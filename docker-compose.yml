@@ -51,7 +51,7 @@ services:
     container_name: six-openresty
     volumes:
       - ./conf/nginx/openresty-conf/default.conf:/etc/nginx/conf.d/default.conf
-      - ./conf/nginx/openresty-conf/nginx.conf:/etc/nginx/nginx.conf
+#      - ./conf/nginx/openresty-conf/nginx.conf:/etc/nginx/nginx.conf
       - ./conf/nginx/openresty-conf/nginx.conf:/usr/local/openresty/nginx/conf/nginx.conf
       - ./test:/docker/www
       - ./log/openresty-nginx:/var/log/nginx

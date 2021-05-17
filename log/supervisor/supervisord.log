@@ -787,3 +787,29 @@
 2021-05-17 17:20:02,313 INFO spawned: 'laravel-s-test' with pid 10
 2021-05-17 17:20:03,374 INFO success: php entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
 2021-05-17 17:20:03,375 INFO success: laravel-s-test entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2021-05-17 20:25:27,807 WARN received SIGQUIT indicating exit request
+2021-05-17 20:25:27,811 INFO waiting for php, laravel-s-test to die
+2021-05-17 20:25:27,954 INFO stopped: laravel-s-test (exit status 0)
+2021-05-17 20:25:27,978 INFO stopped: php (exit status 0)
+2021-05-17 20:26:50,373 CRIT Supervisor is running as root.  Privileges were not dropped because no user is specified in the config file.  If you intend to run as root, you can set user=root in the config file to avoid this message.
+2021-05-17 20:26:50,374 INFO Included extra file "/etc/supervisor/conf.d/phpSupervisord.conf" during parsing
+2021-05-17 20:26:50,397 INFO RPC interface 'supervisor' initialized
+2021-05-17 20:26:50,398 CRIT Server 'unix_http_server' running without any HTTP authentication checking
+2021-05-17 20:26:50,398 INFO supervisord started with pid 1
+2021-05-17 20:26:51,404 INFO spawned: 'php' with pid 10
+2021-05-17 20:26:51,409 INFO spawned: 'laravel-s-test' with pid 11
+2021-05-17 20:26:52,503 INFO success: php entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2021-05-17 20:26:52,505 INFO success: laravel-s-test entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2021-05-17 20:29:18,397 WARN received SIGQUIT indicating exit request
+2021-05-17 20:29:18,398 INFO waiting for php, laravel-s-test to die
+2021-05-17 20:29:18,428 INFO stopped: laravel-s-test (exit status 0)
+2021-05-17 20:29:18,442 INFO stopped: php (exit status 0)
+2021-05-17 20:29:46,220 CRIT Supervisor is running as root.  Privileges were not dropped because no user is specified in the config file.  If you intend to run as root, you can set user=root in the config file to avoid this message.
+2021-05-17 20:29:46,221 INFO Included extra file "/etc/supervisor/conf.d/phpSupervisord.conf" during parsing
+2021-05-17 20:29:46,243 INFO RPC interface 'supervisor' initialized
+2021-05-17 20:29:46,244 CRIT Server 'unix_http_server' running without any HTTP authentication checking
+2021-05-17 20:29:46,245 INFO supervisord started with pid 1
+2021-05-17 20:29:47,252 INFO spawned: 'php' with pid 9
+2021-05-17 20:29:47,266 INFO spawned: 'laravel-s-test' with pid 10
+2021-05-17 20:29:48,302 INFO success: php entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2021-05-17 20:29:48,303 INFO success: laravel-s-test entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
