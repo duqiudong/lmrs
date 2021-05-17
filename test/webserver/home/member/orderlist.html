@@ -1,0 +1,1147 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<meta name="renderer" content="webkit" />
+<meta http-equiv="X-UA-COMPATIBLE" content="IE=edge,chrome=1"/>
+<meta charset="UTF-8">
+<meta name="renderer" content="webkit"> 
+<title>六星开源商城&nbsp;-&nbsp;六星教育</title>
+<meta name="keywords" content="六星教育" />
+<meta name="description" content="六星教育"/>
+<link rel="shortcut  icon" type="image/x-icon" href="/template/shop/blue/public/images/favicon.ico" media="screen"/>
+<!--可共用-->
+<link type="text/css" rel="stylesheet" href="../../static/css/ns_common_13.css">
+<link type="text/css" rel="stylesheet" href="../../static/css/ns_color_style_13.css">
+<link type="text/css" rel="stylesheet" href="../../static/css/iconfont_13.css">
+<link type="text/css" rel="stylesheet" href="../../static/css/ns_bottom_13.css">
+<link rel="stylesheet" href="../../static/css/layer_13.css" id="layuicss-skinlayercss">
+<script type="text/javascript" src="../../static/js/jquery_14.js"></script>
+<script type="text/javascript">
+	var shop_main='http://tp.23673.com';//外置JS调用
+	var app_main='http://tp.23673.com/wap';//外置JS调用
+	var upload = "";//外置JS调用
+	var ADMINMAIN='http://tp.23673.com/admin';
+	var TEMP_IMG = "/template/shop/blue/public/images";
+	var temp = "/template/";//外置JS调用
+	$(function(){
+		//一级菜单选中	
+		$('#nav li>a').removeClass('current');
+		var path_info='member/orderlist';
+		if(path_info==''){
+			$("#nav li>a[href^='http://tp.23673.com/index/index']").addClass('current');
+		}else{
+			$("#nav li>a[href^='http://tp.23673.com/member/orderlist']").addClass('current');
+		}
+	})
+	
+	window.onload=function(){
+		$.footer();
+	}
+</script>
+<script type="text/javascript" src="../../static/js/ns_cart_13.js"></script>
+<script type="text/javascript" src="../../static/js/common_17.js"></script>
+<script type="text/javascript" src="../../static/js/ns_components_13.js"></script>
+<script type="text/javascript" src="../../static/js/jquery.fly.min_13.js"></script>
+<script type="text/javascript" src="../../static/js/layer_13.js"></script>
+<script type="text/javascript" src="../../static/js/jquery.method_13.js"></script>
+<script type="text/javascript" src="../../static/js/nav_13.js"></script>
+<script type="text/javascript" src="../../static/js/jquery.cookie_13.js"></script>
+<script src="../../static/js/ajax_file_upload_16.js" type="text/javascript"></script>
+<script src="../../static/js/file_upload_16.js" type="text/javascript"></script>
+<script>
+	/**
+	 * 六星开源商城系统 - 团队十年电商经验汇集巨献!
+	 * ========================================================= Copy right
+	 * 2015-2025 湖南六星教育网络科技有限公司, 保留所有权利。
+	 * ---------------------------------------------- 官方网址:
+	 * http://www.sixstaredu.com 这不是一个自由软件！您只能在不用于商业目的的前提下对程序代码进行修改和使用。
+	 * 任何企业和个人不允许对程序代码以任何形式任何目的再发布。
+	 * =========================================================
+	 * 
+	 * @author : 小学生Pack老师
+	 * @date : 2016年12月16日 16:17:13
+	 * @version : v1.0.0.0 商品发布中的第二步，编辑商品信息
+	 */
+	var PLATFORM_NAME = "";
+	var ADMINIMG = "/public/admin/images";//后台图片请求路径
+	var ADMINMAIN = "http://tp.23673.com/admin";//后台请求路径
+	var UPLOAD = "";//上传文件根目录
+	var PAGESIZE = "";//分页显示页数
+	var ROOT = "";//跟目录
+
+	//上传文件路径
+	var UPLOADGOODS = 'upload/goods/';//存放商品图片
+	var UPLOADGOODSSKU = 'upload/goods_sku/';//存放商品SKU
+	var UPLOADGOODSBRAND = 'upload/goods_brand/';//存放商品品牌图
+	var UPLOADGOODSGROUP = 'upload/goods_group/';////存放商品分组图片
+	var UPLOADGOODSCATEGORY = 'upload/goods_category/';////存放商品分类图片
+	var UPLOADCOMMON = 'upload/common/';//存放公共图片、网站logo、独立图片、没有任何关联的图片
+	var UPLOADAVATOR = 'upload/avator/';//存放用户头像
+	var UPLOADPAY = 'upload/pay/';//存放支付生成的二维码图片
+	var UPLOADADV = 'upload/advertising/';//存放广告位图片
+	var UPLOADEXPRESS = 'upload/express/';//存放物流图片
+	var UPLOADCMS = 'UPLOAD_CMS';//存放文章图片
+</script>
+<script src="../../static/js/load_task_17.js" type="text/javascript"></script>
+
+<!--继承base可重写-->
+
+
+
+
+<!-- 右侧购物车 -->
+
+<!-- 添加css、字体文件文件 -->
+<script src="../../static/js/order.js"></script>
+<style type="text/css">
+.nav_active{background:#E6E6E6; color:#FFF;}
+.tip-box{position: static;margin-top: 100px;}
+</style>
+
+</head>
+<body>
+<!-- 头部广告 -->
+
+
+
+<!-- 公共的顶部（部分界面不用，例如，商家入驻） -->
+
+	<!--
+	创建时间：2017年2月7日 12:08:45
+	功能描述： 顶部， 
+-->
+<div class="header-top">
+	<div class="header-box">
+		<font id="login-info" class="login-info"></font>
+		<ul>
+			<li><a class="menu-hd home" href="http://tp.23673.com" target="_top"><i></i>商城首页</a></li>
+			<li class="menu-item">
+				<div class="menu">
+					<a class="menu-hd myinfo" href="http://tp.23673.com/member/index" target="_blank"><i></i> 个人中心 <b></b></a>
+					<div id="menu-2" class="menu-bd">
+						<span class="menu-bd-mask"></span>
+						<div class="menu-bd-panel">
+							<a href="http://tp.23673.com/member/orderlist" target="_blank">已买到的宝贝</a>
+							<a href="http://tp.23673.com/member/addresslist" target="_blank">我的地址管理</a>
+							<a href="http://tp.23673.com/member/goodscollectionlist" target="_blank">我收藏的宝贝</a>
+						</div>
+					</div>
+				</div>
+			</li>
+			<li class="menu-item cartbox"><a class="menu-hd cart" href="http://tp.23673.com/goods/cart" target="_top"><i></i>&nbsp;购物车</a></li>
+			<li><a class="menu-hd" target="_blank" href="http://tp.23673.com/admin">卖家中心</a></li> 
+			<li class="menu-item">
+				<div class="menu">
+					<a class="menu-hd we-chat"
+						href="javascript:;" target="_top"> <i></i>
+						关注商城 <b></b>
+					</a>
+					<div id="menu-5" class="menu-bd we-chat-qrcode">
+						<span class="menu-bd-mask"></span> <a target="_top"> <img src="../../static/picture/1500630330_13.jpg" alt="官方微信"></a>
+						<p class="font-14">关注官方微信</p>
+					</div>
+				</div>
+			</li>
+<!-- 			<li class="menu-item"> -->
+<!-- 				<div class="menu"> -->
+<!-- 					<a href="http://tp.23673.com/helpcenter/index" class="menu-hd site-nav" target="_blank"> 商家支持 <b></b></a> -->
+<!-- 					<div id="menu-7" class="menu-bd site-nav-main"> -->
+<!-- 						<span class="menu-bd-mask"></span> -->
+<!-- 						<div class="menu-bd-panel"> -->
+<!-- 							<div class="site-nav-con"> -->
+<!-- 								<a href="http://tp.23673.com/helpcenter/index?id=2" target="_blank" title="常见问题">常见问题</a> -->
+<!-- 								<a href="http://tp.23673.com/helpcenter/index?id=7" target="_blank" title="网上支付">网上支付</a> -->
+<!-- 								<a href="http://tp.23673.com/helpcenter/index?id=5" target="_blank" title="验货与签收">验货与签收</a> -->
+<!-- 								<a href="http://tp.23673.com/helpcenter/index?id=9" target="_blank" title="退款说明">退款说明</a> -->
+<!-- 							</div> -->
+<!-- 						</div> -->
+<!-- 					</div> -->
+<!-- 				</div> -->
+<!-- 			</li> -->
+			<li class="menu-item"><a  href="http://tp.23673.com/wap/" class="menu-hd wap-nav" > <i></i>手机端</a></li>
+			<li class="menu-item"><a href="http://tp.23673.com/helpcenter/index" class="menu-hd site-nav" target="_blank">帮助中心</a></li>
+		</ul>
+	</div>
+</div>
+
+<script type="text/javascript">
+$.ajax({
+	type:"post",
+	url:"http://tp.23673.com/components/getlogininfo",
+	success:function(data){
+		var login_info_html='';
+		if(data!=null && data!=""){
+// 			if(data["user_info"]["nick_name"]!= null && data["user_info"]["nick_name"] != ""){
+				login_info_html='<a class="sn-login color" href="http://tp.23673.com/member/index" target="_top">'+data["user_info"]["nick_name"]+'</a><em>欢迎您回来！</em><a class="sn-register" href="javascript:logout();" target="_top">退出</a>';
+				$('div.login-info').html('<font id="login-info" class="login-info NS-USER-ALREADY-LOGIN"><em><a href="#" target="_blank" class="color NS-USER-NAME"></a></em><a href="javascript:logout();" data-method="post" class="logout bg-color">退出</a></font>');
+// 			}
+		}else{
+			login_info_html='<em>欢迎来到六星开源商城</em><a class="login color" href="http://tp.23673.com/login/index" target="_top">请登录</a><a class="register" href="http://tp.23673.com/login/registerbox" target="_top">免费注册</a>';
+			$('div.login-info').html('<font id="login-info" class="login-info"><a class="login color" href="http://tp.23673.com/login/index" target="_top">登录</a><a class="register bg-color" href="http://tp.23673.com/login/registerbox" target="_top">免费注册</a></font>');
+		}
+		$('#login-info').html(login_info_html);
+	}
+});
+
+//退出登录
+function logout(){
+	$.ajax({
+		url: "http://tp.23673.com/member/logout",
+		type: "post",
+		success: function (res) {
+			if (res['code'] > 0) {
+// 				location.href='http://tp.23673.com';
+				$.msg("退出成功！");
+				window.location.reload();
+			} else {
+				if(res["message"]!=null){
+					$.msg(res["message"]);
+				}
+			}
+		}
+	})
+}
+</script>
+
+
+<!-- 头部，菜单栏、搜索、导航栏 -->
+
+	<!--
+	创建人：Pack老师
+	创建时间：2017年2月7日 12:09:42
+	功能描述：顶部logo、搜索 
+-->
+<script type="text/javascript">
+	//显示搜索历史
+	function SearRecord(){
+		var arrSear=new Array();
+		var strSear = $.cookie("searchRecord");
+		var sear_html='<span>最近搜索</span>';
+		if(typeof(strSear)!='undefined' && strSear!='null'){
+			var arrSear=JSON.parse(strSear);
+			sear_html+='<a href="javascript:clearSearRecord();" class="clear-history"> <i></i>清空</a><br/>';
+			for(var i=0;i<arrSear.length;i++){
+				sear_html+='<a href="http://tp.23673.com/goods/goodslist?keyword='+arrSear[i]+'" style="display:inline-block;">'+arrSear[i]+'</a>';
+			}
+		}
+		$('#search_titles').html(sear_html);
+	}
+	//清除搜索历史
+	function clearSearRecord(){
+		clear = JSON.stringify(new Array());
+		$.cookie("searchRecord", clear);
+		SearRecord();
+	}
+	
+	$(function(){
+		SearRecord();
+	});
+</script>
+<div class="as-shelter"></div>
+<div class="follow-box">
+	<div class="follow-box-con">
+		<a href="http://tp.23673.com" class="logo"><img src="../../static/picture/1497923663_14.jpg" /></a>
+		<div class="search NS-SEARCH-BOX-TOP">
+			<form class="search-form NS-SEARCH-BOX-FORM" method="get"  onsubmit="return false">
+				<div class="search-info">
+					<div class="search-type-box">
+						<ul class="search-type" style="height: 36px; overflow: hidden;">
+							<li class="search-li-top curr" num="0">宝贝</li>
+<!-- 							<li class="search-li-top" num="1" >店铺</li> -->
+						</ul>
+<!-- 						<i></i> -->
+					</div>
+					<div class="search-box">
+						<div class="search-box-con">
+							<input type="text"
+								class="search-box-input NS-SEARCH-BOX-KEYWORD" name="keyword" tabindex="9" autocomplete="off" data-searchwords="1231231231" placeholder="1231231231"  value="">
+						</div>
+					</div>
+					<input type="hidden" id="searchtypeTop" name="type" value="0" class="searchtype">
+					<input type="button" id="btn_search_box_submit_top" value="搜索" class="button NS-SEARCH-BOX-SUBMIT-TOP">
+				</div>
+			</form>
+		</div>
+		<div class="login-info"></div>
+	</div>
+</div>
+<div class="header">
+	<div class="w1210">
+		<div class="logo-info">
+			<a href="http://tp.23673.com" class="logo"> <img src="../../static/picture/1497923663_14.jpg" /></a>
+		</div>
+		<div class="search NS-SEARCH-BOX">
+			<form class="search-form NS-SEARCH-BOX-FORM" method="get"  onsubmit="return false">
+				<div class="search-info">
+					<div class="search-type-box">
+						<ul class="search-type">
+							<li class="search-li curr" num="0">宝贝</li>
+<!-- 							<li class="search-li" num="1">店铺</li> -->
+						</ul>
+<!-- 						<i></i> -->
+					</div>
+					<div class="search-box">
+						<div class="search-box-con">
+							<input type="text" class="keyword search-box-input NS-SEARCH-BOX-KEYWORD" name="keyword" tabindex="9" autocomplete="off" data-searchwords="1231231231" placeholder="1231231231" value="" />
+						</div>
+					</div>
+					<!-- <input type="hidden" id="searchtype" name="type" value="0" class="searchtype"> --> 
+					<input type="button" id="btn_search_box_submit" value="搜索" class="button btn_search_box_submit NS-SEARCH-BOX-SUBMIT">
+				</div>
+				<!-- -热门搜索热搜词显示 -->
+				<div class="search-results hide NS-SEARCH-BOX-HELPER" style="display: none;">
+					<ul class="history-results">
+						<li class="title" id="search_titles" style="word-wrap:break-word "></li>
+						
+					</ul>
+					<ul class="rec-results">
+						<li class="title"><span>正在热搜中</span> <i class="close"></i></li>
+												<li><a  href="http://tp.23673.com/goods/goodslist?keyword=衣服，鞋子" title="衣服，鞋子">衣服，鞋子</a></li>
+											</ul>
+				</div>
+			</form>
+			<ul class="hot-query">
+				<!-- 默认搜索词 -->
+				<li class="first"><a href="javascript:void(0);"></a></li>
+			</ul>
+		</div>
+		<!-- 搜索框右侧小广告 _start -->
+		<div class="header-right">
+		<a href="http://tp.23673.com/goods/cart" class="my-cart"><span class="ico"></span>购物车结算<span class="right_border"></span></a>
+			<a href="http://tp.23673.com/member" class="my-mall"><span class="ico"></span>我的商城<span class="right_border"></span></a>
+		</div>
+		<!-- 搜索框右侧小广告 _end -->
+	</div>
+</div>
+<!-- logo栏小广告  -->
+<!-- logo栏小广告 
+	Page老师
+	2017年2月10日10:28:30
+ -->
+<script type="text/javascript">
+	//logo右侧小广告 
+	var ap_id=1052;
+	var data=platformAdvLoad(ap_id);
+	if(data !=''){
+		$('.logo-info').append('<a href="'+data[0]['adv_url']+'" class="logo-right"> <img src="../../static/picture/69e8584ceaa141aca29c75bffdb259cf.gif'+data[0]['adv_image']+'"> </a>');
+	}
+	//搜索框右侧小广告
+	//$('.header-right').html('<a href="'+data[1]['adv_url']+'" target="_blank" title="">  <img src="../../static/picture/69e8584ceaa141aca29c75bffdb259cf.gif'+data[1]['adv_image']+'"></a>');
+</script>
+<script type="text/javascript">
+	$(document).ready(function() {
+		// 搜索框提示显示
+		$('.NS-SEARCH-BOX .NS-SEARCH-BOX-KEYWORD').focus(function() {
+			$(".NS-SEARCH-BOX .NS-SEARCH-BOX-HELPER").show();
+		});
+		// 搜索框提示隐藏
+		$(".NS-SEARCH-BOX-HELPER .close").on('click',function() {
+			$(".NS-SEARCH-BOX .NS-SEARCH-BOX-HELPER").hide();
+		});
+		// 清除记录
+		$(".NS-SEARCH-BOX-HELPER .clear").click(function() {
+			var url = '/search/clear-record.html';
+			$.post(
+				url,
+				{},
+				function(result) {
+					if (result.code == 0) {
+						$(".history-results .active").empty();
+					} else {
+					}
+				},
+				'json');
+		});
+	});
+	function search_box_remove(key) {
+		var url = '/search/delete-record.html';
+		$.post(url, {
+			data : key
+		}, function(result) {
+			if (result.code == 0) {
+				$("#" + key).css("display", "none");
+			} else {
+
+			}
+		}, 'json');
+	}
+	$(document).on("click", function(e) {
+		var target = $(e.target);
+		if (target.closest(".NS-SEARCH-BOX").length == 0) {
+			$('.NS-SEARCH-BOX-HELPER').hide();
+		}
+	})
+</script>
+<script type="text/javascript">
+	//固定搜索
+	$(document).ready(function() {
+		$(".NS-SEARCH-BOX .NS-SEARCH-BOX-SUBMIT").click(function() {
+			var keyword_obj = $(this).parents(".NS-SEARCH-BOX").find(".NS-SEARCH-BOX-KEYWORD");
+			var keywords = keyword_obj.val();
+			if ($.trim(keywords).length == 0
+					|| $.trim(keywords) == "请输入关键词") {
+				keywords = keyword_obj.attr("data-searchwords");
+			}
+			
+			$(keyword_obj).val(keywords);
+			if(keywords==null)
+			{
+				keywords = "";
+			}
+
+			if($.cookie("searchRecord") != undefined){
+				var arr = eval($.cookie("searchRecord"));				
+			}else{
+				var arr = new Array();
+			}
+			if(arr.length >0 ){
+				if($.inArray(keywords,arr)< 0){
+					arr.push(keywords);
+				}
+			}else{
+				arr.push(keywords);
+			}
+			$.cookie("searchRecord",JSON.stringify(arr));
+
+			if ($(".search-li.curr").attr('num') == 0) {
+				window.location.href = 'http://tp.23673.com/goods/goodslist?keyword='+keywords;
+			}else{
+				window.location.href = 'http://tp.23673.com/shop/shopstreet?shopname='+keywords;
+			}
+		});
+	});
+	//浮动搜索
+	$(document).ready(function() {
+		$(".NS-SEARCH-BOX-TOP .NS-SEARCH-BOX-SUBMIT-TOP").click(function() {
+			var keyword_obj = $(this).parents(".NS-SEARCH-BOX-TOP").find(".NS-SEARCH-BOX-KEYWORD");
+			var keywords = $(keyword_obj).val();
+			if ($.trim(keywords).length == 0
+					|| $.trim(keywords) == "请输入关键词") {
+				keywords = $(keyword_obj).attr("data-searchwords");
+			}
+
+			if($.cookie("searchRecord") != undefined){
+				var arr = eval($.cookie("searchRecord"));				
+			}else{
+				var arr = new Array();
+			}
+			if(arr.length >0 ){
+				if($.inArray(keywords,arr)< 0){
+					arr.push(keywords);
+				}
+			}else{
+				arr.push(keywords);
+			}
+			$.cookie("searchRecord",JSON.stringify(arr));
+
+			$(keyword_obj).val(keywords);
+			if ($(".search-li-top.curr").attr('num') == 0) {
+				window.location.href = 'http://tp.23673.com/goods/goodslist?keyword='+keywords;
+			}else{
+				window.location.href = 'http://tp.23673.com/shop/shopstreet?shopname='+keywords;
+			}
+		});
+	});
+</script>
+
+
+<!--头部商品分类 start-->
+
+	<!--
+	创建人：Page老师
+	创建时间：2017年2月7日 12:22:28
+	功能描述：导航栏、菜单栏 、商品分类（与首页的样式不同，没有轮播图）
+-->
+<div class="category-box category-box-border">
+	<div class="w1210">
+		<div class="home-category fl">
+			<a href="http://tp.23673.com/goods/category" class="menu-event" title="查看全部商品分类"><i></i>全部商品分类</a>
+						<div class="expand-menu category-layer" style="display: none;">
+							<!-- 公共的菜单栏-->
+				<div class="category-layer">
+					<span class="category-layer-bg"></span>
+										<div class="list">
+						<dl class="cat">
+							<dt class="cat-name">
+								<a href="http://tp.23673.com/goods/goodslist?category_id=311" target="_blank" title="女装/男装/内衣">女装/男装/内衣</a>
+							</dt>
+														<i class="right-arrow"></i>
+													</dl>
+						<div class="categorys" style="display: none;">
+							<div class="item-left fl">
+								<div class="subitems">
+																		<dl class="fore1">
+											<dt style="width: 5em;">
+												<a href="http://tp.23673.com/goods/goodslist?category_id=313" target="_blank" title="女装">
+													<em>女装</em>
+																										<i></i>
+																									</a>
+											</dt>
+											<dd>
+																									<a href="http://tp.23673.com/goods/goodslist?category_id=320" target="_blank" title="蕾丝短袖">蕾丝短袖</a>
+																										<a href="http://tp.23673.com/goods/goodslist?category_id=322" target="_blank" title="针织短袖">针织短袖</a>
+																								</dd>
+										</dl>
+																			<dl class="fore1">
+											<dt style="width: 5em;">
+												<a href="http://tp.23673.com/goods/goodslist?category_id=314" target="_blank" title="连衣裙">
+													<em>连衣裙</em>
+																										<i></i>
+																									</a>
+											</dt>
+											<dd>
+																									<a href="http://tp.23673.com/goods/goodslist?category_id=316" target="_blank" title="迷你连衣裙">迷你连衣裙</a>
+																								</dd>
+										</dl>
+																	</div>
+							</div>
+						</div>
+					</div>
+										<div class="list">
+						<dl class="cat">
+							<dt class="cat-name">
+								<a href="http://tp.23673.com/goods/goodslist?category_id=312" target="_blank" title="鞋靴/箱包/配件">鞋靴/箱包/配件</a>
+							</dt>
+													</dl>
+						<div class="categorys" style="display: none;">
+							<div class="item-left fl">
+								<div class="subitems">
+																</div>
+							</div>
+						</div>
+					</div>
+										<div class="list">
+						<dl class="cat">
+							<dt class="cat-name">
+								<a href="http://tp.23673.com/goods/goodslist?category_id=315" target="_blank" title="手机数码">手机数码</a>
+							</dt>
+													</dl>
+						<div class="categorys" style="display: none;">
+							<div class="item-left fl">
+								<div class="subitems">
+																</div>
+							</div>
+						</div>
+					</div>
+										<div class="list">
+						<dl class="cat">
+							<dt class="cat-name">
+								<a href="http://tp.23673.com/goods/goodslist?category_id=317" target="_blank" title="家用电器">家用电器</a>
+							</dt>
+														<i class="right-arrow"></i>
+													</dl>
+						<div class="categorys" style="display: none;">
+							<div class="item-left fl">
+								<div class="subitems">
+																		<dl class="fore1">
+											<dt style="width: 5em;">
+												<a href="http://tp.23673.com/goods/goodslist?category_id=318" target="_blank" title="小电器">
+													<em>小电器</em>
+																										<i></i>
+																									</a>
+											</dt>
+											<dd>
+																									<a href="http://tp.23673.com/goods/goodslist?category_id=319" target="_blank" title="高压锅">高压锅</a>
+																								</dd>
+										</dl>
+																	</div>
+							</div>
+						</div>
+					</div>
+									</div>
+			</div>
+		</div>
+		<!-- 公共的菜单栏-->
+	<div class="all-category fl" id="nav">
+	<ul>
+			<li class="fl" >
+								<a class="nav" target="_blank" href="http://tp.23673.com/index/index"  title="首页">首页</a>
+						</li>
+			<li class="fl" >
+								<a class="nav" href="http://tp.23673.com/index/discount"  title="限时折扣">限时折扣</a>
+						</li>
+			<li class="fl" >
+								<a class="nav" href="http://tp.23673.com/goods/brandlist"  title="品牌列表">品牌列表</a>
+						</li>
+			<li class="fl" >
+								<a class="nav" target="_blank" href="http://tp.23673.com/shop/shopstreet"  title="店铺街">店铺街</a>
+						</li>
+			<li class="fl" >
+								<a class="nav" href="http://tp.23673.com/goods/integralcenter"  title="积分中心">积分中心</a>
+						</li>
+		</ul>
+	<div class="wrap-line">
+		<span style="left: 15px;"></span>
+	</div>
+</div>
+	</div>
+</div>
+
+<!--头部商品分类 end-->
+
+<!-- 右侧固定购物车 -->
+
+<!-- 内容 -->
+
+<div class="margin-w1210">
+	<link type="text/css" rel="stylesheet" href="../../static/css/user_2.css" />
+<div class="breadcrumb">
+	<a href="http://tp.23673.com" class="index">首页</a>
+	<span class="crumbs-arrow">&gt;</span>
+	<a href="http://tp.23673.com/member/index" class="js-bread-crumb"></a>
+</div>
+<div class="member-menu">
+	<div class="user-info">
+		<header>
+			<span class="level-name">普通会员</span>
+			<span class="exit" onclick="logout()" title="退出登录"><i class="icon i-exit"></i>退出</span>
+		</header>
+		<div class="logo" onclick="location.href='http://tp.23673.com/member/person';" title="查看个人资料">
+						<img id="headImagePath" src="../../static/picture/temp_default_user_portrait_0_13.png" />
+					</div>
+		<strong onclick="location.href='http://tp.23673.com/member/person';" title="查看个人资料">admin</strong>
+	</div>
+	<article class="list">
+		<div class="item">
+			<h3>
+				<i class="icon i-member-center"></i>
+				<span>会员中心</span>
+			</h3>
+			<ul>
+				<li onclick="location.href='http://tp.23673.com/member/index';" data-href="http://tp.23673.com/member/index">
+					<span>欢迎页</span>
+					<i class="icon i-arrow"></i>
+				</li>
+				<li onclick="location.href='http://tp.23673.com/member/person';" data-href="http://tp.23673.com/member/person">
+					<span>个人资料</span>
+					<i class="icon i-arrow"></i>
+				</li>
+				<li onclick="location.href='http://tp.23673.com/member/usersecurity';" data-href="http://tp.23673.com/member/usersecurity">
+					<span>账户安全</span>
+					<i class="icon i-arrow"></i>
+				</li>
+				<li onclick="location.href='http://tp.23673.com/member/addresslist';" data-href="http://tp.23673.com/member/addresslist">
+					<span>收货地址</span>
+					<i class="icon i-arrow"></i>
+				</li>
+				<li onclick="location.href='http://tp.23673.com/member/balancelist';" data-href="http://tp.23673.com/member/balancelist">
+					<span>账户余额</span>
+					<i class="icon i-arrow"></i>
+				</li>
+				<li onclick="location.href='http://tp.23673.com/member/balancewithdrawlist';" data-href="http://tp.23673.com/member/balancewithdrawlist">
+					<span>提现记录</span>
+					<i class="icon i-arrow"></i>
+				</li>
+				<li onclick="location.href='http://tp.23673.com/member/vouchers';" data-href="http://tp.23673.com/member/vouchers">
+					<span>我的优惠券</span>
+					<i class="icon i-arrow"></i>
+				</li>
+				<li onclick="location.href='http://tp.23673.com/member/integral';" data-href="http://tp.23673.com/member/integrallist">
+					<span>我的积分</span>
+					<i class="icon i-arrow"></i>
+				</li>
+			</ul>
+		</div>
+		<div class="item">
+			<h3>
+				<i class="icon i-trading-center"></i>
+				<span>交易中心</span>
+			</h3>
+			<ul>
+				<li onclick="location.href='http://tp.23673.com/member/orderlist';" data-href="http://tp.23673.com/member/orderlist">
+					<span>我的订单</span>
+					<i class="icon i-arrow"></i>
+				</li>
+				<li onclick="location.href='http://tp.23673.com/member/backlist';" data-href="http://tp.23673.com/member/backlist">
+					<span>退款/退货及维修</span>
+					<i class="icon i-arrow"></i>
+				</li>
+				<li onclick="location.href='http://tp.23673.com/member/goodsevaluationlist';" data-href="http://tp.23673.com/member/goodsevaluationlist">
+					<span>商品评价/晒单</span>
+					<i class="icon i-arrow"></i>
+				</li>
+				<li onclick="location.href='http://tp.23673.com/member/goodscollectionlist';" data-href="http://tp.23673.com/member/goodscollectionlist">
+					<span>商品收藏</span>
+					<i class="icon i-arrow"></i>
+				</li>
+				<li onclick="location.href='http://tp.23673.com/member/shopcollectionlist';" data-href="http://tp.23673.com/member/shopcollectionlist">
+					<span>店铺收藏</span>
+					<i class="icon i-arrow"></i>
+				</li>
+			</ul>
+		</div>
+	</article>
+</div>
+<script type="text/javascript">
+$(function(){
+	//选中
+	var path_info='member/orderlist';
+	if(path_info==''||path_info=="member"){
+		$("li[data-href^='http://tp.23673.com/member/index']").addClass('current');
+		$(".js-bread-crumb").attr("href",$("li[data-href^='http://tp.23673.com/member/index']").attr("data-href"));
+		$(".js-bread-crumb").text($("li[data-href^='http://tp.23673.com/member/index']").text());
+	}else{
+		$("li[data-href^='http://tp.23673.com/member/orderlist']").addClass('current');
+		$(".js-bread-crumb").attr("href",$("li[data-href^='http://tp.23673.com/member/orderlist']").attr("data-href"));
+		$(".js-bread-crumb").text($("li[data-href^='http://tp.23673.com/member/orderlist']").text());
+	}
+});
+</script>
+	<div class="member-main">
+		<div class="box">
+			<div class="tabmenu">
+				<ul class="tab">
+					<li class="active">我的订单</li>
+				</ul>
+			</div>
+			<div id="J_Remide" class="remide-box">
+				<h3>我的交易提醒：</h3>
+				<ul>
+					<li  class="nav_active"  va="all"><a href="http://tp.23673.com/member/orderlist?status=all" >全部(<span class="num" id="all">3</span>)</a></li>
+					<li  va="0"><a href="http://tp.23673.com/member/orderlist?status=0">待付款(<span class="num" id="wait_pay">2</span>)</a></li>
+					<li  va="1"><a href="http://tp.23673.com/member/orderlist?status=1">待发货(<span class="num" id="wait_delivery">0</span>)</a></li>
+					<li  va="2"><a href="http://tp.23673.com/member/orderlist?status=2">待收货(<span class="num" id="wait_recieved">0</span>)</a></li>
+					<li  va="3"><a href="http://tp.23673.com/member/orderlist?status=3">已收货(<span class="num" id="recieved">0</span>)</a></li>
+					<li  va="4"><a href="http://tp.23673.com/member/orderlist?status=4">退款/售后(<span class="num" id="refunding">0</span>)</a></li>
+					<li  va="5"><a href="http://tp.23673.com/member/orderlist?status=5">待评价(<span class="num" id="wait_evaluate">0</span>)</a></li>
+				</ul>
+			</div>
+			<div class="extra-r" style="display:none">
+				<div class="search-01">
+					<input id="ip_keyword" class="s-itxt" value="商品名称、商品编号、订单编号" onfocus="if (this.value==this.defaultValue) this.value=&#39;&#39;" onblur="if (this.value==&#39;&#39;) this.value=this.defaultValue" onkeydown="javascript:if(event.keyCode==13) OrderSearch(&#39;ip_keyword&#39;);" type="text" />
+					<a href="javascript:;" class="btn-13" onclick="OrderSearch(&#39;ip_keyword&#39;)" clstag="click|keycount|orderinfo|search">查 询</a>
+				</div>
+				<div class="blank"></div>
+			</div>
+			<table width="100%" border="0" cellspacing="0" cellpadding="0" class="bought-table">
+				<thead>
+					<tr class="col-name">
+						<th width="25%" style="border-left: 1px solid #E6E6E6;">宝贝</th>
+						<th width="18%">属性</th>
+						<th width="9%">单价(元)</th>
+						<th width="5%">数量</th>
+						<th width="13%">售后</th>
+						<th width="8%">订单总金额</th>
+						<th width="10%">状态</th>
+						<th width="13%" style="border-right: 1px solid #E6E6E6;">操作</th>
+					</tr>
+				</thead>
+				<tbody id="list_content" class="close-order">
+										<tr class="order-hd">
+						<td colspan="8">
+							<span class="no"><label>订单编号：<span class="order-num"><a href="javascript:void(0);" class="main-color">20180524201028000000002</a></span></label></span>
+							<span class="deal-time">&nbsp;&nbsp;成交时间：<span>2018-05-24 20:10:28</span></span>
+						</td>
+					</tr>
+										<tr class="order-bd">
+						<td align="center" class="baobei no-border-right order_goods_info">
+							<div class="goods_desc last">
+								<a class="pic" href="http://tp.23673.com/goods/goodsinfo?goodsid=383" title="查看宝贝详情" target="_blank">
+									<img src="../../static/picture/1500601152704.jpg" alt="" width="50" height="50" />
+								</a>
+								<a href="http://tp.23673.com/goods/goodsinfo?goodsid=383" title="查看宝贝详情" target="_blank">
+									<div class="goods_name">单鞋细高跟防水台鱼嘴女凉鞋2017春夏季新款复古刺绣高跟鞋40-42</div>
+								</a>
+							</div> 
+						</td>
+						<td align="center" class="baobei no-border-right order_goods_attr"><div class="goods_desc goods_desc_t last" style="line-height:50px;"> </div></td>
+						<td align="center" class="baobei no-border-right order_goods_info" style="padding:0px;"><div class="goods_desc price  last" style="padding-left:0px; line-height:50px;"> ￥345.00 </div></td>
+						<td align="center" class="baobei no-border-right order_goods_info" style="padding:0px;"><div class="goods_desc last" style="padding-left:0px;line-height:50px;"> 9 </div> </td>
+						<td align="center" class="after-service baobei no-border-right order_goods_info" valign="middle">
+							<div class="goods_desc last"> 
+															</div>
+						</td>
+												<td rowspan="1" align="center" class="amount no-border-right"><p class="post-type"><strong>￥3105.00</strong></p></td>
+						<td rowspan="1" align="center" class="trade-status no-border-right">
+							<div>待付款</div>
+							<a href="http://tp.23673.com/member/orderdetail?orderid=5" class="main-color">订单详情</a><br/>
+													</td>
+						<td rowspan="1" align="center" class="other">
+															<a href="javascript:void(0)" class="on_money" style="background-color:#FF9149;border: 1px solid  #FF9149;" onclick="operation('pay',5)">去支付</a>
+															<a href="javascript:void(0)" class="on_money" style="background-color:#FF9149;border: 1px solid  #FF9149;" onclick="operation('close',5)">关闭订单</a>
+													</td> 
+										</tr>
+										<tr class="order-hd">
+						<td colspan="8">
+							<span class="no"><label>订单编号：<span class="order-num"><a href="javascript:void(0);" class="main-color">20180524155954000000001</a></span></label></span>
+							<span class="deal-time">&nbsp;&nbsp;成交时间：<span>2018-05-24 15:59:54</span></span>
+						</td>
+					</tr>
+										<tr class="order-bd">
+						<td align="center" class="baobei no-border-right order_goods_info">
+							<div class="goods_desc last">
+								<a class="pic" href="http://tp.23673.com/goods/goodsinfo?goodsid=383" title="查看宝贝详情" target="_blank">
+									<img src="../../static/picture/1500601152704.jpg" alt="" width="50" height="50" />
+								</a>
+								<a href="http://tp.23673.com/goods/goodsinfo?goodsid=383" title="查看宝贝详情" target="_blank">
+									<div class="goods_name">单鞋细高跟防水台鱼嘴女凉鞋2017春夏季新款复古刺绣高跟鞋40-42</div>
+								</a>
+							</div> 
+						</td>
+						<td align="center" class="baobei no-border-right order_goods_attr"><div class="goods_desc goods_desc_t last" style="line-height:50px;"> </div></td>
+						<td align="center" class="baobei no-border-right order_goods_info" style="padding:0px;"><div class="goods_desc price  last" style="padding-left:0px; line-height:50px;"> ￥345.00 </div></td>
+						<td align="center" class="baobei no-border-right order_goods_info" style="padding:0px;"><div class="goods_desc last" style="padding-left:0px;line-height:50px;"> 10 </div> </td>
+						<td align="center" class="after-service baobei no-border-right order_goods_info" valign="middle">
+							<div class="goods_desc last"> 
+															</div>
+						</td>
+												<td rowspan="2" align="center" class="amount no-border-right"><p class="post-type"><strong>￥3819.00</strong></p></td>
+						<td rowspan="2" align="center" class="trade-status no-border-right">
+							<div>待付款</div>
+							<a href="http://tp.23673.com/member/orderdetail?orderid=4" class="main-color">订单详情</a><br/>
+													</td>
+						<td rowspan="2" align="center" class="other">
+															<a href="javascript:void(0)" class="on_money" style="background-color:#FF9149;border: 1px solid  #FF9149;" onclick="operation('pay',4)">去支付</a>
+															<a href="javascript:void(0)" class="on_money" style="background-color:#FF9149;border: 1px solid  #FF9149;" onclick="operation('close',4)">关闭订单</a>
+													</td> 
+										</tr>
+										<tr class="order-bd">
+						<td align="center" class="baobei no-border-right order_goods_info">
+							<div class="goods_desc last">
+								<a class="pic" href="http://tp.23673.com/goods/goodsinfo?goodsid=382" title="查看宝贝详情" target="_blank">
+									<img src="../../static/picture/1500600767634.jpg" alt="" width="50" height="50" />
+								</a>
+								<a href="http://tp.23673.com/goods/goodsinfo?goodsid=382" title="查看宝贝详情" target="_blank">
+									<div class="goods_name">M Queen独立制衣 优雅V领褶皱飘带系带修身长裙A字吊带连衣裙8915</div>
+								</a>
+							</div> 
+						</td>
+						<td align="center" class="baobei no-border-right order_goods_attr"><div class="goods_desc goods_desc_t last" style="line-height:50px;"> </div></td>
+						<td align="center" class="baobei no-border-right order_goods_info" style="padding:0px;"><div class="goods_desc price  last" style="padding-left:0px; line-height:50px;"> ￥369.00 </div></td>
+						<td align="center" class="baobei no-border-right order_goods_info" style="padding:0px;"><div class="goods_desc last" style="padding-left:0px;line-height:50px;"> 1 </div> </td>
+						<td align="center" class="after-service baobei no-border-right order_goods_info" valign="middle">
+							<div class="goods_desc last"> 
+															</div>
+						</td>
+											</tr>
+										<tr class="order-hd">
+						<td colspan="8">
+							<span class="no"><label>订单编号：<span class="order-num"><a href="javascript:void(0);" class="main-color">20180106225557000000001</a></span></label></span>
+							<span class="deal-time">&nbsp;&nbsp;成交时间：<span>2018-01-06 22:55:57</span></span>
+						</td>
+					</tr>
+										<tr class="order-bd">
+						<td align="center" class="baobei no-border-right order_goods_info">
+							<div class="goods_desc last">
+								<a class="pic" href="http://tp.23673.com/goods/goodsinfo?goodsid=383" title="查看宝贝详情" target="_blank">
+									<img src="../../static/picture/1500601152704.jpg" alt="" width="50" height="50" />
+								</a>
+								<a href="http://tp.23673.com/goods/goodsinfo?goodsid=383" title="查看宝贝详情" target="_blank">
+									<div class="goods_name">单鞋细高跟防水台鱼嘴女凉鞋2017春夏季新款复古刺绣高跟鞋40-42</div>
+								</a>
+							</div> 
+						</td>
+						<td align="center" class="baobei no-border-right order_goods_attr"><div class="goods_desc goods_desc_t last" style="line-height:50px;"> </div></td>
+						<td align="center" class="baobei no-border-right order_goods_info" style="padding:0px;"><div class="goods_desc price  last" style="padding-left:0px; line-height:50px;"> ￥345.00 </div></td>
+						<td align="center" class="baobei no-border-right order_goods_info" style="padding:0px;"><div class="goods_desc last" style="padding-left:0px;line-height:50px;"> 11 </div> </td>
+						<td align="center" class="after-service baobei no-border-right order_goods_info" valign="middle">
+							<div class="goods_desc last"> 
+															</div>
+						</td>
+												<td rowspan="1" align="center" class="amount no-border-right"><p class="post-type"><strong>￥3795.00</strong></p></td>
+						<td rowspan="1" align="center" class="trade-status no-border-right">
+							<div>已关闭</div>
+							<a href="http://tp.23673.com/member/orderdetail?orderid=3" class="main-color">订单详情</a><br/>
+													</td>
+						<td rowspan="1" align="center" class="other">
+													</td> 
+										</tr>
+									</tbody>
+			</table>
+		<div id="pagination" class="page" >
+	<div class="page-wrap fr">
+		<div class="total">共<span id="totalcount">3</span>条</div>
+	</div>
+	<div class="page-num fr">
+					<span id="home_page"><a href="javascript:;" class="num prev disabled" data-go-page="1" title="第一页" >首页</a></span>
+			<span id="pre_page"><a href="javascript:;" class="num prev disabled " title="上一页" >上一页</a></span>
+				<div id="page_list" style="float: left;member/orderlist">
+			<!-- 分页页码显示计算 -->
+			
+			<!-- 总页数小于总页码时就都显示 -->
+									<span class="num curr"><a href="javascript:;" data-cur-page="1">1</a></span>
+								<!-- 当前页小于页码的页码的平均两面的值时显示 -->
+						
+		</div>
+		
+					<span id="next_page"><a href="javascript:;" class="num next disabled" title="下一页" >下一页</a></span>
+			<span id="last_page"><a href="javascript:;" class="num next disabled" title="下一页" >尾页</a></span>
+				
+	</div>
+</div>
+		</div>
+	</div>
+</div>
+
+
+<!-- 底部 -->
+
+<!--
+	创建时间：2017年2月7日 12:11:41
+	功能描述： 底部，联系我们、电话 
+-->
+<div class="footer">
+	<div class="dsc-service">
+		<div class="w w1200 relative">
+			<ul class="service-list">
+				<li>
+					<div class="service-tit service-zheng">
+						<img src="../../static/picture/icon-zheng_13.png">
+					</div>
+					<div class="service-txt">正品保障</div>
+				</li>
+				<li>
+					<div class="service-tit service-qi">
+						<img src="../../static/picture/icon-qi_13.png"></i>
+					</div>
+					<div class="service-txt">七天包退</div>
+				</li>
+				<li>
+					<div class="service-tit service-hao">
+						<img src="../../static/picture/icon-grin_13.png">
+					</div>
+					<div class="service-txt">好评如潮</div>
+				</li>
+				<li>
+					<div class="service-tit service-shan">
+						<img src="../../static/picture/icon-light_13.png"></i>
+					</div>
+					<div class="service-txt">闪电发货</div>
+				</li>
+				<li class="last">
+					<div class="service-tit service-quan">
+						<img src="../../static/picture/icon-tronphy_13.png">
+					</div>
+					<div class="service-txt">权威荣誉</div>
+				</li>
+			</ul>
+		</div>
+	</div>
+	<div class="dsc-help">
+		<div class="w w1200">
+			<div class="help-list">
+								<div class="help-item">
+					<h3>新手上路</h3>
+					<ul>
+												<li><a href="http://tp.23673.com/helpcenter/index?id=18"
+							title="售后流程" target="_blank">有问题请找我</a></li> 						<li><a href="http://tp.23673.com/helpcenter/index?id=8"
+							title="售后流程" target="_blank">配送支付智能查询</a></li> 					</ul>
+				</div>
+								<div class="help-item">
+					<h3>配送与支付</h3>
+					<ul>
+												<li><a href="http://tp.23673.com/helpcenter/index?id=7"
+							title="售后流程" target="_blank">货到付款区域</a></li> 						<li><a href="http://tp.23673.com/helpcenter/index?id=2"
+							title="售后流程" target="_blank">支付方式说明</a></li> 					</ul>
+				</div>
+								<div class="help-item">
+					<h3>会员中心</h3>
+					<ul>
+												<li><a href="http://tp.23673.com/helpcenter/index?id=3"
+							title="售后流程" target="_blank">售后流程</a></li> 						<li><a href="http://tp.23673.com/helpcenter/index?id=5"
+							title="售后流程" target="_blank">资金管理</a></li> 						<li><a href="http://tp.23673.com/helpcenter/index?id=6"
+							title="售后流程" target="_blank">我的收藏</a></li> 						<li><a href="http://tp.23673.com/helpcenter/index?id=14"
+							title="售后流程" target="_blank">我的订单</a></li> 					</ul>
+				</div>
+								<div class="help-item">
+					<h3>服务保证</h3>
+					<ul>
+												<li><a href="http://tp.23673.com/helpcenter/index?id=9"
+							title="售后流程" target="_blank">退换货原则</a></li> 						<li><a href="http://tp.23673.com/helpcenter/index?id=10"
+							title="售后流程" target="_blank">售后服务保证</a></li> 						<li><a href="http://tp.23673.com/helpcenter/index?id=11"
+							title="售后流程" target="_blank">产品质量保证</a></li> 					</ul>
+				</div>
+								<div class="help-item">
+					<h3>联系我们</h3>
+					<ul>
+												<li><a href="http://tp.23673.com/helpcenter/index?id=12"
+							title="售后流程" target="_blank">网站故障报告</a></li> 						<li><a href="http://tp.23673.com/helpcenter/index?id=15"
+							title="售后流程" target="_blank">选机咨询</a></li> 						<li><a href="http://tp.23673.com/helpcenter/index?id=16"
+							title="售后流程" target="_blank">投诉与建议</a></li> 					</ul>
+				</div>
+							</div>
+			<div class="help-cover">
+				<div class="help-ctn">
+					<div class="help-ctn-mt">
+						<span>服务热线</span> <strong>0731-85573019</strong>
+					</div>
+					<div class="help-ctn-mb">
+
+						<a id="IM" im_type="dsc" onclick="openWin(this)"
+							href="http://wpa.qq.com/msgrd?v=3&uin=10202706&site=qq&menu=yes"
+							target="_blank" class="btn-ctn"><img
+							src="../../static/picture/icon-csu_13.png"
+							style="vertical-align: middle;">&nbsp;&nbsp;咨询客服</a>
+					</div>
+				</div>
+				<div class="help-scan">
+					<div class="code">
+						<img src="../../static/picture/1500630330_13.jpg">
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<!--
+	创建时间：2017年2月7日 12:13:09
+	功能描述： 底部、公司信息 
+-->
+<div class="dsc-copyright">
+	<div class="w w1200">
+		<p class="copyright_info">
+			<a href="#">Copyright © 2015-2025 六星开源商城&nbsp;版权所有 保留一切权利</a>
+		</p>
+		<b> <a href="javascript:;" target="_blank" class="copyright-logo">六星</a>&nbsp;&nbsp;
+			<a href="http://www.sixstaredu.com" target="_blank"
+			class="copyright-logo">湖南六星教育网络科技有限公司&nbsp;&nbsp;</a> <span>提供技术支持&nbsp;0731-8557-3019</span>
+		</b>
+	</div>
+</div>
+
+
+
+<link rel="stylesheet" type="text/css" href="../../static/css/jquery-ui-private_5.css">
+<script>
+var platform_shopname= '六星开源商城';
+</script>
+<script type="text/javascript" src="../../static/js/jquery-ui-private_5.js" charset="utf-8"></script>
+<script type="text/javascript" src="../../static/js/jquery.timers_5.js"></script>
+<div id="dialog"></div>
+<script type="text/javascript">
+function showMessage(type, message,url,time){
+	if(url == undefined){
+		url = '';
+	}
+	if(time == undefined){
+		time = 2;
+	}
+	//成功之后的跳转
+	if(type == 'success'){
+		$( "#dialog" ).dialog({
+			buttons: {
+				"确定,#51A351": function() {
+					$(this).dialog('close');
+				}
+			},
+			contentText:message,
+			time:time,
+			timeHref: url,
+		});
+	}
+	//失败之后的跳转
+	if(type == 'error'){
+		$( "#dialog" ).dialog({
+			buttons: {
+				"确定,#e57373": function() {
+					$(this).dialog('close');
+				}
+			},
+			time:time,
+			contentText:message,
+			timeHref: url,
+		});
+	}
+}
+
+function showConfirm(content){
+	$( "#dialog" ).dialog({
+		buttons: {
+			"确定": function() {
+				$(this).dialog('close');
+				return 1;
+			},
+			"取消,#e57373": function() {
+				$(this).dialog('close');
+				return 0;
+			}
+		},
+		contentText:content,
+	});
+}
+</script>
+<script type="text/javascript">
+$(function(){
+	var html = '';
+	$(".logistics-tracking").hover(function(){
+		var curr = $(this);
+		var order_goods_id = curr.attr('goods_id');
+		var express_name = curr.parent().siblings('.express_name').attr('express_name');
+		$.ajax({
+			type : "post",
+			url : "http://tp.23673.com/admin/order/getexpressinfo",
+			data : {"order_goods_id":order_goods_id},
+			beforeSend : function(){
+				html = '<div class="silider-express">';
+				html += '<div class="mask-layer-loading" style="text-align:center;">';
+				html += '<img src="../../static/picture/mask_load.gif"/>';
+				html += '<div style="text-align:center;margin-top:10px;">努力加载中...</div>';
+				html += '</div>';
+				html += '</div>';
+				$(".logistics-tracking").popover({content : html});
+				curr.popover("show");
+			},
+			success : function(data) {
+				html = '<div class="silider-express">';
+				html += '<div class="express_names">快递公司:'+express_name+'</div>';
+				html += '<div>';
+				html += '<div>物流跟踪：</div>';
+				if (data['Success'] == true) {
+					for (var i = 0; i < data["Traces"].length; i++){
+							html += '<p style="width:76%;float:left;">'+ data["Traces"][i]["AcceptStation"]+'</p>';
+							html += '<p style="width:24%;float:right;">'+ data["Traces"][i]["AcceptTime"]+'</p>';
+					}
+				} else {
+					html += '<p style="width:76%;float:left;">'+ data["Reason"]+'</p>';
+				}
+				html += '</div>';
+				html += '</div>';
+				curr.popover("destroy");
+				curr.popover({content : html});
+				curr.popover("show");
+			}
+		});
+	},function(){
+		$(this).popover("hide");
+	});
+	
+})
+ function cancleDetail(order_id ,order_goods_id){
+	
+	$.ajax({
+		url: "http://tp.23673.com/member/cancleorder",
+		type: "post",
+		data:{
+			"order_id":order_id,
+			"order_goods_id":order_goods_id
+		},
+		dataType:"json",
+		success: function(res){
+			 if(res['code']>0){
+				$.msg("取消退款成功");
+				location.href="http://tp.23673.com/member/orderlist";
+			}
+			
+		}
+	})
+}
+</script>
+
+
+
+<script>
+(function(){
+	var bp = document.createElement('script');
+	var curProtocol = window.location.protocol.split(':')[0];
+	if (curProtocol === 'https') {
+		bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+	}
+	else {
+		bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+	}
+	var s = document.getElementsByTagName("script")[0];
+	s.parentNode.insertBefore(bp, s);
+})();
+</script>
+</body>
+</html>

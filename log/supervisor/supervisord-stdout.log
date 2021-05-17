@@ -1,0 +1,2134 @@
+Could not open input file: /var/www/http/blog/bin/laravels
+Could not open input file: /var/www/http/blog/bin/laravels
+Could not open input file: /var/www/http/blog/bin/laravels
+Could not open input file: /var/www/http/blog/bin/laravels
+Could not open input file: /var/www/http/blog/bin/laravels
+Could not open input file: /var/www/http/blog/bin/laravels
+Could not open input file: /var/www/http/blog/bin/laravels
+Could not open input file: /var/www/http/blog/bin/laravels
+Could not open input file: /var/www/http/blog/bin/laravels
+Could not open input file: /var/www/http/blog/bin/laravels
+Could not open input file: /var/www/http/blog/bin/laravels
+Could not open input file: /var/www/http/blog/bin/laravels
+Could not open input file: /var/www/http/blog/bin/laravels
+Could not open input file: /var/www/http/blog/bin/laravels
+Could not open input file: /var/www/http/blog/bin/laravels
+Could not open input file: /var/www/http/blog/bin/laravels
+ _                               _  _____ 
+| |                             | |/ ____|
+| |     __ _ _ __ __ ___   _____| | (___  
+| |    / _` | '__/ _` \ \ / / _ \ |\___ \ 
+| |___| (_| | | | (_| |\ V /  __/ |____) |
+|______\__,_|_|  \__,_| \_/ \___|_|_____/ 
+                                           
+Speed up your Laravel/Lumen
+>>> Components
++---------------------------+---------+
+| Component                 | Version |
++---------------------------+---------+
+| PHP                       | 8.0.6   |
+| Swoole                    | 4.6.6   |
+| LaravelS                  | 3.7.19  |
+| Laravel Framework [local] | 8.41.0  |
++---------------------------+---------+
+>>> Protocols
++-----------+--------+-------------------+-----------------------+
+| Protocol  | Status | Handler           | Listen At             |
++-----------+--------+-------------------+-----------------------+
+| Main HTTP | On     | Laravel Framework | http://127.0.0.1:5200 |
++-----------+--------+-------------------+-----------------------+
+>>> Feedback: https://github.com/hhxsv5/laravel-s
+[2021-05-12 06:47:21] [TRACE] Swoole is running, press Ctrl+C to quit.
+ _                               _  _____ 
+| |                             | |/ ____|
+| |     __ _ _ __ __ ___   _____| | (___  
+| |    / _` | '__/ _` \ \ / / _ \ |\___ \ 
+| |___| (_| | | | (_| |\ V /  __/ |____) |
+|______\__,_|_|  \__,_| \_/ \___|_|_____/ 
+                                           
+Speed up your Laravel/Lumen
+>>> Components
++---------------------------+---------+
+| Component                 | Version |
++---------------------------+---------+
+| PHP                       | 8.0.6   |
+| Swoole                    | 4.6.6   |
+| LaravelS                  | 3.7.19  |
+| Laravel Framework [local] | 8.41.0  |
++---------------------------+---------+
+>>> Protocols
++-----------+--------+-------------------+-----------------------+
+| Protocol  | Status | Handler           | Listen At             |
++-----------+--------+-------------------+-----------------------+
+| Main HTTP | On     | Laravel Framework | http://127.0.0.1:5200 |
++-----------+--------+-------------------+-----------------------+
+>>> Feedback: https://github.com/hhxsv5/laravel-s
+[2021-05-12 06:48:44] [TRACE] Swoole is running, press Ctrl+C to quit.
+ _                               _  _____ 
+| |                             | |/ ____|
+| |     __ _ _ __ __ ___   _____| | (___  
+| |    / _` | '__/ _` \ \ / / _ \ |\___ \ 
+| |___| (_| | | | (_| |\ V /  __/ |____) |
+|______\__,_|_|  \__,_| \_/ \___|_|_____/ 
+                                           
+Speed up your Laravel/Lumen
+>>> Components
++---------------------------+---------+
+| Component                 | Version |
++---------------------------+---------+
+| PHP                       | 8.0.6   |
+| Swoole                    | 4.6.6   |
+| LaravelS                  | 3.7.19  |
+| Laravel Framework [local] | 8.41.0  |
++---------------------------+---------+
+>>> Protocols
++-----------+--------+-------------------+---------------------+
+| Protocol  | Status | Handler           | Listen At           |
++-----------+--------+-------------------+---------------------+
+| Main HTTP | On     | Laravel Framework | http://0.0.0.0:5200 |
++-----------+--------+-------------------+---------------------+
+>>> Feedback: https://github.com/hhxsv5/laravel-s
+[2021-05-12 06:53:59] [TRACE] Swoole is running, press Ctrl+C to quit.
+ _                               _  _____ 
+| |                             | |/ ____|
+| |     __ _ _ __ __ ___   _____| | (___  
+| |    / _` | '__/ _` \ \ / / _ \ |\___ \ 
+| |___| (_| | | | (_| |\ V /  __/ |____) |
+|______\__,_|_|  \__,_| \_/ \___|_|_____/ 
+                                           
+Speed up your Laravel/Lumen
+>>> Components
++---------------------------+---------+
+| Component                 | Version |
++---------------------------+---------+
+| PHP                       | 8.0.6   |
+| Swoole                    | 4.6.6   |
+| LaravelS                  | 3.7.19  |
+| Laravel Framework [local] | 8.41.0  |
++---------------------------+---------+
+>>> Protocols
++-----------+--------+-------------------+---------------------+
+| Protocol  | Status | Handler           | Listen At           |
++-----------+--------+-------------------+---------------------+
+| Main HTTP | On     | Laravel Framework | http://0.0.0.0:5200 |
++-----------+--------+-------------------+---------------------+
+>>> Feedback: https://github.com/hhxsv5/laravel-s
+[2021-05-12 06:57:32] [TRACE] Swoole is running, press Ctrl+C to quit.
+ _                               _  _____ 
+| |                             | |/ ____|
+| |     __ _ _ __ __ ___   _____| | (___  
+| |    / _` | '__/ _` \ \ / / _ \ |\___ \ 
+| |___| (_| | | | (_| |\ V /  __/ |____) |
+|______\__,_|_|  \__,_| \_/ \___|_|_____/ 
+                                           
+Speed up your Laravel/Lumen
+>>> Components
++---------------------------+---------+
+| Component                 | Version |
++---------------------------+---------+
+| PHP                       | 8.0.6   |
+| Swoole                    | 4.6.6   |
+| LaravelS                  | 3.7.19  |
+| Laravel Framework [local] | 8.41.0  |
++---------------------------+---------+
+>>> Protocols
++-----------+--------+-------------------+---------------------+
+| Protocol  | Status | Handler           | Listen At           |
++-----------+--------+-------------------+---------------------+
+| Main HTTP | On     | Laravel Framework | http://0.0.0.0:5200 |
++-----------+--------+-------------------+---------------------+
+>>> Feedback: https://github.com/hhxsv5/laravel-s
+[2021-05-12 06:59:41] [TRACE] Swoole is running, press Ctrl+C to quit.
+ _                               _  _____ 
+| |                             | |/ ____|
+| |     __ _ _ __ __ ___   _____| | (___  
+| |    / _` | '__/ _` \ \ / / _ \ |\___ \ 
+| |___| (_| | | | (_| |\ V /  __/ |____) |
+|______\__,_|_|  \__,_| \_/ \___|_|_____/ 
+                                           
+Speed up your Laravel/Lumen
+>>> Components
++---------------------------+---------+
+| Component                 | Version |
++---------------------------+---------+
+| PHP                       | 8.0.6   |
+| Swoole                    | 4.6.6   |
+| LaravelS                  | 3.7.19  |
+| Laravel Framework [local] | 8.41.0  |
++---------------------------+---------+
+>>> Protocols
++-----------+--------+-------------------+---------------------+
+| Protocol  | Status | Handler           | Listen At           |
++-----------+--------+-------------------+---------------------+
+| Main HTTP | On     | Laravel Framework | http://0.0.0.0:5200 |
++-----------+--------+-------------------+---------------------+
+>>> Feedback: https://github.com/hhxsv5/laravel-s
+[2021-05-12 07:02:57] [TRACE] Swoole is running, press Ctrl+C to quit.
+ _                               _  _____ 
+| |                             | |/ ____|
+| |     __ _ _ __ __ ___   _____| | (___  
+| |    / _` | '__/ _` \ \ / / _ \ |\___ \ 
+| |___| (_| | | | (_| |\ V /  __/ |____) |
+|______\__,_|_|  \__,_| \_/ \___|_|_____/ 
+                                           
+Speed up your Laravel/Lumen
+>>> Components
++---------------------------+---------+
+| Component                 | Version |
++---------------------------+---------+
+| PHP                       | 8.0.6   |
+| Swoole                    | 4.6.6   |
+| LaravelS                  | 3.7.19  |
+| Laravel Framework [local] | 8.41.0  |
++---------------------------+---------+
+>>> Protocols
++-----------+--------+-------------------+---------------------+
+| Protocol  | Status | Handler           | Listen At           |
++-----------+--------+-------------------+---------------------+
+| Main HTTP | On     | Laravel Framework | http://0.0.0.0:5200 |
++-----------+--------+-------------------+---------------------+
+>>> Feedback: https://github.com/hhxsv5/laravel-s
+[2021-05-12 07:34:57] [TRACE] Swoole is running, press Ctrl+C to quit.
+ _                               _  _____ 
+| |                             | |/ ____|
+| |     __ _ _ __ __ ___   _____| | (___  
+| |    / _` | '__/ _` \ \ / / _ \ |\___ \ 
+| |___| (_| | | | (_| |\ V /  __/ |____) |
+|______\__,_|_|  \__,_| \_/ \___|_|_____/ 
+                                           
+Speed up your Laravel/Lumen
+>>> Components
++---------------------------+---------+
+| Component                 | Version |
++---------------------------+---------+
+| PHP                       | 8.0.6   |
+| Swoole                    | 4.6.6   |
+| LaravelS                  | 3.7.19  |
+| Laravel Framework [local] | 8.41.0  |
++---------------------------+---------+
+>>> Protocols
++-----------+--------+-------------------+---------------------+
+| Protocol  | Status | Handler           | Listen At           |
++-----------+--------+-------------------+---------------------+
+| Main HTTP | On     | Laravel Framework | http://0.0.0.0:5200 |
++-----------+--------+-------------------+---------------------+
+>>> Feedback: https://github.com/hhxsv5/laravel-s
+[2021-05-12 09:24:29] [TRACE] Swoole is running, press Ctrl+C to quit.
+ _                               _  _____ 
+| |                             | |/ ____|
+| |     __ _ _ __ __ ___   _____| | (___  
+| |    / _` | '__/ _` \ \ / / _ \ |\___ \ 
+| |___| (_| | | | (_| |\ V /  __/ |____) |
+|______\__,_|_|  \__,_| \_/ \___|_|_____/ 
+                                           
+Speed up your Laravel/Lumen
+>>> Components
++---------------------------+---------+
+| Component                 | Version |
++---------------------------+---------+
+| PHP                       | 8.0.6   |
+| Swoole                    | 4.6.6   |
+| LaravelS                  | 3.7.19  |
+| Laravel Framework [local] | 8.41.0  |
++---------------------------+---------+
+>>> Protocols
++-----------+--------+-------------------+---------------------+
+| Protocol  | Status | Handler           | Listen At           |
++-----------+--------+-------------------+---------------------+
+| Main HTTP | On     | Laravel Framework | http://0.0.0.0:5200 |
++-----------+--------+-------------------+---------------------+
+>>> Feedback: https://github.com/hhxsv5/laravel-s
+[2021-05-12 09:28:58] [TRACE] Swoole is running, press Ctrl+C to quit.
+ _                               _  _____ 
+| |                             | |/ ____|
+| |     __ _ _ __ __ ___   _____| | (___  
+| |    / _` | '__/ _` \ \ / / _ \ |\___ \ 
+| |___| (_| | | | (_| |\ V /  __/ |____) |
+|______\__,_|_|  \__,_| \_/ \___|_|_____/ 
+                                           
+Speed up your Laravel/Lumen
+>>> Components
++---------------------------+---------+
+| Component                 | Version |
++---------------------------+---------+
+| PHP                       | 8.0.6   |
+| Swoole                    | 4.6.6   |
+| LaravelS                  | 3.7.19  |
+| Laravel Framework [local] | 8.41.0  |
++---------------------------+---------+
+>>> Protocols
++-----------+--------+-------------------+---------------------+
+| Protocol  | Status | Handler           | Listen At           |
++-----------+--------+-------------------+---------------------+
+| Main HTTP | On     | Laravel Framework | http://0.0.0.0:5200 |
++-----------+--------+-------------------+---------------------+
+>>> Feedback: https://github.com/hhxsv5/laravel-s
+[2021-05-12 09:44:33] [TRACE] Swoole is running, press Ctrl+C to quit.
+ _                               _  _____ 
+| |                             | |/ ____|
+| |     __ _ _ __ __ ___   _____| | (___  
+| |    / _` | '__/ _` \ \ / / _ \ |\___ \ 
+| |___| (_| | | | (_| |\ V /  __/ |____) |
+|______\__,_|_|  \__,_| \_/ \___|_|_____/ 
+                                           
+Speed up your Laravel/Lumen
+>>> Components
++---------------------------+---------+
+| Component                 | Version |
++---------------------------+---------+
+| PHP                       | 8.0.6   |
+| Swoole                    | 4.6.6   |
+| LaravelS                  | 3.7.19  |
+| Laravel Framework [local] | 8.41.0  |
++---------------------------+---------+
+>>> Protocols
++-----------+--------+-------------------+---------------------+
+| Protocol  | Status | Handler           | Listen At           |
++-----------+--------+-------------------+---------------------+
+| Main HTTP | On     | Laravel Framework | http://0.0.0.0:5200 |
++-----------+--------+-------------------+---------------------+
+>>> Feedback: https://github.com/hhxsv5/laravel-s
+[2021-05-12 09:48:04] [TRACE] Swoole is running, press Ctrl+C to quit.
+ _                               _  _____ 
+| |                             | |/ ____|
+| |     __ _ _ __ __ ___   _____| | (___  
+| |    / _` | '__/ _` \ \ / / _ \ |\___ \ 
+| |___| (_| | | | (_| |\ V /  __/ |____) |
+|______\__,_|_|  \__,_| \_/ \___|_|_____/ 
+                                           
+Speed up your Laravel/Lumen
+>>> Components
++---------------------------+---------+
+| Component                 | Version |
++---------------------------+---------+
+| PHP                       | 8.0.6   |
+| Swoole                    | 4.6.6   |
+| LaravelS                  | 3.7.19  |
+| Laravel Framework [local] | 8.41.0  |
++---------------------------+---------+
+>>> Protocols
++-----------+--------+-------------------+---------------------+
+| Protocol  | Status | Handler           | Listen At           |
++-----------+--------+-------------------+---------------------+
+| Main HTTP | On     | Laravel Framework | http://0.0.0.0:5200 |
++-----------+--------+-------------------+---------------------+
+>>> Feedback: https://github.com/hhxsv5/laravel-s
+[2021-05-12 10:04:08] [TRACE] Swoole is running, press Ctrl+C to quit.
+ _                               _  _____ 
+| |                             | |/ ____|
+| |     __ _ _ __ __ ___   _____| | (___  
+| |    / _` | '__/ _` \ \ / / _ \ |\___ \ 
+| |___| (_| | | | (_| |\ V /  __/ |____) |
+|______\__,_|_|  \__,_| \_/ \___|_|_____/ 
+                                           
+Speed up your Laravel/Lumen
+>>> Components
++---------------------------+---------+
+| Component                 | Version |
++---------------------------+---------+
+| PHP                       | 8.0.6   |
+| Swoole                    | 4.6.6   |
+| LaravelS                  | 3.7.19  |
+| Laravel Framework [local] | 8.41.0  |
++---------------------------+---------+
+>>> Protocols
++-----------+--------+-------------------+---------------------+
+| Protocol  | Status | Handler           | Listen At           |
++-----------+--------+-------------------+---------------------+
+| Main HTTP | On     | Laravel Framework | http://0.0.0.0:5200 |
++-----------+--------+-------------------+---------------------+
+>>> Feedback: https://github.com/hhxsv5/laravel-s
+[2021-05-12 10:04:56] [TRACE] Swoole is running, press Ctrl+C to quit.
+ _                               _  _____ 
+| |                             | |/ ____|
+| |     __ _ _ __ __ ___   _____| | (___  
+| |    / _` | '__/ _` \ \ / / _ \ |\___ \ 
+| |___| (_| | | | (_| |\ V /  __/ |____) |
+|______\__,_|_|  \__,_| \_/ \___|_|_____/ 
+                                           
+Speed up your Laravel/Lumen
+>>> Components
++---------------------------+---------+
+| Component                 | Version |
++---------------------------+---------+
+| PHP                       | 8.0.6   |
+| Swoole                    | 4.6.6   |
+| LaravelS                  | 3.7.19  |
+| Laravel Framework [local] | 8.41.0  |
++---------------------------+---------+
+>>> Protocols
++-----------+--------+-------------------+---------------------+
+| Protocol  | Status | Handler           | Listen At           |
++-----------+--------+-------------------+---------------------+
+| Main HTTP | On     | Laravel Framework | http://0.0.0.0:5200 |
++-----------+--------+-------------------+---------------------+
+>>> Feedback: https://github.com/hhxsv5/laravel-s
+[2021-05-13 03:29:59] [TRACE] Swoole is running, press Ctrl+C to quit.
+ _                               _  _____ 
+| |                             | |/ ____|
+| |     __ _ _ __ __ ___   _____| | (___  
+| |    / _` | '__/ _` \ \ / / _ \ |\___ \ 
+| |___| (_| | | | (_| |\ V /  __/ |____) |
+|______\__,_|_|  \__,_| \_/ \___|_|_____/ 
+                                           
+Speed up your Laravel/Lumen
+>>> Components
++---------------------------+---------+
+| Component                 | Version |
++---------------------------+---------+
+| PHP                       | 8.0.6   |
+| Swoole                    | 4.6.6   |
+| LaravelS                  | 3.7.19  |
+| Laravel Framework [local] | 8.41.0  |
++---------------------------+---------+
+>>> Protocols
++-----------+--------+-------------------+----------------+
+| Protocol  | Status | Handler           | Listen At      |
++-----------+--------+-------------------+----------------+
+| Main HTTP | On     | Laravel Framework | http://0.0.0.0 |
++-----------+--------+-------------------+----------------+
+>>> Feedback: https://github.com/hhxsv5/laravel-s
+[2021-05-13 03:47:05] [TRACE] Swoole is running, press Ctrl+C to quit.
+ _                               _  _____ 
+| |                             | |/ ____|
+| |     __ _ _ __ __ ___   _____| | (___  
+| |    / _` | '__/ _` \ \ / / _ \ |\___ \ 
+| |___| (_| | | | (_| |\ V /  __/ |____) |
+|______\__,_|_|  \__,_| \_/ \___|_|_____/ 
+                                           
+Speed up your Laravel/Lumen
+>>> Components
++---------------------------+---------+
+| Component                 | Version |
++---------------------------+---------+
+| PHP                       | 8.0.6   |
+| Swoole                    | 4.6.6   |
+| LaravelS                  | 3.7.19  |
+| Laravel Framework [local] | 8.41.0  |
++---------------------------+---------+
+>>> Protocols
++-----------+--------+-------------------+----------------+
+| Protocol  | Status | Handler           | Listen At      |
++-----------+--------+-------------------+----------------+
+| Main HTTP | On     | Laravel Framework | http://0.0.0.0 |
++-----------+--------+-------------------+----------------+
+>>> Feedback: https://github.com/hhxsv5/laravel-s
+[2021-05-13 03:48:53] [TRACE] Swoole is running, press Ctrl+C to quit.
+ _                               _  _____ 
+| |                             | |/ ____|
+| |     __ _ _ __ __ ___   _____| | (___  
+| |    / _` | '__/ _` \ \ / / _ \ |\___ \ 
+| |___| (_| | | | (_| |\ V /  __/ |____) |
+|______\__,_|_|  \__,_| \_/ \___|_|_____/ 
+                                           
+Speed up your Laravel/Lumen
+>>> Components
++---------------------------+---------+
+| Component                 | Version |
++---------------------------+---------+
+| PHP                       | 8.0.6   |
+| Swoole                    | 4.6.6   |
+| LaravelS                  | 3.7.19  |
+| Laravel Framework [local] | 8.41.0  |
++---------------------------+---------+
+>>> Protocols
++-----------+--------+-------------------+---------------------+
+| Protocol  | Status | Handler           | Listen At           |
++-----------+--------+-------------------+---------------------+
+| Main HTTP | On     | Laravel Framework | http://0.0.0.0:5200 |
++-----------+--------+-------------------+---------------------+
+>>> Feedback: https://github.com/hhxsv5/laravel-s
+[2021-05-13 03:50:03] [TRACE] Swoole is running, press Ctrl+C to quit.
+ _                               _  _____ 
+| |                             | |/ ____|
+| |     __ _ _ __ __ ___   _____| | (___  
+| |    / _` | '__/ _` \ \ / / _ \ |\___ \ 
+| |___| (_| | | | (_| |\ V /  __/ |____) |
+|______\__,_|_|  \__,_| \_/ \___|_|_____/ 
+                                           
+Speed up your Laravel/Lumen
+>>> Components
++---------------------------+---------+
+| Component                 | Version |
++---------------------------+---------+
+| PHP                       | 8.0.6   |
+| Swoole                    | 4.6.6   |
+| LaravelS                  | 3.7.19  |
+| Laravel Framework [local] | 8.41.0  |
++---------------------------+---------+
+>>> Protocols
++-----------+--------+-------------------+---------------------+
+| Protocol  | Status | Handler           | Listen At           |
++-----------+--------+-------------------+---------------------+
+| Main HTTP | On     | Laravel Framework | http://0.0.0.0:5200 |
++-----------+--------+-------------------+---------------------+
+>>> Feedback: https://github.com/hhxsv5/laravel-s
+[2021-05-13 05:45:33] [TRACE] Swoole is running, press Ctrl+C to quit.
+[2021-05-13 05:45:35] [ERROR] onRequest: Uncaught exception "ReflectionException"([-1]Class "Encore\Admin\Admin" does not exist) at /var/www/html/blog/vendor/hhxsv5/laravel-s/src/Illuminate/Cleaners/LaravelAdminCleaner.php:35, 
+#0 /var/www/html/blog/vendor/hhxsv5/laravel-s/src/Illuminate/Cleaners/LaravelAdminCleaner.php(35): ReflectionClass->__construct('Encore\\Admin\\Ad...')
+#1 /var/www/html/blog/vendor/hhxsv5/laravel-s/src/Illuminate/CleanerManager.php(82): Hhxsv5\LaravelS\Illuminate\Cleaners\LaravelAdminCleaner->__construct(Object(Illuminate\Foundation\Application), Object(Illuminate\Foundation\Application))
+#2 /var/www/html/blog/vendor/laravel/framework/src/Illuminate/Container/Container.php(829): Hhxsv5\LaravelS\Illuminate\CleanerManager->Hhxsv5\LaravelS\Illuminate\{closure}(Object(Illuminate\Foundation\Application), Array)
+#3 /var/www/html/blog/vendor/laravel/framework/src/Illuminate/Container/Container.php(714): Illuminate\Container\Container->build(Object(Closure))
+#4 /var/www/html/blog/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(841): Illuminate\Container\Container->resolve('Hhxsv5\\LaravelS...', Array, true)
+#5 /var/www/html/blog/vendor/laravel/framework/src/Illuminate/Container/Container.php(652): Illuminate\Foundation\Application->resolve('Hhxsv5\\LaravelS...', Array)
+#6 /var/www/html/blog/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(826): Illuminate\Container\Container->make('Hhxsv5\\LaravelS...', Array)
+#7 /var/www/html/blog/vendor/hhxsv5/laravel-s/src/Illuminate/CleanerManager.php(103): Illuminate\Foundation\Application->make('Hhxsv5\\LaravelS...')
+#8 /var/www/html/blog/vendor/hhxsv5/laravel-s/src/Illuminate/Laravel.php(212): Hhxsv5\LaravelS\Illuminate\CleanerManager->clean()
+#9 /var/www/html/blog/vendor/hhxsv5/laravel-s/src/LaravelS.php(261): Hhxsv5\LaravelS\Illuminate\Laravel->clean()
+#10 /var/www/html/blog/vendor/hhxsv5/laravel-s/src/LaravelS.php(202): Hhxsv5\LaravelS\LaravelS->handleDynamicResource(Object(Hhxsv5\LaravelS\Illuminate\Laravel), Object(Illuminate\Http\Request), Object(Swoole\Http\Response))
+#11 [internal function]: Hhxsv5\LaravelS\LaravelS->onRequest(Object(Swoole\Http\Request), Object(Swoole\Http\Response))
+#12 /var/www/html/blog/vendor/hhxsv5/laravel-s/src/Swoole/Server.php(402): Swoole\Server->start()
+#13 /var/www/html/blog/vendor/hhxsv5/laravel-s/src/Console/Portal.php(158): Hhxsv5\LaravelS\Swoole\Server->run()
+#14 /var/www/html/blog/vendor/hhxsv5/laravel-s/src/Console/Portal.php(59): Hhxsv5\LaravelS\Console\Portal->start()
+#15 /var/www/html/blog/vendor/symfony/console/Command/Command.php(256): Hhxsv5\LaravelS\Console\Portal->execute(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#16 /var/www/html/blog/bin/laravels(164): Symfony\Component\Console\Command\Command->run(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#17 {main}
+[2021-05-13 05:45:35] [ERROR] Uncaught exception 'ErrorException': [0]Swoole\Http\Response::status(): http response is unavailable (maybe it has been ended or detached) called in /var/www/html/blog/vendor/hhxsv5/laravel-s/src/LaravelS.php:227
+#0 [internal function]: Illuminate\Foundation\Bootstrap\HandleExceptions->handleError(2, 'Swoole\\Http\\Res...', '/var/www/html/b...', 227)
+#1 /var/www/html/blog/vendor/hhxsv5/laravel-s/src/LaravelS.php(227): Swoole\Http\Response->status(500)
+#2 /var/www/html/blog/vendor/hhxsv5/laravel-s/src/LaravelS.php(205): Hhxsv5\LaravelS\LaravelS->handleException(Object(ReflectionException), Object(Swoole\Http\Response))
+#3 [internal function]: Hhxsv5\LaravelS\LaravelS->onRequest(Object(Swoole\Http\Request), Object(Swoole\Http\Response))
+#4 /var/www/html/blog/vendor/hhxsv5/laravel-s/src/Swoole/Server.php(402): Swoole\Server->start()
+#5 /var/www/html/blog/vendor/hhxsv5/laravel-s/src/Console/Portal.php(158): Hhxsv5\LaravelS\Swoole\Server->run()
+#6 /var/www/html/blog/vendor/hhxsv5/laravel-s/src/Console/Portal.php(59): Hhxsv5\LaravelS\Console\Portal->start()
+#7 /var/www/html/blog/vendor/symfony/console/Command/Command.php(256): Hhxsv5\LaravelS\Console\Portal->execute(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#8 /var/www/html/blog/bin/laravels(164): Symfony\Component\Console\Command\Command->run(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#9 {main}
+[2021-05-13 05:45:36] [ERROR] onRequest: Uncaught exception "ReflectionException"([-1]Class "Encore\Admin\Admin" does not exist) at /var/www/html/blog/vendor/hhxsv5/laravel-s/src/Illuminate/Cleaners/LaravelAdminCleaner.php:35, 
+#0 /var/www/html/blog/vendor/hhxsv5/laravel-s/src/Illuminate/Cleaners/LaravelAdminCleaner.php(35): ReflectionClass->__construct('Encore\\Admin\\Ad...')
+#1 /var/www/html/blog/vendor/hhxsv5/laravel-s/src/Illuminate/CleanerManager.php(82): Hhxsv5\LaravelS\Illuminate\Cleaners\LaravelAdminCleaner->__construct(Object(Illuminate\Foundation\Application), Object(Illuminate\Foundation\Application))
+#2 /var/www/html/blog/vendor/laravel/framework/src/Illuminate/Container/Container.php(829): Hhxsv5\LaravelS\Illuminate\CleanerManager->Hhxsv5\LaravelS\Illuminate\{closure}(Object(Illuminate\Foundation\Application), Array)
+#3 /var/www/html/blog/vendor/laravel/framework/src/Illuminate/Container/Container.php(714): Illuminate\Container\Container->build(Object(Closure))
+#4 /var/www/html/blog/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(841): Illuminate\Container\Container->resolve('Hhxsv5\\LaravelS...', Array, true)
+#5 /var/www/html/blog/vendor/laravel/framework/src/Illuminate/Container/Container.php(652): Illuminate\Foundation\Application->resolve('Hhxsv5\\LaravelS...', Array)
+#6 /var/www/html/blog/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(826): Illuminate\Container\Container->make('Hhxsv5\\LaravelS...', Array)
+#7 /var/www/html/blog/vendor/hhxsv5/laravel-s/src/Illuminate/CleanerManager.php(103): Illuminate\Foundation\Application->make('Hhxsv5\\LaravelS...')
+#8 /var/www/html/blog/vendor/hhxsv5/laravel-s/src/Illuminate/Laravel.php(212): Hhxsv5\LaravelS\Illuminate\CleanerManager->clean()
+#9 /var/www/html/blog/vendor/hhxsv5/laravel-s/src/LaravelS.php(261): Hhxsv5\LaravelS\Illuminate\Laravel->clean()
+#10 /var/www/html/blog/vendor/hhxsv5/laravel-s/src/LaravelS.php(202): Hhxsv5\LaravelS\LaravelS->handleDynamicResource(Object(Hhxsv5\LaravelS\Illuminate\Laravel), Object(Illuminate\Http\Request), Object(Swoole\Http\Response))
+#11 [internal function]: Hhxsv5\LaravelS\LaravelS->onRequest(Object(Swoole\Http\Request), Object(Swoole\Http\Response))
+#12 /var/www/html/blog/vendor/hhxsv5/laravel-s/src/Swoole/Server.php(402): Swoole\Server->start()
+#13 /var/www/html/blog/vendor/hhxsv5/laravel-s/src/Console/Portal.php(158): Hhxsv5\LaravelS\Swoole\Server->run()
+#14 /var/www/html/blog/vendor/hhxsv5/laravel-s/src/Console/Portal.php(59): Hhxsv5\LaravelS\Console\Portal->start()
+#15 /var/www/html/blog/vendor/symfony/console/Command/Command.php(256): Hhxsv5\LaravelS\Console\Portal->execute(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#16 /var/www/html/blog/bin/laravels(164): Symfony\Component\Console\Command\Command->run(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#17 {main}
+[2021-05-13 05:45:36] [ERROR] Uncaught exception 'ErrorException': [0]Swoole\Http\Response::status(): http response is unavailable (maybe it has been ended or detached) called in /var/www/html/blog/vendor/hhxsv5/laravel-s/src/LaravelS.php:227
+#0 [internal function]: Illuminate\Foundation\Bootstrap\HandleExceptions->handleError(2, 'Swoole\\Http\\Res...', '/var/www/html/b...', 227)
+#1 /var/www/html/blog/vendor/hhxsv5/laravel-s/src/LaravelS.php(227): Swoole\Http\Response->status(500)
+#2 /var/www/html/blog/vendor/hhxsv5/laravel-s/src/LaravelS.php(205): Hhxsv5\LaravelS\LaravelS->handleException(Object(ReflectionException), Object(Swoole\Http\Response))
+#3 [internal function]: Hhxsv5\LaravelS\LaravelS->onRequest(Object(Swoole\Http\Request), Object(Swoole\Http\Response))
+#4 /var/www/html/blog/vendor/hhxsv5/laravel-s/src/Swoole/Server.php(402): Swoole\Server->start()
+#5 /var/www/html/blog/vendor/hhxsv5/laravel-s/src/Console/Portal.php(158): Hhxsv5\LaravelS\Swoole\Server->run()
+#6 /var/www/html/blog/vendor/hhxsv5/laravel-s/src/Console/Portal.php(59): Hhxsv5\LaravelS\Console\Portal->start()
+#7 /var/www/html/blog/vendor/symfony/console/Command/Command.php(256): Hhxsv5\LaravelS\Console\Portal->execute(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#8 /var/www/html/blog/bin/laravels(164): Symfony\Component\Console\Command\Command->run(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#9 {main}
+[2021-05-13 05:45:36] [ERROR] onRequest: Uncaught exception "ReflectionException"([-1]Class "Encore\Admin\Admin" does not exist) at /var/www/html/blog/vendor/hhxsv5/laravel-s/src/Illuminate/Cleaners/LaravelAdminCleaner.php:35, 
+#0 /var/www/html/blog/vendor/hhxsv5/laravel-s/src/Illuminate/Cleaners/LaravelAdminCleaner.php(35): ReflectionClass->__construct('Encore\\Admin\\Ad...')
+#1 /var/www/html/blog/vendor/hhxsv5/laravel-s/src/Illuminate/CleanerManager.php(82): Hhxsv5\LaravelS\Illuminate\Cleaners\LaravelAdminCleaner->__construct(Object(Illuminate\Foundation\Application), Object(Illuminate\Foundation\Application))
+#2 /var/www/html/blog/vendor/laravel/framework/src/Illuminate/Container/Container.php(829): Hhxsv5\LaravelS\Illuminate\CleanerManager->Hhxsv5\LaravelS\Illuminate\{closure}(Object(Illuminate\Foundation\Application), Array)
+#3 /var/www/html/blog/vendor/laravel/framework/src/Illuminate/Container/Container.php(714): Illuminate\Container\Container->build(Object(Closure))
+#4 /var/www/html/blog/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(841): Illuminate\Container\Container->resolve('Hhxsv5\\LaravelS...', Array, true)
+#5 /var/www/html/blog/vendor/laravel/framework/src/Illuminate/Container/Container.php(652): Illuminate\Foundation\Application->resolve('Hhxsv5\\LaravelS...', Array)
+#6 /var/www/html/blog/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(826): Illuminate\Container\Container->make('Hhxsv5\\LaravelS...', Array)
+#7 /var/www/html/blog/vendor/hhxsv5/laravel-s/src/Illuminate/CleanerManager.php(103): Illuminate\Foundation\Application->make('Hhxsv5\\LaravelS...')
+#8 /var/www/html/blog/vendor/hhxsv5/laravel-s/src/Illuminate/Laravel.php(212): Hhxsv5\LaravelS\Illuminate\CleanerManager->clean()
+#9 /var/www/html/blog/vendor/hhxsv5/laravel-s/src/LaravelS.php(261): Hhxsv5\LaravelS\Illuminate\Laravel->clean()
+#10 /var/www/html/blog/vendor/hhxsv5/laravel-s/src/LaravelS.php(202): Hhxsv5\LaravelS\LaravelS->handleDynamicResource(Object(Hhxsv5\LaravelS\Illuminate\Laravel), Object(Illuminate\Http\Request), Object(Swoole\Http\Response))
+#11 [internal function]: Hhxsv5\LaravelS\LaravelS->onRequest(Object(Swoole\Http\Request), Object(Swoole\Http\Response))
+#12 /var/www/html/blog/vendor/hhxsv5/laravel-s/src/Swoole/Server.php(402): Swoole\Server->start()
+#13 /var/www/html/blog/vendor/hhxsv5/laravel-s/src/Console/Portal.php(158): Hhxsv5\LaravelS\Swoole\Server->run()
+#14 /var/www/html/blog/vendor/hhxsv5/laravel-s/src/Console/Portal.php(59): Hhxsv5\LaravelS\Console\Portal->start()
+#15 /var/www/html/blog/vendor/symfony/console/Command/Command.php(256): Hhxsv5\LaravelS\Console\Portal->execute(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#16 /var/www/html/blog/bin/laravels(164): Symfony\Component\Console\Command\Command->run(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#17 {main}
+[2021-05-13 05:45:36] [ERROR] Uncaught exception 'ErrorException': [0]Swoole\Http\Response::status(): http response is unavailable (maybe it has been ended or detached) called in /var/www/html/blog/vendor/hhxsv5/laravel-s/src/LaravelS.php:227
+#0 [internal function]: Illuminate\Foundation\Bootstrap\HandleExceptions->handleError(2, 'Swoole\\Http\\Res...', '/var/www/html/b...', 227)
+#1 /var/www/html/blog/vendor/hhxsv5/laravel-s/src/LaravelS.php(227): Swoole\Http\Response->status(500)
+#2 /var/www/html/blog/vendor/hhxsv5/laravel-s/src/LaravelS.php(205): Hhxsv5\LaravelS\LaravelS->handleException(Object(ReflectionException), Object(Swoole\Http\Response))
+#3 [internal function]: Hhxsv5\LaravelS\LaravelS->onRequest(Object(Swoole\Http\Request), Object(Swoole\Http\Response))
+#4 /var/www/html/blog/vendor/hhxsv5/laravel-s/src/Swoole/Server.php(402): Swoole\Server->start()
+#5 /var/www/html/blog/vendor/hhxsv5/laravel-s/src/Console/Portal.php(158): Hhxsv5\LaravelS\Swoole\Server->run()
+#6 /var/www/html/blog/vendor/hhxsv5/laravel-s/src/Console/Portal.php(59): Hhxsv5\LaravelS\Console\Portal->start()
+#7 /var/www/html/blog/vendor/symfony/console/Command/Command.php(256): Hhxsv5\LaravelS\Console\Portal->execute(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#8 /var/www/html/blog/bin/laravels(164): Symfony\Component\Console\Command\Command->run(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#9 {main}
+[2021-05-13 05:45:39] [ERROR] onRequest: Uncaught exception "ReflectionException"([-1]Class "Encore\Admin\Admin" does not exist) at /var/www/html/blog/vendor/hhxsv5/laravel-s/src/Illuminate/Cleaners/LaravelAdminCleaner.php:35, 
+#0 /var/www/html/blog/vendor/hhxsv5/laravel-s/src/Illuminate/Cleaners/LaravelAdminCleaner.php(35): ReflectionClass->__construct('Encore\\Admin\\Ad...')
+#1 /var/www/html/blog/vendor/hhxsv5/laravel-s/src/Illuminate/CleanerManager.php(82): Hhxsv5\LaravelS\Illuminate\Cleaners\LaravelAdminCleaner->__construct(Object(Illuminate\Foundation\Application), Object(Illuminate\Foundation\Application))
+#2 /var/www/html/blog/vendor/laravel/framework/src/Illuminate/Container/Container.php(829): Hhxsv5\LaravelS\Illuminate\CleanerManager->Hhxsv5\LaravelS\Illuminate\{closure}(Object(Illuminate\Foundation\Application), Array)
+#3 /var/www/html/blog/vendor/laravel/framework/src/Illuminate/Container/Container.php(714): Illuminate\Container\Container->build(Object(Closure))
+#4 /var/www/html/blog/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(841): Illuminate\Container\Container->resolve('Hhxsv5\\LaravelS...', Array, true)
+#5 /var/www/html/blog/vendor/laravel/framework/src/Illuminate/Container/Container.php(652): Illuminate\Foundation\Application->resolve('Hhxsv5\\LaravelS...', Array)
+#6 /var/www/html/blog/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(826): Illuminate\Container\Container->make('Hhxsv5\\LaravelS...', Array)
+#7 /var/www/html/blog/vendor/hhxsv5/laravel-s/src/Illuminate/CleanerManager.php(103): Illuminate\Foundation\Application->make('Hhxsv5\\LaravelS...')
+#8 /var/www/html/blog/vendor/hhxsv5/laravel-s/src/Illuminate/Laravel.php(212): Hhxsv5\LaravelS\Illuminate\CleanerManager->clean()
+#9 /var/www/html/blog/vendor/hhxsv5/laravel-s/src/LaravelS.php(261): Hhxsv5\LaravelS\Illuminate\Laravel->clean()
+#10 /var/www/html/blog/vendor/hhxsv5/laravel-s/src/LaravelS.php(202): Hhxsv5\LaravelS\LaravelS->handleDynamicResource(Object(Hhxsv5\LaravelS\Illuminate\Laravel), Object(Illuminate\Http\Request), Object(Swoole\Http\Response))
+#11 [internal function]: Hhxsv5\LaravelS\LaravelS->onRequest(Object(Swoole\Http\Request), Object(Swoole\Http\Response))
+#12 /var/www/html/blog/vendor/hhxsv5/laravel-s/src/Swoole/Server.php(402): Swoole\Server->start()
+#13 /var/www/html/blog/vendor/hhxsv5/laravel-s/src/Console/Portal.php(158): Hhxsv5\LaravelS\Swoole\Server->run()
+#14 /var/www/html/blog/vendor/hhxsv5/laravel-s/src/Console/Portal.php(59): Hhxsv5\LaravelS\Console\Portal->start()
+#15 /var/www/html/blog/vendor/symfony/console/Command/Command.php(256): Hhxsv5\LaravelS\Console\Portal->execute(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#16 /var/www/html/blog/bin/laravels(164): Symfony\Component\Console\Command\Command->run(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#17 {main}
+[2021-05-13 05:45:39] [ERROR] Uncaught exception 'ErrorException': [0]Swoole\Http\Response::status(): http response is unavailable (maybe it has been ended or detached) called in /var/www/html/blog/vendor/hhxsv5/laravel-s/src/LaravelS.php:227
+#0 [internal function]: Illuminate\Foundation\Bootstrap\HandleExceptions->handleError(2, 'Swoole\\Http\\Res...', '/var/www/html/b...', 227)
+#1 /var/www/html/blog/vendor/hhxsv5/laravel-s/src/LaravelS.php(227): Swoole\Http\Response->status(500)
+#2 /var/www/html/blog/vendor/hhxsv5/laravel-s/src/LaravelS.php(205): Hhxsv5\LaravelS\LaravelS->handleException(Object(ReflectionException), Object(Swoole\Http\Response))
+#3 [internal function]: Hhxsv5\LaravelS\LaravelS->onRequest(Object(Swoole\Http\Request), Object(Swoole\Http\Response))
+#4 /var/www/html/blog/vendor/hhxsv5/laravel-s/src/Swoole/Server.php(402): Swoole\Server->start()
+#5 /var/www/html/blog/vendor/hhxsv5/laravel-s/src/Console/Portal.php(158): Hhxsv5\LaravelS\Swoole\Server->run()
+#6 /var/www/html/blog/vendor/hhxsv5/laravel-s/src/Console/Portal.php(59): Hhxsv5\LaravelS\Console\Portal->start()
+#7 /var/www/html/blog/vendor/symfony/console/Command/Command.php(256): Hhxsv5\LaravelS\Console\Portal->execute(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#8 /var/www/html/blog/bin/laravels(164): Symfony\Component\Console\Command\Command->run(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#9 {main}
+[2021-05-13 05:46:25] [ERROR] onRequest: Uncaught exception "ReflectionException"([-1]Class "Encore\Admin\Admin" does not exist) at /var/www/html/blog/vendor/hhxsv5/laravel-s/src/Illuminate/Cleaners/LaravelAdminCleaner.php:35, 
+#0 /var/www/html/blog/vendor/hhxsv5/laravel-s/src/Illuminate/Cleaners/LaravelAdminCleaner.php(35): ReflectionClass->__construct('Encore\\Admin\\Ad...')
+#1 /var/www/html/blog/vendor/hhxsv5/laravel-s/src/Illuminate/CleanerManager.php(82): Hhxsv5\LaravelS\Illuminate\Cleaners\LaravelAdminCleaner->__construct(Object(Illuminate\Foundation\Application), Object(Illuminate\Foundation\Application))
+#2 /var/www/html/blog/vendor/laravel/framework/src/Illuminate/Container/Container.php(829): Hhxsv5\LaravelS\Illuminate\CleanerManager->Hhxsv5\LaravelS\Illuminate\{closure}(Object(Illuminate\Foundation\Application), Array)
+#3 /var/www/html/blog/vendor/laravel/framework/src/Illuminate/Container/Container.php(714): Illuminate\Container\Container->build(Object(Closure))
+#4 /var/www/html/blog/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(841): Illuminate\Container\Container->resolve('Hhxsv5\\LaravelS...', Array, true)
+#5 /var/www/html/blog/vendor/laravel/framework/src/Illuminate/Container/Container.php(652): Illuminate\Foundation\Application->resolve('Hhxsv5\\LaravelS...', Array)
+#6 /var/www/html/blog/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(826): Illuminate\Container\Container->make('Hhxsv5\\LaravelS...', Array)
+#7 /var/www/html/blog/vendor/hhxsv5/laravel-s/src/Illuminate/CleanerManager.php(103): Illuminate\Foundation\Application->make('Hhxsv5\\LaravelS...')
+#8 /var/www/html/blog/vendor/hhxsv5/laravel-s/src/Illuminate/Laravel.php(212): Hhxsv5\LaravelS\Illuminate\CleanerManager->clean()
+#9 /var/www/html/blog/vendor/hhxsv5/laravel-s/src/LaravelS.php(261): Hhxsv5\LaravelS\Illuminate\Laravel->clean()
+#10 /var/www/html/blog/vendor/hhxsv5/laravel-s/src/LaravelS.php(202): Hhxsv5\LaravelS\LaravelS->handleDynamicResource(Object(Hhxsv5\LaravelS\Illuminate\Laravel), Object(Illuminate\Http\Request), Object(Swoole\Http\Response))
+#11 [internal function]: Hhxsv5\LaravelS\LaravelS->onRequest(Object(Swoole\Http\Request), Object(Swoole\Http\Response))
+#12 /var/www/html/blog/vendor/hhxsv5/laravel-s/src/Swoole/Server.php(402): Swoole\Server->start()
+#13 /var/www/html/blog/vendor/hhxsv5/laravel-s/src/Console/Portal.php(158): Hhxsv5\LaravelS\Swoole\Server->run()
+#14 /var/www/html/blog/vendor/hhxsv5/laravel-s/src/Console/Portal.php(59): Hhxsv5\LaravelS\Console\Portal->start()
+#15 /var/www/html/blog/vendor/symfony/console/Command/Command.php(256): Hhxsv5\LaravelS\Console\Portal->execute(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#16 /var/www/html/blog/bin/laravels(164): Symfony\Component\Console\Command\Command->run(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#17 {main}
+[2021-05-13 05:46:25] [ERROR] Uncaught exception 'ErrorException': [0]Swoole\Http\Response::status(): http response is unavailable (maybe it has been ended or detached) called in /var/www/html/blog/vendor/hhxsv5/laravel-s/src/LaravelS.php:227
+#0 [internal function]: Illuminate\Foundation\Bootstrap\HandleExceptions->handleError(2, 'Swoole\\Http\\Res...', '/var/www/html/b...', 227)
+#1 /var/www/html/blog/vendor/hhxsv5/laravel-s/src/LaravelS.php(227): Swoole\Http\Response->status(500)
+#2 /var/www/html/blog/vendor/hhxsv5/laravel-s/src/LaravelS.php(205): Hhxsv5\LaravelS\LaravelS->handleException(Object(ReflectionException), Object(Swoole\Http\Response))
+#3 [internal function]: Hhxsv5\LaravelS\LaravelS->onRequest(Object(Swoole\Http\Request), Object(Swoole\Http\Response))
+#4 /var/www/html/blog/vendor/hhxsv5/laravel-s/src/Swoole/Server.php(402): Swoole\Server->start()
+#5 /var/www/html/blog/vendor/hhxsv5/laravel-s/src/Console/Portal.php(158): Hhxsv5\LaravelS\Swoole\Server->run()
+#6 /var/www/html/blog/vendor/hhxsv5/laravel-s/src/Console/Portal.php(59): Hhxsv5\LaravelS\Console\Portal->start()
+#7 /var/www/html/blog/vendor/symfony/console/Command/Command.php(256): Hhxsv5\LaravelS\Console\Portal->execute(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#8 /var/www/html/blog/bin/laravels(164): Symfony\Component\Console\Command\Command->run(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#9 {main}
+ _                               _  _____ 
+| |                             | |/ ____|
+| |     __ _ _ __ __ ___   _____| | (___  
+| |    / _` | '__/ _` \ \ / / _ \ |\___ \ 
+| |___| (_| | | | (_| |\ V /  __/ |____) |
+|______\__,_|_|  \__,_| \_/ \___|_|_____/ 
+                                           
+Speed up your Laravel/Lumen
+>>> Components
++---------------------------+---------+
+| Component                 | Version |
++---------------------------+---------+
+| PHP                       | 8.0.6   |
+| Swoole                    | 4.6.6   |
+| LaravelS                  | 3.7.19  |
+| Laravel Framework [local] | 8.41.0  |
++---------------------------+---------+
+>>> Protocols
++-----------+--------+-------------------+---------------------+
+| Protocol  | Status | Handler           | Listen At           |
++-----------+--------+-------------------+---------------------+
+| Main HTTP | On     | Laravel Framework | http://0.0.0.0:5200 |
++-----------+--------+-------------------+---------------------+
+>>> Feedback: https://github.com/hhxsv5/laravel-s
+[2021-05-13 05:46:31] [TRACE] Swoole is running, press Ctrl+C to quit.
+[2021-05-13 05:46:31] [WARNING] Require extension inotify
+[2021-05-13 05:46:34] [ERROR] onRequest: Uncaught exception "ReflectionException"([-1]Class "Encore\Admin\Admin" does not exist) at /var/www/html/blog/vendor/hhxsv5/laravel-s/src/Illuminate/Cleaners/LaravelAdminCleaner.php:35, 
+#0 /var/www/html/blog/vendor/hhxsv5/laravel-s/src/Illuminate/Cleaners/LaravelAdminCleaner.php(35): ReflectionClass->__construct('Encore\\Admin\\Ad...')
+#1 /var/www/html/blog/vendor/hhxsv5/laravel-s/src/Illuminate/CleanerManager.php(82): Hhxsv5\LaravelS\Illuminate\Cleaners\LaravelAdminCleaner->__construct(Object(Illuminate\Foundation\Application), Object(Illuminate\Foundation\Application))
+#2 /var/www/html/blog/vendor/laravel/framework/src/Illuminate/Container/Container.php(829): Hhxsv5\LaravelS\Illuminate\CleanerManager->Hhxsv5\LaravelS\Illuminate\{closure}(Object(Illuminate\Foundation\Application), Array)
+#3 /var/www/html/blog/vendor/laravel/framework/src/Illuminate/Container/Container.php(714): Illuminate\Container\Container->build(Object(Closure))
+#4 /var/www/html/blog/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(841): Illuminate\Container\Container->resolve('Hhxsv5\\LaravelS...', Array, true)
+#5 /var/www/html/blog/vendor/laravel/framework/src/Illuminate/Container/Container.php(652): Illuminate\Foundation\Application->resolve('Hhxsv5\\LaravelS...', Array)
+#6 /var/www/html/blog/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(826): Illuminate\Container\Container->make('Hhxsv5\\LaravelS...', Array)
+#7 /var/www/html/blog/vendor/hhxsv5/laravel-s/src/Illuminate/CleanerManager.php(103): Illuminate\Foundation\Application->make('Hhxsv5\\LaravelS...')
+#8 /var/www/html/blog/vendor/hhxsv5/laravel-s/src/Illuminate/Laravel.php(212): Hhxsv5\LaravelS\Illuminate\CleanerManager->clean()
+#9 /var/www/html/blog/vendor/hhxsv5/laravel-s/src/LaravelS.php(261): Hhxsv5\LaravelS\Illuminate\Laravel->clean()
+#10 /var/www/html/blog/vendor/hhxsv5/laravel-s/src/LaravelS.php(202): Hhxsv5\LaravelS\LaravelS->handleDynamicResource(Object(Hhxsv5\LaravelS\Illuminate\Laravel), Object(Illuminate\Http\Request), Object(Swoole\Http\Response))
+#11 [internal function]: Hhxsv5\LaravelS\LaravelS->onRequest(Object(Swoole\Http\Request), Object(Swoole\Http\Response))
+#12 /var/www/html/blog/vendor/hhxsv5/laravel-s/src/Swoole/Server.php(402): Swoole\Server->start()
+#13 /var/www/html/blog/vendor/hhxsv5/laravel-s/src/Console/Portal.php(158): Hhxsv5\LaravelS\Swoole\Server->run()
+#14 /var/www/html/blog/vendor/hhxsv5/laravel-s/src/Console/Portal.php(59): Hhxsv5\LaravelS\Console\Portal->start()
+#15 /var/www/html/blog/vendor/symfony/console/Command/Command.php(256): Hhxsv5\LaravelS\Console\Portal->execute(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#16 /var/www/html/blog/bin/laravels(164): Symfony\Component\Console\Command\Command->run(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#17 {main}
+[2021-05-13 05:46:34] [ERROR] Uncaught exception 'ErrorException': [0]Swoole\Http\Response::status(): http response is unavailable (maybe it has been ended or detached) called in /var/www/html/blog/vendor/hhxsv5/laravel-s/src/LaravelS.php:227
+#0 [internal function]: Illuminate\Foundation\Bootstrap\HandleExceptions->handleError(2, 'Swoole\\Http\\Res...', '/var/www/html/b...', 227)
+#1 /var/www/html/blog/vendor/hhxsv5/laravel-s/src/LaravelS.php(227): Swoole\Http\Response->status(500)
+#2 /var/www/html/blog/vendor/hhxsv5/laravel-s/src/LaravelS.php(205): Hhxsv5\LaravelS\LaravelS->handleException(Object(ReflectionException), Object(Swoole\Http\Response))
+#3 [internal function]: Hhxsv5\LaravelS\LaravelS->onRequest(Object(Swoole\Http\Request), Object(Swoole\Http\Response))
+#4 /var/www/html/blog/vendor/hhxsv5/laravel-s/src/Swoole/Server.php(402): Swoole\Server->start()
+#5 /var/www/html/blog/vendor/hhxsv5/laravel-s/src/Console/Portal.php(158): Hhxsv5\LaravelS\Swoole\Server->run()
+#6 /var/www/html/blog/vendor/hhxsv5/laravel-s/src/Console/Portal.php(59): Hhxsv5\LaravelS\Console\Portal->start()
+#7 /var/www/html/blog/vendor/symfony/console/Command/Command.php(256): Hhxsv5\LaravelS\Console\Portal->execute(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#8 /var/www/html/blog/bin/laravels(164): Symfony\Component\Console\Command\Command->run(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#9 {main}
+[2021-05-13 05:46:46] [ERROR] onRequest: Uncaught exception "ReflectionException"([-1]Class "Encore\Admin\Admin" does not exist) at /var/www/html/blog/vendor/hhxsv5/laravel-s/src/Illuminate/Cleaners/LaravelAdminCleaner.php:35, 
+#0 /var/www/html/blog/vendor/hhxsv5/laravel-s/src/Illuminate/Cleaners/LaravelAdminCleaner.php(35): ReflectionClass->__construct('Encore\\Admin\\Ad...')
+#1 /var/www/html/blog/vendor/hhxsv5/laravel-s/src/Illuminate/CleanerManager.php(82): Hhxsv5\LaravelS\Illuminate\Cleaners\LaravelAdminCleaner->__construct(Object(Illuminate\Foundation\Application), Object(Illuminate\Foundation\Application))
+#2 /var/www/html/blog/vendor/laravel/framework/src/Illuminate/Container/Container.php(829): Hhxsv5\LaravelS\Illuminate\CleanerManager->Hhxsv5\LaravelS\Illuminate\{closure}(Object(Illuminate\Foundation\Application), Array)
+#3 /var/www/html/blog/vendor/laravel/framework/src/Illuminate/Container/Container.php(714): Illuminate\Container\Container->build(Object(Closure))
+#4 /var/www/html/blog/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(841): Illuminate\Container\Container->resolve('Hhxsv5\\LaravelS...', Array, true)
+#5 /var/www/html/blog/vendor/laravel/framework/src/Illuminate/Container/Container.php(652): Illuminate\Foundation\Application->resolve('Hhxsv5\\LaravelS...', Array)
+#6 /var/www/html/blog/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(826): Illuminate\Container\Container->make('Hhxsv5\\LaravelS...', Array)
+#7 /var/www/html/blog/vendor/hhxsv5/laravel-s/src/Illuminate/CleanerManager.php(103): Illuminate\Foundation\Application->make('Hhxsv5\\LaravelS...')
+#8 /var/www/html/blog/vendor/hhxsv5/laravel-s/src/Illuminate/Laravel.php(212): Hhxsv5\LaravelS\Illuminate\CleanerManager->clean()
+#9 /var/www/html/blog/vendor/hhxsv5/laravel-s/src/LaravelS.php(261): Hhxsv5\LaravelS\Illuminate\Laravel->clean()
+#10 /var/www/html/blog/vendor/hhxsv5/laravel-s/src/LaravelS.php(202): Hhxsv5\LaravelS\LaravelS->handleDynamicResource(Object(Hhxsv5\LaravelS\Illuminate\Laravel), Object(Illuminate\Http\Request), Object(Swoole\Http\Response))
+#11 [internal function]: Hhxsv5\LaravelS\LaravelS->onRequest(Object(Swoole\Http\Request), Object(Swoole\Http\Response))
+#12 /var/www/html/blog/vendor/hhxsv5/laravel-s/src/Swoole/Server.php(402): Swoole\Server->start()
+#13 /var/www/html/blog/vendor/hhxsv5/laravel-s/src/Console/Portal.php(158): Hhxsv5\LaravelS\Swoole\Server->run()
+#14 /var/www/html/blog/vendor/hhxsv5/laravel-s/src/Console/Portal.php(59): Hhxsv5\LaravelS\Console\Portal->start()
+#15 /var/www/html/blog/vendor/symfony/console/Command/Command.php(256): Hhxsv5\LaravelS\Console\Portal->execute(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#16 /var/www/html/blog/bin/laravels(164): Symfony\Component\Console\Command\Command->run(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#17 {main}
+[2021-05-13 05:46:46] [ERROR] Uncaught exception 'ErrorException': [0]Swoole\Http\Response::status(): http response is unavailable (maybe it has been ended or detached) called in /var/www/html/blog/vendor/hhxsv5/laravel-s/src/LaravelS.php:227
+#0 [internal function]: Illuminate\Foundation\Bootstrap\HandleExceptions->handleError(2, 'Swoole\\Http\\Res...', '/var/www/html/b...', 227)
+#1 /var/www/html/blog/vendor/hhxsv5/laravel-s/src/LaravelS.php(227): Swoole\Http\Response->status(500)
+#2 /var/www/html/blog/vendor/hhxsv5/laravel-s/src/LaravelS.php(205): Hhxsv5\LaravelS\LaravelS->handleException(Object(ReflectionException), Object(Swoole\Http\Response))
+#3 [internal function]: Hhxsv5\LaravelS\LaravelS->onRequest(Object(Swoole\Http\Request), Object(Swoole\Http\Response))
+#4 /var/www/html/blog/vendor/hhxsv5/laravel-s/src/Swoole/Server.php(402): Swoole\Server->start()
+#5 /var/www/html/blog/vendor/hhxsv5/laravel-s/src/Console/Portal.php(158): Hhxsv5\LaravelS\Swoole\Server->run()
+#6 /var/www/html/blog/vendor/hhxsv5/laravel-s/src/Console/Portal.php(59): Hhxsv5\LaravelS\Console\Portal->start()
+#7 /var/www/html/blog/vendor/symfony/console/Command/Command.php(256): Hhxsv5\LaravelS\Console\Portal->execute(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#8 /var/www/html/blog/bin/laravels(164): Symfony\Component\Console\Command\Command->run(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#9 {main}
+[2021-05-13 05:46:47] [ERROR] onRequest: Uncaught exception "ReflectionException"([-1]Class "Encore\Admin\Admin" does not exist) at /var/www/html/blog/vendor/hhxsv5/laravel-s/src/Illuminate/Cleaners/LaravelAdminCleaner.php:35, 
+#0 /var/www/html/blog/vendor/hhxsv5/laravel-s/src/Illuminate/Cleaners/LaravelAdminCleaner.php(35): ReflectionClass->__construct('Encore\\Admin\\Ad...')
+#1 /var/www/html/blog/vendor/hhxsv5/laravel-s/src/Illuminate/CleanerManager.php(82): Hhxsv5\LaravelS\Illuminate\Cleaners\LaravelAdminCleaner->__construct(Object(Illuminate\Foundation\Application), Object(Illuminate\Foundation\Application))
+#2 /var/www/html/blog/vendor/laravel/framework/src/Illuminate/Container/Container.php(829): Hhxsv5\LaravelS\Illuminate\CleanerManager->Hhxsv5\LaravelS\Illuminate\{closure}(Object(Illuminate\Foundation\Application), Array)
+#3 /var/www/html/blog/vendor/laravel/framework/src/Illuminate/Container/Container.php(714): Illuminate\Container\Container->build(Object(Closure))
+#4 /var/www/html/blog/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(841): Illuminate\Container\Container->resolve('Hhxsv5\\LaravelS...', Array, true)
+#5 /var/www/html/blog/vendor/laravel/framework/src/Illuminate/Container/Container.php(652): Illuminate\Foundation\Application->resolve('Hhxsv5\\LaravelS...', Array)
+#6 /var/www/html/blog/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(826): Illuminate\Container\Container->make('Hhxsv5\\LaravelS...', Array)
+#7 /var/www/html/blog/vendor/hhxsv5/laravel-s/src/Illuminate/CleanerManager.php(103): Illuminate\Foundation\Application->make('Hhxsv5\\LaravelS...')
+#8 /var/www/html/blog/vendor/hhxsv5/laravel-s/src/Illuminate/Laravel.php(212): Hhxsv5\LaravelS\Illuminate\CleanerManager->clean()
+#9 /var/www/html/blog/vendor/hhxsv5/laravel-s/src/LaravelS.php(261): Hhxsv5\LaravelS\Illuminate\Laravel->clean()
+#10 /var/www/html/blog/vendor/hhxsv5/laravel-s/src/LaravelS.php(202): Hhxsv5\LaravelS\LaravelS->handleDynamicResource(Object(Hhxsv5\LaravelS\Illuminate\Laravel), Object(Illuminate\Http\Request), Object(Swoole\Http\Response))
+#11 [internal function]: Hhxsv5\LaravelS\LaravelS->onRequest(Object(Swoole\Http\Request), Object(Swoole\Http\Response))
+#12 /var/www/html/blog/vendor/hhxsv5/laravel-s/src/Swoole/Server.php(402): Swoole\Server->start()
+#13 /var/www/html/blog/vendor/hhxsv5/laravel-s/src/Console/Portal.php(158): Hhxsv5\LaravelS\Swoole\Server->run()
+#14 /var/www/html/blog/vendor/hhxsv5/laravel-s/src/Console/Portal.php(59): Hhxsv5\LaravelS\Console\Portal->start()
+#15 /var/www/html/blog/vendor/symfony/console/Command/Command.php(256): Hhxsv5\LaravelS\Console\Portal->execute(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#16 /var/www/html/blog/bin/laravels(164): Symfony\Component\Console\Command\Command->run(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#17 {main}
+[2021-05-13 05:46:47] [ERROR] Uncaught exception 'ErrorException': [0]Swoole\Http\Response::status(): http response is unavailable (maybe it has been ended or detached) called in /var/www/html/blog/vendor/hhxsv5/laravel-s/src/LaravelS.php:227
+#0 [internal function]: Illuminate\Foundation\Bootstrap\HandleExceptions->handleError(2, 'Swoole\\Http\\Res...', '/var/www/html/b...', 227)
+#1 /var/www/html/blog/vendor/hhxsv5/laravel-s/src/LaravelS.php(227): Swoole\Http\Response->status(500)
+#2 /var/www/html/blog/vendor/hhxsv5/laravel-s/src/LaravelS.php(205): Hhxsv5\LaravelS\LaravelS->handleException(Object(ReflectionException), Object(Swoole\Http\Response))
+#3 [internal function]: Hhxsv5\LaravelS\LaravelS->onRequest(Object(Swoole\Http\Request), Object(Swoole\Http\Response))
+#4 /var/www/html/blog/vendor/hhxsv5/laravel-s/src/Swoole/Server.php(402): Swoole\Server->start()
+#5 /var/www/html/blog/vendor/hhxsv5/laravel-s/src/Console/Portal.php(158): Hhxsv5\LaravelS\Swoole\Server->run()
+#6 /var/www/html/blog/vendor/hhxsv5/laravel-s/src/Console/Portal.php(59): Hhxsv5\LaravelS\Console\Portal->start()
+#7 /var/www/html/blog/vendor/symfony/console/Command/Command.php(256): Hhxsv5\LaravelS\Console\Portal->execute(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#8 /var/www/html/blog/bin/laravels(164): Symfony\Component\Console\Command\Command->run(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#9 {main}
+[2021-05-13 05:46:47] [ERROR] onRequest: Uncaught exception "ReflectionException"([-1]Class "Encore\Admin\Admin" does not exist) at /var/www/html/blog/vendor/hhxsv5/laravel-s/src/Illuminate/Cleaners/LaravelAdminCleaner.php:35, 
+#0 /var/www/html/blog/vendor/hhxsv5/laravel-s/src/Illuminate/Cleaners/LaravelAdminCleaner.php(35): ReflectionClass->__construct('Encore\\Admin\\Ad...')
+#1 /var/www/html/blog/vendor/hhxsv5/laravel-s/src/Illuminate/CleanerManager.php(82): Hhxsv5\LaravelS\Illuminate\Cleaners\LaravelAdminCleaner->__construct(Object(Illuminate\Foundation\Application), Object(Illuminate\Foundation\Application))
+#2 /var/www/html/blog/vendor/laravel/framework/src/Illuminate/Container/Container.php(829): Hhxsv5\LaravelS\Illuminate\CleanerManager->Hhxsv5\LaravelS\Illuminate\{closure}(Object(Illuminate\Foundation\Application), Array)
+#3 /var/www/html/blog/vendor/laravel/framework/src/Illuminate/Container/Container.php(714): Illuminate\Container\Container->build(Object(Closure))
+#4 /var/www/html/blog/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(841): Illuminate\Container\Container->resolve('Hhxsv5\\LaravelS...', Array, true)
+#5 /var/www/html/blog/vendor/laravel/framework/src/Illuminate/Container/Container.php(652): Illuminate\Foundation\Application->resolve('Hhxsv5\\LaravelS...', Array)
+#6 /var/www/html/blog/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(826): Illuminate\Container\Container->make('Hhxsv5\\LaravelS...', Array)
+#7 /var/www/html/blog/vendor/hhxsv5/laravel-s/src/Illuminate/CleanerManager.php(103): Illuminate\Foundation\Application->make('Hhxsv5\\LaravelS...')
+#8 /var/www/html/blog/vendor/hhxsv5/laravel-s/src/Illuminate/Laravel.php(212): Hhxsv5\LaravelS\Illuminate\CleanerManager->clean()
+#9 /var/www/html/blog/vendor/hhxsv5/laravel-s/src/LaravelS.php(261): Hhxsv5\LaravelS\Illuminate\Laravel->clean()
+#10 /var/www/html/blog/vendor/hhxsv5/laravel-s/src/LaravelS.php(202): Hhxsv5\LaravelS\LaravelS->handleDynamicResource(Object(Hhxsv5\LaravelS\Illuminate\Laravel), Object(Illuminate\Http\Request), Object(Swoole\Http\Response))
+#11 [internal function]: Hhxsv5\LaravelS\LaravelS->onRequest(Object(Swoole\Http\Request), Object(Swoole\Http\Response))
+#12 /var/www/html/blog/vendor/hhxsv5/laravel-s/src/Swoole/Server.php(402): Swoole\Server->start()
+#13 /var/www/html/blog/vendor/hhxsv5/laravel-s/src/Console/Portal.php(158): Hhxsv5\LaravelS\Swoole\Server->run()
+#14 /var/www/html/blog/vendor/hhxsv5/laravel-s/src/Console/Portal.php(59): Hhxsv5\LaravelS\Console\Portal->start()
+#15 /var/www/html/blog/vendor/symfony/console/Command/Command.php(256): Hhxsv5\LaravelS\Console\Portal->execute(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#16 /var/www/html/blog/bin/laravels(164): Symfony\Component\Console\Command\Command->run(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#17 {main}
+[2021-05-13 05:46:47] [ERROR] Uncaught exception 'ErrorException': [0]Swoole\Http\Response::status(): http response is unavailable (maybe it has been ended or detached) called in /var/www/html/blog/vendor/hhxsv5/laravel-s/src/LaravelS.php:227
+#0 [internal function]: Illuminate\Foundation\Bootstrap\HandleExceptions->handleError(2, 'Swoole\\Http\\Res...', '/var/www/html/b...', 227)
+#1 /var/www/html/blog/vendor/hhxsv5/laravel-s/src/LaravelS.php(227): Swoole\Http\Response->status(500)
+#2 /var/www/html/blog/vendor/hhxsv5/laravel-s/src/LaravelS.php(205): Hhxsv5\LaravelS\LaravelS->handleException(Object(ReflectionException), Object(Swoole\Http\Response))
+#3 [internal function]: Hhxsv5\LaravelS\LaravelS->onRequest(Object(Swoole\Http\Request), Object(Swoole\Http\Response))
+#4 /var/www/html/blog/vendor/hhxsv5/laravel-s/src/Swoole/Server.php(402): Swoole\Server->start()
+#5 /var/www/html/blog/vendor/hhxsv5/laravel-s/src/Console/Portal.php(158): Hhxsv5\LaravelS\Swoole\Server->run()
+#6 /var/www/html/blog/vendor/hhxsv5/laravel-s/src/Console/Portal.php(59): Hhxsv5\LaravelS\Console\Portal->start()
+#7 /var/www/html/blog/vendor/symfony/console/Command/Command.php(256): Hhxsv5\LaravelS\Console\Portal->execute(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#8 /var/www/html/blog/bin/laravels(164): Symfony\Component\Console\Command\Command->run(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#9 {main}
+[2021-05-13 05:46:47] [ERROR] onRequest: Uncaught exception "ReflectionException"([-1]Class "Encore\Admin\Admin" does not exist) at /var/www/html/blog/vendor/hhxsv5/laravel-s/src/Illuminate/Cleaners/LaravelAdminCleaner.php:35, 
+#0 /var/www/html/blog/vendor/hhxsv5/laravel-s/src/Illuminate/Cleaners/LaravelAdminCleaner.php(35): ReflectionClass->__construct('Encore\\Admin\\Ad...')
+#1 /var/www/html/blog/vendor/hhxsv5/laravel-s/src/Illuminate/CleanerManager.php(82): Hhxsv5\LaravelS\Illuminate\Cleaners\LaravelAdminCleaner->__construct(Object(Illuminate\Foundation\Application), Object(Illuminate\Foundation\Application))
+#2 /var/www/html/blog/vendor/laravel/framework/src/Illuminate/Container/Container.php(829): Hhxsv5\LaravelS\Illuminate\CleanerManager->Hhxsv5\LaravelS\Illuminate\{closure}(Object(Illuminate\Foundation\Application), Array)
+#3 /var/www/html/blog/vendor/laravel/framework/src/Illuminate/Container/Container.php(714): Illuminate\Container\Container->build(Object(Closure))
+#4 /var/www/html/blog/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(841): Illuminate\Container\Container->resolve('Hhxsv5\\LaravelS...', Array, true)
+#5 /var/www/html/blog/vendor/laravel/framework/src/Illuminate/Container/Container.php(652): Illuminate\Foundation\Application->resolve('Hhxsv5\\LaravelS...', Array)
+#6 /var/www/html/blog/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(826): Illuminate\Container\Container->make('Hhxsv5\\LaravelS...', Array)
+#7 /var/www/html/blog/vendor/hhxsv5/laravel-s/src/Illuminate/CleanerManager.php(103): Illuminate\Foundation\Application->make('Hhxsv5\\LaravelS...')
+#8 /var/www/html/blog/vendor/hhxsv5/laravel-s/src/Illuminate/Laravel.php(212): Hhxsv5\LaravelS\Illuminate\CleanerManager->clean()
+#9 /var/www/html/blog/vendor/hhxsv5/laravel-s/src/LaravelS.php(261): Hhxsv5\LaravelS\Illuminate\Laravel->clean()
+#10 /var/www/html/blog/vendor/hhxsv5/laravel-s/src/LaravelS.php(202): Hhxsv5\LaravelS\LaravelS->handleDynamicResource(Object(Hhxsv5\LaravelS\Illuminate\Laravel), Object(Illuminate\Http\Request), Object(Swoole\Http\Response))
+#11 [internal function]: Hhxsv5\LaravelS\LaravelS->onRequest(Object(Swoole\Http\Request), Object(Swoole\Http\Response))
+#12 /var/www/html/blog/vendor/hhxsv5/laravel-s/src/Swoole/Server.php(402): Swoole\Server->start()
+#13 /var/www/html/blog/vendor/hhxsv5/laravel-s/src/Console/Portal.php(158): Hhxsv5\LaravelS\Swoole\Server->run()
+#14 /var/www/html/blog/vendor/hhxsv5/laravel-s/src/Console/Portal.php(59): Hhxsv5\LaravelS\Console\Portal->start()
+#15 /var/www/html/blog/vendor/symfony/console/Command/Command.php(256): Hhxsv5\LaravelS\Console\Portal->execute(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#16 /var/www/html/blog/bin/laravels(164): Symfony\Component\Console\Command\Command->run(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#17 {main}
+[2021-05-13 05:46:47] [ERROR] Uncaught exception 'ErrorException': [0]Swoole\Http\Response::status(): http response is unavailable (maybe it has been ended or detached) called in /var/www/html/blog/vendor/hhxsv5/laravel-s/src/LaravelS.php:227
+#0 [internal function]: Illuminate\Foundation\Bootstrap\HandleExceptions->handleError(2, 'Swoole\\Http\\Res...', '/var/www/html/b...', 227)
+#1 /var/www/html/blog/vendor/hhxsv5/laravel-s/src/LaravelS.php(227): Swoole\Http\Response->status(500)
+#2 /var/www/html/blog/vendor/hhxsv5/laravel-s/src/LaravelS.php(205): Hhxsv5\LaravelS\LaravelS->handleException(Object(ReflectionException), Object(Swoole\Http\Response))
+#3 [internal function]: Hhxsv5\LaravelS\LaravelS->onRequest(Object(Swoole\Http\Request), Object(Swoole\Http\Response))
+#4 /var/www/html/blog/vendor/hhxsv5/laravel-s/src/Swoole/Server.php(402): Swoole\Server->start()
+#5 /var/www/html/blog/vendor/hhxsv5/laravel-s/src/Console/Portal.php(158): Hhxsv5\LaravelS\Swoole\Server->run()
+#6 /var/www/html/blog/vendor/hhxsv5/laravel-s/src/Console/Portal.php(59): Hhxsv5\LaravelS\Console\Portal->start()
+#7 /var/www/html/blog/vendor/symfony/console/Command/Command.php(256): Hhxsv5\LaravelS\Console\Portal->execute(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#8 /var/www/html/blog/bin/laravels(164): Symfony\Component\Console\Command\Command->run(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#9 {main}
+[2021-05-13 05:46:47] [ERROR] onRequest: Uncaught exception "ReflectionException"([-1]Class "Encore\Admin\Admin" does not exist) at /var/www/html/blog/vendor/hhxsv5/laravel-s/src/Illuminate/Cleaners/LaravelAdminCleaner.php:35, 
+#0 /var/www/html/blog/vendor/hhxsv5/laravel-s/src/Illuminate/Cleaners/LaravelAdminCleaner.php(35): ReflectionClass->__construct('Encore\\Admin\\Ad...')
+#1 /var/www/html/blog/vendor/hhxsv5/laravel-s/src/Illuminate/CleanerManager.php(82): Hhxsv5\LaravelS\Illuminate\Cleaners\LaravelAdminCleaner->__construct(Object(Illuminate\Foundation\Application), Object(Illuminate\Foundation\Application))
+#2 /var/www/html/blog/vendor/laravel/framework/src/Illuminate/Container/Container.php(829): Hhxsv5\LaravelS\Illuminate\CleanerManager->Hhxsv5\LaravelS\Illuminate\{closure}(Object(Illuminate\Foundation\Application), Array)
+#3 /var/www/html/blog/vendor/laravel/framework/src/Illuminate/Container/Container.php(714): Illuminate\Container\Container->build(Object(Closure))
+#4 /var/www/html/blog/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(841): Illuminate\Container\Container->resolve('Hhxsv5\\LaravelS...', Array, true)
+#5 /var/www/html/blog/vendor/laravel/framework/src/Illuminate/Container/Container.php(652): Illuminate\Foundation\Application->resolve('Hhxsv5\\LaravelS...', Array)
+#6 /var/www/html/blog/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(826): Illuminate\Container\Container->make('Hhxsv5\\LaravelS...', Array)
+#7 /var/www/html/blog/vendor/hhxsv5/laravel-s/src/Illuminate/CleanerManager.php(103): Illuminate\Foundation\Application->make('Hhxsv5\\LaravelS...')
+#8 /var/www/html/blog/vendor/hhxsv5/laravel-s/src/Illuminate/Laravel.php(212): Hhxsv5\LaravelS\Illuminate\CleanerManager->clean()
+#9 /var/www/html/blog/vendor/hhxsv5/laravel-s/src/LaravelS.php(261): Hhxsv5\LaravelS\Illuminate\Laravel->clean()
+#10 /var/www/html/blog/vendor/hhxsv5/laravel-s/src/LaravelS.php(202): Hhxsv5\LaravelS\LaravelS->handleDynamicResource(Object(Hhxsv5\LaravelS\Illuminate\Laravel), Object(Illuminate\Http\Request), Object(Swoole\Http\Response))
+#11 [internal function]: Hhxsv5\LaravelS\LaravelS->onRequest(Object(Swoole\Http\Request), Object(Swoole\Http\Response))
+#12 /var/www/html/blog/vendor/hhxsv5/laravel-s/src/Swoole/Server.php(402): Swoole\Server->start()
+#13 /var/www/html/blog/vendor/hhxsv5/laravel-s/src/Console/Portal.php(158): Hhxsv5\LaravelS\Swoole\Server->run()
+#14 /var/www/html/blog/vendor/hhxsv5/laravel-s/src/Console/Portal.php(59): Hhxsv5\LaravelS\Console\Portal->start()
+#15 /var/www/html/blog/vendor/symfony/console/Command/Command.php(256): Hhxsv5\LaravelS\Console\Portal->execute(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#16 /var/www/html/blog/bin/laravels(164): Symfony\Component\Console\Command\Command->run(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#17 {main}
+[2021-05-13 05:46:47] [ERROR] Uncaught exception 'ErrorException': [0]Swoole\Http\Response::status(): http response is unavailable (maybe it has been ended or detached) called in /var/www/html/blog/vendor/hhxsv5/laravel-s/src/LaravelS.php:227
+#0 [internal function]: Illuminate\Foundation\Bootstrap\HandleExceptions->handleError(2, 'Swoole\\Http\\Res...', '/var/www/html/b...', 227)
+#1 /var/www/html/blog/vendor/hhxsv5/laravel-s/src/LaravelS.php(227): Swoole\Http\Response->status(500)
+#2 /var/www/html/blog/vendor/hhxsv5/laravel-s/src/LaravelS.php(205): Hhxsv5\LaravelS\LaravelS->handleException(Object(ReflectionException), Object(Swoole\Http\Response))
+#3 [internal function]: Hhxsv5\LaravelS\LaravelS->onRequest(Object(Swoole\Http\Request), Object(Swoole\Http\Response))
+#4 /var/www/html/blog/vendor/hhxsv5/laravel-s/src/Swoole/Server.php(402): Swoole\Server->start()
+#5 /var/www/html/blog/vendor/hhxsv5/laravel-s/src/Console/Portal.php(158): Hhxsv5\LaravelS\Swoole\Server->run()
+#6 /var/www/html/blog/vendor/hhxsv5/laravel-s/src/Console/Portal.php(59): Hhxsv5\LaravelS\Console\Portal->start()
+#7 /var/www/html/blog/vendor/symfony/console/Command/Command.php(256): Hhxsv5\LaravelS\Console\Portal->execute(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#8 /var/www/html/blog/bin/laravels(164): Symfony\Component\Console\Command\Command->run(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#9 {main}
+[2021-05-13 05:46:48] [ERROR] onRequest: Uncaught exception "ReflectionException"([-1]Class "Encore\Admin\Admin" does not exist) at /var/www/html/blog/vendor/hhxsv5/laravel-s/src/Illuminate/Cleaners/LaravelAdminCleaner.php:35, 
+#0 /var/www/html/blog/vendor/hhxsv5/laravel-s/src/Illuminate/Cleaners/LaravelAdminCleaner.php(35): ReflectionClass->__construct('Encore\\Admin\\Ad...')
+#1 /var/www/html/blog/vendor/hhxsv5/laravel-s/src/Illuminate/CleanerManager.php(82): Hhxsv5\LaravelS\Illuminate\Cleaners\LaravelAdminCleaner->__construct(Object(Illuminate\Foundation\Application), Object(Illuminate\Foundation\Application))
+#2 /var/www/html/blog/vendor/laravel/framework/src/Illuminate/Container/Container.php(829): Hhxsv5\LaravelS\Illuminate\CleanerManager->Hhxsv5\LaravelS\Illuminate\{closure}(Object(Illuminate\Foundation\Application), Array)
+#3 /var/www/html/blog/vendor/laravel/framework/src/Illuminate/Container/Container.php(714): Illuminate\Container\Container->build(Object(Closure))
+#4 /var/www/html/blog/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(841): Illuminate\Container\Container->resolve('Hhxsv5\\LaravelS...', Array, true)
+#5 /var/www/html/blog/vendor/laravel/framework/src/Illuminate/Container/Container.php(652): Illuminate\Foundation\Application->resolve('Hhxsv5\\LaravelS...', Array)
+#6 /var/www/html/blog/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(826): Illuminate\Container\Container->make('Hhxsv5\\LaravelS...', Array)
+#7 /var/www/html/blog/vendor/hhxsv5/laravel-s/src/Illuminate/CleanerManager.php(103): Illuminate\Foundation\Application->make('Hhxsv5\\LaravelS...')
+#8 /var/www/html/blog/vendor/hhxsv5/laravel-s/src/Illuminate/Laravel.php(212): Hhxsv5\LaravelS\Illuminate\CleanerManager->clean()
+#9 /var/www/html/blog/vendor/hhxsv5/laravel-s/src/LaravelS.php(261): Hhxsv5\LaravelS\Illuminate\Laravel->clean()
+#10 /var/www/html/blog/vendor/hhxsv5/laravel-s/src/LaravelS.php(202): Hhxsv5\LaravelS\LaravelS->handleDynamicResource(Object(Hhxsv5\LaravelS\Illuminate\Laravel), Object(Illuminate\Http\Request), Object(Swoole\Http\Response))
+#11 [internal function]: Hhxsv5\LaravelS\LaravelS->onRequest(Object(Swoole\Http\Request), Object(Swoole\Http\Response))
+#12 /var/www/html/blog/vendor/hhxsv5/laravel-s/src/Swoole/Server.php(402): Swoole\Server->start()
+#13 /var/www/html/blog/vendor/hhxsv5/laravel-s/src/Console/Portal.php(158): Hhxsv5\LaravelS\Swoole\Server->run()
+#14 /var/www/html/blog/vendor/hhxsv5/laravel-s/src/Console/Portal.php(59): Hhxsv5\LaravelS\Console\Portal->start()
+#15 /var/www/html/blog/vendor/symfony/console/Command/Command.php(256): Hhxsv5\LaravelS\Console\Portal->execute(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#16 /var/www/html/blog/bin/laravels(164): Symfony\Component\Console\Command\Command->run(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#17 {main}
+[2021-05-13 05:46:48] [ERROR] Uncaught exception 'ErrorException': [0]Swoole\Http\Response::status(): http response is unavailable (maybe it has been ended or detached) called in /var/www/html/blog/vendor/hhxsv5/laravel-s/src/LaravelS.php:227
+#0 [internal function]: Illuminate\Foundation\Bootstrap\HandleExceptions->handleError(2, 'Swoole\\Http\\Res...', '/var/www/html/b...', 227)
+#1 /var/www/html/blog/vendor/hhxsv5/laravel-s/src/LaravelS.php(227): Swoole\Http\Response->status(500)
+#2 /var/www/html/blog/vendor/hhxsv5/laravel-s/src/LaravelS.php(205): Hhxsv5\LaravelS\LaravelS->handleException(Object(ReflectionException), Object(Swoole\Http\Response))
+#3 [internal function]: Hhxsv5\LaravelS\LaravelS->onRequest(Object(Swoole\Http\Request), Object(Swoole\Http\Response))
+#4 /var/www/html/blog/vendor/hhxsv5/laravel-s/src/Swoole/Server.php(402): Swoole\Server->start()
+#5 /var/www/html/blog/vendor/hhxsv5/laravel-s/src/Console/Portal.php(158): Hhxsv5\LaravelS\Swoole\Server->run()
+#6 /var/www/html/blog/vendor/hhxsv5/laravel-s/src/Console/Portal.php(59): Hhxsv5\LaravelS\Console\Portal->start()
+#7 /var/www/html/blog/vendor/symfony/console/Command/Command.php(256): Hhxsv5\LaravelS\Console\Portal->execute(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#8 /var/www/html/blog/bin/laravels(164): Symfony\Component\Console\Command\Command->run(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#9 {main}
+ _                               _  _____ 
+| |                             | |/ ____|
+| |     __ _ _ __ __ ___   _____| | (___  
+| |    / _` | '__/ _` \ \ / / _ \ |\___ \ 
+| |___| (_| | | | (_| |\ V /  __/ |____) |
+|______\__,_|_|  \__,_| \_/ \___|_|_____/ 
+                                           
+Speed up your Laravel/Lumen
+>>> Components
++---------------------------+---------+
+| Component                 | Version |
++---------------------------+---------+
+| PHP                       | 8.0.6   |
+| Swoole                    | 4.6.6   |
+| LaravelS                  | 3.7.19  |
+| Laravel Framework [local] | 8.41.0  |
++---------------------------+---------+
+>>> Protocols
++-----------+--------+-------------------+---------------------+
+| Protocol  | Status | Handler           | Listen At           |
++-----------+--------+-------------------+---------------------+
+| Main HTTP | On     | Laravel Framework | http://0.0.0.0:5200 |
++-----------+--------+-------------------+---------------------+
+>>> Feedback: https://github.com/hhxsv5/laravel-s
+[2021-05-13 05:50:48] [TRACE] Swoole is running, press Ctrl+C to quit.
+[2021-05-13 05:50:54] [INFO] [Inotify] watched files: 1230; file types: .php; excluded directories: 
+[2021-05-13 05:50:56] [ERROR] onRequest: Uncaught exception "ReflectionException"([-1]Class "Encore\Admin\Admin" does not exist) at /var/www/html/blog/vendor/hhxsv5/laravel-s/src/Illuminate/Cleaners/LaravelAdminCleaner.php:35, 
+#0 /var/www/html/blog/vendor/hhxsv5/laravel-s/src/Illuminate/Cleaners/LaravelAdminCleaner.php(35): ReflectionClass->__construct('Encore\\Admin\\Ad...')
+#1 /var/www/html/blog/vendor/hhxsv5/laravel-s/src/Illuminate/CleanerManager.php(82): Hhxsv5\LaravelS\Illuminate\Cleaners\LaravelAdminCleaner->__construct(Object(Illuminate\Foundation\Application), Object(Illuminate\Foundation\Application))
+#2 /var/www/html/blog/vendor/laravel/framework/src/Illuminate/Container/Container.php(829): Hhxsv5\LaravelS\Illuminate\CleanerManager->Hhxsv5\LaravelS\Illuminate\{closure}(Object(Illuminate\Foundation\Application), Array)
+#3 /var/www/html/blog/vendor/laravel/framework/src/Illuminate/Container/Container.php(714): Illuminate\Container\Container->build(Object(Closure))
+#4 /var/www/html/blog/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(841): Illuminate\Container\Container->resolve('Hhxsv5\\LaravelS...', Array, true)
+#5 /var/www/html/blog/vendor/laravel/framework/src/Illuminate/Container/Container.php(652): Illuminate\Foundation\Application->resolve('Hhxsv5\\LaravelS...', Array)
+#6 /var/www/html/blog/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(826): Illuminate\Container\Container->make('Hhxsv5\\LaravelS...', Array)
+#7 /var/www/html/blog/vendor/hhxsv5/laravel-s/src/Illuminate/CleanerManager.php(103): Illuminate\Foundation\Application->make('Hhxsv5\\LaravelS...')
+#8 /var/www/html/blog/vendor/hhxsv5/laravel-s/src/Illuminate/Laravel.php(212): Hhxsv5\LaravelS\Illuminate\CleanerManager->clean()
+#9 /var/www/html/blog/vendor/hhxsv5/laravel-s/src/LaravelS.php(261): Hhxsv5\LaravelS\Illuminate\Laravel->clean()
+#10 /var/www/html/blog/vendor/hhxsv5/laravel-s/src/LaravelS.php(202): Hhxsv5\LaravelS\LaravelS->handleDynamicResource(Object(Hhxsv5\LaravelS\Illuminate\Laravel), Object(Illuminate\Http\Request), Object(Swoole\Http\Response))
+#11 [internal function]: Hhxsv5\LaravelS\LaravelS->onRequest(Object(Swoole\Http\Request), Object(Swoole\Http\Response))
+#12 /var/www/html/blog/vendor/hhxsv5/laravel-s/src/Swoole/Server.php(402): Swoole\Server->start()
+#13 /var/www/html/blog/vendor/hhxsv5/laravel-s/src/Console/Portal.php(158): Hhxsv5\LaravelS\Swoole\Server->run()
+#14 /var/www/html/blog/vendor/hhxsv5/laravel-s/src/Console/Portal.php(59): Hhxsv5\LaravelS\Console\Portal->start()
+#15 /var/www/html/blog/vendor/symfony/console/Command/Command.php(256): Hhxsv5\LaravelS\Console\Portal->execute(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#16 /var/www/html/blog/bin/laravels(164): Symfony\Component\Console\Command\Command->run(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#17 {main}
+[2021-05-13 05:50:56] [ERROR] Uncaught exception 'ErrorException': [0]Swoole\Http\Response::status(): http response is unavailable (maybe it has been ended or detached) called in /var/www/html/blog/vendor/hhxsv5/laravel-s/src/LaravelS.php:227
+#0 [internal function]: Illuminate\Foundation\Bootstrap\HandleExceptions->handleError(2, 'Swoole\\Http\\Res...', '/var/www/html/b...', 227)
+#1 /var/www/html/blog/vendor/hhxsv5/laravel-s/src/LaravelS.php(227): Swoole\Http\Response->status(500)
+#2 /var/www/html/blog/vendor/hhxsv5/laravel-s/src/LaravelS.php(205): Hhxsv5\LaravelS\LaravelS->handleException(Object(ReflectionException), Object(Swoole\Http\Response))
+#3 [internal function]: Hhxsv5\LaravelS\LaravelS->onRequest(Object(Swoole\Http\Request), Object(Swoole\Http\Response))
+#4 /var/www/html/blog/vendor/hhxsv5/laravel-s/src/Swoole/Server.php(402): Swoole\Server->start()
+#5 /var/www/html/blog/vendor/hhxsv5/laravel-s/src/Console/Portal.php(158): Hhxsv5\LaravelS\Swoole\Server->run()
+#6 /var/www/html/blog/vendor/hhxsv5/laravel-s/src/Console/Portal.php(59): Hhxsv5\LaravelS\Console\Portal->start()
+#7 /var/www/html/blog/vendor/symfony/console/Command/Command.php(256): Hhxsv5\LaravelS\Console\Portal->execute(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#8 /var/www/html/blog/bin/laravels(164): Symfony\Component\Console\Command\Command->run(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#9 {main}
+[2021-05-13 05:50:56] [ERROR] onRequest: Uncaught exception "ReflectionException"([-1]Class "Encore\Admin\Admin" does not exist) at /var/www/html/blog/vendor/hhxsv5/laravel-s/src/Illuminate/Cleaners/LaravelAdminCleaner.php:35, 
+#0 /var/www/html/blog/vendor/hhxsv5/laravel-s/src/Illuminate/Cleaners/LaravelAdminCleaner.php(35): ReflectionClass->__construct('Encore\\Admin\\Ad...')
+#1 /var/www/html/blog/vendor/hhxsv5/laravel-s/src/Illuminate/CleanerManager.php(82): Hhxsv5\LaravelS\Illuminate\Cleaners\LaravelAdminCleaner->__construct(Object(Illuminate\Foundation\Application), Object(Illuminate\Foundation\Application))
+#2 /var/www/html/blog/vendor/laravel/framework/src/Illuminate/Container/Container.php(829): Hhxsv5\LaravelS\Illuminate\CleanerManager->Hhxsv5\LaravelS\Illuminate\{closure}(Object(Illuminate\Foundation\Application), Array)
+#3 /var/www/html/blog/vendor/laravel/framework/src/Illuminate/Container/Container.php(714): Illuminate\Container\Container->build(Object(Closure))
+#4 /var/www/html/blog/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(841): Illuminate\Container\Container->resolve('Hhxsv5\\LaravelS...', Array, true)
+#5 /var/www/html/blog/vendor/laravel/framework/src/Illuminate/Container/Container.php(652): Illuminate\Foundation\Application->resolve('Hhxsv5\\LaravelS...', Array)
+#6 /var/www/html/blog/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(826): Illuminate\Container\Container->make('Hhxsv5\\LaravelS...', Array)
+#7 /var/www/html/blog/vendor/hhxsv5/laravel-s/src/Illuminate/CleanerManager.php(103): Illuminate\Foundation\Application->make('Hhxsv5\\LaravelS...')
+#8 /var/www/html/blog/vendor/hhxsv5/laravel-s/src/Illuminate/Laravel.php(212): Hhxsv5\LaravelS\Illuminate\CleanerManager->clean()
+#9 /var/www/html/blog/vendor/hhxsv5/laravel-s/src/LaravelS.php(261): Hhxsv5\LaravelS\Illuminate\Laravel->clean()
+#10 /var/www/html/blog/vendor/hhxsv5/laravel-s/src/LaravelS.php(202): Hhxsv5\LaravelS\LaravelS->handleDynamicResource(Object(Hhxsv5\LaravelS\Illuminate\Laravel), Object(Illuminate\Http\Request), Object(Swoole\Http\Response))
+#11 [internal function]: Hhxsv5\LaravelS\LaravelS->onRequest(Object(Swoole\Http\Request), Object(Swoole\Http\Response))
+#12 /var/www/html/blog/vendor/hhxsv5/laravel-s/src/Swoole/Server.php(402): Swoole\Server->start()
+#13 /var/www/html/blog/vendor/hhxsv5/laravel-s/src/Console/Portal.php(158): Hhxsv5\LaravelS\Swoole\Server->run()
+#14 /var/www/html/blog/vendor/hhxsv5/laravel-s/src/Console/Portal.php(59): Hhxsv5\LaravelS\Console\Portal->start()
+#15 /var/www/html/blog/vendor/symfony/console/Command/Command.php(256): Hhxsv5\LaravelS\Console\Portal->execute(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#16 /var/www/html/blog/bin/laravels(164): Symfony\Component\Console\Command\Command->run(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#17 {main}
+[2021-05-13 05:50:56] [ERROR] Uncaught exception 'ErrorException': [0]Swoole\Http\Response::status(): http response is unavailable (maybe it has been ended or detached) called in /var/www/html/blog/vendor/hhxsv5/laravel-s/src/LaravelS.php:227
+#0 [internal function]: Illuminate\Foundation\Bootstrap\HandleExceptions->handleError(2, 'Swoole\\Http\\Res...', '/var/www/html/b...', 227)
+#1 /var/www/html/blog/vendor/hhxsv5/laravel-s/src/LaravelS.php(227): Swoole\Http\Response->status(500)
+#2 /var/www/html/blog/vendor/hhxsv5/laravel-s/src/LaravelS.php(205): Hhxsv5\LaravelS\LaravelS->handleException(Object(ReflectionException), Object(Swoole\Http\Response))
+#3 [internal function]: Hhxsv5\LaravelS\LaravelS->onRequest(Object(Swoole\Http\Request), Object(Swoole\Http\Response))
+#4 /var/www/html/blog/vendor/hhxsv5/laravel-s/src/Swoole/Server.php(402): Swoole\Server->start()
+#5 /var/www/html/blog/vendor/hhxsv5/laravel-s/src/Console/Portal.php(158): Hhxsv5\LaravelS\Swoole\Server->run()
+#6 /var/www/html/blog/vendor/hhxsv5/laravel-s/src/Console/Portal.php(59): Hhxsv5\LaravelS\Console\Portal->start()
+#7 /var/www/html/blog/vendor/symfony/console/Command/Command.php(256): Hhxsv5\LaravelS\Console\Portal->execute(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#8 /var/www/html/blog/bin/laravels(164): Symfony\Component\Console\Command\Command->run(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#9 {main}
+[2021-05-13 05:50:57] [ERROR] onRequest: Uncaught exception "ReflectionException"([-1]Class "Encore\Admin\Admin" does not exist) at /var/www/html/blog/vendor/hhxsv5/laravel-s/src/Illuminate/Cleaners/LaravelAdminCleaner.php:35, 
+#0 /var/www/html/blog/vendor/hhxsv5/laravel-s/src/Illuminate/Cleaners/LaravelAdminCleaner.php(35): ReflectionClass->__construct('Encore\\Admin\\Ad...')
+#1 /var/www/html/blog/vendor/hhxsv5/laravel-s/src/Illuminate/CleanerManager.php(82): Hhxsv5\LaravelS\Illuminate\Cleaners\LaravelAdminCleaner->__construct(Object(Illuminate\Foundation\Application), Object(Illuminate\Foundation\Application))
+#2 /var/www/html/blog/vendor/laravel/framework/src/Illuminate/Container/Container.php(829): Hhxsv5\LaravelS\Illuminate\CleanerManager->Hhxsv5\LaravelS\Illuminate\{closure}(Object(Illuminate\Foundation\Application), Array)
+#3 /var/www/html/blog/vendor/laravel/framework/src/Illuminate/Container/Container.php(714): Illuminate\Container\Container->build(Object(Closure))
+#4 /var/www/html/blog/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(841): Illuminate\Container\Container->resolve('Hhxsv5\\LaravelS...', Array, true)
+#5 /var/www/html/blog/vendor/laravel/framework/src/Illuminate/Container/Container.php(652): Illuminate\Foundation\Application->resolve('Hhxsv5\\LaravelS...', Array)
+#6 /var/www/html/blog/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(826): Illuminate\Container\Container->make('Hhxsv5\\LaravelS...', Array)
+#7 /var/www/html/blog/vendor/hhxsv5/laravel-s/src/Illuminate/CleanerManager.php(103): Illuminate\Foundation\Application->make('Hhxsv5\\LaravelS...')
+#8 /var/www/html/blog/vendor/hhxsv5/laravel-s/src/Illuminate/Laravel.php(212): Hhxsv5\LaravelS\Illuminate\CleanerManager->clean()
+#9 /var/www/html/blog/vendor/hhxsv5/laravel-s/src/LaravelS.php(261): Hhxsv5\LaravelS\Illuminate\Laravel->clean()
+#10 /var/www/html/blog/vendor/hhxsv5/laravel-s/src/LaravelS.php(202): Hhxsv5\LaravelS\LaravelS->handleDynamicResource(Object(Hhxsv5\LaravelS\Illuminate\Laravel), Object(Illuminate\Http\Request), Object(Swoole\Http\Response))
+#11 [internal function]: Hhxsv5\LaravelS\LaravelS->onRequest(Object(Swoole\Http\Request), Object(Swoole\Http\Response))
+#12 /var/www/html/blog/vendor/hhxsv5/laravel-s/src/Swoole/Server.php(402): Swoole\Server->start()
+#13 /var/www/html/blog/vendor/hhxsv5/laravel-s/src/Console/Portal.php(158): Hhxsv5\LaravelS\Swoole\Server->run()
+#14 /var/www/html/blog/vendor/hhxsv5/laravel-s/src/Console/Portal.php(59): Hhxsv5\LaravelS\Console\Portal->start()
+#15 /var/www/html/blog/vendor/symfony/console/Command/Command.php(256): Hhxsv5\LaravelS\Console\Portal->execute(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#16 /var/www/html/blog/bin/laravels(164): Symfony\Component\Console\Command\Command->run(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#17 {main}
+[2021-05-13 05:50:57] [ERROR] Uncaught exception 'ErrorException': [0]Swoole\Http\Response::status(): http response is unavailable (maybe it has been ended or detached) called in /var/www/html/blog/vendor/hhxsv5/laravel-s/src/LaravelS.php:227
+#0 [internal function]: Illuminate\Foundation\Bootstrap\HandleExceptions->handleError(2, 'Swoole\\Http\\Res...', '/var/www/html/b...', 227)
+#1 /var/www/html/blog/vendor/hhxsv5/laravel-s/src/LaravelS.php(227): Swoole\Http\Response->status(500)
+#2 /var/www/html/blog/vendor/hhxsv5/laravel-s/src/LaravelS.php(205): Hhxsv5\LaravelS\LaravelS->handleException(Object(ReflectionException), Object(Swoole\Http\Response))
+#3 [internal function]: Hhxsv5\LaravelS\LaravelS->onRequest(Object(Swoole\Http\Request), Object(Swoole\Http\Response))
+#4 /var/www/html/blog/vendor/hhxsv5/laravel-s/src/Swoole/Server.php(402): Swoole\Server->start()
+#5 /var/www/html/blog/vendor/hhxsv5/laravel-s/src/Console/Portal.php(158): Hhxsv5\LaravelS\Swoole\Server->run()
+#6 /var/www/html/blog/vendor/hhxsv5/laravel-s/src/Console/Portal.php(59): Hhxsv5\LaravelS\Console\Portal->start()
+#7 /var/www/html/blog/vendor/symfony/console/Command/Command.php(256): Hhxsv5\LaravelS\Console\Portal->execute(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#8 /var/www/html/blog/bin/laravels(164): Symfony\Component\Console\Command\Command->run(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#9 {main}
+[2021-05-13 05:50:57] [ERROR] onRequest: Uncaught exception "ReflectionException"([-1]Class "Encore\Admin\Admin" does not exist) at /var/www/html/blog/vendor/hhxsv5/laravel-s/src/Illuminate/Cleaners/LaravelAdminCleaner.php:35, 
+#0 /var/www/html/blog/vendor/hhxsv5/laravel-s/src/Illuminate/Cleaners/LaravelAdminCleaner.php(35): ReflectionClass->__construct('Encore\\Admin\\Ad...')
+#1 /var/www/html/blog/vendor/hhxsv5/laravel-s/src/Illuminate/CleanerManager.php(82): Hhxsv5\LaravelS\Illuminate\Cleaners\LaravelAdminCleaner->__construct(Object(Illuminate\Foundation\Application), Object(Illuminate\Foundation\Application))
+#2 /var/www/html/blog/vendor/laravel/framework/src/Illuminate/Container/Container.php(829): Hhxsv5\LaravelS\Illuminate\CleanerManager->Hhxsv5\LaravelS\Illuminate\{closure}(Object(Illuminate\Foundation\Application), Array)
+#3 /var/www/html/blog/vendor/laravel/framework/src/Illuminate/Container/Container.php(714): Illuminate\Container\Container->build(Object(Closure))
+#4 /var/www/html/blog/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(841): Illuminate\Container\Container->resolve('Hhxsv5\\LaravelS...', Array, true)
+#5 /var/www/html/blog/vendor/laravel/framework/src/Illuminate/Container/Container.php(652): Illuminate\Foundation\Application->resolve('Hhxsv5\\LaravelS...', Array)
+#6 /var/www/html/blog/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(826): Illuminate\Container\Container->make('Hhxsv5\\LaravelS...', Array)
+#7 /var/www/html/blog/vendor/hhxsv5/laravel-s/src/Illuminate/CleanerManager.php(103): Illuminate\Foundation\Application->make('Hhxsv5\\LaravelS...')
+#8 /var/www/html/blog/vendor/hhxsv5/laravel-s/src/Illuminate/Laravel.php(212): Hhxsv5\LaravelS\Illuminate\CleanerManager->clean()
+#9 /var/www/html/blog/vendor/hhxsv5/laravel-s/src/LaravelS.php(261): Hhxsv5\LaravelS\Illuminate\Laravel->clean()
+#10 /var/www/html/blog/vendor/hhxsv5/laravel-s/src/LaravelS.php(202): Hhxsv5\LaravelS\LaravelS->handleDynamicResource(Object(Hhxsv5\LaravelS\Illuminate\Laravel), Object(Illuminate\Http\Request), Object(Swoole\Http\Response))
+#11 [internal function]: Hhxsv5\LaravelS\LaravelS->onRequest(Object(Swoole\Http\Request), Object(Swoole\Http\Response))
+#12 /var/www/html/blog/vendor/hhxsv5/laravel-s/src/Swoole/Server.php(402): Swoole\Server->start()
+#13 /var/www/html/blog/vendor/hhxsv5/laravel-s/src/Console/Portal.php(158): Hhxsv5\LaravelS\Swoole\Server->run()
+#14 /var/www/html/blog/vendor/hhxsv5/laravel-s/src/Console/Portal.php(59): Hhxsv5\LaravelS\Console\Portal->start()
+#15 /var/www/html/blog/vendor/symfony/console/Command/Command.php(256): Hhxsv5\LaravelS\Console\Portal->execute(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#16 /var/www/html/blog/bin/laravels(164): Symfony\Component\Console\Command\Command->run(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#17 {main}
+[2021-05-13 05:50:57] [ERROR] Uncaught exception 'ErrorException': [0]Swoole\Http\Response::status(): http response is unavailable (maybe it has been ended or detached) called in /var/www/html/blog/vendor/hhxsv5/laravel-s/src/LaravelS.php:227
+#0 [internal function]: Illuminate\Foundation\Bootstrap\HandleExceptions->handleError(2, 'Swoole\\Http\\Res...', '/var/www/html/b...', 227)
+#1 /var/www/html/blog/vendor/hhxsv5/laravel-s/src/LaravelS.php(227): Swoole\Http\Response->status(500)
+#2 /var/www/html/blog/vendor/hhxsv5/laravel-s/src/LaravelS.php(205): Hhxsv5\LaravelS\LaravelS->handleException(Object(ReflectionException), Object(Swoole\Http\Response))
+#3 [internal function]: Hhxsv5\LaravelS\LaravelS->onRequest(Object(Swoole\Http\Request), Object(Swoole\Http\Response))
+#4 /var/www/html/blog/vendor/hhxsv5/laravel-s/src/Swoole/Server.php(402): Swoole\Server->start()
+#5 /var/www/html/blog/vendor/hhxsv5/laravel-s/src/Console/Portal.php(158): Hhxsv5\LaravelS\Swoole\Server->run()
+#6 /var/www/html/blog/vendor/hhxsv5/laravel-s/src/Console/Portal.php(59): Hhxsv5\LaravelS\Console\Portal->start()
+#7 /var/www/html/blog/vendor/symfony/console/Command/Command.php(256): Hhxsv5\LaravelS\Console\Portal->execute(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#8 /var/www/html/blog/bin/laravels(164): Symfony\Component\Console\Command\Command->run(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#9 {main}
+[2021-05-13 05:50:57] [ERROR] onRequest: Uncaught exception "ReflectionException"([-1]Class "Encore\Admin\Admin" does not exist) at /var/www/html/blog/vendor/hhxsv5/laravel-s/src/Illuminate/Cleaners/LaravelAdminCleaner.php:35, 
+#0 /var/www/html/blog/vendor/hhxsv5/laravel-s/src/Illuminate/Cleaners/LaravelAdminCleaner.php(35): ReflectionClass->__construct('Encore\\Admin\\Ad...')
+#1 /var/www/html/blog/vendor/hhxsv5/laravel-s/src/Illuminate/CleanerManager.php(82): Hhxsv5\LaravelS\Illuminate\Cleaners\LaravelAdminCleaner->__construct(Object(Illuminate\Foundation\Application), Object(Illuminate\Foundation\Application))
+#2 /var/www/html/blog/vendor/laravel/framework/src/Illuminate/Container/Container.php(829): Hhxsv5\LaravelS\Illuminate\CleanerManager->Hhxsv5\LaravelS\Illuminate\{closure}(Object(Illuminate\Foundation\Application), Array)
+#3 /var/www/html/blog/vendor/laravel/framework/src/Illuminate/Container/Container.php(714): Illuminate\Container\Container->build(Object(Closure))
+#4 /var/www/html/blog/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(841): Illuminate\Container\Container->resolve('Hhxsv5\\LaravelS...', Array, true)
+#5 /var/www/html/blog/vendor/laravel/framework/src/Illuminate/Container/Container.php(652): Illuminate\Foundation\Application->resolve('Hhxsv5\\LaravelS...', Array)
+#6 /var/www/html/blog/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(826): Illuminate\Container\Container->make('Hhxsv5\\LaravelS...', Array)
+#7 /var/www/html/blog/vendor/hhxsv5/laravel-s/src/Illuminate/CleanerManager.php(103): Illuminate\Foundation\Application->make('Hhxsv5\\LaravelS...')
+#8 /var/www/html/blog/vendor/hhxsv5/laravel-s/src/Illuminate/Laravel.php(212): Hhxsv5\LaravelS\Illuminate\CleanerManager->clean()
+#9 /var/www/html/blog/vendor/hhxsv5/laravel-s/src/LaravelS.php(261): Hhxsv5\LaravelS\Illuminate\Laravel->clean()
+#10 /var/www/html/blog/vendor/hhxsv5/laravel-s/src/LaravelS.php(202): Hhxsv5\LaravelS\LaravelS->handleDynamicResource(Object(Hhxsv5\LaravelS\Illuminate\Laravel), Object(Illuminate\Http\Request), Object(Swoole\Http\Response))
+#11 [internal function]: Hhxsv5\LaravelS\LaravelS->onRequest(Object(Swoole\Http\Request), Object(Swoole\Http\Response))
+#12 /var/www/html/blog/vendor/hhxsv5/laravel-s/src/Swoole/Server.php(402): Swoole\Server->start()
+#13 /var/www/html/blog/vendor/hhxsv5/laravel-s/src/Console/Portal.php(158): Hhxsv5\LaravelS\Swoole\Server->run()
+#14 /var/www/html/blog/vendor/hhxsv5/laravel-s/src/Console/Portal.php(59): Hhxsv5\LaravelS\Console\Portal->start()
+#15 /var/www/html/blog/vendor/symfony/console/Command/Command.php(256): Hhxsv5\LaravelS\Console\Portal->execute(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#16 /var/www/html/blog/bin/laravels(164): Symfony\Component\Console\Command\Command->run(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#17 {main}
+[2021-05-13 05:50:57] [ERROR] Uncaught exception 'ErrorException': [0]Swoole\Http\Response::status(): http response is unavailable (maybe it has been ended or detached) called in /var/www/html/blog/vendor/hhxsv5/laravel-s/src/LaravelS.php:227
+#0 [internal function]: Illuminate\Foundation\Bootstrap\HandleExceptions->handleError(2, 'Swoole\\Http\\Res...', '/var/www/html/b...', 227)
+#1 /var/www/html/blog/vendor/hhxsv5/laravel-s/src/LaravelS.php(227): Swoole\Http\Response->status(500)
+#2 /var/www/html/blog/vendor/hhxsv5/laravel-s/src/LaravelS.php(205): Hhxsv5\LaravelS\LaravelS->handleException(Object(ReflectionException), Object(Swoole\Http\Response))
+#3 [internal function]: Hhxsv5\LaravelS\LaravelS->onRequest(Object(Swoole\Http\Request), Object(Swoole\Http\Response))
+#4 /var/www/html/blog/vendor/hhxsv5/laravel-s/src/Swoole/Server.php(402): Swoole\Server->start()
+#5 /var/www/html/blog/vendor/hhxsv5/laravel-s/src/Console/Portal.php(158): Hhxsv5\LaravelS\Swoole\Server->run()
+#6 /var/www/html/blog/vendor/hhxsv5/laravel-s/src/Console/Portal.php(59): Hhxsv5\LaravelS\Console\Portal->start()
+#7 /var/www/html/blog/vendor/symfony/console/Command/Command.php(256): Hhxsv5\LaravelS\Console\Portal->execute(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#8 /var/www/html/blog/bin/laravels(164): Symfony\Component\Console\Command\Command->run(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#9 {main}
+[2021-05-13 05:50:57] [ERROR] onRequest: Uncaught exception "ReflectionException"([-1]Class "Encore\Admin\Admin" does not exist) at /var/www/html/blog/vendor/hhxsv5/laravel-s/src/Illuminate/Cleaners/LaravelAdminCleaner.php:35, 
+#0 /var/www/html/blog/vendor/hhxsv5/laravel-s/src/Illuminate/Cleaners/LaravelAdminCleaner.php(35): ReflectionClass->__construct('Encore\\Admin\\Ad...')
+#1 /var/www/html/blog/vendor/hhxsv5/laravel-s/src/Illuminate/CleanerManager.php(82): Hhxsv5\LaravelS\Illuminate\Cleaners\LaravelAdminCleaner->__construct(Object(Illuminate\Foundation\Application), Object(Illuminate\Foundation\Application))
+#2 /var/www/html/blog/vendor/laravel/framework/src/Illuminate/Container/Container.php(829): Hhxsv5\LaravelS\Illuminate\CleanerManager->Hhxsv5\LaravelS\Illuminate\{closure}(Object(Illuminate\Foundation\Application), Array)
+#3 /var/www/html/blog/vendor/laravel/framework/src/Illuminate/Container/Container.php(714): Illuminate\Container\Container->build(Object(Closure))
+#4 /var/www/html/blog/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(841): Illuminate\Container\Container->resolve('Hhxsv5\\LaravelS...', Array, true)
+#5 /var/www/html/blog/vendor/laravel/framework/src/Illuminate/Container/Container.php(652): Illuminate\Foundation\Application->resolve('Hhxsv5\\LaravelS...', Array)
+#6 /var/www/html/blog/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(826): Illuminate\Container\Container->make('Hhxsv5\\LaravelS...', Array)
+#7 /var/www/html/blog/vendor/hhxsv5/laravel-s/src/Illuminate/CleanerManager.php(103): Illuminate\Foundation\Application->make('Hhxsv5\\LaravelS...')
+#8 /var/www/html/blog/vendor/hhxsv5/laravel-s/src/Illuminate/Laravel.php(212): Hhxsv5\LaravelS\Illuminate\CleanerManager->clean()
+#9 /var/www/html/blog/vendor/hhxsv5/laravel-s/src/LaravelS.php(261): Hhxsv5\LaravelS\Illuminate\Laravel->clean()
+#10 /var/www/html/blog/vendor/hhxsv5/laravel-s/src/LaravelS.php(202): Hhxsv5\LaravelS\LaravelS->handleDynamicResource(Object(Hhxsv5\LaravelS\Illuminate\Laravel), Object(Illuminate\Http\Request), Object(Swoole\Http\Response))
+#11 [internal function]: Hhxsv5\LaravelS\LaravelS->onRequest(Object(Swoole\Http\Request), Object(Swoole\Http\Response))
+#12 /var/www/html/blog/vendor/hhxsv5/laravel-s/src/Swoole/Server.php(402): Swoole\Server->start()
+#13 /var/www/html/blog/vendor/hhxsv5/laravel-s/src/Console/Portal.php(158): Hhxsv5\LaravelS\Swoole\Server->run()
+#14 /var/www/html/blog/vendor/hhxsv5/laravel-s/src/Console/Portal.php(59): Hhxsv5\LaravelS\Console\Portal->start()
+#15 /var/www/html/blog/vendor/symfony/console/Command/Command.php(256): Hhxsv5\LaravelS\Console\Portal->execute(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#16 /var/www/html/blog/bin/laravels(164): Symfony\Component\Console\Command\Command->run(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#17 {main}
+[2021-05-13 05:50:57] [ERROR] Uncaught exception 'ErrorException': [0]Swoole\Http\Response::status(): http response is unavailable (maybe it has been ended or detached) called in /var/www/html/blog/vendor/hhxsv5/laravel-s/src/LaravelS.php:227
+#0 [internal function]: Illuminate\Foundation\Bootstrap\HandleExceptions->handleError(2, 'Swoole\\Http\\Res...', '/var/www/html/b...', 227)
+#1 /var/www/html/blog/vendor/hhxsv5/laravel-s/src/LaravelS.php(227): Swoole\Http\Response->status(500)
+#2 /var/www/html/blog/vendor/hhxsv5/laravel-s/src/LaravelS.php(205): Hhxsv5\LaravelS\LaravelS->handleException(Object(ReflectionException), Object(Swoole\Http\Response))
+#3 [internal function]: Hhxsv5\LaravelS\LaravelS->onRequest(Object(Swoole\Http\Request), Object(Swoole\Http\Response))
+#4 /var/www/html/blog/vendor/hhxsv5/laravel-s/src/Swoole/Server.php(402): Swoole\Server->start()
+#5 /var/www/html/blog/vendor/hhxsv5/laravel-s/src/Console/Portal.php(158): Hhxsv5\LaravelS\Swoole\Server->run()
+#6 /var/www/html/blog/vendor/hhxsv5/laravel-s/src/Console/Portal.php(59): Hhxsv5\LaravelS\Console\Portal->start()
+#7 /var/www/html/blog/vendor/symfony/console/Command/Command.php(256): Hhxsv5\LaravelS\Console\Portal->execute(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#8 /var/www/html/blog/bin/laravels(164): Symfony\Component\Console\Command\Command->run(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#9 {main}
+[2021-05-13 05:51:15] [INFO] Swoole [PID=11] is reloaded.
+[2021-05-13 05:51:15] [INFO] reloaded by inotify, reason: modify index.php
+[2021-05-13 05:52:24] [INFO] Swoole [PID=11] is reloaded.
+[2021-05-13 05:52:24] [INFO] reloaded by inotify, reason: delete laravels.php
+[2021-05-13 05:52:33] [ERROR] onRequest: Uncaught exception "ReflectionException"([-1]Class "Encore\Admin\Admin" does not exist) at /var/www/html/blog/vendor/hhxsv5/laravel-s/src/Illuminate/Cleaners/LaravelAdminCleaner.php:35, 
+#0 /var/www/html/blog/vendor/hhxsv5/laravel-s/src/Illuminate/Cleaners/LaravelAdminCleaner.php(35): ReflectionClass->__construct('Encore\\Admin\\Ad...')
+#1 /var/www/html/blog/vendor/hhxsv5/laravel-s/src/Illuminate/CleanerManager.php(82): Hhxsv5\LaravelS\Illuminate\Cleaners\LaravelAdminCleaner->__construct(Object(Illuminate\Foundation\Application), Object(Illuminate\Foundation\Application))
+#2 /var/www/html/blog/vendor/laravel/framework/src/Illuminate/Container/Container.php(829): Hhxsv5\LaravelS\Illuminate\CleanerManager->Hhxsv5\LaravelS\Illuminate\{closure}(Object(Illuminate\Foundation\Application), Array)
+#3 /var/www/html/blog/vendor/laravel/framework/src/Illuminate/Container/Container.php(714): Illuminate\Container\Container->build(Object(Closure))
+#4 /var/www/html/blog/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(841): Illuminate\Container\Container->resolve('Hhxsv5\\LaravelS...', Array, true)
+#5 /var/www/html/blog/vendor/laravel/framework/src/Illuminate/Container/Container.php(652): Illuminate\Foundation\Application->resolve('Hhxsv5\\LaravelS...', Array)
+#6 /var/www/html/blog/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(826): Illuminate\Container\Container->make('Hhxsv5\\LaravelS...', Array)
+#7 /var/www/html/blog/vendor/hhxsv5/laravel-s/src/Illuminate/CleanerManager.php(103): Illuminate\Foundation\Application->make('Hhxsv5\\LaravelS...')
+#8 /var/www/html/blog/vendor/hhxsv5/laravel-s/src/Illuminate/Laravel.php(212): Hhxsv5\LaravelS\Illuminate\CleanerManager->clean()
+#9 /var/www/html/blog/vendor/hhxsv5/laravel-s/src/LaravelS.php(261): Hhxsv5\LaravelS\Illuminate\Laravel->clean()
+#10 /var/www/html/blog/vendor/hhxsv5/laravel-s/src/LaravelS.php(202): Hhxsv5\LaravelS\LaravelS->handleDynamicResource(Object(Hhxsv5\LaravelS\Illuminate\Laravel), Object(Illuminate\Http\Request), Object(Swoole\Http\Response))
+#11 [internal function]: Hhxsv5\LaravelS\LaravelS->onRequest(Object(Swoole\Http\Request), Object(Swoole\Http\Response))
+#12 /var/www/html/blog/vendor/hhxsv5/laravel-s/src/Swoole/Server.php(402): Swoole\Server->start()
+#13 /var/www/html/blog/vendor/hhxsv5/laravel-s/src/Console/Portal.php(158): Hhxsv5\LaravelS\Swoole\Server->run()
+#14 /var/www/html/blog/vendor/hhxsv5/laravel-s/src/Console/Portal.php(59): Hhxsv5\LaravelS\Console\Portal->start()
+#15 /var/www/html/blog/vendor/symfony/console/Command/Command.php(256): Hhxsv5\LaravelS\Console\Portal->execute(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#16 /var/www/html/blog/bin/laravels(164): Symfony\Component\Console\Command\Command->run(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#17 {main}
+[2021-05-13 05:52:33] [ERROR] Uncaught exception 'ErrorException': [0]Swoole\Http\Response::status(): http response is unavailable (maybe it has been ended or detached) called in /var/www/html/blog/vendor/hhxsv5/laravel-s/src/LaravelS.php:227
+#0 [internal function]: Illuminate\Foundation\Bootstrap\HandleExceptions->handleError(2, 'Swoole\\Http\\Res...', '/var/www/html/b...', 227)
+#1 /var/www/html/blog/vendor/hhxsv5/laravel-s/src/LaravelS.php(227): Swoole\Http\Response->status(500)
+#2 /var/www/html/blog/vendor/hhxsv5/laravel-s/src/LaravelS.php(205): Hhxsv5\LaravelS\LaravelS->handleException(Object(ReflectionException), Object(Swoole\Http\Response))
+#3 [internal function]: Hhxsv5\LaravelS\LaravelS->onRequest(Object(Swoole\Http\Request), Object(Swoole\Http\Response))
+#4 /var/www/html/blog/vendor/hhxsv5/laravel-s/src/Swoole/Server.php(402): Swoole\Server->start()
+#5 /var/www/html/blog/vendor/hhxsv5/laravel-s/src/Console/Portal.php(158): Hhxsv5\LaravelS\Swoole\Server->run()
+#6 /var/www/html/blog/vendor/hhxsv5/laravel-s/src/Console/Portal.php(59): Hhxsv5\LaravelS\Console\Portal->start()
+#7 /var/www/html/blog/vendor/symfony/console/Command/Command.php(256): Hhxsv5\LaravelS\Console\Portal->execute(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#8 /var/www/html/blog/bin/laravels(164): Symfony\Component\Console\Command\Command->run(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#9 {main}
+[2021-05-13 05:52:34] [ERROR] onRequest: Uncaught exception "ReflectionException"([-1]Class "Encore\Admin\Admin" does not exist) at /var/www/html/blog/vendor/hhxsv5/laravel-s/src/Illuminate/Cleaners/LaravelAdminCleaner.php:35, 
+#0 /var/www/html/blog/vendor/hhxsv5/laravel-s/src/Illuminate/Cleaners/LaravelAdminCleaner.php(35): ReflectionClass->__construct('Encore\\Admin\\Ad...')
+#1 /var/www/html/blog/vendor/hhxsv5/laravel-s/src/Illuminate/CleanerManager.php(82): Hhxsv5\LaravelS\Illuminate\Cleaners\LaravelAdminCleaner->__construct(Object(Illuminate\Foundation\Application), Object(Illuminate\Foundation\Application))
+#2 /var/www/html/blog/vendor/laravel/framework/src/Illuminate/Container/Container.php(829): Hhxsv5\LaravelS\Illuminate\CleanerManager->Hhxsv5\LaravelS\Illuminate\{closure}(Object(Illuminate\Foundation\Application), Array)
+#3 /var/www/html/blog/vendor/laravel/framework/src/Illuminate/Container/Container.php(714): Illuminate\Container\Container->build(Object(Closure))
+#4 /var/www/html/blog/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(841): Illuminate\Container\Container->resolve('Hhxsv5\\LaravelS...', Array, true)
+#5 /var/www/html/blog/vendor/laravel/framework/src/Illuminate/Container/Container.php(652): Illuminate\Foundation\Application->resolve('Hhxsv5\\LaravelS...', Array)
+#6 /var/www/html/blog/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(826): Illuminate\Container\Container->make('Hhxsv5\\LaravelS...', Array)
+#7 /var/www/html/blog/vendor/hhxsv5/laravel-s/src/Illuminate/CleanerManager.php(103): Illuminate\Foundation\Application->make('Hhxsv5\\LaravelS...')
+#8 /var/www/html/blog/vendor/hhxsv5/laravel-s/src/Illuminate/Laravel.php(212): Hhxsv5\LaravelS\Illuminate\CleanerManager->clean()
+#9 /var/www/html/blog/vendor/hhxsv5/laravel-s/src/LaravelS.php(261): Hhxsv5\LaravelS\Illuminate\Laravel->clean()
+#10 /var/www/html/blog/vendor/hhxsv5/laravel-s/src/LaravelS.php(202): Hhxsv5\LaravelS\LaravelS->handleDynamicResource(Object(Hhxsv5\LaravelS\Illuminate\Laravel), Object(Illuminate\Http\Request), Object(Swoole\Http\Response))
+#11 [internal function]: Hhxsv5\LaravelS\LaravelS->onRequest(Object(Swoole\Http\Request), Object(Swoole\Http\Response))
+#12 /var/www/html/blog/vendor/hhxsv5/laravel-s/src/Swoole/Server.php(402): Swoole\Server->start()
+#13 /var/www/html/blog/vendor/hhxsv5/laravel-s/src/Console/Portal.php(158): Hhxsv5\LaravelS\Swoole\Server->run()
+#14 /var/www/html/blog/vendor/hhxsv5/laravel-s/src/Console/Portal.php(59): Hhxsv5\LaravelS\Console\Portal->start()
+#15 /var/www/html/blog/vendor/symfony/console/Command/Command.php(256): Hhxsv5\LaravelS\Console\Portal->execute(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#16 /var/www/html/blog/bin/laravels(164): Symfony\Component\Console\Command\Command->run(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#17 {main}
+[2021-05-13 05:52:34] [ERROR] Uncaught exception 'ErrorException': [0]Swoole\Http\Response::status(): http response is unavailable (maybe it has been ended or detached) called in /var/www/html/blog/vendor/hhxsv5/laravel-s/src/LaravelS.php:227
+#0 [internal function]: Illuminate\Foundation\Bootstrap\HandleExceptions->handleError(2, 'Swoole\\Http\\Res...', '/var/www/html/b...', 227)
+#1 /var/www/html/blog/vendor/hhxsv5/laravel-s/src/LaravelS.php(227): Swoole\Http\Response->status(500)
+#2 /var/www/html/blog/vendor/hhxsv5/laravel-s/src/LaravelS.php(205): Hhxsv5\LaravelS\LaravelS->handleException(Object(ReflectionException), Object(Swoole\Http\Response))
+#3 [internal function]: Hhxsv5\LaravelS\LaravelS->onRequest(Object(Swoole\Http\Request), Object(Swoole\Http\Response))
+#4 /var/www/html/blog/vendor/hhxsv5/laravel-s/src/Swoole/Server.php(402): Swoole\Server->start()
+#5 /var/www/html/blog/vendor/hhxsv5/laravel-s/src/Console/Portal.php(158): Hhxsv5\LaravelS\Swoole\Server->run()
+#6 /var/www/html/blog/vendor/hhxsv5/laravel-s/src/Console/Portal.php(59): Hhxsv5\LaravelS\Console\Portal->start()
+#7 /var/www/html/blog/vendor/symfony/console/Command/Command.php(256): Hhxsv5\LaravelS\Console\Portal->execute(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#8 /var/www/html/blog/bin/laravels(164): Symfony\Component\Console\Command\Command->run(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#9 {main}
+ _                               _  _____ 
+| |                             | |/ ____|
+| |     __ _ _ __ __ ___   _____| | (___  
+| |    / _` | '__/ _` \ \ / / _ \ |\___ \ 
+| |___| (_| | | | (_| |\ V /  __/ |____) |
+|______\__,_|_|  \__,_| \_/ \___|_|_____/ 
+                                           
+Speed up your Laravel/Lumen
+>>> Components
++---------------------------+---------+
+| Component                 | Version |
++---------------------------+---------+
+| PHP                       | 8.0.6   |
+| Swoole                    | 4.6.6   |
+| LaravelS                  | 3.7.19  |
+| Laravel Framework [local] | 8.41.0  |
++---------------------------+---------+
+>>> Protocols
++-----------+--------+-------------------+---------------------+
+| Protocol  | Status | Handler           | Listen At           |
++-----------+--------+-------------------+---------------------+
+| Main HTTP | On     | Laravel Framework | http://0.0.0.0:5200 |
++-----------+--------+-------------------+---------------------+
+>>> Feedback: https://github.com/hhxsv5/laravel-s
+[2021-05-13 05:55:21] [TRACE] Swoole is running, press Ctrl+C to quit.
+
+Fatal error: Uncaught ReflectionException: Class "config" does not exist in /var/www/html/blog/vendor/laravel/framework/src/Illuminate/Container/Container.php:833
+Stack trace:
+#0 /var/www/html/blog/vendor/laravel/framework/src/Illuminate/Container/Container.php(833): ReflectionClass->__construct('config')
+#1 /var/www/html/blog/vendor/laravel/framework/src/Illuminate/Container/Container.php(714): Illuminate\Container\Container->build('config')
+#2 /var/www/html/blog/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(841): Illuminate\Container\Container->resolve('config', Array, true)
+#3 /var/www/html/blog/vendor/laravel/framework/src/Illuminate/Container/Container.php(652): Illuminate\Foundation\Application->resolve('config', Array)
+#4 /var/www/html/blog/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(826): Illuminate\Container\Container->make('config', Array)
+#5 /var/www/html/blog/vendor/laravel/framework/src/Illuminate/Support/ServiceProvider.php(127): Illuminate\Foundation\Application->make('config')
+#6 /var/www/html/blog/vendor/hhxsv5/laravel-s/src/Illuminate/LaravelSServiceProvider.php(19): Illuminate\Support\ServiceProvider->mergeConfigFrom('/var/www/html/b...', 'laravels')
+#7 /var/www/html/blog/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(672): Hhxsv5\LaravelS\Illuminate\LaravelSServiceProvider->register()
+#8 /var/www/html/blog/bootstrap/app.php(55): Illuminate\Foundation\Application->register(Object(Hhxsv5\LaravelS\Illuminate\LaravelSServiceProvider))
+#9 /var/www/html/blog/artisan(20): require_once('/var/www/html/b...')
+#10 {main}
+
+Next Illuminate\Contracts\Container\BindingResolutionException: Target class [config] does not exist. in /var/www/html/blog/vendor/laravel/framework/src/Illuminate/Container/Container.php:835
+Stack trace:
+#0 /var/www/html/blog/vendor/laravel/framework/src/Illuminate/Container/Container.php(714): Illuminate\Container\Container->build('config')
+#1 /var/www/html/blog/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(841): Illuminate\Container\Container->resolve('config', Array, true)
+#2 /var/www/html/blog/vendor/laravel/framework/src/Illuminate/Container/Container.php(652): Illuminate\Foundation\Application->resolve('config', Array)
+#3 /var/www/html/blog/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(826): Illuminate\Container\Container->make('config', Array)
+#4 /var/www/html/blog/vendor/laravel/framework/src/Illuminate/Support/ServiceProvider.php(127): Illuminate\Foundation\Application->make('config')
+#5 /var/www/html/blog/vendor/hhxsv5/laravel-s/src/Illuminate/LaravelSServiceProvider.php(19): Illuminate\Support\ServiceProvider->mergeConfigFrom('/var/www/html/b...', 'laravels')
+#6 /var/www/html/blog/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(672): Hhxsv5\LaravelS\Illuminate\LaravelSServiceProvider->register()
+#7 /var/www/html/blog/bootstrap/app.php(55): Illuminate\Foundation\Application->register(Object(Hhxsv5\LaravelS\Illuminate\LaravelSServiceProvider))
+#8 /var/www/html/blog/artisan(20): require_once('/var/www/html/b...')
+#9 {main}
+  thrown in /var/www/html/blog/vendor/laravel/framework/src/Illuminate/Container/Container.php on line 835
+
+Fatal error: Uncaught ReflectionException: Class "config" does not exist in /var/www/html/blog/vendor/laravel/framework/src/Illuminate/Container/Container.php:833
+Stack trace:
+#0 /var/www/html/blog/vendor/laravel/framework/src/Illuminate/Container/Container.php(833): ReflectionClass->__construct('config')
+#1 /var/www/html/blog/vendor/laravel/framework/src/Illuminate/Container/Container.php(714): Illuminate\Container\Container->build('config')
+#2 /var/www/html/blog/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(841): Illuminate\Container\Container->resolve('config', Array, true)
+#3 /var/www/html/blog/vendor/laravel/framework/src/Illuminate/Container/Container.php(652): Illuminate\Foundation\Application->resolve('config', Array)
+#4 /var/www/html/blog/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(826): Illuminate\Container\Container->make('config', Array)
+#5 /var/www/html/blog/vendor/laravel/framework/src/Illuminate/Support/ServiceProvider.php(127): Illuminate\Foundation\Application->make('config')
+#6 /var/www/html/blog/vendor/hhxsv5/laravel-s/src/Illuminate/LaravelSServiceProvider.php(19): Illuminate\Support\ServiceProvider->mergeConfigFrom('/var/www/html/b...', 'laravels')
+#7 /var/www/html/blog/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(672): Hhxsv5\LaravelS\Illuminate\LaravelSServiceProvider->register()
+#8 /var/www/html/blog/bootstrap/app.php(55): Illuminate\Foundation\Application->register(Object(Hhxsv5\LaravelS\Illuminate\LaravelSServiceProvider))
+#9 /var/www/html/blog/artisan(20): require_once('/var/www/html/b...')
+#10 {main}
+
+Next Illuminate\Contracts\Container\BindingResolutionException: Target class [config] does not exist. in /var/www/html/blog/vendor/laravel/framework/src/Illuminate/Container/Container.php:835
+Stack trace:
+#0 /var/www/html/blog/vendor/laravel/framework/src/Illuminate/Container/Container.php(714): Illuminate\Container\Container->build('config')
+#1 /var/www/html/blog/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(841): Illuminate\Container\Container->resolve('config', Array, true)
+#2 /var/www/html/blog/vendor/laravel/framework/src/Illuminate/Container/Container.php(652): Illuminate\Foundation\Application->resolve('config', Array)
+#3 /var/www/html/blog/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(826): Illuminate\Container\Container->make('config', Array)
+#4 /var/www/html/blog/vendor/laravel/framework/src/Illuminate/Support/ServiceProvider.php(127): Illuminate\Foundation\Application->make('config')
+#5 /var/www/html/blog/vendor/hhxsv5/laravel-s/src/Illuminate/LaravelSServiceProvider.php(19): Illuminate\Support\ServiceProvider->mergeConfigFrom('/var/www/html/b...', 'laravels')
+#6 /var/www/html/blog/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(672): Hhxsv5\LaravelS\Illuminate\LaravelSServiceProvider->register()
+#7 /var/www/html/blog/bootstrap/app.php(55): Illuminate\Foundation\Application->register(Object(Hhxsv5\LaravelS\Illuminate\LaravelSServiceProvider))
+#8 /var/www/html/blog/artisan(20): require_once('/var/www/html/b...')
+#9 {main}
+  thrown in /var/www/html/blog/vendor/laravel/framework/src/Illuminate/Container/Container.php on line 835
+
+Fatal error: Uncaught ReflectionException: Class "config" does not exist in /var/www/html/blog/vendor/laravel/framework/src/Illuminate/Container/Container.php:833
+Stack trace:
+#0 /var/www/html/blog/vendor/laravel/framework/src/Illuminate/Container/Container.php(833): ReflectionClass->__construct('config')
+#1 /var/www/html/blog/vendor/laravel/framework/src/Illuminate/Container/Container.php(714): Illuminate\Container\Container->build('config')
+#2 /var/www/html/blog/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(841): Illuminate\Container\Container->resolve('config', Array, true)
+#3 /var/www/html/blog/vendor/laravel/framework/src/Illuminate/Container/Container.php(652): Illuminate\Foundation\Application->resolve('config', Array)
+#4 /var/www/html/blog/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(826): Illuminate\Container\Container->make('config', Array)
+#5 /var/www/html/blog/vendor/laravel/framework/src/Illuminate/Support/ServiceProvider.php(127): Illuminate\Foundation\Application->make('config')
+#6 /var/www/html/blog/vendor/hhxsv5/laravel-s/src/Illuminate/LaravelSServiceProvider.php(19): Illuminate\Support\ServiceProvider->mergeConfigFrom('/var/www/html/b...', 'laravels')
+#7 /var/www/html/blog/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(672): Hhxsv5\LaravelS\Illuminate\LaravelSServiceProvider->register()
+#8 /var/www/html/blog/bootstrap/app.php(55): Illuminate\Foundation\Application->register(Object(Hhxsv5\LaravelS\Illuminate\LaravelSServiceProvider))
+#9 /var/www/html/blog/artisan(20): require_once('/var/www/html/b...')
+#10 {main}
+
+Next Illuminate\Contracts\Container\BindingResolutionException: Target class [config] does not exist. in /var/www/html/blog/vendor/laravel/framework/src/Illuminate/Container/Container.php:835
+Stack trace:
+#0 /var/www/html/blog/vendor/laravel/framework/src/Illuminate/Container/Container.php(714): Illuminate\Container\Container->build('config')
+#1 /var/www/html/blog/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(841): Illuminate\Container\Container->resolve('config', Array, true)
+#2 /var/www/html/blog/vendor/laravel/framework/src/Illuminate/Container/Container.php(652): Illuminate\Foundation\Application->resolve('config', Array)
+#3 /var/www/html/blog/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(826): Illuminate\Container\Container->make('config', Array)
+#4 /var/www/html/blog/vendor/laravel/framework/src/Illuminate/Support/ServiceProvider.php(127): Illuminate\Foundation\Application->make('config')
+#5 /var/www/html/blog/vendor/hhxsv5/laravel-s/src/Illuminate/LaravelSServiceProvider.php(19): Illuminate\Support\ServiceProvider->mergeConfigFrom('/var/www/html/b...', 'laravels')
+#6 /var/www/html/blog/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(672): Hhxsv5\LaravelS\Illuminate\LaravelSServiceProvider->register()
+#7 /var/www/html/blog/bootstrap/app.php(55): Illuminate\Foundation\Application->register(Object(Hhxsv5\LaravelS\Illuminate\LaravelSServiceProvider))
+#8 /var/www/html/blog/artisan(20): require_once('/var/www/html/b...')
+#9 {main}
+  thrown in /var/www/html/blog/vendor/laravel/framework/src/Illuminate/Container/Container.php on line 835
+
+Fatal error: Uncaught ReflectionException: Class "config" does not exist in /var/www/html/blog/vendor/laravel/framework/src/Illuminate/Container/Container.php:833
+Stack trace:
+#0 /var/www/html/blog/vendor/laravel/framework/src/Illuminate/Container/Container.php(833): ReflectionClass->__construct('config')
+#1 /var/www/html/blog/vendor/laravel/framework/src/Illuminate/Container/Container.php(714): Illuminate\Container\Container->build('config')
+#2 /var/www/html/blog/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(841): Illuminate\Container\Container->resolve('config', Array, true)
+#3 /var/www/html/blog/vendor/laravel/framework/src/Illuminate/Container/Container.php(652): Illuminate\Foundation\Application->resolve('config', Array)
+#4 /var/www/html/blog/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(826): Illuminate\Container\Container->make('config', Array)
+#5 /var/www/html/blog/vendor/laravel/framework/src/Illuminate/Support/ServiceProvider.php(127): Illuminate\Foundation\Application->make('config')
+#6 /var/www/html/blog/vendor/hhxsv5/laravel-s/src/Illuminate/LaravelSServiceProvider.php(19): Illuminate\Support\ServiceProvider->mergeConfigFrom('/var/www/html/b...', 'laravels')
+#7 /var/www/html/blog/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(672): Hhxsv5\LaravelS\Illuminate\LaravelSServiceProvider->register()
+#8 /var/www/html/blog/bootstrap/app.php(55): Illuminate\Foundation\Application->register(Object(Hhxsv5\LaravelS\Illuminate\LaravelSServiceProvider))
+#9 /var/www/html/blog/artisan(20): require_once('/var/www/html/b...')
+#10 {main}
+
+Next Illuminate\Contracts\Container\BindingResolutionException: Target class [config] does not exist. in /var/www/html/blog/vendor/laravel/framework/src/Illuminate/Container/Container.php:835
+Stack trace:
+#0 /var/www/html/blog/vendor/laravel/framework/src/Illuminate/Container/Container.php(714): Illuminate\Container\Container->build('config')
+#1 /var/www/html/blog/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(841): Illuminate\Container\Container->resolve('config', Array, true)
+#2 /var/www/html/blog/vendor/laravel/framework/src/Illuminate/Container/Container.php(652): Illuminate\Foundation\Application->resolve('config', Array)
+#3 /var/www/html/blog/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(826): Illuminate\Container\Container->make('config', Array)
+#4 /var/www/html/blog/vendor/laravel/framework/src/Illuminate/Support/ServiceProvider.php(127): Illuminate\Foundation\Application->make('config')
+#5 /var/www/html/blog/vendor/hhxsv5/laravel-s/src/Illuminate/LaravelSServiceProvider.php(19): Illuminate\Support\ServiceProvider->mergeConfigFrom('/var/www/html/b...', 'laravels')
+#6 /var/www/html/blog/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(672): Hhxsv5\LaravelS\Illuminate\LaravelSServiceProvider->register()
+#7 /var/www/html/blog/bootstrap/app.php(55): Illuminate\Foundation\Application->register(Object(Hhxsv5\LaravelS\Illuminate\LaravelSServiceProvider))
+#8 /var/www/html/blog/artisan(20): require_once('/var/www/html/b...')
+#9 {main}
+  thrown in /var/www/html/blog/vendor/laravel/framework/src/Illuminate/Container/Container.php on line 835
+ _                               _  _____ 
+| |                             | |/ ____|
+| |     __ _ _ __ __ ___   _____| | (___  
+| |    / _` | '__/ _` \ \ / / _ \ |\___ \ 
+| |___| (_| | | | (_| |\ V /  __/ |____) |
+|______\__,_|_|  \__,_| \_/ \___|_|_____/ 
+                                           
+Speed up your Laravel/Lumen
+>>> Components
++---------------------------+---------+
+| Component                 | Version |
++---------------------------+---------+
+| PHP                       | 8.0.6   |
+| Swoole                    | 4.6.6   |
+| LaravelS                  | 3.7.19  |
+| Laravel Framework [local] | 8.41.0  |
++---------------------------+---------+
+>>> Protocols
++-----------+--------+-------------------+---------------------+
+| Protocol  | Status | Handler           | Listen At           |
++-----------+--------+-------------------+---------------------+
+| Main HTTP | On     | Laravel Framework | http://0.0.0.0:5200 |
++-----------+--------+-------------------+---------------------+
+>>> Feedback: https://github.com/hhxsv5/laravel-s
+[2021-05-13 07:48:06] [TRACE] Swoole is running, press Ctrl+C to quit.
+"hello"
+"hello"
+"hello"
+"hello"
+"hello"
+"hello"
+"hello"
+"hello"
+"hello"
+"hello"
+"hello"
+"hello"
+"hello"
+"hello"
+"hello"
+"hello"
+"hello"
+"hello"
+"hello"
+
+   ErrorException 
+
+  Undefined array key "version"
+
+  at blog/vendor/dingo/api/src/Routing/Router.php:360
+    356▕         }
+    357▕ 
+    358▕         $action['uri'] = $uri;
+    359▕ 
+  ➜ 360▕         return $this->adapter->addRoute((array) $methods, $action['version'], $uri, $action);
+    361▕     }
+    362▕ 
+    363▕     /**
+    364▕      * Add the controller preparation middleware to the beginning of the routes middleware.
+
+      [2m+2 vendor frames [22m
+  3   blog/routes/api.php:17
+      Dingo\Api\Routing\Router::get("test")
+
+      [2m+4 vendor frames [22m
+  8   blog/app/Providers/RouteServiceProvider.php:44
+      Illuminate\Routing\RouteRegistrar::group("/var/www/html/blog/routes/api.php")
+
+   ErrorException 
+
+  Undefined array key "version"
+
+  at blog/vendor/dingo/api/src/Routing/Router.php:360
+    356▕         }
+    357▕ 
+    358▕         $action['uri'] = $uri;
+    359▕ 
+  ➜ 360▕         return $this->adapter->addRoute((array) $methods, $action['version'], $uri, $action);
+    361▕     }
+    362▕ 
+    363▕     /**
+    364▕      * Add the controller preparation middleware to the beginning of the routes middleware.
+
+      [2m+2 vendor frames [22m
+  3   blog/routes/api.php:17
+      Dingo\Api\Routing\Router::get("test")
+
+      [2m+4 vendor frames [22m
+  8   blog/app/Providers/RouteServiceProvider.php:44
+      Illuminate\Routing\RouteRegistrar::group("/var/www/html/blog/routes/api.php")
+
+   ErrorException 
+
+  Undefined array key "version"
+
+  at blog/vendor/dingo/api/src/Routing/Router.php:360
+    356▕         }
+    357▕ 
+    358▕         $action['uri'] = $uri;
+    359▕ 
+  ➜ 360▕         return $this->adapter->addRoute((array) $methods, $action['version'], $uri, $action);
+    361▕     }
+    362▕ 
+    363▕     /**
+    364▕      * Add the controller preparation middleware to the beginning of the routes middleware.
+
+      [2m+2 vendor frames [22m
+  3   blog/routes/api.php:17
+      Dingo\Api\Routing\Router::get("test")
+
+      [2m+4 vendor frames [22m
+  8   blog/app/Providers/RouteServiceProvider.php:44
+      Illuminate\Routing\RouteRegistrar::group("/var/www/html/blog/routes/api.php")
+
+   ErrorException 
+
+  Undefined array key "version"
+
+  at blog/vendor/dingo/api/src/Routing/Router.php:360
+    356▕         }
+    357▕ 
+    358▕         $action['uri'] = $uri;
+    359▕ 
+  ➜ 360▕         return $this->adapter->addRoute((array) $methods, $action['version'], $uri, $action);
+    361▕     }
+    362▕ 
+    363▕     /**
+    364▕      * Add the controller preparation middleware to the beginning of the routes middleware.
+
+      [2m+2 vendor frames [22m
+  3   blog/routes/api.php:17
+      Dingo\Api\Routing\Router::get("test")
+
+      [2m+4 vendor frames [22m
+  8   blog/app/Providers/RouteServiceProvider.php:44
+      Illuminate\Routing\RouteRegistrar::group("/var/www/html/blog/routes/api.php")
+
+   TypeError 
+
+  call_user_func(): Argument #1 ($callback) must be a valid callback, non-static method App\Http\Controllers\Api\V1\VerificationCodesController::index() cannot be called statically
+
+  at blog/vendor/dingo/api/src/Routing/Router.php:171
+    167▕         }
+    168▕ 
+    169▕         $this->groupStack[] = $attributes;
+    170▕ 
+  ➜ 171▕         call_user_func($callback, $this);
+    172▕ 
+    173▕         array_pop($this->groupStack);
+    174▕     }
+    175▕
+
+      [2m+2 vendor frames [22m
+  3   blog/routes/api.php:17
+      Dingo\Api\Routing\Router::version("test")
+
+      [2m+4 vendor frames [22m
+  8   blog/app/Providers/RouteServiceProvider.php:44
+      Illuminate\Routing\RouteRegistrar::group("/var/www/html/blog/routes/api.php")
+
+   TypeError 
+
+  call_user_func(): Argument #1 ($callback) must be a valid callback, non-static method App\Http\Controllers\Api\V1\VerificationCodesController::index() cannot be called statically
+
+  at blog/vendor/dingo/api/src/Routing/Router.php:171
+    167▕         }
+    168▕ 
+    169▕         $this->groupStack[] = $attributes;
+    170▕ 
+  ➜ 171▕         call_user_func($callback, $this);
+    172▕ 
+    173▕         array_pop($this->groupStack);
+    174▕     }
+    175▕
+
+      [2m+2 vendor frames [22m
+  3   blog/routes/api.php:17
+      Dingo\Api\Routing\Router::version("test")
+
+      [2m+4 vendor frames [22m
+  8   blog/app/Providers/RouteServiceProvider.php:44
+      Illuminate\Routing\RouteRegistrar::group("/var/www/html/blog/routes/api.php")
+
+   TypeError 
+
+  call_user_func(): Argument #1 ($callback) must be a valid callback, non-static method App\Http\Controllers\Api\V1\VerificationCodesController::index() cannot be called statically
+
+  at blog/vendor/dingo/api/src/Routing/Router.php:171
+    167▕         }
+    168▕ 
+    169▕         $this->groupStack[] = $attributes;
+    170▕ 
+  ➜ 171▕         call_user_func($callback, $this);
+    172▕ 
+    173▕         array_pop($this->groupStack);
+    174▕     }
+    175▕
+
+      [2m+2 vendor frames [22m
+  3   blog/routes/api.php:17
+      Dingo\Api\Routing\Router::version("test")
+
+      [2m+4 vendor frames [22m
+  8   blog/app/Providers/RouteServiceProvider.php:44
+      Illuminate\Routing\RouteRegistrar::group("/var/www/html/blog/routes/api.php")
+
+   TypeError 
+
+  call_user_func(): Argument #1 ($callback) must be a valid callback, non-static method App\Http\Controllers\Api\V1\VerificationCodesController::index() cannot be called statically
+
+  at blog/vendor/dingo/api/src/Routing/Router.php:171
+    167▕         }
+    168▕ 
+    169▕         $this->groupStack[] = $attributes;
+    170▕ 
+  ➜ 171▕         call_user_func($callback, $this);
+    172▕ 
+    173▕         array_pop($this->groupStack);
+    174▕     }
+    175▕
+
+      [2m+2 vendor frames [22m
+  3   blog/routes/api.php:17
+      Dingo\Api\Routing\Router::version("test")
+
+      [2m+4 vendor frames [22m
+  8   blog/app/Providers/RouteServiceProvider.php:44
+      Illuminate\Routing\RouteRegistrar::group("/var/www/html/blog/routes/api.php")
+
+   TypeError 
+
+  call_user_func(): Argument #1 ($callback) must be a valid callback, non-static method App\Http\Controllers\Api\V1\VerificationCodesController::index() cannot be called statically
+
+  at blog/vendor/dingo/api/src/Routing/Router.php:171
+    167▕         }
+    168▕ 
+    169▕         $this->groupStack[] = $attributes;
+    170▕ 
+  ➜ 171▕         call_user_func($callback, $this);
+    172▕ 
+    173▕         array_pop($this->groupStack);
+    174▕     }
+    175▕
+
+      [2m+2 vendor frames [22m
+  3   blog/routes/api.php:17
+      Dingo\Api\Routing\Router::version("test")
+
+      [2m+4 vendor frames [22m
+  8   blog/app/Providers/RouteServiceProvider.php:44
+      Illuminate\Routing\RouteRegistrar::group("/var/www/html/blog/routes/api.php")
+
+   TypeError 
+
+  call_user_func(): Argument #1 ($callback) must be a valid callback, non-static method App\Http\Controllers\Api\V1\VerificationCodesController::index() cannot be called statically
+
+  at blog/vendor/dingo/api/src/Routing/Router.php:171
+    167▕         }
+    168▕ 
+    169▕         $this->groupStack[] = $attributes;
+    170▕ 
+  ➜ 171▕         call_user_func($callback, $this);
+    172▕ 
+    173▕         array_pop($this->groupStack);
+    174▕     }
+    175▕
+
+      [2m+2 vendor frames [22m
+  3   blog/routes/api.php:17
+      Dingo\Api\Routing\Router::version("test")
+
+      [2m+4 vendor frames [22m
+  8   blog/app/Providers/RouteServiceProvider.php:44
+      Illuminate\Routing\RouteRegistrar::group("/var/www/html/blog/routes/api.php")
+
+   TypeError 
+
+  call_user_func(): Argument #1 ($callback) must be a valid callback, non-static method App\Http\Controllers\Api\V1\VerificationCodesController::index() cannot be called statically
+
+  at blog/vendor/dingo/api/src/Routing/Router.php:171
+    167▕         }
+    168▕ 
+    169▕         $this->groupStack[] = $attributes;
+    170▕ 
+  ➜ 171▕         call_user_func($callback, $this);
+    172▕ 
+    173▕         array_pop($this->groupStack);
+    174▕     }
+    175▕
+
+      [2m+2 vendor frames [22m
+  3   blog/routes/api.php:17
+      Dingo\Api\Routing\Router::version("test")
+
+      [2m+4 vendor frames [22m
+  8   blog/app/Providers/RouteServiceProvider.php:44
+      Illuminate\Routing\RouteRegistrar::group("/var/www/html/blog/routes/api.php")
+
+   TypeError 
+
+  call_user_func(): Argument #1 ($callback) must be a valid callback, non-static method App\Http\Controllers\Api\V1\VerificationCodesController::index() cannot be called statically
+
+  at blog/vendor/dingo/api/src/Routing/Router.php:171
+    167▕         }
+    168▕ 
+    169▕         $this->groupStack[] = $attributes;
+    170▕ 
+  ➜ 171▕         call_user_func($callback, $this);
+    172▕ 
+    173▕         array_pop($this->groupStack);
+    174▕     }
+    175▕
+
+      [2m+2 vendor frames [22m
+  3   blog/routes/api.php:17
+      Dingo\Api\Routing\Router::version("test")
+
+      [2m+4 vendor frames [22m
+  8   blog/app/Providers/RouteServiceProvider.php:44
+      Illuminate\Routing\RouteRegistrar::group("/var/www/html/blog/routes/api.php")
+
+   TypeError 
+
+  call_user_func(): Argument #1 ($callback) must be a valid callback, non-static method App\Http\Controllers\Api\V1\VerificationCodesController::index() cannot be called statically
+
+  at blog/vendor/dingo/api/src/Routing/Router.php:171
+    167▕         }
+    168▕ 
+    169▕         $this->groupStack[] = $attributes;
+    170▕ 
+  ➜ 171▕         call_user_func($callback, $this);
+    172▕ 
+    173▕         array_pop($this->groupStack);
+    174▕     }
+    175▕
+
+      [2m+2 vendor frames [22m
+  3   blog/routes/api.php:17
+      Dingo\Api\Routing\Router::version("test")
+
+      [2m+4 vendor frames [22m
+  8   blog/app/Providers/RouteServiceProvider.php:44
+      Illuminate\Routing\RouteRegistrar::group("/var/www/html/blog/routes/api.php")
+
+   TypeError 
+
+  call_user_func(): Argument #1 ($callback) must be a valid callback, non-static method App\Http\Controllers\Api\V1\VerificationCodesController::index() cannot be called statically
+
+  at blog/vendor/dingo/api/src/Routing/Router.php:171
+    167▕         }
+    168▕ 
+    169▕         $this->groupStack[] = $attributes;
+    170▕ 
+  ➜ 171▕         call_user_func($callback, $this);
+    172▕ 
+    173▕         array_pop($this->groupStack);
+    174▕     }
+    175▕
+
+      [2m+2 vendor frames [22m
+  3   blog/routes/api.php:17
+      Dingo\Api\Routing\Router::version("test")
+
+      [2m+4 vendor frames [22m
+  8   blog/app/Providers/RouteServiceProvider.php:44
+      Illuminate\Routing\RouteRegistrar::group("/var/www/html/blog/routes/api.php")
+ _                               _  _____ 
+| |                             | |/ ____|
+| |     __ _ _ __ __ ___   _____| | (___  
+| |    / _` | '__/ _` \ \ / / _ \ |\___ \ 
+| |___| (_| | | | (_| |\ V /  __/ |____) |
+|______\__,_|_|  \__,_| \_/ \___|_|_____/ 
+                                           
+Speed up your Laravel/Lumen
+>>> Components
++---------------------------+---------+
+| Component                 | Version |
++---------------------------+---------+
+| PHP                       | 8.0.6   |
+| Swoole                    | 4.6.6   |
+| LaravelS                  | 3.7.19  |
+| Laravel Framework [local] | 8.41.0  |
++---------------------------+---------+
+>>> Protocols
++-----------+--------+-------------------+---------------------+
+| Protocol  | Status | Handler           | Listen At           |
++-----------+--------+-------------------+---------------------+
+| Main HTTP | On     | Laravel Framework | http://0.0.0.0:5200 |
++-----------+--------+-------------------+---------------------+
+>>> Feedback: https://github.com/hhxsv5/laravel-s
+[2021-05-14 02:12:40] [TRACE] Swoole is running, press Ctrl+C to quit.
+ _                               _  _____ 
+| |                             | |/ ____|
+| |     __ _ _ __ __ ___   _____| | (___  
+| |    / _` | '__/ _` \ \ / / _ \ |\___ \ 
+| |___| (_| | | | (_| |\ V /  __/ |____) |
+|______\__,_|_|  \__,_| \_/ \___|_|_____/ 
+                                           
+Speed up your Laravel/Lumen
+>>> Components
++---------------------------+---------+
+| Component                 | Version |
++---------------------------+---------+
+| PHP                       | 8.0.6   |
+| Swoole                    | 4.6.6   |
+| LaravelS                  | 3.7.19  |
+| Laravel Framework [local] | 8.41.0  |
++---------------------------+---------+
+>>> Protocols
++-----------+--------+-------------------+---------------------+
+| Protocol  | Status | Handler           | Listen At           |
++-----------+--------+-------------------+---------------------+
+| Main HTTP | On     | Laravel Framework | http://0.0.0.0:5200 |
++-----------+--------+-------------------+---------------------+
+>>> Feedback: https://github.com/hhxsv5/laravel-s
+[2021-05-14 02:18:07] [TRACE] Swoole is running, press Ctrl+C to quit.
+
+   Illuminate\Contracts\Container\BindingResolutionException 
+
+  Target class [VerificationCodesController] does not exist.
+
+  at blog/vendor/laravel/framework/src/Illuminate/Container/Container.php:835
+    831▕ 
+    832▕         try {
+    833▕             $reflector = new ReflectionClass($concrete);
+    834▕         } catch (ReflectionException $e) {
+  ➜ 835▕             throw new BindingResolutionException("Target class [$concrete] does not exist.", 0, $e);
+    836▕         }
+    837▕ 
+    838▕         // If the type is not instantiable, the developer is attempting to resolve
+    839▕         // an abstract type such as an Interface or Abstract Class and there is
+
+      [2m+13 vendor frames [22m
+  14  blog/bootstrap/cache/routes-v7.php:191
+      Dingo\Api\Routing\Router::setAdapterRoutes([Object(Illuminate\Routing\RouteCollection)])
+
+      [2m+7 vendor frames [22m
+  22  blog/artisan:37
+      Illuminate\Foundation\Console\Kernel::handle(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+
+   Illuminate\Contracts\Container\BindingResolutionException 
+
+  Target class [VerificationCodesController] does not exist.
+
+  at blog/vendor/laravel/framework/src/Illuminate/Container/Container.php:835
+    831▕ 
+    832▕         try {
+    833▕             $reflector = new ReflectionClass($concrete);
+    834▕         } catch (ReflectionException $e) {
+  ➜ 835▕             throw new BindingResolutionException("Target class [$concrete] does not exist.", 0, $e);
+    836▕         }
+    837▕ 
+    838▕         // If the type is not instantiable, the developer is attempting to resolve
+    839▕         // an abstract type such as an Interface or Abstract Class and there is
+
+      [2m+13 vendor frames [22m
+  14  blog/bootstrap/cache/routes-v7.php:191
+      Dingo\Api\Routing\Router::setAdapterRoutes([Object(Illuminate\Routing\RouteCollection)])
+
+      [2m+7 vendor frames [22m
+  22  blog/artisan:37
+      Illuminate\Foundation\Console\Kernel::handle(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+
+   Illuminate\Contracts\Container\BindingResolutionException 
+
+  Target class [VerificationCodesController] does not exist.
+
+  at blog/vendor/laravel/framework/src/Illuminate/Container/Container.php:835
+    831▕ 
+    832▕         try {
+    833▕             $reflector = new ReflectionClass($concrete);
+    834▕         } catch (ReflectionException $e) {
+  ➜ 835▕             throw new BindingResolutionException("Target class [$concrete] does not exist.", 0, $e);
+    836▕         }
+    837▕ 
+    838▕         // If the type is not instantiable, the developer is attempting to resolve
+    839▕         // an abstract type such as an Interface or Abstract Class and there is
+
+      [2m+13 vendor frames [22m
+  14  blog/bootstrap/cache/routes-v7.php:191
+      Dingo\Api\Routing\Router::setAdapterRoutes([Object(Illuminate\Routing\RouteCollection)])
+
+      [2m+7 vendor frames [22m
+  22  blog/artisan:37
+      Illuminate\Foundation\Console\Kernel::handle(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+
+   Illuminate\Contracts\Container\BindingResolutionException 
+
+  Target class [VerificationCodesController] does not exist.
+
+  at blog/vendor/laravel/framework/src/Illuminate/Container/Container.php:835
+    831▕ 
+    832▕         try {
+    833▕             $reflector = new ReflectionClass($concrete);
+    834▕         } catch (ReflectionException $e) {
+  ➜ 835▕             throw new BindingResolutionException("Target class [$concrete] does not exist.", 0, $e);
+    836▕         }
+    837▕ 
+    838▕         // If the type is not instantiable, the developer is attempting to resolve
+    839▕         // an abstract type such as an Interface or Abstract Class and there is
+
+      [2m+13 vendor frames [22m
+  14  blog/bootstrap/cache/routes-v7.php:191
+      Dingo\Api\Routing\Router::setAdapterRoutes([Object(Illuminate\Routing\RouteCollection)])
+
+      [2m+7 vendor frames [22m
+  22  blog/artisan:37
+      Illuminate\Foundation\Console\Kernel::handle(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+
+   Illuminate\Contracts\Container\BindingResolutionException 
+
+  Target class [VerificationCodesController] does not exist.
+
+  at blog/vendor/laravel/framework/src/Illuminate/Container/Container.php:835
+    831▕ 
+    832▕         try {
+    833▕             $reflector = new ReflectionClass($concrete);
+    834▕         } catch (ReflectionException $e) {
+  ➜ 835▕             throw new BindingResolutionException("Target class [$concrete] does not exist.", 0, $e);
+    836▕         }
+    837▕ 
+    838▕         // If the type is not instantiable, the developer is attempting to resolve
+    839▕         // an abstract type such as an Interface or Abstract Class and there is
+
+      [2m+13 vendor frames [22m
+  14  blog/bootstrap/cache/routes-v7.php:191
+      Dingo\Api\Routing\Router::setAdapterRoutes([Object(Illuminate\Routing\RouteCollection)])
+
+      [2m+7 vendor frames [22m
+  22  blog/artisan:37
+      Illuminate\Foundation\Console\Kernel::handle(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+
+   Illuminate\Contracts\Container\BindingResolutionException 
+
+  Target class [VerificationCodesController] does not exist.
+
+  at blog/vendor/laravel/framework/src/Illuminate/Container/Container.php:835
+    831▕ 
+    832▕         try {
+    833▕             $reflector = new ReflectionClass($concrete);
+    834▕         } catch (ReflectionException $e) {
+  ➜ 835▕             throw new BindingResolutionException("Target class [$concrete] does not exist.", 0, $e);
+    836▕         }
+    837▕ 
+    838▕         // If the type is not instantiable, the developer is attempting to resolve
+    839▕         // an abstract type such as an Interface or Abstract Class and there is
+
+      [2m+13 vendor frames [22m
+  14  blog/bootstrap/cache/routes-v7.php:191
+      Dingo\Api\Routing\Router::setAdapterRoutes([Object(Illuminate\Routing\RouteCollection)])
+
+      [2m+7 vendor frames [22m
+  22  blog/artisan:37
+      Illuminate\Foundation\Console\Kernel::handle(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+
+   Illuminate\Contracts\Container\BindingResolutionException 
+
+  Target class [VerificationCodesController] does not exist.
+
+  at blog/vendor/laravel/framework/src/Illuminate/Container/Container.php:835
+    831▕ 
+    832▕         try {
+    833▕             $reflector = new ReflectionClass($concrete);
+    834▕         } catch (ReflectionException $e) {
+  ➜ 835▕             throw new BindingResolutionException("Target class [$concrete] does not exist.", 0, $e);
+    836▕         }
+    837▕ 
+    838▕         // If the type is not instantiable, the developer is attempting to resolve
+    839▕         // an abstract type such as an Interface or Abstract Class and there is
+
+      [2m+13 vendor frames [22m
+  14  blog/bootstrap/cache/routes-v7.php:191
+      Dingo\Api\Routing\Router::setAdapterRoutes([Object(Illuminate\Routing\RouteCollection)])
+
+      [2m+7 vendor frames [22m
+  22  blog/artisan:37
+      Illuminate\Foundation\Console\Kernel::handle(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+
+   Illuminate\Contracts\Container\BindingResolutionException 
+
+  Target class [VerificationCodesController] does not exist.
+
+  at blog/vendor/laravel/framework/src/Illuminate/Container/Container.php:835
+    831▕ 
+    832▕         try {
+    833▕             $reflector = new ReflectionClass($concrete);
+    834▕         } catch (ReflectionException $e) {
+  ➜ 835▕             throw new BindingResolutionException("Target class [$concrete] does not exist.", 0, $e);
+    836▕         }
+    837▕ 
+    838▕         // If the type is not instantiable, the developer is attempting to resolve
+    839▕         // an abstract type such as an Interface or Abstract Class and there is
+
+      [2m+13 vendor frames [22m
+  14  blog/bootstrap/cache/routes-v7.php:191
+      Dingo\Api\Routing\Router::setAdapterRoutes([Object(Illuminate\Routing\RouteCollection)])
+
+      [2m+7 vendor frames [22m
+  22  blog/artisan:37
+      Illuminate\Foundation\Console\Kernel::handle(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+ _                               _  _____ 
+| |                             | |/ ____|
+| |     __ _ _ __ __ ___   _____| | (___  
+| |    / _` | '__/ _` \ \ / / _ \ |\___ \ 
+| |___| (_| | | | (_| |\ V /  __/ |____) |
+|______\__,_|_|  \__,_| \_/ \___|_|_____/ 
+                                           
+Speed up your Laravel/Lumen
+>>> Components
++---------------------------+---------+
+| Component                 | Version |
++---------------------------+---------+
+| PHP                       | 8.0.6   |
+| Swoole                    | 4.6.6   |
+| LaravelS                  | 3.7.19  |
+| Laravel Framework [local] | 8.41.0  |
++---------------------------+---------+
+>>> Protocols
++-----------+--------+-------------------+---------------------+
+| Protocol  | Status | Handler           | Listen At           |
++-----------+--------+-------------------+---------------------+
+| Main HTTP | On     | Laravel Framework | http://0.0.0.0:5200 |
++-----------+--------+-------------------+---------------------+
+>>> Feedback: https://github.com/hhxsv5/laravel-s
+[2021-05-16 01:15:23] [TRACE] Swoole is running, press Ctrl+C to quit.
+ _                               _  _____ 
+| |                             | |/ ____|
+| |     __ _ _ __ __ ___   _____| | (___  
+| |    / _` | '__/ _` \ \ / / _ \ |\___ \ 
+| |___| (_| | | | (_| |\ V /  __/ |____) |
+|______\__,_|_|  \__,_| \_/ \___|_|_____/ 
+                                           
+Speed up your Laravel/Lumen
+>>> Components
++---------------------------+---------+
+| Component                 | Version |
++---------------------------+---------+
+| PHP                       | 8.0.6   |
+| Swoole                    | 4.6.6   |
+| LaravelS                  | 3.7.19  |
+| Laravel Framework [local] | 8.41.0  |
++---------------------------+---------+
+>>> Protocols
++-----------+--------+-------------------+---------------------+
+| Protocol  | Status | Handler           | Listen At           |
++-----------+--------+-------------------+---------------------+
+| Main HTTP | On     | Laravel Framework | http://0.0.0.0:5200 |
++-----------+--------+-------------------+---------------------+
+>>> Feedback: https://github.com/hhxsv5/laravel-s
+[2021-05-16 03:31:29] [TRACE] Swoole is running, press Ctrl+C to quit.
+ _                               _  _____ 
+| |                             | |/ ____|
+| |     __ _ _ __ __ ___   _____| | (___  
+| |    / _` | '__/ _` \ \ / / _ \ |\___ \ 
+| |___| (_| | | | (_| |\ V /  __/ |____) |
+|______\__,_|_|  \__,_| \_/ \___|_|_____/ 
+                                           
+Speed up your Laravel/Lumen
+>>> Components
++---------------------------+---------+
+| Component                 | Version |
++---------------------------+---------+
+| PHP                       | 8.0.6   |
+| Swoole                    | 4.6.6   |
+| LaravelS                  | 3.7.19  |
+| Laravel Framework [local] | 8.41.0  |
++---------------------------+---------+
+>>> Protocols
++-----------+--------+-------------------+---------------------+
+| Protocol  | Status | Handler           | Listen At           |
++-----------+--------+-------------------+---------------------+
+| Main HTTP | On     | Laravel Framework | http://0.0.0.0:5200 |
++-----------+--------+-------------------+---------------------+
+>>> Feedback: https://github.com/hhxsv5/laravel-s
+[2021-05-16 03:43:20] [TRACE] Swoole is running, press Ctrl+C to quit.
+ _                               _  _____ 
+| |                             | |/ ____|
+| |     __ _ _ __ __ ___   _____| | (___  
+| |    / _` | '__/ _` \ \ / / _ \ |\___ \ 
+| |___| (_| | | | (_| |\ V /  __/ |____) |
+|______\__,_|_|  \__,_| \_/ \___|_|_____/ 
+                                           
+Speed up your Laravel/Lumen
+>>> Components
++---------------------------+---------+
+| Component                 | Version |
++---------------------------+---------+
+| PHP                       | 8.0.6   |
+| Swoole                    | 4.6.6   |
+| LaravelS                  | 3.7.19  |
+| Laravel Framework [local] | 8.41.0  |
++---------------------------+---------+
+>>> Protocols
++-----------+--------+-------------------+---------------------+
+| Protocol  | Status | Handler           | Listen At           |
++-----------+--------+-------------------+---------------------+
+| Main HTTP | On     | Laravel Framework | http://0.0.0.0:5200 |
++-----------+--------+-------------------+---------------------+
+>>> Feedback: https://github.com/hhxsv5/laravel-s
+[2021-05-16 03:44:11] [TRACE] Swoole is running, press Ctrl+C to quit.
+ _                               _  _____ 
+| |                             | |/ ____|
+| |     __ _ _ __ __ ___   _____| | (___  
+| |    / _` | '__/ _` \ \ / / _ \ |\___ \ 
+| |___| (_| | | | (_| |\ V /  __/ |____) |
+|______\__,_|_|  \__,_| \_/ \___|_|_____/ 
+                                           
+Speed up your Laravel/Lumen
+>>> Components
++---------------------------+---------+
+| Component                 | Version |
++---------------------------+---------+
+| PHP                       | 8.0.6   |
+| Swoole                    | 4.6.6   |
+| LaravelS                  | 3.7.19  |
+| Laravel Framework [local] | 8.41.0  |
++---------------------------+---------+
+>>> Protocols
++-----------+--------+-------------------+---------------------+
+| Protocol  | Status | Handler           | Listen At           |
++-----------+--------+-------------------+---------------------+
+| Main HTTP | On     | Laravel Framework | http://0.0.0.0:5200 |
++-----------+--------+-------------------+---------------------+
+>>> Feedback: https://github.com/hhxsv5/laravel-s
+[2021-05-16 08:22:54] [TRACE] Swoole is running, press Ctrl+C to quit.
+ _                               _  _____ 
+| |                             | |/ ____|
+| |     __ _ _ __ __ ___   _____| | (___  
+| |    / _` | '__/ _` \ \ / / _ \ |\___ \ 
+| |___| (_| | | | (_| |\ V /  __/ |____) |
+|______\__,_|_|  \__,_| \_/ \___|_|_____/ 
+                                           
+Speed up your Laravel/Lumen
+>>> Components
++---------------------------+---------+
+| Component                 | Version |
++---------------------------+---------+
+| PHP                       | 8.0.6   |
+| Swoole                    | 4.6.6   |
+| LaravelS                  | 3.7.19  |
+| Laravel Framework [local] | 8.41.0  |
++---------------------------+---------+
+>>> Protocols
++-----------+--------+-------------------+---------------------+
+| Protocol  | Status | Handler           | Listen At           |
++-----------+--------+-------------------+---------------------+
+| Main HTTP | On     | Laravel Framework | http://0.0.0.0:5200 |
++-----------+--------+-------------------+---------------------+
+>>> Feedback: https://github.com/hhxsv5/laravel-s
+[2021-05-16 08:24:28] [TRACE] Swoole is running, press Ctrl+C to quit.
+ _                               _  _____ 
+| |                             | |/ ____|
+| |     __ _ _ __ __ ___   _____| | (___  
+| |    / _` | '__/ _` \ \ / / _ \ |\___ \ 
+| |___| (_| | | | (_| |\ V /  __/ |____) |
+|______\__,_|_|  \__,_| \_/ \___|_|_____/ 
+                                           
+Speed up your Laravel/Lumen
+>>> Components
++---------------------------+---------+
+| Component                 | Version |
++---------------------------+---------+
+| PHP                       | 8.0.6   |
+| Swoole                    | 4.6.6   |
+| LaravelS                  | 3.7.19  |
+| Laravel Framework [local] | 8.41.0  |
++---------------------------+---------+
+>>> Protocols
++-----------+--------+-------------------+---------------------+
+| Protocol  | Status | Handler           | Listen At           |
++-----------+--------+-------------------+---------------------+
+| Main HTTP | On     | Laravel Framework | http://0.0.0.0:5200 |
++-----------+--------+-------------------+---------------------+
+>>> Feedback: https://github.com/hhxsv5/laravel-s
+[2021-05-16 09:56:59] [TRACE] Swoole is running, press Ctrl+C to quit.
+ _                               _  _____ 
+| |                             | |/ ____|
+| |     __ _ _ __ __ ___   _____| | (___  
+| |    / _` | '__/ _` \ \ / / _ \ |\___ \ 
+| |___| (_| | | | (_| |\ V /  __/ |____) |
+|______\__,_|_|  \__,_| \_/ \___|_|_____/ 
+                                           
+Speed up your Laravel/Lumen
+>>> Components
++---------------------------+---------+
+| Component                 | Version |
++---------------------------+---------+
+| PHP                       | 8.0.6   |
+| Swoole                    | 4.6.6   |
+| LaravelS                  | 3.7.19  |
+| Laravel Framework [local] | 8.41.0  |
++---------------------------+---------+
+>>> Protocols
++-----------+--------+-------------------+---------------------+
+| Protocol  | Status | Handler           | Listen At           |
++-----------+--------+-------------------+---------------------+
+| Main HTTP | On     | Laravel Framework | http://0.0.0.0:5200 |
++-----------+--------+-------------------+---------------------+
+>>> Feedback: https://github.com/hhxsv5/laravel-s
+[2021-05-17 03:13:27] [TRACE] Swoole is running, press Ctrl+C to quit.
+ _                               _  _____ 
+| |                             | |/ ____|
+| |     __ _ _ __ __ ___   _____| | (___  
+| |    / _` | '__/ _` \ \ / / _ \ |\___ \ 
+| |___| (_| | | | (_| |\ V /  __/ |____) |
+|______\__,_|_|  \__,_| \_/ \___|_|_____/ 
+                                           
+Speed up your Laravel/Lumen
+>>> Components
++---------------------------+---------+
+| Component                 | Version |
++---------------------------+---------+
+| PHP                       | 8.0.6   |
+| Swoole                    | 4.6.6   |
+| LaravelS                  | 3.7.19  |
+| Laravel Framework [local] | 8.41.0  |
++---------------------------+---------+
+>>> Protocols
++-----------+--------+-------------------+---------------------+
+| Protocol  | Status | Handler           | Listen At           |
++-----------+--------+-------------------+---------------------+
+| Main HTTP | On     | Laravel Framework | http://0.0.0.0:5200 |
++-----------+--------+-------------------+---------------------+
+>>> Feedback: https://github.com/hhxsv5/laravel-s
+[2021-05-17 04:08:24] [TRACE] Swoole is running, press Ctrl+C to quit.
+ _                               _  _____ 
+| |                             | |/ ____|
+| |     __ _ _ __ __ ___   _____| | (___  
+| |    / _` | '__/ _` \ \ / / _ \ |\___ \ 
+| |___| (_| | | | (_| |\ V /  __/ |____) |
+|______\__,_|_|  \__,_| \_/ \___|_|_____/ 
+                                           
+Speed up your Laravel/Lumen
+>>> Components
++---------------------------+---------+
+| Component                 | Version |
++---------------------------+---------+
+| PHP                       | 8.0.6   |
+| Swoole                    | 4.6.6   |
+| LaravelS                  | 3.7.19  |
+| Laravel Framework [local] | 8.41.0  |
++---------------------------+---------+
+>>> Protocols
++-----------+--------+-------------------+---------------------+
+| Protocol  | Status | Handler           | Listen At           |
++-----------+--------+-------------------+---------------------+
+| Main HTTP | On     | Laravel Framework | http://0.0.0.0:5200 |
++-----------+--------+-------------------+---------------------+
+>>> Feedback: https://github.com/hhxsv5/laravel-s
+[2021-05-17 08:34:11] [TRACE] Swoole is running, press Ctrl+C to quit.
+ _                               _  _____ 
+| |                             | |/ ____|
+| |     __ _ _ __ __ ___   _____| | (___  
+| |    / _` | '__/ _` \ \ / / _ \ |\___ \ 
+| |___| (_| | | | (_| |\ V /  __/ |____) |
+|______\__,_|_|  \__,_| \_/ \___|_|_____/ 
+                                           
+Speed up your Laravel/Lumen
+>>> Components
++---------------------------+---------+
+| Component                 | Version |
++---------------------------+---------+
+| PHP                       | 8.0.6   |
+| Swoole                    | 4.6.6   |
+| LaravelS                  | 3.7.19  |
+| Laravel Framework [local] | 8.41.0  |
++---------------------------+---------+
+>>> Protocols
++-----------+--------+-------------------+---------------------+
+| Protocol  | Status | Handler           | Listen At           |
++-----------+--------+-------------------+---------------------+
+| Main HTTP | On     | Laravel Framework | http://0.0.0.0:5200 |
++-----------+--------+-------------------+---------------------+
+>>> Feedback: https://github.com/hhxsv5/laravel-s
+[2021-05-17 09:20:04] [TRACE] Swoole is running, press Ctrl+C to quit.

@@ -1,0 +1,1503 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta name="renderer" content="webkit" />
+		<meta http-equiv="X-UA-COMPATIBLE" content="IE=edge,chrome=1" />
+		<meta charset="UTF-8">
+		<meta name="renderer" content="webkit">
+		<title>六星开源商城&nbsp;-&nbsp;六星教育</title>
+		<meta name="keywords" content="六星教育" />
+		<meta name="description" content="六星教育" />
+		<link rel="shortcut  icon" type="image/x-icon" href="/template/shop/blue/public/images/favicon.ico" media="screen" />
+		<!--可共用-->
+		<link type="text/css" rel="stylesheet" href="../../static/css/ns_common_9.css">
+		<link type="text/css" rel="stylesheet" href="../../static/css/ns_color_style_9.css">
+		<link type="text/css" rel="stylesheet" href="../../static/css/iconfont_9.css">
+		<link type="text/css" rel="stylesheet" href="../../static/css/ns_bottom_9.css">
+		<link rel="stylesheet" href="../../static/css/layer_9.css" id="layuicss-skinlayercss">
+		<script type="text/javascript" src="../../static/js/jquery_9.js"></script>
+		<script type="text/javascript">
+			var shop_main = 'http://tp.23673.com'; //外置JS调用
+			var app_main = 'http://tp.23673.com/wap'; //外置JS调用
+			var upload = ""; //外置JS调用
+			var ADMINMAIN = 'http://tp.23673.com/admin';
+			var TEMP_IMG = "/template/shop/blue/public/images";
+			var temp = "/template/"; //外置JS调用
+			$(function() {
+				//一级菜单选中
+				$('#nav li>a').removeClass('current');
+				var path_info = 'goods/goodslist';
+				if(path_info == '') {
+					$("#nav li>a[href^='http://tp.23673.com/index/index']").addClass('current');
+				} else {
+					$("#nav li>a[href^='http://tp.23673.com/goods/goodslist']").addClass('current');
+				}
+			})
+			window.onload = function() {
+				$.footer();
+			}
+		</script>
+		<script type="text/javascript" src="../../static/js/ns_cart_9.js"></script>
+		<script type="text/javascript" src="../../static/js/common_13.js"></script>
+		<script type="text/javascript" src="../../static/js/ns_components_9.js"></script>
+		<script type="text/javascript" src="../../static/js/jquery.fly.min_9.js"></script>
+		<script type="text/javascript" src="../../static/js/layer_9.js"></script>
+		<script type="text/javascript" src="../../static/js/jquery.method_9.js"></script>
+		<script type="text/javascript" src="../../static/js/nav_9.js"></script>
+		<script type="text/javascript" src="../../static/js/jquery.cookie_9.js"></script>
+		<script src="../../static/js/ajax_file_upload_12.js" type="text/javascript"></script>
+		<script src="../../static/js/file_upload_12.js" type="text/javascript"></script>
+		<script>
+			var PLATFORM_NAME = "";
+			var ADMINIMG = "/public/admin/images"; //后台图片请求路径
+			var ADMINMAIN = "http://tp.23673.com/admin"; //后台请求路径
+			var UPLOAD = ""; //上传文件根目录
+			var PAGESIZE = ""; //分页显示页数
+			var ROOT = ""; //跟目录
+			//上传文件路径
+			var UPLOADGOODS = 'upload/goods/'; //存放商品图片
+			var UPLOADGOODSSKU = 'upload/goods_sku/'; //存放商品SKU
+			var UPLOADGOODSBRAND = 'upload/goods_brand/'; //存放商品品牌图
+			var UPLOADGOODSGROUP = 'upload/goods_group/'; ////存放商品分组图片
+			var UPLOADGOODSCATEGORY = 'upload/goods_category/'; ////存放商品分类图片
+			var UPLOADCOMMON = 'upload/common/'; //存放公共图片、网站logo、独立图片、没有任何关联的图片
+			var UPLOADAVATOR = 'upload/avator/'; //存放用户头像
+			var UPLOADPAY = 'upload/pay/'; //存放支付生成的二维码图片
+			var UPLOADADV = 'upload/advertising/'; //存放广告位图片
+			var UPLOADEXPRESS = 'upload/express/'; //存放物流图片
+			var UPLOADCMS = 'UPLOAD_CMS'; //存放文章图片
+		</script>
+		<script src="../../static/js/load_task_13.js" type="text/javascript"></script>
+
+		<!--继承base可重写-->
+		<!-- 右侧购物车 -->
+		<!-- 添加css、字体文件文件 -->
+		<link type="text/css" rel="stylesheet" href="../../static/css/ns_category_3.css">
+		<link rel="stylesheet" type="text/css" href="../../static/css/ns_shop_common_3.css">
+	</head>
+	<body>
+		<!-- 头部广告 -->
+		<!-- 公共的顶部（部分界面不用，例如，商家入驻） -->
+		<div class="header-top">
+			<div class="header-box">
+				<font id="login-info" class="login-info"></font>
+				<ul>
+					<li>
+						<a class="menu-hd home" href="http://tp.23673.com" target="_top"><i></i>商城首页</a>
+					</li>
+					<li class="menu-item">
+						<div class="menu">
+							<a class="menu-hd myinfo" href="http://tp.23673.com/member/index" target="_blank"><i></i> 个人中心 <b></b></a>
+							<div id="menu-2" class="menu-bd">
+								<span class="menu-bd-mask"></span>
+								<div class="menu-bd-panel">
+									<a href="http://tp.23673.com/member/orderlist" target="_blank">已买到的宝贝</a>
+									<a href="http://tp.23673.com/member/addresslist" target="_blank">我的地址管理</a>
+									<a href="http://tp.23673.com/member/goodscollectionlist" target="_blank">我收藏的宝贝</a>
+								</div>
+							</div>
+						</div>
+					</li>
+					<li class="menu-item cartbox">
+						<a class="menu-hd cart" href="http://tp.23673.com/goods/cart" target="_top"><i></i>&nbsp;购物车</a>
+					</li>
+					<li>
+						<a class="menu-hd" target="_blank" href="http://tp.23673.com/admin">卖家中心</a>
+					</li>
+					<li class="menu-item">
+						<div class="menu">
+							<a class="menu-hd we-chat" href="javascript:;" target="_top"> <i></i> 关注商城 <b></b>
+							</a>
+							<div id="menu-5" class="menu-bd we-chat-qrcode">
+								<span class="menu-bd-mask"></span>
+								<a target="_top"> <img src="../../static/picture/1500630330_9.jpg" alt="官方微信"></a>
+								<p class="font-14">关注官方微信</p>
+							</div>
+						</div>
+					</li>
+					<li class="menu-item">
+						<a href="http://tp.23673.com/wap/" class="menu-hd wap-nav"> <i></i>手机端</a>
+					</li>
+					<li class="menu-item">
+						<a href="http://tp.23673.com/helpcenter/index" class="menu-hd site-nav" target="_blank">帮助中心</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+
+		<script type="text/javascript">
+			$.ajax({
+				type: "post",
+				url: "http://tp.23673.com/components/getlogininfo",
+				success: function(data) {
+					var login_info_html = '';
+					if(data != null && data != "") {
+						// 			if(data["user_info"]["nick_name"]!= null && data["user_info"]["nick_name"] != ""){
+						login_info_html = '<a class="sn-login color" href="http://tp.23673.com/member/index" target="_top">' + data["user_info"]["nick_name"] + '</a><em>欢迎您回来！</em><a class="sn-register" href="javascript:logout();" target="_top">退出</a>';
+						$('div.login-info').html(
+							'<font id="login-info" class="login-info NS-USER-ALREADY-LOGIN"><em><a href="#" target="_blank" class="color NS-USER-NAME"></a></em><a href="javascript:logout();" data-method="post" class="logout bg-color">退出</a></font>');
+						// 			}
+					} else {
+						login_info_html = '<em>欢迎来到六星开源商城</em><a class="login color" href="http://tp.23673.com/login/index" target="_top">请登录</a><a class="register" href="http://tp.23673.com/login/registerbox" target="_top">免费注册</a>';
+						$('div.login-info').html(
+							'<font id="login-info" class="login-info"><a class="login color" href="http://tp.23673.com/login/index" target="_top">登录</a><a class="register bg-color" href="http://tp.23673.com/login/registerbox" target="_top">免费注册</a></font>');
+					}
+					$('#login-info').html(login_info_html);
+				}
+			});
+
+			//退出登录
+			function logout() {
+				$.ajax({
+					url: "http://tp.23673.com/member/logout",
+					type: "post",
+					success: function(res) {
+						if(res['code'] > 0) {
+							// 				location.href='http://tp.23673.com';
+							$.msg("退出成功！");
+							window.location.reload();
+						} else {
+							if(res["message"] != null) {
+								$.msg(res["message"]);
+							}
+						}
+					}
+				})
+			}
+		</script>
+
+		<!-- 头部，菜单栏、搜索、导航栏 -->
+		<script type="text/javascript">
+			//显示搜索历史
+			function SearRecord() {
+				var arrSear = new Array();
+				var strSear = $.cookie("searchRecord");
+				var sear_html = '<span>最近搜索</span>';
+				if(typeof(strSear) != 'undefined' && strSear != 'null') {
+					var arrSear = JSON.parse(strSear);
+					sear_html += '<a href="javascript:clearSearRecord();" class="clear-history"> <i></i>清空</a><br/>';
+					for(var i = 0; i < arrSear.length; i++) {
+						sear_html += '<a href="http://tp.23673.com/goods/goodslist?keyword=' + arrSear[i] + '" style="display:inline-block;">' + arrSear[i] + '</a>';
+					}
+				}
+				$('#search_titles').html(sear_html);
+			}
+			//清除搜索历史
+			function clearSearRecord() {
+				clear = JSON.stringify(new Array());
+				$.cookie("searchRecord", clear);
+				SearRecord();
+			}
+			$(function() {
+				SearRecord();
+			});
+		</script>
+		<div class="as-shelter"></div>
+		<div class="follow-box">
+			<div class="follow-box-con">
+				<a href="http://tp.23673.com" class="logo"><img src="../../static/picture/1497923663_9.jpg" /></a>
+				<div class="search NS-SEARCH-BOX-TOP">
+					<form class="search-form NS-SEARCH-BOX-FORM" method="get" onsubmit="return false">
+						<div class="search-info">
+							<div class="search-type-box">
+								<ul class="search-type" style="height: 36px; overflow: hidden;">
+									<li class="search-li-top curr" num="0">宝贝</li>
+								</ul>
+							</div>
+							<div class="search-box">
+								<div class="search-box-con">
+									<input type="text" class="search-box-input NS-SEARCH-BOX-KEYWORD" name="keyword" tabindex="9" autocomplete="off" data-searchwords="1231231231" placeholder="1231231231" value="">
+								</div>
+							</div>
+							<input type="hidden" id="searchtypeTop" name="type" value="0" class="searchtype">
+							<input type="button" id="btn_search_box_submit_top" value="搜索" class="button NS-SEARCH-BOX-SUBMIT-TOP">
+						</div>
+					</form>
+				</div>
+				<div class="login-info"></div>
+			</div>
+		</div>
+		<div class="header">
+			<div class="w1210">
+				<div class="logo-info">
+					<a href="http://tp.23673.com" class="logo"> <img src="../../static/picture/1497923663_9.jpg" /></a>
+				</div>
+				<div class="search NS-SEARCH-BOX">
+					<form class="search-form NS-SEARCH-BOX-FORM" method="get" onsubmit="return false">
+						<div class="search-info">
+							<div class="search-type-box">
+								<ul class="search-type">
+									<li class="search-li curr" num="0">宝贝</li>
+									<!-- 							<li class="search-li" num="1">店铺</li> -->
+								</ul>
+								<!-- 						<i></i> -->
+							</div>
+							<div class="search-box">
+								<div class="search-box-con">
+									<input type="text" class="keyword search-box-input NS-SEARCH-BOX-KEYWORD" name="keyword" tabindex="9" autocomplete="off" data-searchwords="1231231231" placeholder="1231231231" value="" />
+								</div>
+							</div>
+							<!-- <input type="hidden" id="searchtype" name="type" value="0" class="searchtype"> -->
+							<input type="button" id="btn_search_box_submit" value="搜索" class="button btn_search_box_submit NS-SEARCH-BOX-SUBMIT">
+						</div>
+						<!-- -热门搜索热搜词显示 -->
+						<div class="search-results hide NS-SEARCH-BOX-HELPER" style="display: none;">
+							<ul class="history-results">
+								<li class="title" id="search_titles" style="word-wrap:break-word "></li>
+
+							</ul>
+							<ul class="rec-results">
+								<li class="title"><span>正在热搜中</span> <i class="close"></i></li>
+								<li>
+									<a href="http://tp.23673.com/goods/goodslist?keyword=衣服，鞋子" title="衣服，鞋子">衣服，鞋子</a>
+								</li>
+							</ul>
+						</div>
+					</form>
+					<ul class="hot-query">
+						<!-- 默认搜索词 -->
+						<li class="first">
+							<a href="javascript:void(0);"></a>
+						</li>
+					</ul>
+				</div>
+				<!-- 搜索框右侧小广告 _start -->
+				<div class="header-right">
+					<a href="http://tp.23673.com/goods/cart" class="my-cart"><span class="ico"></span>购物车结算<span class="right_border"></span></a>
+					<a href="http://tp.23673.com/member" class="my-mall"><span class="ico"></span>我的商城<span class="right_border"></span></a>
+				</div>
+				<!-- 搜索框右侧小广告 _end -->
+			</div>
+		</div>
+		<!-- logo栏小广告  -->
+		<script type="text/javascript">
+			//logo右侧小广告
+			var ap_id = 1052;
+			var data = platformAdvLoad(ap_id);
+			if(data != '') {
+				$('.logo-info').append('<a href="' + data[0]['adv_url'] + '" class="logo-right"> <img src="../../static/picture/01560f4798cd4dcaa436d7b1010e2047.gif' + data[0]['adv_image'] + '"> </a>');
+			}
+			//搜索框右侧小广告
+		</script>
+		<script type="text/javascript">
+			$(document).ready(function() {
+				// 搜索框提示显示
+				$('.NS-SEARCH-BOX .NS-SEARCH-BOX-KEYWORD').focus(function() {
+					$(".NS-SEARCH-BOX .NS-SEARCH-BOX-HELPER").show();
+				});
+				// 搜索框提示隐藏
+				$(".NS-SEARCH-BOX-HELPER .close").on('click', function() {
+					$(".NS-SEARCH-BOX .NS-SEARCH-BOX-HELPER").hide();
+				});
+				// 清除记录
+				$(".NS-SEARCH-BOX-HELPER .clear").click(function() {
+					var url = '/search/clear-record.html';
+					$.post(
+						url, {},
+						function(result) {
+							if(result.code == 0) {
+								$(".history-results .active").empty();
+							} else {}
+						},
+						'json');
+				});
+			});
+
+			function search_box_remove(key) {
+				var url = '/search/delete-record.html';
+				$.post(url, {
+					data: key
+				}, function(result) {
+					if(result.code == 0) {
+						$("#" + key).css("display", "none");
+					} else {
+
+					}
+				}, 'json');
+			}
+			$(document).on("click", function(e) {
+				var target = $(e.target);
+				if(target.closest(".NS-SEARCH-BOX").length == 0) {
+					$('.NS-SEARCH-BOX-HELPER').hide();
+				}
+			})
+		</script>
+		<script type="text/javascript">
+			//固定搜索
+			$(document).ready(function() {
+				$(".NS-SEARCH-BOX .NS-SEARCH-BOX-SUBMIT").click(function() {
+					var keyword_obj = $(this).parents(".NS-SEARCH-BOX").find(".NS-SEARCH-BOX-KEYWORD");
+					var keywords = keyword_obj.val();
+					if($.trim(keywords).length == 0 ||
+						$.trim(keywords) == "请输入关键词") {
+						keywords = keyword_obj.attr("data-searchwords");
+					}
+
+					$(keyword_obj).val(keywords);
+					if(keywords == null) {
+						keywords = "";
+					}
+
+					if($.cookie("searchRecord") != undefined) {
+						var arr = eval($.cookie("searchRecord"));
+					} else {
+						var arr = new Array();
+					}
+					if(arr.length > 0) {
+						if($.inArray(keywords, arr) < 0) {
+							arr.push(keywords);
+						}
+					} else {
+						arr.push(keywords);
+					}
+					$.cookie("searchRecord", JSON.stringify(arr));
+
+					if($(".search-li.curr").attr('num') == 0) {
+						window.location.href = 'http://tp.23673.com/goods/goodslist?keyword=' + keywords;
+					} else {
+						window.location.href = 'http://tp.23673.com/shop/shopstreet?shopname=' + keywords;
+					}
+				});
+			});
+			//浮动搜索
+			$(document).ready(function() {
+				$(".NS-SEARCH-BOX-TOP .NS-SEARCH-BOX-SUBMIT-TOP").click(function() {
+					var keyword_obj = $(this).parents(".NS-SEARCH-BOX-TOP").find(".NS-SEARCH-BOX-KEYWORD");
+					var keywords = $(keyword_obj).val();
+					if($.trim(keywords).length == 0 ||
+						$.trim(keywords) == "请输入关键词") {
+						keywords = $(keyword_obj).attr("data-searchwords");
+					}
+
+					if($.cookie("searchRecord") != undefined) {
+						var arr = eval($.cookie("searchRecord"));
+					} else {
+						var arr = new Array();
+					}
+					if(arr.length > 0) {
+						if($.inArray(keywords, arr) < 0) {
+							arr.push(keywords);
+						}
+					} else {
+						arr.push(keywords);
+					}
+					$.cookie("searchRecord", JSON.stringify(arr));
+
+					$(keyword_obj).val(keywords);
+					if($(".search-li-top.curr").attr('num') == 0) {
+						window.location.href = 'http://tp.23673.com/goods/goodslist?keyword=' + keywords;
+					} else {
+						window.location.href = 'http://tp.23673.com/shop/shopstreet?shopname=' + keywords;
+					}
+				});
+			});
+		</script>
+		<!--头部商品分类 start-->
+		<div class="category-box category-box-border">
+			<div class="w1210">
+				<div class="home-category fl">
+					<a href="http://tp.23673.com/goods/category" class="menu-event" title="查看全部商品分类"><i></i>全部商品分类</a>
+					<div class="expand-menu category-layer" style="display: none;">
+						<!-- 公共的菜单栏-->
+						<div class="category-layer">
+							<span class="category-layer-bg"></span>
+							<div class="list">
+								<dl class="cat">
+									<dt class="cat-name">
+										<a href="http://tp.23673.com/goods/goodslist?category_id=311" target="_blank" title="女装/男装/内衣">女装/男装/内衣</a>
+									</dt>
+									<i class="right-arrow"></i>
+								</dl>
+								<div class="categorys" style="display: none;">
+									<div class="item-left fl">
+										<div class="subitems">
+											<dl class="fore1">
+												<dt style="width: 5em;">
+												<a href="http://tp.23673.com/goods/goodslist?category_id=313" target="_blank" title="女装">
+													<em>女装</em>
+													<i></i>
+												</a>
+											</dt>
+												<dd>
+													<a href="http://tp.23673.com/goods/goodslist?category_id=320" target="_blank" title="蕾丝短袖">蕾丝短袖</a>
+													<a href="http://tp.23673.com/goods/goodslist?category_id=322" target="_blank" title="针织短袖">针织短袖</a>
+												</dd>
+											</dl>
+											<dl class="fore1">
+												<dt style="width: 5em;">
+												<a href="http://tp.23673.com/goods/goodslist?category_id=314" target="_blank" title="连衣裙">
+													<em>连衣裙</em>
+													<i></i>
+												</a>
+											</dt>
+												<dd>
+													<a href="http://tp.23673.com/goods/goodslist?category_id=316" target="_blank" title="迷你连衣裙">迷你连衣裙</a>
+												</dd>
+											</dl>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="list">
+								<dl class="cat">
+									<dt class="cat-name">
+								<a href="http://tp.23673.com/goods/goodslist?category_id=312" target="_blank" title="鞋靴/箱包/配件">鞋靴/箱包/配件</a>
+							</dt>
+								</dl>
+								<div class="categorys" style="display: none;">
+									<div class="item-left fl">
+										<div class="subitems">
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="list">
+								<dl class="cat">
+									<dt class="cat-name">
+								<a href="http://tp.23673.com/goods/goodslist?category_id=315" target="_blank" title="手机数码">手机数码</a>
+							</dt>
+								</dl>
+								<div class="categorys" style="display: none;">
+									<div class="item-left fl">
+										<div class="subitems">
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="list">
+								<dl class="cat">
+									<dt class="cat-name">
+								<a href="http://tp.23673.com/goods/goodslist?category_id=317" target="_blank" title="家用电器">家用电器</a>
+							</dt>
+									<i class="right-arrow"></i>
+								</dl>
+								<div class="categorys" style="display: none;">
+									<div class="item-left fl">
+										<div class="subitems">
+											<dl class="fore1">
+												<dt style="width: 5em;">
+												<a href="http://tp.23673.com/goods/goodslist?category_id=318" target="_blank" title="小电器">
+													<em>小电器</em>
+													<i></i>
+												</a>
+											</dt>
+												<dd>
+													<a href="http://tp.23673.com/goods/goodslist?category_id=319" target="_blank" title="高压锅">高压锅</a>
+												</dd>
+											</dl>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- 公共的菜单栏-->
+				<div class="all-category fl" id="nav">
+					<ul>
+						<li class="fl">
+							<a class="nav" target="_blank" href="http://tp.23673.com/index/index" title="首页">首页</a>
+						</li>
+						<li class="fl">
+							<a class="nav" href="http://tp.23673.com/index/discount" title="限时折扣">限时折扣</a>
+						</li>
+						<li class="fl">
+							<a class="nav" href="http://tp.23673.com/goods/brandlist" title="品牌列表">品牌列表</a>
+						</li>
+						<li class="fl">
+							<a class="nav" target="_blank" href="http://tp.23673.com/shop/shopstreet" title="店铺街">店铺街</a>
+						</li>
+						<li class="fl">
+							<a class="nav" href="http://tp.23673.com/goods/integralcenter" title="积分中心">积分中心</a>
+						</li>
+					</ul>
+					<div class="wrap-line">
+						<span style="left: 15px;"></span>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!--头部商品分类 end-->
+		<!-- 右侧固定购物车 -->
+		<script type="text/javascript" src="../../static/js/shopping_cart_7.js"></script>
+		<script src="../../static/js/ns_collections_7.js" type="text/javascript"></script>
+		<!-- common.js 刷新了购物车数据 -->
+		<script>
+			//当浏览器窗口大小改变时，设置显示内容的高度
+			window.onresize = function() {
+				$(".sidebar-cartbox").find('.cart-panel-content').height($(window).height() - 90);
+				$(".sidebar-cartbox").find('.bonus-panel-content').height($(window).height() - 40);
+			}
+			$(function() {
+				$(".quick-links").css("top", ($(window).height()) / 2);
+				$.ajax({
+					type: "post",
+					url: "http://tp.23673.com/components/getlogininfo",
+					success: function(data) {
+						if(data != null && data != "") {
+							var img = data["user_info"]["user_headimg"];
+							var name = data["user_info"]["nick_name"];
+							$("#not_logged").css("display", "none");
+							$("#right_login_info").css("display", "block");
+							$("#right_login_info_name").text(name);
+							if(img == '' || img == null) {
+								$("#login_member_logo").attr('src', "/template/shop/blue/public/images/temp_default_user_portrait_0.png");
+							} else {
+								img = '/' + img;
+								$("#login_member_logo").attr('src', img);
+							}
+						} else {
+							$("#not_logged").css("display", "block");
+							$("#right_login_info").css("display", "none");
+						}
+					}
+				})
+				$('.ajax-login').click(function() {
+					$('#mask-layer-login').show();
+					$('#layui-layer').show();
+				})
+				$('.layui-layer-close.layui-layer-close1').click(function() {
+					$('#mask-layer-login').hide();
+					$('#layui-layer').hide();
+				})
+				refreshShopCart();
+			});
+		</script>
+		<input type="hidden" id="hidden_uid" value="293" />
+		<div class="right-sidebar-con">
+			<div class="right-sidebar-main">
+				<div class="right-sidebar-panel">
+					<div id="quick-links" class="quick-links">
+						<ul>
+							<li class="quick-area quick-login sidebar-user-trigger">
+								<a href="javascript:void(0);" class="quick-links-a" title="个人中心"><i class="user"></i></a>
+								<div class="sidebar-user quick-sidebar">
+									<i class="arrow-right"></i>
+									<div class="sidebar-user-info">
+										<!-- 没有登录的情况 _start -->
+										<div class="NS-USER-NOT-LOGIN">
+											<a href="http://tp.23673.com/member/index">
+												<div class="user-pic">
+													<div class="user-pic-mask"></div>
+													<img id="login_member_logo" src="../../static/picture/temp_default_user_portrait_0_9.png" />
+												</div>
+											</a>
+											<br>
+											<p id="not_logged">你好！请
+												<a href="javascript:void(0);" class="quick-login-a color ajax-login">登录</a> |
+												<a href="http://tp.23673.com/login/registerbox" class="color">注册</a>
+											</p>
+											<p id="right_login_info">你好！<span id="right_login_info_name"></span></p>
+										</div>
+										<!-- 没有登录的情况 _end -->
+										<!-- 有登录的情况 _start -->
+										<div class="js-user-already-login" style="display: none;">
+											<div class="user-have-login">
+												<div class="user-pic">
+													<div class="user-pic-mask"></div>
+													<img src="" class="NS-USER-PIC">
+												</div>
+												<div class="user-info">
+													<p>
+														用&nbsp;&nbsp;&nbsp;户： <span class="NS-USER-NAME"></span>
+													</p>
+												</div>
+											</div>
+											<p class="m-t-10">
+												<span class="prev-login"> 上次登录时间：
+											<span class="NS-USER-LAST-LOGIN"></span>
+												</span>
+												<a href="http://tp.23673.com/member/index" class="btn account-btn" target="_blank">个人中心</a>
+												<a href="http://tp.23673.com/member/orderlist" class="btn order-btn" target="_blank">订单中心</a>
+											</p>
+										</div>
+										<!-- 有登录的情况 _end -->
+									</div>
+								</div>
+							</li>
+							<li class="sidebar-tabs" data-ns-flag="shopping_cart">
+								<!-- 购物车 -->
+								<div class="cart-list quick-links-a sidebar-cartbox-trigger" title="购物车">
+									<i class="cart"></i>
+									<span class="cart_num js-cart-count">0</span>
+								</div>
+							</li>
+							<li id="collectGoods" class="sidebar-tabs" data-ns-flag="collections_goods" title="商品收藏">
+								<a href="javascript:;" class="mpbtn_collect quick-links-a">
+									<i class="collection"></i>
+								</a>
+							</li>
+							<li id="collectShops" class="sidebar-tabs" data-ns-flag="collections_shops" title="店铺收藏">
+								<a href="javascript:;" class="mpbtn_collect quick-links-a">
+									<i class="shopcollection"></i>
+								</a>
+							</li>
+							<li class="quick-area">
+								<a class="quick-links-a" href="http://wpa.qq.com/msgrd?v=3&uin=10202706&site=qq&menu=yes" title="联系客服" target="_blank">
+									<i class="customer-service"></i>
+								</a>
+							</li>
+
+							<li class="quick-area">
+								<a class="quick-links-a" href="javascript:void(0);" title="商城二维码"><i class="qr-code"></i></a>
+								<div class="sidebar-code quick-sidebar" style="display: none;">
+									<i class="arrow-right"></i>
+									<img src="../../static/picture/1500630330_9.jpg">
+								</div>
+							</li>
+							<li class="returnTop" style="display: none;background: #0689e1;">
+								<a href="javascript:void(0);" class="return_top quick-links-a">
+									<i class="top"></i>
+								</a>
+								<div class="popup" style="left: -121px; visibility: hidden;">
+									返回顶部 <i class="arrow-right"></i>
+								</div>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- 内容 -->
+		<div class="w1210">
+			<div class="breadcrumb clearfix">
+				<a href="http://tp.23673.com" class="index">首页</a>
+				<span class="last js-nav">
+						&nbsp;&gt;&nbsp;<a href="http://tp.23673.com/goods/goodslist?category_id=311">女装/男装/内衣</a>
+					</span>
+			</div>
+			<script src="../../static/js/conditions_3.js"></script>
+			<!--筛选条件-->
+			<div class="search-wrap" id="attr-list-ul" style="border-top: none;">
+				<!--已选条件-->
+				<!--品牌-->
+				<dl id="attr-group-dl-brand">
+					<dt style="line-height:40px;">款式：</dt>
+					<dd class="moredd hide showover">
+						<label>
+							<a href="javascript:void(0)" class="multiple" onclick="showOverflow(this);">
+							<font class="duo-b"></font> 更多
+							</a>
+						</label>
+					</dd>
+					<dd class="moredd hide hideover">
+						<label>
+							<a href="javascript:void(0)" class="multiple" onclick="hideOverflow(this);">
+							<font class="duo-b"></font> 收起
+							</a>
+						</label>
+					</dd>
+					<dd>
+						<div id="brand-abox-father">
+							<ul class="brand-abox-imgul" style="overflow: hidden;">
+								<!--品牌选中状态为brand-seled样式-->
+								<li class="brand " title="韩版" data-attr="attr2" data-attr-value="款式" data-attr-value-name="韩版" onclick="attrSelect(this);">
+									<a href="javascript:;">
+										韩版 <span class="color">韩版</span> <i></i>
+									</a>
+								</li>
+								<li class="brand " title="休闲" data-attr="attr2" data-attr-value="款式" data-attr-value-name="休闲" onclick="attrSelect(this);">
+									<a href="javascript:;">
+										休闲 <span class="color">休闲</span> <i></i>
+									</a>
+								</li>
+								<li class="brand " title="欧美" data-attr="attr2" data-attr-value="款式" data-attr-value-name="欧美" onclick="attrSelect(this);">
+									<a href="javascript:;">
+										欧美 <span class="color">欧美</span> <i></i>
+									</a>
+								</li>
+								<li class="brand " title="复古" data-attr="attr2" data-attr-value="款式" data-attr-value-name="复古" onclick="attrSelect(this);">
+									<a href="javascript:;">
+										复古 <span class="color">复古</span> <i></i>
+									</a>
+								</li>
+								<li class="brand " title="传统" data-attr="attr2" data-attr-value="款式" data-attr-value-name="传统" onclick="attrSelect(this);">
+									<a href="javascript:;">
+										传统 <span class="color">传统</span> <i></i>
+									</a>
+								</li>
+							</ul>
+						</div>
+					</dd>
+				</dl>
+				<!--价格-->
+				<input type="hidden" id="hidden_category_id" value="311" />
+				<input type="hidden" id="hidden_brand_id" value="" />
+				<input type="hidden" id="hidden_brand_name" value="" />
+				<input type="hidden" id="hidden_min_price" value="" />
+				<input type="hidden" id="hidden_max_price" value="" />
+				<input type="hidden" id="hidden_url_parameter" value="category_id=311" />
+			</div>
+			<div class="blank15"></div>
+			<div class="content-wrap category-wrap clearfix">
+				<!--功能：左侧新品推荐、销售排行榜-->
+				<!--创建人：Page老师-->
+				<!--时间：2017年2月7日11:57:58-->
+				<div class="aside">
+					<span class="slide-aside"></span>
+					<div class="aside-inner">
+						<!--新品推荐-->
+						<div class="aside-con">
+							<h2 class="aside-tit">新品推荐</h2>
+							<ul class="aside-list">
+							</ul>
+						</div>
+						<!--销量排行榜-->
+						<div class="aside-con">
+							<h2 class="aside-tit">销量排行榜</h2>
+							<ul class="aside-list">
+								<li>
+									<div class="p-img">
+										<a target="_blank" title="单鞋细高跟防水台鱼嘴女凉鞋2017春夏季新款复古刺绣高跟鞋40-42" href="http://tp.23673.com/goods/goodsinfo?goodsid=383">
+											<img src="../../static/picture/1500601152702_5.jpg">
+										</a>
+									</div>
+									<div class="p-name">
+										<a target="_blank" title="单鞋细高跟防水台鱼嘴女凉鞋2017春夏季新款复古刺绣高跟鞋40-42" href="http://tp.23673.com/goods/goodsinfo?goodsid=383">单鞋细高跟防水台鱼嘴女凉鞋2017春夏季新款复古刺绣高跟鞋40-42</a>
+									</div>
+									<div class="p-price">
+										<span class="sale-price money-color">￥345.00</span>
+										<span class="sale-num">销量：21</span>
+									</div>
+								</li>
+								<li>
+									<div class="p-img">
+										<a target="_blank" title="M Queen独立制衣 优雅V领褶皱飘带系带修身长裙A字吊带连衣裙8915" href="http://tp.23673.com/goods/goodsinfo?goodsid=382">
+											<img src="../../static/picture/1500600767632_4.jpg">
+										</a>
+									</div>
+									<div class="p-name">
+										<a target="_blank" title="M Queen独立制衣 优雅V领褶皱飘带系带修身长裙A字吊带连衣裙8915" href="http://tp.23673.com/goods/goodsinfo?goodsid=382">M Queen独立制衣 优雅V领褶皱飘带系带修身长裙A字吊带连衣裙8915</a>
+									</div>
+									<div class="p-price">
+										<span class="sale-price money-color">￥369.00</span>
+										<span class="sale-num">销量：1</span>
+									</div>
+								</li>
+								<li>
+									<div class="p-img">
+										<a target="_blank" title="神舟战神 T6-S5D1独显4G四核i5高清15.6英寸游戏本笔记本电脑正品" href="http://tp.23673.com/goods/goodsinfo?goodsid=388">
+											<img src="../../static/picture/1500601655972_3.jpg">
+										</a>
+									</div>
+									<div class="p-name">
+										<a target="_blank" title="神舟战神 T6-S5D1独显4G四核i5高清15.6英寸游戏本笔记本电脑正品" href="http://tp.23673.com/goods/goodsinfo?goodsid=388">神舟战神 T6-S5D1独显4G四核i5高清15.6英寸游戏本笔记本电脑正品</a>
+									</div>
+									<div class="p-price">
+										<span class="sale-price money-color">￥4700.00</span>
+										<span class="sale-num">销量：1</span>
+									</div>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<!--is_new_recommend新品推荐显示 is_sale_ranking销售排行显示-->
+				<!--功能：商品列表可块级显示也可条状显示-->
+				<!--创建人：Page老师-->
+				<!--时间：2017年2月7日11:57:58-->
+				<script src="../../static/js/controlgoods_3.js"></script>
+				<script src="../../static/js/ns_collections_7.js" type="text/javascript"></script>
+				<!-- 地址选择 _start -->
+				<script type="text/javascript" src="../../static/js/ns_select_region_4.js"></script>
+				<input type="hidden" id="hidden_province" value="湖南省" />
+				<input type="hidden" id="hidden_city" value="长沙市" />
+				<div class="main">
+					<div id="filter">
+						<!--排序-->
+						<form method="get" name="listform" action="" style="position: relative;">
+							<div class="fore1">
+								<dl class="order">
+									<!-- 默认 -->
+									<dd class="first curr">
+										<a href="http://tp.23673.com/goods/goodslist?category_id=311">综合</a>
+									</dd>
+									<!-- 销量 -->
+									<dd>
+										<a href="http://tp.23673.com/goods/goodslist?category_id=311&order=ng.sales&sort=desc">销量
+											<b class="icon-order-DESCending"></b>
+										</a>
+									</dd>
+
+									<!-- 新品 -->
+									<dd>
+										<a href="http://tp.23673.com/goods/goodslist?category_id=311&order=ng.is_new&sort=desc">新品
+											<b class="icon-order-DESCending"></b>
+										</a>
+									</dd>
+
+									<!-- 价格 -->
+
+									<dd>
+										<a href="http://tp.23673.com/goods/goodslist?category_id=311&order=ng.price&sort=desc">价格
+											<b class="icon-order-DESCending"></b>
+										</a>
+									</dd>
+								</dl>
+								<div class="total">共 <span class="color" id="shops_count">4</span>个商品&nbsp;</div>
+								<dl class="order f-right">
+									<!-- <dd class="first">
+						<a href="javascript:;" style="position: relative;" onmouseout="hideAddress(this)" onmousemove="showAddress(this)">所在地<i class="address_home_down"></i> </a>
+					</dd> -->
+								</dl>
+							</div>
+							<div class="fore2">
+								<div class="filter-btn">
+									<span class="distribution">配送至</span>
+									<div class="region-chooser-container region-chooser" style="z-index: 3">
+										<div class="region-chooser-selected">
+											<div class="region js-region">
+												<font>湖南省长沙市<i></i></font>
+											</div>
+										</div>
+										<div class="region-chooser-box" id="region-chooser-box" style="display: none;">
+											<div class="region-chooser-close"></div>
+											<div class="region-tabs">
+												<div class="region-tab selected" data-region-level="1" style="display: block">
+													湖南省<i></i>
+												</div>
+												<div class="region-tab" data-region-level="2" style="display: block">
+													长沙市<i></i>
+												</div>
+												<div class="region-tab " data-region-level="3" style="display: block">
+													请选择区/县<i></i>
+												</div>
+											</div>
+											<div class="region-items" data-region-level="1" style="display: block;"></div>
+											<div class="region-items" data-region-level="2" style="display: none;"></div>
+											<div class="region-items" data-region-level="3" style="display: none;"></div>
+										</div>
+										<div style="clear: both;"></div>
+									</div>
+
+									<a href="http://tp.23673.com/goods/goodslist?category_id=311&shipping_fee=0" class="filter-tag ">
+										<i class="icon"></i><span class="text">包邮</span>
+									</a>
+
+									<a href="http://tp.23673.com/goods/goodslist?category_id=311&stock=0" class="filter-tag ">
+										<i class="icon"></i><span class="text">仅显示有货</span>
+									</a>
+								</div>
+								<div class="filter-mod">
+									<!-- 选中样式为a标签添加curr样式 -->
+									<div class="nch-sortbar-location">商品所在地：
+										<div class="select-layer">
+											<div class="holder">
+												<em nc_type="area_name">
+																不限地区
+																</em>
+											</div>
+											<div class="selected">
+												<a nc_type="area_name">
+													不限地区
+												</a>
+											</div>
+											<i class="direction"></i>
+										</div>
+									</div>
+									<a href="javascript:;" data-type="1" title="列表模式" class="filter-type filter-type-list js-filter-type">
+										<span class="filter-type-icon"></span>
+									</a>
+									<a href="javascript:;" data-type="0" title="大图模式" class="filter-type filter-type-grid curr js-filter-type">
+										<span class="filter-type-icon"></span>
+									</a>
+								</div>
+							</div>
+							<ul class="options">
+								<div class="filter-detailc" id="addressDraw">
+									<dl class="location-hots">
+										<dt>常用地区</dt>
+										<dd>
+											<a href="http://tp.23673.com/goods/goodslist?category_id=311&province_id=1&province_name=北京">北京</a>
+										</dd>
+										<dd>
+											<a href="http://tp.23673.com/goods/goodslist?category_id=311&province_id=2&province_name=天津">天津</a>
+										</dd>
+										<dd>
+											<a href="http://tp.23673.com/goods/goodslist?category_id=311&province_id=9&province_name=上海">上海</a>
+										</dd>
+									</dl>
+									<dl class="location-all">
+										<dt>省份</dt>
+										<dd>
+											<ul>
+												<li>
+													<p class="lt">A</p>
+													<p class="lc">
+														<span><a href="http://tp.23673.com/goods/goodslist?category_id=311&province_id=12&province_name=安徽">安徽</a></span>
+														<span><a href="http://tp.23673.com/goods/goodslist?category_id=311&province_id=33&province_name=澳门">澳门</a></span>
+													</p>
+												</li>
+												<li>
+													<p class="lt">C</p>
+													<p class="lc">
+														<span><a href="http://tp.23673.com/goods/goodslist?category_id=311&province_id=22&province_name=重庆">重庆</a></span>
+													</p>
+												</li>
+												<li>
+													<p class="lt">F</p>
+													<p class="lc">
+														<span><a href="http://tp.23673.com/goods/goodslist?category_id=311&province_id=13&province_name=福建">福建</a></span>
+													</p>
+												</li>
+												<li>
+													<p class="lt">G</p>
+													<p class="lc">
+														<span><a href="http://tp.23673.com/goods/goodslist?category_id=311&province_id=19&province_name=广东">广东</a></span>
+														<span><a href="http://tp.23673.com/goods/goodslist?category_id=311&province_id=28&province_name=甘肃">甘肃</a></span>
+														<span><a href="http://tp.23673.com/goods/goodslist?category_id=311&province_id=20&province_name=广西">广西</a></span>
+														<span><a href="">贵州</a></span>
+													</p>
+												</li>
+											</ul>
+											<ul>
+												<li>
+													<p class="lt">H</p>
+													<p class="lc">
+														<span><a href="http://tp.23673.com/goods/goodslist?category_id=311&province_id=21&province_name=海南">海南</a></span>
+														<span><a href="http://tp.23673.com/goods/goodslist?category_id=311&province_id=3&province_name=河北">河北</a></span>
+														<span><a href="http://tp.23673.com/goods/goodslist?category_id=311&province_id=16&province_name=河南">河南</a></span>
+														<span><a href="http://tp.23673.com/goods/goodslist?category_id=311&province_id=8&province_name=黑龙江">黑龙江</a></span>
+														<span><a href="http://tp.23673.com/goods/goodslist?category_id=311&province_id=17&province_name=湖北">湖北</a></span>
+														<span><a href="http://tp.23673.com/goods/goodslist?category_id=311&province_id=18&province_name=湖南">湖南</a></span>
+													</p>
+												</li>
+												<li>
+													<p class="lt">J</p>
+													<p class="lc">
+														<span><a href="http://tp.23673.com/goods/goodslist?category_id=311&province_id=10&province_name=江苏">江苏</a></span>
+														<span><a href="http://tp.23673.com/goods/goodslist?category_id=311&province_id=14&province_name=江西">江西</a></span>
+														<span><a href="http://tp.23673.com/goods/goodslist?category_id=311&province_id=7&province_name=吉林">吉林</a></span>
+													</p>
+												</li>
+											</ul>
+											<ul>
+												<li>
+													<p class="lt">N</p>
+													<p class="lc">
+														<span><a href="http://tp.23673.com/goods/goodslist?category_id=311&province_id=6&province_name=辽宁">辽宁</a></span>
+														<span><a href="http://tp.23673.com/goods/goodslist?category_id=311&province_id=5&province_name=内蒙古">内蒙古</a></span>
+														<span><a href="http://tp.23673.com/goods/goodslist?category_id=311&province_id=30&province_name=宁夏">宁夏</a></span>
+													</p>
+												</li>
+												<li>
+													<p class="lt">Q</p>
+													<p class="lc"> <span><a href="http://tp.23673.com/goods/goodslist?category_id=311&province_id=29&province_name=青海">青海</a></span> </p>
+												</li>
+												<li>
+													<p class="lt">S</p>
+													<p class="lc">
+														<span><a href="http://tp.23673.com/goods/goodslist?category_id=311&province_id=15&province_name=山东">山东</a></span>
+														<span><a href="http://tp.23673.com/goods/goodslist?category_id=311&province_id=4&province_name=山西">山西</a></span>
+														<span><a href="http://tp.23673.com/goods/goodslist?category_id=311&province_id=27&province_name=陕西">陕西</a></span>
+														<span><a href="http://tp.23673.com/goods/goodslist?category_id=311&province_id=23&province_name=四川">四川</a></span>
+													</p>
+												</li>
+											</ul>
+											<ul>
+												<li>
+													<p class="lt">T</p>
+													<p class="lc"> <span><a href="http://tp.23673.com/goods/goodslist?category_id=311&province_id=34&province_name=台湾">台湾</a></span> </p>
+												</li>
+												<li>
+													<p class="lt">X</p>
+													<p class="lc">
+														<span><a href="http://tp.23673.com/goods/goodslist?category_id=311&province_id=26&province_name=西藏">西藏</a></span>
+														<span><a href="http://tp.23673.com/goods/goodslist?category_id=311&province_id=31&province_name=新疆">新疆</a></span> <span><a href="">香港</a></span>
+													</p>
+												</li>
+												<li>
+													<p class="lt">Y</p>
+													<p class="lc"> <span><a href="http://tp.23673.com/goods/goodslist?category_id=311&province_id=25&province_name=云南">云南</a></span> </p>
+												</li>
+												<li>
+													<p class="lt">Z</p>
+													<p class="lc"> <span><a href="http://tp.23673.com/goods/goodslist?category_id=311&province_id=11&province_name=浙江">浙江</a></span> </p>
+												</li>
+											</ul>
+										</dd>
+									</dl>
+									<p class="oreder-default">
+										<a href="http://tp.23673.com/goods/goodslist?category_id=311">不限地区</a>
+									</p>
+								</div>
+							</ul>
+						</form>
+					</div>
+					<!--主体商品内容展示-->
+					<form name="compareForm" action="compare.php" method="post" onsubmit="" id="table_list">
+						<div class="goodsList js-list-type" style="display: none;">
+							<!-- JS加载商品列表数据【列表模式】 -->
+
+							<ul class="clearfix">
+								<li class="thumb">
+									<a href="http://tp.23673.com/goods/goodsinfo?goodsid=372" target="_blank" title="2017新款女装夏装修身长款连衣裙女雪纺灯笼袖中袖裙雪纺刺绣长裙">
+										<img src="../../static/picture/01560f4798cd4dcaa436d7b1010e2047.gif" class="pic_img_206" style="display: inline;">
+									</a>
+								</li>
+								<li class="goodsName">
+									<a href="http://tp.23673.com/shop/goods/goodsinfo?goodsid=372" target="_blank" title="2017新款女装夏装修身长款连衣裙女雪纺灯笼袖中袖裙雪纺刺绣长裙">2017新款女装夏装修身长款连衣裙女雪纺灯笼袖中袖裙雪纺刺绣长裙</a>
+								</li>
+								<li class="list_price">市场价：
+									<font class="market">￥1.00</font><br> 本店售价：
+									<font class="shop">￥0.00</font> <br></li>
+								<li class="action">
+									<a href="javascript:;" class="action-btn collet-btn  curr" onclick="collectionGoods(372,'goods','2017新款女装夏装修身长款连衣裙女雪纺灯笼袖中袖裙雪纺刺绣长裙',this,true)">
+										收藏
+									</a>
+									<a href="javascript:ShowGoodsAttribute(372,'2017新款女装夏装修身长款连衣裙女雪纺灯笼袖中袖裙雪纺刺绣长裙',,this,1000,0);" class="action-btn addcart-btn add-cart">加入购物车</a>
+								</li>
+							</ul>
+
+							<ul class="clearfix">
+								<li class="thumb">
+									<a href="http://tp.23673.com/goods/goodsinfo?goodsid=380" target="_blank" title="印花显瘦A字碎花真丝连衣裙女夏季2017新款欧洲站气质裙子女装潮">
+										<img src="../../static/picture/1500547407502_4.jpg" class="pic_img_206" style="display: inline;">
+									</a>
+								</li>
+								<li class="goodsName">
+									<a href="http://tp.23673.com/shop/goods/goodsinfo?goodsid=380" target="_blank" title="印花显瘦A字碎花真丝连衣裙女夏季2017新款欧洲站气质裙子女装潮">印花显瘦A字碎花真丝连衣裙女夏季2017新款欧洲站气质裙子女装潮</a>
+								</li>
+								<li class="list_price">市场价：
+									<font class="market">￥0.00</font><br> 本店售价：
+									<font class="shop">￥359.00</font> <br></li>
+								<li class="action">
+									<a href="javascript:;" class="action-btn collet-btn  curr" onclick="collectionGoods(380,'goods','印花显瘦A字碎花真丝连衣裙女夏季2017新款欧洲站气质裙子女装潮',this,true)">
+										收藏
+									</a>
+									<a href="javascript:ShowGoodsAttribute(380,'印花显瘦A字碎花真丝连衣裙女夏季2017新款欧洲站气质裙子女装潮',1827,this,1000,1);" class="action-btn addcart-btn add-cart">加入购物车</a>
+								</li>
+							</ul>
+
+							<ul class="clearfix">
+								<li class="thumb">
+									<a href="http://tp.23673.com/goods/goodsinfo?goodsid=381" target="_blank" title="2016夏装新款夜店豹纹性感露背低胸女装超短裙抹胸紧身包臀连衣裙">
+										<img src="../../static/picture/1500600673622_4.jpg" class="pic_img_206" style="display: inline;">
+									</a>
+								</li>
+								<li class="goodsName">
+									<a href="http://tp.23673.com/shop/goods/goodsinfo?goodsid=381" target="_blank" title="2016夏装新款夜店豹纹性感露背低胸女装超短裙抹胸紧身包臀连衣裙">2016夏装新款夜店豹纹性感露背低胸女装超短裙抹胸紧身包臀连衣裙</a>
+								</li>
+								<li class="list_price">市场价：
+									<font class="market">￥0.00</font><br> 本店售价：
+									<font class="shop">￥426.00</font> <br></li>
+								<li class="action">
+									<a href="javascript:;" class="action-btn collet-btn  curr" onclick="collectionGoods(381,'goods','2016夏装新款夜店豹纹性感露背低胸女装超短裙抹胸紧身包臀连衣裙',this,true)">
+										收藏
+									</a>
+									<a href="javascript:ShowGoodsAttribute(381,'2016夏装新款夜店豹纹性感露背低胸女装超短裙抹胸紧身包臀连衣裙',1839,this,1000,1);" class="action-btn addcart-btn add-cart">加入购物车</a>
+								</li>
+							</ul>
+
+							<ul class="clearfix">
+								<li class="thumb">
+									<a href="http://tp.23673.com/goods/goodsinfo?goodsid=382" target="_blank" title="M Queen独立制衣 优雅V领褶皱飘带系带修身长裙A字吊带连衣裙8915">
+										<img src="../../static/picture/1500600767632_4.jpg" class="pic_img_206" style="display: inline;">
+									</a>
+								</li>
+								<li class="goodsName">
+									<a href="http://tp.23673.com/shop/goods/goodsinfo?goodsid=382" target="_blank" title="M Queen独立制衣 优雅V领褶皱飘带系带修身长裙A字吊带连衣裙8915">M Queen独立制衣 优雅V领褶皱飘带系带修身长裙A字吊带连衣裙8915</a>
+								</li>
+								<li class="list_price">市场价：
+									<font class="market">￥0.00</font><br> 本店售价：
+									<font class="shop">￥369.00</font> <br></li>
+								<li class="action">
+									<a href="javascript:;" class="action-btn collet-btn  curr" onclick="collectionGoods(382,'goods','M Queen独立制衣 优雅V领褶皱飘带系带修身长裙A字吊带连衣裙8915',this,true)">
+										收藏
+									</a>
+									<a href="javascript:ShowGoodsAttribute(382,'M Queen独立制衣 优雅V领褶皱飘带系带修身长裙A字吊带连衣裙8915',1841,this,999,1);" class="action-btn addcart-btn add-cart">加入购物车</a>
+								</li>
+							</ul>
+						</div>
+						<ul class="list-grid clearfix js-list-grid">
+							<li class="item ">
+								<div class="item-con">
+									<div class="item-pic">
+										<a href="http://tp.23673.com/goods/goodsinfo?goodsid=372" title="2017新款女装夏装修身长款连衣裙女雪纺灯笼袖中袖裙雪纺刺绣长裙" target="_blank">
+											<img src="../../static/picture/01560f4798cd4dcaa436d7b1010e2047.gif">
+										</a>
+									</div>
+									<div class="item-info">
+										<div class="item-price"><em class="sale-price money-color">￥0.00</em></div>
+										<div class="item-name">
+											<a href="http://tp.23673.com/goods/goodsinfo?goodsid=372" target="_blank" title="2017新款女装夏装修身长款连衣裙女雪纺灯笼袖中袖裙雪纺刺绣长裙">2017新款女装夏装修身长款连衣裙女雪纺灯笼袖中袖裙雪纺刺绣长裙</a>
+										</div>
+										<div class="item-con-info">
+											<div class="fl">
+												<div class="item-operate">
+													<a href="javascript:;" class="operate-btn collet-btn  goods-collect" onclick="collectionGoods(372,'goods','2017新款女装夏装修身长款连衣裙女雪纺灯笼袖中袖裙雪纺刺绣长裙',this,false)">
+														<i data-log-id="0"></i>
+														<span> 收藏					 					</span>
+													</a>
+													<a href="http://tp.23673.com/goods/goodsinfo?goodsid=372#goods_evaluate" target="_blank" class="operate-btn comment-btn"><i></i> 0</a>
+												</div>
+											</div>
+											<div class="fr">
+												<div class="item-add-cart">
+													<a href="javascript:;" class="add-cart" title="加入购物车" style="background-image: url(../../static/images/gray-cart_3.png)"></a>
+													<input type="hidden" name="goods_sku372" value="1827,1828,1829;" stock="0" price="0.00" skuid="1471" skuname=" ">
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</li>
+							<li class="item ">
+								<div class="item-con">
+									<div class="item-pic">
+										<a href="http://tp.23673.com/goods/goodsinfo?goodsid=380" title="印花显瘦A字碎花真丝连衣裙女夏季2017新款欧洲站气质裙子女装潮" target="_blank">
+											<img src="../../static/picture/1500547407502_4.jpg">
+										</a>
+									</div>
+									<div class="item-info">
+										<div class="item-price"><em class="sale-price money-color">￥359.00</em></div>
+										<div class="item-name">
+											<a href="http://tp.23673.com/goods/goodsinfo?goodsid=380" target="_blank" title="印花显瘦A字碎花真丝连衣裙女夏季2017新款欧洲站气质裙子女装潮">印花显瘦A字碎花真丝连衣裙女夏季2017新款欧洲站气质裙子女装潮</a>
+										</div>
+										<div class="item-con-info">
+											<div class="fl">
+												<div class="item-operate">
+													<a href="javascript:;" class="operate-btn collet-btn  goods-collect" onclick="collectionGoods(380,'goods','印花显瘦A字碎花真丝连衣裙女夏季2017新款欧洲站气质裙子女装潮',this,false)">
+														<i data-log-id="0"></i>
+														<span> 收藏					 					</span>
+													</a>
+													<a href="http://tp.23673.com/goods/goodsinfo?goodsid=380#goods_evaluate" target="_blank" class="operate-btn comment-btn"><i></i> 0</a>
+												</div>
+											</div>
+											<div class="fr">
+												<div class="item-add-cart">
+													<a href="javascript:ShowGoodsAttribute(380,'印花显瘦A字碎花真丝连衣裙女夏季2017新款欧洲站气质裙子女装潮',1827,this,1000,1);" class="add-cart" title="加入购物车"></a>
+													<input type="hidden" name="goods_sku380" value=";" stock="1000" price="359.00" skuid="1479" skuname="">
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</li>
+							<li class="item ">
+								<div class="item-con">
+									<div class="item-pic">
+										<a href="http://tp.23673.com/goods/goodsinfo?goodsid=381" title="2016夏装新款夜店豹纹性感露背低胸女装超短裙抹胸紧身包臀连衣裙" target="_blank">
+											<img src="../../static/picture/1500600673622_4.jpg">
+										</a>
+									</div>
+									<div class="item-info">
+										<div class="item-price"><em class="sale-price money-color">￥426.00</em></div>
+										<div class="item-name">
+											<a href="http://tp.23673.com/goods/goodsinfo?goodsid=381" target="_blank" title="2016夏装新款夜店豹纹性感露背低胸女装超短裙抹胸紧身包臀连衣裙">2016夏装新款夜店豹纹性感露背低胸女装超短裙抹胸紧身包臀连衣裙</a>
+										</div>
+										<div class="item-con-info">
+											<div class="fl">
+												<div class="item-operate">
+													<a href="javascript:;" class="operate-btn collet-btn  goods-collect" onclick="collectionGoods(381,'goods','2016夏装新款夜店豹纹性感露背低胸女装超短裙抹胸紧身包臀连衣裙',this,false)">
+														<i data-log-id="0"></i>
+														<span> 收藏					 					</span>
+													</a>
+													<a href="http://tp.23673.com/goods/goodsinfo?goodsid=381#goods_evaluate" target="_blank" class="operate-btn comment-btn"><i></i> 0</a>
+												</div>
+											</div>
+											<div class="fr">
+												<div class="item-add-cart">
+													<a href="javascript:ShowGoodsAttribute(381,'2016夏装新款夜店豹纹性感露背低胸女装超短裙抹胸紧身包臀连衣裙',1839,this,1000,1);" class="add-cart" title="加入购物车"></a>
+													<input type="hidden" name="goods_sku381" value=";" stock="1000" price="426.00" skuid="1480" skuname="">
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</li>
+							<li class="item last">
+								<div class="item-con">
+									<div class="item-pic">
+										<a href="http://tp.23673.com/goods/goodsinfo?goodsid=382" title="M Queen独立制衣 优雅V领褶皱飘带系带修身长裙A字吊带连衣裙8915" target="_blank">
+											<img src="../../static/picture/1500600767632_4.jpg">
+										</a>
+									</div>
+									<div class="item-info">
+										<div class="item-price"><em class="sale-price money-color">￥369.00</em></div>
+										<div class="item-name">
+											<a href="http://tp.23673.com/goods/goodsinfo?goodsid=382" target="_blank" title="M Queen独立制衣 优雅V领褶皱飘带系带修身长裙A字吊带连衣裙8915">M Queen独立制衣 优雅V领褶皱飘带系带修身长裙A字吊带连衣裙8915</a>
+										</div>
+										<div class="item-con-info">
+											<div class="fl">
+												<div class="item-operate">
+													<a href="javascript:;" class="operate-btn collet-btn  goods-collect" onclick="collectionGoods(382,'goods','M Queen独立制衣 优雅V领褶皱飘带系带修身长裙A字吊带连衣裙8915',this,false)">
+														<i data-log-id="0"></i>
+														<span> 收藏					 					</span>
+													</a>
+													<a href="http://tp.23673.com/goods/goodsinfo?goodsid=382#goods_evaluate" target="_blank" class="operate-btn comment-btn"><i></i> 0</a>
+												</div>
+											</div>
+											<div class="fr">
+												<div class="item-add-cart">
+													<a href="javascript:ShowGoodsAttribute(382,'M Queen独立制衣 优雅V领褶皱飘带系带修身长裙A字吊带连衣裙8915',1841,this,999,1);" class="add-cart" title="加入购物车"></a>
+													<input type="hidden" name="goods_sku382" value=";" stock="999" price="369.00" skuid="1481" skuname="">
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</li>
+							<!-- JS加载商品列表数据【大图模式】 -->
+						</ul>
+
+						<script src="../../static/js/popupgoodsskuattribute_3.js" type="text/javascript"></script>
+						<style>
+							#mask {
+								display: none;
+								position: fixed;
+								z-index: 9999;
+								width: 1903px;
+								height: 1097px;
+								top: 0px;
+								left: 0px;
+								opacity: 0.15;
+								background: rgb(0, 0, 0);
+							}
+						</style>
+						<div id="speDiv" style="display: none;">
+							<div class="pop-header">
+								<span>请选择商品属性</span>
+								<a href="javascript:closeBuy()" title="关闭" class="spe-close"></a>
+							</div>
+							<div class="attr-list js-sku-list" style="margin: 0;">
+								<!-- ajax 加载sku属性-->
+							</div>
+							<div class="spe-btn">
+								<a href="javascript:addToCart()" class="sure-btn">加入购物车</a>
+								<a href="javascript:closeBuy()" class="cancel-btn">取消</a>
+							</div>
+							<input type="hidden" id="hidden_goodsid" />
+							<input type="hidden" id="hidden_goods_name" />
+							<input type="hidden" id="hidden_skuid" />
+							<input type="hidden" id="hidden_skuname" />
+							<input type="hidden" id="hidden_sku_price" />
+							<input type="hidden" id="hidden_default_img_id" />
+							<input type="hidden" id="hidden_max_buy" />
+						</div>
+						<div id="mask"></div>
+						<!--分页-->
+						<div class="js-show-page">
+							<div id="pagination" class="page">
+								<div class="page-wrap fr">
+									<div class="total">共<span id="totalcount">4</span>条</div>
+								</div>
+								<div class="page-num fr">
+									<span id="home_page"><a href="javascript:;" class="num prev disabled" data-go-page="1" title="第一页" >首页</a></span>
+									<span id="pre_page"><a href="javascript:;" class="num prev disabled " title="上一页" >上一页</a></span>
+									<div id="page_list" style="float: left;goods/goodslist">
+										<!-- 分页页码显示计算 -->
+
+										<!-- 总页数小于总页码时就都显示 -->
+										<span class="num curr"><a href="javascript:;" data-cur-page="1">1</a></span>
+										<!-- 当前页小于页码的页码的平均两面的值时显示 -->
+
+									</div>
+
+									<span id="next_page"><a href="javascript:;" class="num next disabled" title="下一页" >下一页</a></span>
+									<span id="last_page"><a href="javascript:;" class="num next disabled" title="下一页" >尾页</a></span>
+
+								</div>
+							</div>
+						</div>
+					</form>
+				</div>
+			</div>
+			<div class="browse-history">
+				<div class="browse-history-tab clearfix">
+					<!--当前选中color-->
+					<span class="tab-span color">猜您喜欢</span>
+					<span class="tab-span">浏览历史</span>
+					<div class="browse-history-line bg-color" style="left: 0px; width: 104px;"></div>
+					<div class="browse-history-other">
+						<a href="javascript:change_like()" class="history-recommend-change">
+
+						</a>
+						<a href="javascript:clear_history();" class="clear_history none">
+							<i class="icon"></i>
+							<em id="del-history" class="text">清空</em>
+						</a>
+					</div>
+				</div>
+				<div class="browse-history-con">
+					<div class="browse-history-inner">
+						<!--猜您喜欢-->
+						<ul id="user_like" class="recommend-panel">
+							暂无推荐！
+						</ul>
+						<!--浏览历史-->
+						<ul id="history_list" class="history-panel none">
+							您还没有浏览历史！
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- 底部 -->
+		<div class="footer">
+			<div class="dsc-service">
+				<div class="w w1200 relative">
+					<ul class="service-list">
+						<li>
+							<div class="service-tit service-zheng">
+								<img src="../../static/picture/icon-zheng_9.png">
+							</div>
+							<div class="service-txt">正品保障</div>
+						</li>
+						<li>
+							<div class="service-tit service-qi">
+								<img src="../../static/picture/icon-qi_9.png"></i>
+							</div>
+							<div class="service-txt">七天包退</div>
+						</li>
+						<li>
+							<div class="service-tit service-hao">
+								<img src="../../static/picture/icon-grin_9.png">
+							</div>
+							<div class="service-txt">好评如潮</div>
+						</li>
+						<li>
+							<div class="service-tit service-shan">
+								<img src="../../static/picture/icon-light_9.png"></i>
+							</div>
+							<div class="service-txt">闪电发货</div>
+						</li>
+						<li class="last">
+							<div class="service-tit service-quan">
+								<img src="../../static/picture/icon-tronphy_9.png">
+							</div>
+							<div class="service-txt">权威荣誉</div>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<div class="dsc-help">
+				<div class="w w1200">
+					<div class="help-list">
+						<div class="help-item">
+							<h3>新手上路</h3>
+							<ul>
+								<li>
+									<a href="http://tp.23673.com/helpcenter/index?id=18" title="售后流程" target="_blank">有问题请找我</a>
+								</li>
+								<li>
+									<a href="http://tp.23673.com/helpcenter/index?id=8" title="售后流程" target="_blank">配送支付智能查询</a>
+								</li>
+							</ul>
+						</div>
+						<div class="help-item">
+							<h3>配送与支付</h3>
+							<ul>
+								<li>
+									<a href="http://tp.23673.com/helpcenter/index?id=7" title="售后流程" target="_blank">货到付款区域</a>
+								</li>
+								<li>
+									<a href="http://tp.23673.com/helpcenter/index?id=2" title="售后流程" target="_blank">支付方式说明</a>
+								</li>
+							</ul>
+						</div>
+						<div class="help-item">
+							<h3>会员中心</h3>
+							<ul>
+								<li>
+									<a href="http://tp.23673.com/helpcenter/index?id=3" title="售后流程" target="_blank">售后流程</a>
+								</li>
+								<li>
+									<a href="http://tp.23673.com/helpcenter/index?id=5" title="售后流程" target="_blank">资金管理</a>
+								</li>
+								<li>
+									<a href="http://tp.23673.com/helpcenter/index?id=6" title="售后流程" target="_blank">我的收藏</a>
+								</li>
+								<li>
+									<a href="http://tp.23673.com/helpcenter/index?id=14" title="售后流程" target="_blank">我的订单</a>
+								</li>
+							</ul>
+						</div>
+						<div class="help-item">
+							<h3>服务保证</h3>
+							<ul>
+								<li>
+									<a href="http://tp.23673.com/helpcenter/index?id=9" title="售后流程" target="_blank">退换货原则</a>
+								</li>
+								<li>
+									<a href="http://tp.23673.com/helpcenter/index?id=10" title="售后流程" target="_blank">售后服务保证</a>
+								</li>
+								<li>
+									<a href="http://tp.23673.com/helpcenter/index?id=11" title="售后流程" target="_blank">产品质量保证</a>
+								</li>
+							</ul>
+						</div>
+						<div class="help-item">
+							<h3>联系我们</h3>
+							<ul>
+								<li>
+									<a href="http://tp.23673.com/helpcenter/index?id=12" title="售后流程" target="_blank">网站故障报告</a>
+								</li>
+								<li>
+									<a href="http://tp.23673.com/helpcenter/index?id=15" title="售后流程" target="_blank">选机咨询</a>
+								</li>
+								<li>
+									<a href="http://tp.23673.com/helpcenter/index?id=16" title="售后流程" target="_blank">投诉与建议</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+					<div class="help-cover">
+						<div class="help-ctn">
+							<div class="help-ctn-mt">
+								<span>服务热线</span> <strong>0731-85573019</strong>
+							</div>
+							<div class="help-ctn-mb">
+
+								<a id="IM" im_type="dsc" onclick="openWin(this)" href="http://wpa.qq.com/msgrd?v=3&uin=10202706&site=qq&menu=yes" target="_blank" class="btn-ctn"><img src="../../static/picture/icon-csu_9.png" style="vertical-align: middle;">&nbsp;&nbsp;咨询客服</a>
+							</div>
+						</div>
+						<div class="help-scan">
+							<div class="code">
+								<img src="../../static/picture/1500630330_9.jpg">
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="dsc-copyright">
+			<div class="w w1200">
+				<p class="copyright_info">
+					<a href="#">Copyright © 2015-2025 六星开源商城&nbsp;版权所有 保留一切权利</a>
+				</p>
+				<b> <a href="javascript:;" target="_blank" class="copyright-logo">六星</a>&nbsp;&nbsp;
+					<a href="http://www.sixstaredu.com" target="_blank"
+					class="copyright-logo">湖南六星教育网络科技有限公司&nbsp;&nbsp;</a> <span>提供技术支持&nbsp;0731-8557-3019</span>
+				</b>
+			</div>
+		</div>
+
+		<script type="text/javascript" src="../../static/js/ns_category_3.js"></script>
+		<script>
+			var attr_item = "";
+			$(function() {
+				if('' != "") {
+					attr_item = '';
+				}
+
+			})
+		</script>
+
+		<script>
+			(function() {
+				var bp = document.createElement('script');
+				var curProtocol = window.location.protocol.split(':')[0];
+				if(curProtocol === 'https') {
+					bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+				} else {
+					bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+				}
+				var s = document.getElementsByTagName("script")[0];
+				s.parentNode.insertBefore(bp, s);
+			})();
+		</script>
+	</body>
+</html>

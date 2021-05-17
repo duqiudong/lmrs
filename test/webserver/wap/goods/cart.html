@@ -1,0 +1,233 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<meta name="renderer" content="webkit" />
+<meta http-equiv="X-UA-COMPATIBLE" content="IE=edge,chrome=1"/>
+<meta content="text/html; charset=UTF-8">
+<meta name="viewport" content="initial-scale=1.0,maximum-scale=1.0,user-scalable=no">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
+<meta name="format-detection" content="telephone=no">
+<title>六星开源商城-六星教育</title>
+<meta name="keywords" content="六星教育" />
+<meta name="description" content="六星教育"/>
+<link rel="shortcut  icon" type="image/x-icon" href="/template/wap/default/public/images/favicon.ico" media="screen"/>
+<link rel="stylesheet" type="text/css" href="../../static/css/pre_foot_1.css">
+<link rel="stylesheet" type="text/css" href="../../static/css/pro-detail_1.css">
+<link rel="stylesheet" type="text/css" href="../../static/css/font-awesome.min_1.css">
+<link rel="stylesheet" type="text/css" href="../../static/css/showbox_1.css">
+<link rel="stylesheet" href="../../static/css/layer_2.css" id="layuicss-skinlayercss">
+<script src="../../static/js/showbox_2.js"></script>
+<script src="../../static/js/jquery_2.js"></script>
+<script type="text/javascript" src="../../static/js/layer_2.js"></script>
+<script src="../../static/js/load_task_1.js" type="text/javascript"></script>
+<script type="text/javascript">
+var CSS = "/template/wap/default/public/css";
+var APPMAIN='http://tp.23673.com/wap';
+var ADMINMAIN='http://tp.23673.com/admin';
+
+$(function(){
+	showLoadMaskLayer();
+})
+
+$(document).ready(function(){
+	hiddenLoadMaskLayer();
+	//编写代码
+});
+
+//页面底部选中
+function buttomActive(event){
+	clearButton();
+	if(event == "#buttom_home"){
+		$("#buttom_home").find("img").attr("src","/template/wap/default/public/images/home_check.png");
+	}else if(event == "#buttom_classify"){
+		$("#buttom_classify").find("img").attr("src","/template/wap/default/public/images/classify_check.png");
+	}else if(event == "#buttom_stroe"){
+		$("#buttom_stroe").find("img").attr("src","/template/wap/default/public/images/store_check.png");
+	}else if(event == "#bottom_cart"){
+		$("#bottom_cart").find("img").attr("src","/template/wap/default/public/images/cart_check.png");
+	}else if(event == "#bottom_member"){
+		$("#bottom_member").find("img").attr("src","/template/wap/default/public/images/user_check.png");
+	}
+}
+
+function clearButton(){
+	$("#buttom_home").find("img").attr("src","/template/wap/default/public/images/home_uncheck.png");
+	$("#buttom_classify").find("img").attr("src","/template/wap/default/public/images/classify_uncheck.png");
+	$("#buttom_stroe").find("img").attr("src","/template/wap/default/public/images/store_uncheck.png");
+	$("#bottom_cart").find("img").attr("src","/template/wap/default/public/images/cart_uncheck.png");
+	$("#bottom_member").find("img").attr("src","/template/wap/default/public/images/user_uncheck.png");
+}
+
+//显示加载遮罩层
+function showLoadMaskLayer(){
+	$(".mask-layer-loading").fadeIn(300);
+}
+
+//隐藏加载遮罩层
+function hiddenLoadMaskLayer(){
+	$(".mask-layer-loading").fadeOut(300);
+}
+</script>
+<style>
+body .sub-nav.nav-b5 dd i {margin: 3px auto 5px auto;}
+body .fixed.bottom {bottom: 0;}
+.mask-layer-loading{position: fixed;width: 100%;height: 100%;z-index: 999999;top: 0;left: 0;text-align: center;display: none;}
+.mask-layer-loading i,.mask-layer-loading img{text-align: center;color:#000000;font-size:50px;position: relative;top:50%;}
+</style>
+
+<link rel="stylesheet" href="../../static/css/order.css">
+<link rel="stylesheet" type="text/css"href="../../static/css/cart.css">
+<script src="../../static/js/cart.js" type="text/javascript"></script>
+<script type="text/javascript" src="../../static/js/weixincommon.js"></script>
+
+</head>
+<body class="body-gray">
+	
+<section class="head">
+	<a class="head_back" id="head_back" href="javascript:window.history.go(-1)"><i class="icon-back"></i></a>
+	<div class="head-title">购物车</div>
+</section>
+
+	<div class="motify" style="display: none;"><div class="motify-inner">弹出框提示</div></div>
+	
+<div class="popup" id="popup" style="display: none"></div>
+<div class="h50"></div>
+<div class="cart-detail">
+	<section class="cart-prolist">
+		<ul class="cart-prolist-ul" style="border: 0;">
+					<li data-parent-shopid="0">
+				<h2 class="title">
+					<div class="custom-store-img"></div>
+					店铺名称：niushop开源商城					<div class="cart_ed" >
+						<a id="cart_edit0" data-shopid="0" onclick="cart_edit(this,0)" style="display: block;">编辑</a>
+						<a id="edit_success0" onclick="cart_succ(this,0)" style="display: none;">完成</a>
+					</div>
+				</h2>
+			</li>
+						<li class="cart-list-li" data-shopid="0">
+				<div class="checkbox" is_check="yes" is_del='no'></div>
+				<div class="product">
+					<div class="pic">
+						<a href="http://tp.23673.com/wap/goods/goodsdetail?id=383">
+							<img src="../../static/picture/1500601152704.jpg" alt="商品图片">
+						</a>
+					</div>
+					<div class="info">
+						<p class="info-name">
+							<a href="http://tp.23673.com/wap/goods/goodsdetail?id=383">单鞋细高跟防水台鱼嘴女凉鞋2017春夏季新款复古刺绣高跟鞋40-42<span><br /></span></a>
+						</p>
+						<!-- 	<p class="info-price">
+						¥<span name="goods_price">345</span>
+													</p> -->
+					</div>
+				</div>
+				<div class="number">
+					¥<span name="goods_price">345</span>
+										×<span name="succ_amount">7</span>
+					<div name="edit_num0" style="display: none;">
+						<span class="ui-number">
+							<button type="button" class="decrease" onclick="Cart.changeBar(&#39;-&#39;,4,this)" title="减">-</button>
+							<input class="num" name="quantity" autocomplete="off" data-default-num="7" value="7" min="1" max="991" max_buy="0" data-cartid="4" data-shopid="0">
+							<button type="button" class="increase" onclick="Cart.changeBar(&#39;+&#39;,4,this)" title="加">+</button>
+						</span>
+					</div>
+				</div>
+			</li>
+						<li data-parent-shopid="0">
+				<h2 class="title">
+					<div class="custom-store-img"></div>
+					店铺名称：官方直营店					<div class="cart_ed" >
+						<a id="cart_edit0" data-shopid="0" onclick="cart_edit(this,0)" style="display: block;">编辑</a>
+						<a id="edit_success0" onclick="cart_succ(this,0)" style="display: none;">完成</a>
+					</div>
+				</h2>
+			</li>
+						<li class="cart-list-li" data-shopid="0">
+				<div class="checkbox" is_check="yes" is_del='no'></div>
+				<div class="product">
+					<div class="pic">
+						<a href="http://tp.23673.com/wap/goods/goodsdetail?id=380">
+							<img src="../../static/picture/1500547407504.jpg" alt="商品图片">
+						</a>
+					</div>
+					<div class="info">
+						<p class="info-name">
+							<a href="http://tp.23673.com/wap/goods/goodsdetail?id=380">印花显瘦A字碎花真丝连衣裙女夏季2017新款欧洲站气质裙子女装潮<span><br /></span></a>
+						</p>
+						<!-- 	<p class="info-price">
+						¥<span name="goods_price">359</span>
+													</p> -->
+					</div>
+				</div>
+				<div class="number">
+					¥<span name="goods_price">359</span>
+										×<span name="succ_amount">3</span>
+					<div name="edit_num0" style="display: none;">
+						<span class="ui-number">
+							<button type="button" class="decrease" onclick="Cart.changeBar(&#39;-&#39;,7,this)" title="减">-</button>
+							<input class="num" name="quantity" autocomplete="off" data-default-num="3" value="3" min="1" max="999" max_buy="0" data-cartid="7" data-shopid="0">
+							<button type="button" class="increase" onclick="Cart.changeBar(&#39;+&#39;,7,this)" title="加">+</button>
+						</span>
+					</div>
+				</div>
+			</li>
+					</ul>
+	</section>
+</div>
+<input type="hidden" id="countlist" value="2">
+<section class="cart-none" id="cart-none" style="display: none">
+	<i class="cart-big"></i>
+	<p class="text">您的购物车还没有商品！</p>
+		<a href="http://tp.23673.com/wap" class="btn">去逛逛</a>
+	</section>
+
+	
+<div class="fixed bottom">
+	<div class="btn_wrap btn_wrap_static">
+		<div class="btn ttn_server" id="div_selected">
+			<div style="float: left;height: 20px;width: 20px;padding-left:10px;">
+				<img src="../../static/picture/cartp2.png" is_check="yes" is_del="no" id="select_all" style="width:100%;"/>
+			</div>
+			<span id="sel_text">全选</span>
+		</div>
+		<div id="price_info">
+			合计： ¥<span id="orderprice" class="price"></span>
+			<br />
+			<!-- <span style="color: #999;">不含运费</span> -->
+		</div>
+		<button class="btn btn_buy" onclick="settlement()">
+			<span id="settlement">结算()</span>
+		</button>
+	</div>
+</div>
+<div class="h60"></div>
+<script type="text/javascript">
+var cart1 = "/template/wap/default/public/images/cartp1.png";
+var cart2 = "/template/wap/default/public/images/cartp2.png";
+//页面加载触发事件
+$(function () {
+	if(parseInt($("#countlist").val()) == 0){
+		$(".cart-prolist").hide();
+		$("#cart-none").show();
+		$(".fixed.bottom").hide();
+	}
+});
+</script>
+<script type="text/javascript">
+$("#head_back").click(function (){
+    var json ={
+            "center" : "2"
+        }
+    window.webkit.messageHandlers.center.postMessage(json);
+})
+</script>
+
+	
+	<!-- 加载弹出层 -->
+	<div class="mask-layer-loading">
+		<img src="../../static/picture/mask_load_1.gif"/>
+	</div>
+	
+</body>
+</html>

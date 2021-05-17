@@ -1,0 +1,2223 @@
+
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta name="renderer" content="webkit" />
+	<meta http-equiv="X-UA-COMPATIBLE" content="IE=edge,chrome=1" />
+	<meta charset="UTF-8">
+	<title>官方直营店 - 系统管理</title>
+	<link rel="shortcut icon" type="image/x-icon" href="/public/admin/images/admin_icon.ico" media="screen" />
+	<link rel="stylesheet" type="text/css" href="../../static/css/bootstrap_4.css" />
+	<link rel="stylesheet" type="text/css" href="../../static/css/bootstrap-responsive_4.css" />
+	<link rel="stylesheet" type="text/css" href="../../static/css/common_4.css" />
+	<link rel="stylesheet" type="text/css" href="../../static/css/font-awesome.min_4.css" />
+	<link rel="stylesheet" type="text/css" href="../../static/css/seller_center_4.css" />
+	<link rel="stylesheet" type="text/css" href="../../static/css/simple.switch.three_4.css" />
+	<style>
+		.wrapper {
+			width: 1268px;
+		}
+
+		.help-block {
+			color: red;
+		}
+
+		.ncsc-admin-info {
+			cursor: pointer;
+		}
+
+		.ncsc-path a {
+			text-decoration: none;
+		}
+
+		.is-upgrade {
+			width: 7px;
+			height: 7px;
+			background: red;
+			border-radius: 50%;
+			position: absolute;
+			z-index: 5;
+			bottom: 9px;
+			display: none;
+		}
+
+		.modal-header:hover {
+			cursor: move;
+		}
+	</style>
+	<script src="../../static/js/jquery-1.8.1.min_5.js"></script>
+	<script src="../../static/js/bootstrap_5.js"></script>
+	<script src="../../static/js/bootstrapswitch_4.js"></script>
+	<script src="../../static/js/simple.switch_4.js"></script>
+	<script src="../../static/js/jquery.unobtrusive-ajax.min_4.js"></script>
+	<script src="../../static/js/common_4.js"></script>
+	<script src="../../static/js/seller_4.js"></script>
+	<script src="../../static/js/load_task_4.js"></script>
+	<script src="../../static/js/load_bottom.js" type="text/javascript"></script>
+	<script src="../../static/js/jquery-ui.min_4.js"></script>
+	<script src="../../static/js/ns_tool_4.js"></script>
+	<script>
+		var PLATFORM_NAME = "官方直营店";
+		var ADMINIMG = "/public/admin/images"; //后台图片请求路径
+		var ADMINMAIN = "http://tp.23673.com/admin"; //后台请求路径
+		var UPLOAD = ""; //上传文件根目录
+		var PAGESIZE = "20"; //分页显示页数
+		var ROOT = ""; //跟目录
+
+		//上传文件路径
+		var UPLOADGOODS = 'upload/goods/'; //存放商品图片
+		var UPLOADGOODSSKU = 'upload/goods_sku/'; //存放商品SKU
+		var UPLOADGOODSBRAND = 'upload/goods_brand/'; //存放商品品牌图
+		var UPLOADGOODSGROUP = 'upload/goods_group/'; ////存放商品分组图片
+		var UPLOADGOODSCATEGORY = 'upload/goods_category/'; ////存放商品分类图片
+		var UPLOADCOMMON = 'upload/common/'; //存放公共图片、网站logo、独立图片、没有任何关联的图片
+		var UPLOADAVATOR = 'upload/avator/'; //存放用户头像
+		var UPLOADPAY = 'upload/pay/'; //存放支付生成的二维码图片
+		var UPLOADADV = 'upload/advertising/'; //存放广告位图片
+		var UPLOADEXPRESS = 'upload/express/'; //存放物流图片
+	</script>
+
+</head>
+
+<body>
+	<header class="ncsc-head-layout">
+		<div class="wrapper">
+			<div class="ncsc-admin">
+				<div class="ncsc-admin-headimg">
+					<img src="../../static/picture/default_user_portrait_4.gif" />
+				</div>
+				<span class="user-name ncsc-admin-info" data-toggle="dropdown"></span>
+				<a class="ncsc-admin-a ncsc-admin-info" data-toggle="dropdown"><i class="ncsc-admin-i ncsc-admin-down"></i></a>
+				<a class="ncsc-admin-a h40"><i class="ncsc-admin-line"></i></a>
+				<a class="ncsc-admin-a" href="http://tp.23673.com" target="_blank"><i class="ncsc-admin-i ncsc-admin-home"></i></a>
+				<a class="ncsc-admin-a" href="http://tp.23673.com/admin/login/logout" title="安全退出管理中心"><i class="ncsc-admin-i ncsc-admin-off"></i></a>
+				<div class="user-operation dropdown-menu">
+					<a href="javascript:;" title="修改密码" onclick="editpassword()"><i class="fa fa-wrench"></i>修改密码</a>
+					<a href="javascript:;" title="更新缓存" onclick="delcache()"><i class="fa fa-send"></i>更新缓存</a>
+				</div>
+			</div>
+			<div class="center-logo">
+				<a href="http://tp.23673.com/admin"><img src="../../static/picture/shop_logo_4.png"/></a>
+			</div>
+			<div class="index-search-container" style="position: relative;">
+				<div class="index-sitemap" onclick="nav_open()">
+					<a href="javascript:void(0);">导航管理<i class="icon-angle-down"></i></a>
+					<div class="sitemap-menu" style="display: none; z-index: 1000;">
+						<div class="title-bar" onclick="nav_close()">
+							<h2>
+							<i class="icon-sitemap"></i>管理导航<em></em>
+						</h2>
+							<span id="closeSitemap" class="close">X</span>
+						</div>
+						<div id="quicklink_list" class="content">
+							<dl>
+								<dt>首页</dt>
+								<dd>
+									<a href="http://tp.23673.com/admin/index/index"> 欢迎页</a>
+								</dd>
+							</dl>
+							<dl>
+								<dt>商品</dt>
+								<dd>
+									<a href="http://tp.23673.com/admin/goods/goodslist"> 商品列表</a>
+								</dd>
+								<dd>
+									<a href="http://tp.23673.com/admin/goods/addgoods"> 商品发布</a>
+								</dd>
+								<dd>
+									<a href="http://tp.23673.com/admin/goods/goodsgrouplist"> 商品标签</a>
+								</dd>
+								<dd>
+									<a href="http://tp.23673.com/admin/saleservice/consultlist"> 咨询管理</a>
+								</dd>
+								<dd>
+									<a href="http://tp.23673.com/admin/goods/goodscomment"> 商品评价</a>
+								</dd>
+								<dd>
+									<a href="http://tp.23673.com/admin/system/albumlist"> 相册管理</a>
+								</dd>
+								<dd>
+									<a href="http://tp.23673.com/admin/goods/recyclelist"> 商品回收站</a>
+								</dd>
+								<dd>
+									<a href="http://tp.23673.com/admin/goods/supplierlist"> 供货商</a>
+								</dd>
+							</dl>
+							<dl>
+								<dt>订单</dt>
+								<dd>
+									<a href="http://tp.23673.com/admin/order/orderlist"> 订单列表</a>
+								</dd>
+								<dd>
+									<a href="http://tp.23673.com/admin/express/expresscompany"> 物流公司</a>
+								</dd>
+								<dd>
+									<a href="http://tp.23673.com/admin/order/returnsetting"> 商家地址</a>
+								</dd>
+								<dd>
+									<a href="http://tp.23673.com/admin/shop/pickuppointlist"> 自提点管理</a>
+								</dd>
+							</dl>
+							<dl>
+								<dt>营销</dt>
+								<dd>
+									<a href="http://tp.23673.com/admin/promotion/coupontypelist"> 优惠券</a>
+								</dd>
+								<dd>
+									<a href="http://tp.23673.com/admin/promotion/mansonglist"> 满减送</a>
+								</dd>
+								<dd>
+									<a href="http://tp.23673.com/admin/promotion/getdiscountlist"> 限时折扣</a>
+								</dd>
+								<dd>
+									<a href="http://tp.23673.com/admin/promotion/fullshipping"> 满额包邮</a>
+								</dd>
+							</dl>
+							<dl>
+								<dt>店铺</dt>
+								<dd>
+									<a href="http://tp.23673.com/admin/shop/shopconfig"> 店铺设置</a>
+								</dd>
+								<dd>
+									<a href="http://tp.23673.com/admin/System/goodsRecommendClass"> 促销版块</a>
+								</dd>
+								<dd>
+									<a href="http://tp.23673.com/admin/config/shopadlist"> 广告管理</a>
+								</dd>
+								<dd>
+									<a href="http://tp.23673.com/admin/Config/shopNavigationList"> 导航管理</a>
+								</dd>
+								<dd>
+									<a href="http://tp.23673.com/admin/Shop/offlineStore"> 线下店铺</a>
+								</dd>
+								<dd>
+									<a href="http://tp.23673.com/admin/config/updatenotice"> 首页公告</a>
+								</dd>
+							</dl>
+							<dl>
+								<dt>用户</dt>
+								<dd>
+									<a href="http://tp.23673.com/admin/auth/userlist"> 用户列表</a>
+								</dd>
+								<dd>
+									<a href="http://tp.23673.com/admin/auth/authgrouplist"> 用户组列表</a>
+								</dd>
+								<dd>
+									<a href="http://tp.23673.com/admin/auth/userdetail"> 个人资料</a>
+								</dd>
+							</dl>
+							<dl>
+								<dt>资产</dt>
+								<dd>
+									<a href="http://tp.23673.com/admin/account/shopaccount"> 店铺收入</a>
+								</dd>
+								<dd>
+									<a href="http://tp.23673.com/admin/account/shopsalesaccount"> 销售概况</a>
+								</dd>
+								<dd>
+									<a href="http://tp.23673.com/admin/account/shopgoodssaleslist"> 商品分析</a>
+								</dd>
+								<dd>
+									<a href="http://tp.23673.com/admin/account/shopreport"> 运营报告</a>
+								</dd>
+								<dd>
+									<a href="http://tp.23673.com/admin/account/shopgoodssalesrank"> 销售排行</a>
+								</dd>
+							</dl>
+							<dl>
+								<dt>系统</dt>
+								<dd>
+									<a href="http://tp.23673.com/admin/system/modulelist"> 模块列表</a>
+								</dd>
+							</dl>
+						</div>
+					</div>
+				</div>
+				<div class="search-bar">
+					<input type="hidden" name="act" value="search" />
+					<input type="text" id="search_goods" name="keyword" placeholder="商品搜索" class="search-input-text" />
+					<input type="submit" class="search-input-btn pngFix" onclick="search()" value="" />
+				</div>
+			</div>
+			<nav class="ncsc-nav">
+				<dl onmouseover="add_nav_class(this)" onmouseout="remove_nav_class(this)">
+					<dt>
+					<a href="http://tp.23673.com/admin/index/index">首页</a>
+									</dt>
+				</dl>
+				<dl onmouseover="add_nav_class(this)" onmouseout="remove_nav_class(this)">
+					<dt>
+					<a href="http://tp.23673.com/admin/goods/goodslist">商品</a>
+									</dt>
+				</dl>
+				<dl onmouseover="add_nav_class(this)" onmouseout="remove_nav_class(this)">
+					<dt>
+					<a href="http://tp.23673.com/admin/order/orderlist">订单</a>
+									</dt>
+				</dl>
+				<dl onmouseover="add_nav_class(this)" onmouseout="remove_nav_class(this)">
+					<dt>
+					<a href="http://tp.23673.com/admin/promotion/coupontypelist">营销</a>
+									</dt>
+				</dl>
+				<dl onmouseover="add_nav_class(this)" onmouseout="remove_nav_class(this)">
+					<dt>
+					<a href="http://tp.23673.com/admin/shop/shopconfig">店铺</a>
+									</dt>
+				</dl>
+				<dl onmouseover="add_nav_class(this)" onmouseout="remove_nav_class(this)">
+					<dt>
+					<a href="http://tp.23673.com/admin/auth/userlist">用户</a>
+									</dt>
+				</dl>
+				<dl onmouseover="add_nav_class(this)" onmouseout="remove_nav_class(this)">
+					<dt>
+					<a href="http://tp.23673.com/admin/account/shopsalesaccount">资产</a>
+									</dt>
+				</dl>
+				<dl class="current_nav" onmouseover="add_nav_class(this)" onmouseout="remove_nav_class(this)">
+					<dt>
+					<a href="http://tp.23673.com/admin/system/modulelist">系统</a>
+									</dt>
+					<dd class="arrow"></dd>
+				</dl>
+			</nav>
+		</div>
+	</header>
+
+	<!-- 左边菜单的加载 -->
+	<div class="MAIN" style="min-height: 94vh;">
+
+		<div class="LEFT">
+			<div id="accordion2" class="accordion leftmenu">
+				<div class="accordion-group">
+					<div class="sidebarX">
+						<img src="../../static/picture/admin_left_logo_4.png" />
+						<h2>系统</h2>
+					</div>
+					<div class="accordion-body collapse in" id="collapseOne">
+						<ul class="nav nav-pills nav-stacked" id="left_menu-small">
+							<li class="active">
+								<h1></h1><a href="http://tp.23673.com/admin/system/modulelist">模块列表</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- 右边主要内容的加载 -->
+		<div class="RIGHT">
+			<div class="ncsc-path">
+				<a href="http://tp.23673.com/admin"><i class="icon-desktop"></i>官方直营店</a>
+				<i class="icon-angle-right"></i>
+				<a href="http://tp.23673.com/admin/system/modulelist">系统</a>
+				<i class="icon-angle-right"></i>
+				<!-- 需要加跳转链接用这个：http://tp.23673.com/admin/system/modulelist -->
+				<a href="javascript:;">模块列表</a>
+			</div>
+			<!--顶部边框开始  -->
+			<div class="tabmenu">
+				<ul class="tab pngFix">
+					<li class="active"><a href="http://tp.23673.com/admin/system/modulelist">模块列表</a></li>
+				</ul>
+				<div class="right_side_operation">
+					<ul>
+
+						<li><a class="nscs-table-handle_green" href="javascript:;" onclick="addModule()"><i class="fa fa-plus-circle"></i>&nbsp;添加模块</a></li>
+
+					</ul>
+				</div>
+			</div>
+			<hr class="tabmenu_hr" style="border:1px solid #00C0FF;margin:0 0px 10px 20px;" />
+			<div class="main">
+
+				<style>
+					.style0list table input {
+						color: #666;
+						width: 206px;
+						margin-bottom: 0px;
+						border: 1px solid #ccc;
+					}
+
+					.style0list table input.sort {
+						width: auto;
+						text-align: center;
+					}
+
+					.style0list tbody td {
+						line-height: 28px;
+					}
+				</style>
+				<input type="hidden" id="pid" value="0" />
+				<div class="style0list">
+					<table>
+						<colgroup>
+							<col style="width: 1%;">
+							<col style="width: 5%;">
+							<col style="width: 50%;">
+							<col style="width: 10%;">
+							<col style="width: 10%;">
+						</colgroup>
+						<thead>
+							<tr class="row-selected">
+								<th></th>
+								<th>排序</th>
+								<th style="text-align: left;">模块名</th>
+								<th>是否是菜单</th>
+								<th>操作</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr class="pid_0" style="height: 30px;">
+								<td>
+									<a href="javascript:;" onclick="tab_switch(467)" class="tab_jia_467" style="display: block;"><i class="fa fa-plus-circle"></i></a>
+									<a href="javascript:;" onclick="tab_switch(467)" class="tab_jian_467" style="display: none;"><i class="fa fa-minus-circle"></i></a>
+								</td>
+								<td style="text-align: center;"><input onkeyup="value=value.replace(/[^\d+(\.\d+)?]/g,'')" type="text" class="sort" fieldid="467" fieldname="sort" value="0" size="1"></td>
+								<td><input type="text" fieldid="467" fieldname="module_name" value="首页"></td>
+								<td style="text-align: center;">是</td>
+								<td style="text-align: center;"><a href="http://tp.23673.com/admin/system/editmodule?module_id=467">修改</a>
+									<a href="javascript:void(0);" onclick="delModule(467)">删除</a></td>
+							</tr>
+							<tr class="pid_467" style="height: 30px; display: none;">
+								<td> </td>
+								<td style="text-align: center;"><input onkeyup="value=value.replace(/[^\d+(\.\d+)?]/g,'')" type="text" class="sort" fieldid="515" fieldname="sort" value="0" size="1"></td>
+								<td><span style="color: #ccc;">|——</span> <input type="text" fieldid="515" fieldname="module_name" value="欢迎页"></td>
+								<td style="text-align: center;">是</td>
+								<td style="text-align: center;"><a href="http://tp.23673.com/admin/system/editmodule?module_id=515">修改</a>
+									<a href="javascript:void(0);" onclick="delModule(515)">删除</a></td>
+							</tr>
+							<tr class="pid_0" style="height: 30px;">
+								<td>
+									<a href="javascript:;" onclick="tab_switch(149)" class="tab_jia_149" style="display: block;"><i class="fa fa-plus-circle"></i></a>
+									<a href="javascript:;" onclick="tab_switch(149)" class="tab_jian_149" style="display: none;"><i class="fa fa-minus-circle"></i></a>
+								</td>
+								<td style="text-align: center;"><input onkeyup="value=value.replace(/[^\d+(\.\d+)?]/g,'')" type="text" class="sort" fieldid="149" fieldname="sort" value="1" size="1"></td>
+								<td><input type="text" fieldid="149" fieldname="module_name" value="商品"></td>
+								<td style="text-align: center;">是</td>
+								<td style="text-align: center;"><a href="http://tp.23673.com/admin/system/editmodule?module_id=149">修改</a>
+									<a href="javascript:void(0);" onclick="delModule(149)">删除</a></td>
+							</tr>
+							<tr class="pid_149" style="height: 30px; display: none;">
+								<td> </td>
+								<td style="text-align: center;"><input onkeyup="value=value.replace(/[^\d+(\.\d+)?]/g,'')" type="text" class="sort" fieldid="150" fieldname="sort" value="1" size="1"></td>
+								<td><span style="color: #ccc;">|——</span> <input type="text" fieldid="150" fieldname="module_name" value="商品列表"></td>
+								<td style="text-align: center;">是</td>
+								<td style="text-align: center;"><a href="http://tp.23673.com/admin/system/editmodule?module_id=150">修改</a>
+									<a href="javascript:void(0);" onclick="delModule(150)">删除</a></td>
+							</tr>
+							<tr class="pid_149" style="height: 30px; display: none;">
+								<td> </td>
+								<td style="text-align: center;"><input onkeyup="value=value.replace(/[^\d+(\.\d+)?]/g,'')" type="text" class="sort" fieldid="151" fieldname="sort" value="2" size="1"></td>
+								<td><span style="color: #ccc;">|——</span> <input type="text" fieldid="151" fieldname="module_name" value="商品发布"></td>
+								<td style="text-align: center;">是</td>
+								<td style="text-align: center;"><a href="http://tp.23673.com/admin/system/editmodule?module_id=151">修改</a>
+									<a href="javascript:void(0);" onclick="delModule(151)">删除</a></td>
+							</tr>
+							<tr class="pid_149" style="height: 30px; display: none;">
+								<td><a href="javascript:void(0)" onclick="tab_switch(171)" class="tab_jian_171 tab_jian_149" style="display: block;"><i class="fa fa-minus-circle"></i></a><a href="javascript:void(0)" onclick="tab_switch(171)" class="tab_jia_171 tab_jia_149" style="display: none;"><i class="fa fa-plus-circle"></i></a>									</td>
+								<td style="text-align: center;"><input onkeyup="value=value.replace(/[^\d+(\.\d+)?]/g,'')" type="text" class="sort" fieldid="171" fieldname="sort" value="3" size="1"></td>
+								<td><span style="color: #ccc;">|——</span> <input type="text" fieldid="171" fieldname="module_name" value="商品标签"></td>
+								<td style="text-align: center;">是</td>
+								<td style="text-align: center;"><a href="http://tp.23673.com/admin/system/editmodule?module_id=171">修改</a>
+									<a href="javascript:void(0);" onclick="delModule(171)">删除</a></td>
+							</tr>
+							<tr class="pid_171 pid_149" style="height: 30px; display: none;">
+								<td><label></td>
+				<td style="text-align: center;"><input type="text" class="sort"
+					fieldid="210" fieldname="sort" value="2"
+					size="1"></td>
+				<td><span style="color: #ccc;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|——</span>
+					<input type="text" fieldid="210"
+					fieldname="module_name" value="修改商品标签"></td>
+
+				<td style="text-align: center;">否</td>
+				<td style="text-align: center;"><a
+					href="http://tp.23673.com/admin/system/editmodule?module_id=210">修改</a>
+					<a href="javascript:void(0);"
+					onclick="delModule(210)">删除</a></td>
+			</tr>
+						<tr class="pid_171 pid_149"
+				style="height: 30px; display: none;">
+				<td><label></td>
+				<td style="text-align: center;"><input type="text" class="sort"
+					fieldid="172" fieldname="sort" value="6"
+					size="1"></td>
+				<td><span style="color: #ccc;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|——</span>
+					<input type="text" fieldid="172"
+					fieldname="module_name" value="添加商品标签"></td>
+				<td style="text-align: center;">否</td>
+				<td style="text-align: center;"><a
+					href="http://tp.23673.com/admin/system/editmodule?module_id=172">修改</a>
+					<a href="javascript:void(0);"
+					onclick="delModule(172)">删除</a></td>
+			</tr>
+						<tr class="pid_149"
+				style="height: 30px; display: none;">
+				<td>				</td>
+				<td style="text-align: center;"><input onkeyup="value=value.replace(/[^\d+(\.\d+)?]/g,'')" type="text" class="sort"
+					fieldid="334" fieldname="sort" value="8"
+					size="1"></td>
+				<td><span style="color: #ccc;">|——</span> <input type="text"
+					fieldid="334" fieldname="module_name"
+					value="咨询管理"></td>
+				<td style="text-align: center;">是</td>
+				<td style="text-align: center;"><a
+					href="http://tp.23673.com/admin/system/editmodule?module_id=334">修改</a>
+					<a href="javascript:void(0);"
+					onclick="delModule(334)">删除</a></td>
+			</tr>
+						<tr class="pid_149"
+				style="height: 30px; display: none;">
+				<td>				</td>
+				<td style="text-align: center;"><input onkeyup="value=value.replace(/[^\d+(\.\d+)?]/g,'')" type="text" class="sort"
+					fieldid="478" fieldname="sort" value="8"
+					size="1"></td>
+				<td><span style="color: #ccc;">|——</span> <input type="text"
+					fieldid="478" fieldname="module_name"
+					value="商品评价"></td>
+				<td style="text-align: center;">是</td>
+				<td style="text-align: center;"><a
+					href="http://tp.23673.com/admin/system/editmodule?module_id=478">修改</a>
+					<a href="javascript:void(0);"
+					onclick="delModule(478)">删除</a></td>
+			</tr>
+						<tr class="pid_149"
+				style="height: 30px; display: none;">
+				<td><a
+					href="javascript:void(0)" onclick="tab_switch(139)"
+					class="tab_jian_139 tab_jian_149"
+					style="display: block;"><i class="fa fa-minus-circle"></i></a><a
+					href="javascript:void(0)" onclick="tab_switch(139)"
+					class="tab_jia_139 tab_jia_149"
+					style="display: none;"><i class="fa fa-plus-circle"></i></a> 				</td>
+				<td style="text-align: center;"><input onkeyup="value=value.replace(/[^\d+(\.\d+)?]/g,'')" type="text" class="sort"
+					fieldid="139" fieldname="sort" value="10"
+					size="1"></td>
+				<td><span style="color: #ccc;">|——</span> <input type="text"
+					fieldid="139" fieldname="module_name"
+					value="相册管理"></td>
+				<td style="text-align: center;">是</td>
+				<td style="text-align: center;"><a
+					href="http://tp.23673.com/admin/system/editmodule?module_id=139">修改</a>
+					<a href="javascript:void(0);"
+					onclick="delModule(139)">删除</a></td>
+			</tr>
+						<tr class="pid_139 pid_149"
+				style="height: 30px; display: none;">
+				<td><label></td>
+				<td style="text-align: center;"><input type="text" class="sort"
+					fieldid="169" fieldname="sort" value="5"
+					size="1"></td>
+				<td><span style="color: #ccc;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|——</span>
+					<input type="text" fieldid="169"
+					fieldname="module_name" value="图片管理"></td>
+				<td style="text-align: center;">否</td>
+				<td style="text-align: center;"><a
+					href="http://tp.23673.com/admin/system/editmodule?module_id=169">修改</a>
+					<a href="javascript:void(0);"
+					onclick="delModule(169)">删除</a></td>
+			</tr>
+						<tr class="pid_149"
+				style="height: 30px; display: none;">
+				<td><a
+					href="javascript:void(0)" onclick="tab_switch(516)"
+					class="tab_jian_516 tab_jian_149"
+					style="display: block;"><i class="fa fa-minus-circle"></i></a><a
+					href="javascript:void(0)" onclick="tab_switch(516)"
+					class="tab_jia_516 tab_jia_149"
+					style="display: none;"><i class="fa fa-plus-circle"></i></a> 				</td>
+				<td style="text-align: center;"><input onkeyup="value=value.replace(/[^\d+(\.\d+)?]/g,'')" type="text" class="sort"
+					fieldid="516" fieldname="sort" value="11"
+					size="1"></td>
+				<td><span style="color: #ccc;">|——</span> <input type="text"
+					fieldid="516" fieldname="module_name"
+					value="商品回收站"></td>
+				<td style="text-align: center;">是</td>
+				<td style="text-align: center;"><a
+					href="http://tp.23673.com/admin/system/editmodule?module_id=516">修改</a>
+					<a href="javascript:void(0);"
+					onclick="delModule(516)">删除</a></td>
+			</tr>
+						<tr class="pid_516 pid_149"
+				style="height: 30px; display: none;">
+				<td><label></td>
+				<td style="text-align: center;"><input type="text" class="sort"
+					fieldid="517" fieldname="sort" value="0"
+					size="1"></td>
+				<td><span style="color: #ccc;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|——</span>
+					<input type="text" fieldid="517"
+					fieldname="module_name" value="回收站列表"></td>
+				<td style="text-align: center;">否</td>
+				<td style="text-align: center;"><a
+					href="http://tp.23673.com/admin/system/editmodule?module_id=517">修改</a>
+					<a href="javascript:void(0);"
+					onclick="delModule(517)">删除</a></td>
+			</tr>
+						<tr class="pid_149"
+				style="height: 30px; display: none;">
+				<td><a
+					href="javascript:void(0)" onclick="tab_switch(10007)"
+					class="tab_jian_10007 tab_jian_149"
+					style="display: block;"><i class="fa fa-minus-circle"></i></a><a
+					href="javascript:void(0)" onclick="tab_switch(10007)"
+					class="tab_jia_10007 tab_jia_149"
+					style="display: none;"><i class="fa fa-plus-circle"></i></a> 				</td>
+				<td style="text-align: center;"><input onkeyup="value=value.replace(/[^\d+(\.\d+)?]/g,'')" type="text" class="sort"
+					fieldid="10007" fieldname="sort" value="12"
+					size="1"></td>
+				<td><span style="color: #ccc;">|——</span> <input type="text"
+					fieldid="10007" fieldname="module_name"
+					value="供货商"></td>
+				<td style="text-align: center;">是</td>
+				<td style="text-align: center;"><a
+					href="http://tp.23673.com/admin/system/editmodule?module_id=10007">修改</a>
+					<a href="javascript:void(0);"
+					onclick="delModule(10007)">删除</a></td>
+			</tr>
+						<tr class="pid_10007 pid_149"
+				style="height: 30px; display: none;">
+				<td><label></td>
+				<td style="text-align: center;"><input type="text" class="sort"
+					fieldid="10008" fieldname="sort" value="0"
+					size="1"></td>
+				<td><span style="color: #ccc;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|——</span>
+					<input type="text" fieldid="10008"
+					fieldname="module_name" value="添加供货商"></td>
+				<td style="text-align: center;">否</td>
+				<td style="text-align: center;"><a
+					href="http://tp.23673.com/admin/system/editmodule?module_id=10008">修改</a>
+					<a href="javascript:void(0);"
+					onclick="delModule(10008)">删除</a></td>
+			</tr>
+						<tr class="pid_10007 pid_149"
+				style="height: 30px; display: none;">
+				<td><label></td>
+				<td style="text-align: center;"><input type="text" class="sort"
+					fieldid="10009" fieldname="sort" value="1"
+					size="1"></td>
+				<td><span style="color: #ccc;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|——</span>
+					<input type="text" fieldid="10009"
+					fieldname="module_name" value="修改供货商"></td>
+				<td style="text-align: center;">否</td>
+				<td style="text-align: center;"><a
+					href="http://tp.23673.com/admin/system/editmodule?module_id=10009">修改</a>
+					<a href="javascript:void(0);"
+					onclick="delModule(10009)">删除</a></td>
+			</tr>
+					<tr class="pid_0" style="height: 30px;">
+			<td>
+								<a href="javascript:;" onclick="tab_switch(184)" class="tab_jia_184" style="display: block;"><i class="fa fa-plus-circle"></i></a>
+				<a href="javascript:;" onclick="tab_switch(184)" class="tab_jian_184" style="display: none;"><i class="fa fa-minus-circle"></i></a>
+							</td>
+			<td style="text-align: center;"><input onkeyup="value=value.replace(/[^\d+(\.\d+)?]/g,'')" type="text" class="sort"
+					fieldid="184" fieldname="sort" value="2"
+					size="1"></td>
+				<td><input type="text" fieldid="184"
+					fieldname="module_name" value="订单"></td>
+				<td style="text-align: center;">是</td>
+				<td style="text-align: center;"><a
+					href="http://tp.23673.com/admin/system/editmodule?module_id=184">修改</a>
+					<a href="javascript:void(0);"
+					onclick="delModule(184)">删除</a></td>
+			</tr>
+						<tr class="pid_184"
+				style="height: 30px; display: none;">
+				<td><a
+					href="javascript:void(0)" onclick="tab_switch(185)"
+					class="tab_jian_185 tab_jian_184"
+					style="display: block;"><i class="fa fa-minus-circle"></i></a><a
+					href="javascript:void(0)" onclick="tab_switch(185)"
+					class="tab_jia_185 tab_jia_184"
+					style="display: none;"><i class="fa fa-plus-circle"></i></a> 				</td>
+				<td style="text-align: center;"><input onkeyup="value=value.replace(/[^\d+(\.\d+)?]/g,'')" type="text" class="sort"
+					fieldid="185" fieldname="sort" value="1"
+					size="1"></td>
+				<td><span style="color: #ccc;">|——</span> <input type="text"
+					fieldid="185" fieldname="module_name"
+					value="订单列表"></td>
+				<td style="text-align: center;">是</td>
+				<td style="text-align: center;"><a
+					href="http://tp.23673.com/admin/system/editmodule?module_id=185">修改</a>
+					<a href="javascript:void(0);"
+					onclick="delModule(185)">删除</a></td>
+			</tr>
+						<tr class="pid_185 pid_184"
+				style="height: 30px; display: none;">
+				<td><label></td>
+				<td style="text-align: center;"><input type="text" class="sort"
+					fieldid="190" fieldname="sort" value="1"
+					size="1"></td>
+				<td><span style="color: #ccc;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|——</span>
+					<input type="text" fieldid="190"
+					fieldname="module_name" value="订单详情"></td>
+				<td style="text-align: center;">否</td>
+				<td style="text-align: center;"><a
+					href="http://tp.23673.com/admin/system/editmodule?module_id=190">修改</a>
+					<a href="javascript:void(0);"
+					onclick="delModule(190)">删除</a></td>
+			</tr>
+						<tr class="pid_185 pid_184"
+				style="height: 30px; display: none;">
+				<td><label></td>
+				<td style="text-align: center;"><input type="text" class="sort"
+					fieldid="194" fieldname="sort" value="2"
+					size="1"></td>
+				<td><span style="color: #ccc;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|——</span>
+					<input type="text" fieldid="194"
+					fieldname="module_name" value="退款详情"></td>
+				<td style="text-align: center;">否</td>
+				<td style="text-align: center;"><a
+					href="http://tp.23673.com/admin/system/editmodule?module_id=194">修改</a>
+					<a href="javascript:void(0);"
+					onclick="delModule(194)">删除</a></td>
+			</tr>
+						<tr class="pid_184"
+				style="height: 30px; display: none;">
+				<td><a
+					href="javascript:void(0)" onclick="tab_switch(189)"
+					class="tab_jian_189 tab_jian_184"
+					style="display: block;"><i class="fa fa-minus-circle"></i></a><a
+					href="javascript:void(0)" onclick="tab_switch(189)"
+					class="tab_jia_189 tab_jia_184"
+					style="display: none;"><i class="fa fa-plus-circle"></i></a> 				</td>
+				<td style="text-align: center;"><input onkeyup="value=value.replace(/[^\d+(\.\d+)?]/g,'')" type="text" class="sort"
+					fieldid="189" fieldname="sort" value="4"
+					size="1"></td>
+				<td><span style="color: #ccc;">|——</span> <input type="text"
+					fieldid="189" fieldname="module_name"
+					value="物流公司"></td>
+				<td style="text-align: center;">是</td>
+				<td style="text-align: center;"><a
+					href="http://tp.23673.com/admin/system/editmodule?module_id=189">修改</a>
+					<a href="javascript:void(0);"
+					onclick="delModule(189)">删除</a></td>
+			</tr>
+						<tr class="pid_189 pid_184"
+				style="height: 30px; display: none;">
+				<td><label></td>
+				<td style="text-align: center;"><input type="text" class="sort"
+					fieldid="533" fieldname="sort" value="0"
+					size="1"></td>
+				<td><span style="color: #ccc;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|——</span>
+					<input type="text" fieldid="533"
+					fieldname="module_name" value="运费模板列表"></td>
+				<td style="text-align: center;">否</td>
+				<td style="text-align: center;"><a
+					href="http://tp.23673.com/admin/system/editmodule?module_id=533">修改</a>
+					<a href="javascript:void(0);"
+					onclick="delModule(533)">删除</a></td>
+			</tr>
+						<tr class="pid_189 pid_184"
+				style="height: 30px; display: none;">
+				<td><label></td>
+				<td style="text-align: center;"><input type="text" class="sort"
+					fieldid="487" fieldname="sort" value="1"
+					size="1"></td>
+				<td><span style="color: #ccc;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|——</span>
+					<input type="text" fieldid="487"
+					fieldname="module_name" value="模板编辑"></td>
+				<td style="text-align: center;">否</td>
+				<td style="text-align: center;"><a
+					href="http://tp.23673.com/admin/system/editmodule?module_id=487">修改</a>
+					<a href="javascript:void(0);"
+					onclick="delModule(487)">删除</a></td>
+			</tr>
+						<tr class="pid_189 pid_184"
+				style="height: 30px; display: none;">
+				<td><label></td>
+				<td style="text-align: center;"><input type="text" class="sort"
+					fieldid="534" fieldname="sort" value="2"
+					size="1"></td>
+				<td><span style="color: #ccc;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|——</span>
+					<input type="text" fieldid="534"
+					fieldname="module_name" value="编辑运费模板"></td>
+				<td style="text-align: center;">否</td>
+				<td style="text-align: center;"><a
+					href="http://tp.23673.com/admin/system/editmodule?module_id=534">修改</a>
+					<a href="javascript:void(0);"
+					onclick="delModule(534)">删除</a></td>
+			</tr>
+						<tr class="pid_189 pid_184"
+				style="height: 30px; display: none;">
+				<td><label></td>
+				<td style="text-align: center;"><input type="text" class="sort"
+					fieldid="191" fieldname="sort" value="3"
+					size="1"></td>
+				<td><span style="color: #ccc;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|——</span>
+					<input type="text" fieldid="191"
+					fieldname="module_name" value="添加物流公司"></td>
+				<td style="text-align: center;">是</td>
+				<td style="text-align: center;"><a
+					href="http://tp.23673.com/admin/system/editmodule?module_id=191">修改</a>
+					<a href="javascript:void(0);"
+					onclick="delModule(191)">删除</a></td>
+			</tr>
+						<tr class="pid_189 pid_184"
+				style="height: 30px; display: none;">
+				<td><label></td>
+				<td style="text-align: center;"><input type="text" class="sort"
+					fieldid="192" fieldname="sort" value="4"
+					size="1"></td>
+				<td><span style="color: #ccc;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|——</span>
+					<input type="text" fieldid="192"
+					fieldname="module_name" value="物流公司修改"></td>
+				<td style="text-align: center;">是</td>
+				<td style="text-align: center;"><a
+					href="http://tp.23673.com/admin/system/editmodule?module_id=192">修改</a>
+					<a href="javascript:void(0);"
+					onclick="delModule(192)">删除</a></td>
+			</tr>
+						<tr class="pid_184"
+				style="height: 30px; display: none;">
+				<td><a
+					href="javascript:void(0)" onclick="tab_switch(471)"
+					class="tab_jian_471 tab_jian_184"
+					style="display: block;"><i class="fa fa-minus-circle"></i></a><a
+					href="javascript:void(0)" onclick="tab_switch(471)"
+					class="tab_jia_471 tab_jia_184"
+					style="display: none;"><i class="fa fa-plus-circle"></i></a> 				</td>
+				<td style="text-align: center;"><input onkeyup="value=value.replace(/[^\d+(\.\d+)?]/g,'')" type="text" class="sort"
+					fieldid="471" fieldname="sort" value="5"
+					size="1"></td>
+				<td><span style="color: #ccc;">|——</span> <input type="text"
+					fieldid="471" fieldname="module_name"
+					value="商家地址"></td>
+				<td style="text-align: center;">是</td>
+				<td style="text-align: center;"><a
+					href="http://tp.23673.com/admin/system/editmodule?module_id=471">修改</a>
+					<a href="javascript:void(0);"
+					onclick="delModule(471)">删除</a></td>
+			</tr>
+						<tr class="pid_471 pid_184"
+				style="height: 30px; display: none;">
+				<td><label></td>
+				<td style="text-align: center;"><input type="text" class="sort"
+					fieldid="472" fieldname="sort" value="1"
+					size="1"></td>
+				<td><span style="color: #ccc;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|——</span>
+					<input type="text" fieldid="472"
+					fieldname="module_name" value="添加或修改"></td>
+				<td style="text-align: center;">是</td>
+				<td style="text-align: center;"><a
+					href="http://tp.23673.com/admin/system/editmodule?module_id=472">修改</a>
+					<a href="javascript:void(0);"
+					onclick="delModule(472)">删除</a></td>
+			</tr>
+						<tr class="pid_184"
+				style="height: 30px; display: none;">
+				<td><a
+					href="javascript:void(0)" onclick="tab_switch(528)"
+					class="tab_jian_528 tab_jian_184"
+					style="display: block;"><i class="fa fa-minus-circle"></i></a><a
+					href="javascript:void(0)" onclick="tab_switch(528)"
+					class="tab_jia_528 tab_jia_184"
+					style="display: none;"><i class="fa fa-plus-circle"></i></a> 				</td>
+				<td style="text-align: center;"><input onkeyup="value=value.replace(/[^\d+(\.\d+)?]/g,'')" type="text" class="sort"
+					fieldid="528" fieldname="sort" value="6"
+					size="1"></td>
+				<td><span style="color: #ccc;">|——</span> <input type="text"
+					fieldid="528" fieldname="module_name"
+					value="自提点管理"></td>
+				<td style="text-align: center;">是</td>
+				<td style="text-align: center;"><a
+					href="http://tp.23673.com/admin/system/editmodule?module_id=528">修改</a>
+					<a href="javascript:void(0);"
+					onclick="delModule(528)">删除</a></td>
+			</tr>
+						<tr class="pid_528 pid_184"
+				style="height: 30px; display: none;">
+				<td><label></td>
+				<td style="text-align: center;"><input type="text" class="sort"
+					fieldid="529" fieldname="sort" value="0"
+					size="1"></td>
+				<td><span style="color: #ccc;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|——</span>
+					<input type="text" fieldid="529"
+					fieldname="module_name" value="添加自提点"></td>
+				<td style="text-align: center;">否</td>
+				<td style="text-align: center;"><a
+					href="http://tp.23673.com/admin/system/editmodule?module_id=529">修改</a>
+					<a href="javascript:void(0);"
+					onclick="delModule(529)">删除</a></td>
+			</tr>
+						<tr class="pid_528 pid_184"
+				style="height: 30px; display: none;">
+				<td><label></td>
+				<td style="text-align: center;"><input type="text" class="sort"
+					fieldid="530" fieldname="sort" value="0"
+					size="1"></td>
+				<td><span style="color: #ccc;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|——</span>
+					<input type="text" fieldid="530"
+					fieldname="module_name" value="修改自提点"></td>
+				<td style="text-align: center;">否</td>
+				<td style="text-align: center;"><a
+					href="http://tp.23673.com/admin/system/editmodule?module_id=530">修改</a>
+					<a href="javascript:void(0);"
+					onclick="delModule(530)">删除</a></td>
+			</tr>
+					<tr class="pid_0" style="height: 30px;">
+			<td>
+								<a href="javascript:;" onclick="tab_switch(179)" class="tab_jia_179" style="display: block;"><i class="fa fa-plus-circle"></i></a>
+				<a href="javascript:;" onclick="tab_switch(179)" class="tab_jian_179" style="display: none;"><i class="fa fa-minus-circle"></i></a>
+							</td>
+			<td style="text-align: center;"><input onkeyup="value=value.replace(/[^\d+(\.\d+)?]/g,'')" type="text" class="sort"
+					fieldid="179" fieldname="sort" value="3"
+					size="1"></td>
+				<td><input type="text" fieldid="179"
+					fieldname="module_name" value="营销"></td>
+				<td style="text-align: center;">是</td>
+				<td style="text-align: center;"><a
+					href="http://tp.23673.com/admin/system/editmodule?module_id=179">修改</a>
+					<a href="javascript:void(0);"
+					onclick="delModule(179)">删除</a></td>
+			</tr>
+						<tr class="pid_179"
+				style="height: 30px; display: none;">
+				<td><a
+					href="javascript:void(0)" onclick="tab_switch(180)"
+					class="tab_jian_180 tab_jian_179"
+					style="display: block;"><i class="fa fa-minus-circle"></i></a><a
+					href="javascript:void(0)" onclick="tab_switch(180)"
+					class="tab_jia_180 tab_jia_179"
+					style="display: none;"><i class="fa fa-plus-circle"></i></a> 				</td>
+				<td style="text-align: center;"><input onkeyup="value=value.replace(/[^\d+(\.\d+)?]/g,'')" type="text" class="sort"
+					fieldid="180" fieldname="sort" value="1"
+					size="1"></td>
+				<td><span style="color: #ccc;">|——</span> <input type="text"
+					fieldid="180" fieldname="module_name"
+					value="优惠券"></td>
+				<td style="text-align: center;">是</td>
+				<td style="text-align: center;"><a
+					href="http://tp.23673.com/admin/system/editmodule?module_id=180">修改</a>
+					<a href="javascript:void(0);"
+					onclick="delModule(180)">删除</a></td>
+			</tr>
+						<tr class="pid_180 pid_179"
+				style="height: 30px; display: none;">
+				<td><label></td>
+				<td style="text-align: center;"><input type="text" class="sort"
+					fieldid="186" fieldname="sort" value="2"
+					size="1"></td>
+				<td><span style="color: #ccc;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|——</span>
+					<input type="text" fieldid="186"
+					fieldname="module_name" value="添加优惠券"></td>
+				<td style="text-align: center;">是</td>
+				<td style="text-align: center;"><a
+					href="http://tp.23673.com/admin/system/editmodule?module_id=186">修改</a>
+					<a href="javascript:void(0);"
+					onclick="delModule(186)">删除</a></td>
+			</tr>
+						<tr class="pid_180 pid_179"
+				style="height: 30px; display: none;">
+				<td><label></td>
+				<td style="text-align: center;"><input type="text" class="sort"
+					fieldid="187" fieldname="sort" value="3"
+					size="1"></td>
+				<td><span style="color: #ccc;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|——</span>
+					<input type="text" fieldid="187"
+					fieldname="module_name" value="修改优惠券"></td>
+				<td style="text-align: center;">是</td>
+				<td style="text-align: center;"><a
+					href="http://tp.23673.com/admin/system/editmodule?module_id=187">修改</a>
+					<a href="javascript:void(0);"
+					onclick="delModule(187)">删除</a></td>
+			</tr>
+						<tr class="pid_179"
+				style="height: 30px; display: none;">
+				<td><a
+					href="javascript:void(0)" onclick="tab_switch(446)"
+					class="tab_jian_446 tab_jian_179"
+					style="display: block;"><i class="fa fa-minus-circle"></i></a><a
+					href="javascript:void(0)" onclick="tab_switch(446)"
+					class="tab_jia_446 tab_jia_179"
+					style="display: none;"><i class="fa fa-plus-circle"></i></a> 				</td>
+				<td style="text-align: center;"><input onkeyup="value=value.replace(/[^\d+(\.\d+)?]/g,'')" type="text" class="sort"
+					fieldid="446" fieldname="sort" value="1"
+					size="1"></td>
+				<td><span style="color: #ccc;">|——</span> <input type="text"
+					fieldid="446" fieldname="module_name"
+					value="积分管理"></td>
+				<td style="text-align: center;">否</td>
+				<td style="text-align: center;"><a
+					href="http://tp.23673.com/admin/system/editmodule?module_id=446">修改</a>
+					<a href="javascript:void(0);"
+					onclick="delModule(446)">删除</a></td>
+			</tr>
+						<tr class="pid_446 pid_179"
+				style="height: 30px; display: none;">
+				<td><label></td>
+				<td style="text-align: center;"><input type="text" class="sort"
+					fieldid="508" fieldname="sort" value="0"
+					size="1"></td>
+				<td><span style="color: #ccc;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|——</span>
+					<input type="text" fieldid="508"
+					fieldname="module_name" value="积分奖励"></td>
+				<td style="text-align: center;">否</td>
+				<td style="text-align: center;"><a
+					href="http://tp.23673.com/admin/system/editmodule?module_id=508">修改</a>
+					<a href="javascript:void(0);"
+					onclick="delModule(508)">删除</a></td>
+			</tr>
+						<tr class="pid_179"
+				style="height: 30px; display: none;">
+				<td><a
+					href="javascript:void(0)" onclick="tab_switch(195)"
+					class="tab_jian_195 tab_jian_179"
+					style="display: block;"><i class="fa fa-minus-circle"></i></a><a
+					href="javascript:void(0)" onclick="tab_switch(195)"
+					class="tab_jia_195 tab_jia_179"
+					style="display: none;"><i class="fa fa-plus-circle"></i></a> 				</td>
+				<td style="text-align: center;"><input onkeyup="value=value.replace(/[^\d+(\.\d+)?]/g,'')" type="text" class="sort"
+					fieldid="195" fieldname="sort" value="3"
+					size="1"></td>
+				<td><span style="color: #ccc;">|——</span> <input type="text"
+					fieldid="195" fieldname="module_name"
+					value="赠品"></td>
+				<td style="text-align: center;">否</td>
+				<td style="text-align: center;"><a
+					href="http://tp.23673.com/admin/system/editmodule?module_id=195">修改</a>
+					<a href="javascript:void(0);"
+					onclick="delModule(195)">删除</a></td>
+			</tr>
+						<tr class="pid_195 pid_179"
+				style="height: 30px; display: none;">
+				<td><label></td>
+				<td style="text-align: center;"><input type="text" class="sort"
+					fieldid="196" fieldname="sort" value="0"
+					size="1"></td>
+				<td><span style="color: #ccc;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|——</span>
+					<input type="text" fieldid="196"
+					fieldname="module_name" value="添加赠品"></td>
+				<td style="text-align: center;">是</td>
+				<td style="text-align: center;"><a
+					href="http://tp.23673.com/admin/system/editmodule?module_id=196">修改</a>
+					<a href="javascript:void(0);"
+					onclick="delModule(196)">删除</a></td>
+			</tr>
+						<tr class="pid_195 pid_179"
+				style="height: 30px; display: none;">
+				<td><label></td>
+				<td style="text-align: center;"><input type="text" class="sort"
+					fieldid="197" fieldname="sort" value="0"
+					size="1"></td>
+				<td><span style="color: #ccc;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|——</span>
+					<input type="text" fieldid="197"
+					fieldname="module_name" value="修改赠品"></td>
+				<td style="text-align: center;">是</td>
+				<td style="text-align: center;"><a
+					href="http://tp.23673.com/admin/system/editmodule?module_id=197">修改</a>
+					<a href="javascript:void(0);"
+					onclick="delModule(197)">删除</a></td>
+			</tr>
+						<tr class="pid_179"
+				style="height: 30px; display: none;">
+				<td><a
+					href="javascript:void(0)" onclick="tab_switch(198)"
+					class="tab_jian_198 tab_jian_179"
+					style="display: block;"><i class="fa fa-minus-circle"></i></a><a
+					href="javascript:void(0)" onclick="tab_switch(198)"
+					class="tab_jia_198 tab_jia_179"
+					style="display: none;"><i class="fa fa-plus-circle"></i></a> 				</td>
+				<td style="text-align: center;"><input onkeyup="value=value.replace(/[^\d+(\.\d+)?]/g,'')" type="text" class="sort"
+					fieldid="198" fieldname="sort" value="4"
+					size="1"></td>
+				<td><span style="color: #ccc;">|——</span> <input type="text"
+					fieldid="198" fieldname="module_name"
+					value="满减送"></td>
+				<td style="text-align: center;">是</td>
+				<td style="text-align: center;"><a
+					href="http://tp.23673.com/admin/system/editmodule?module_id=198">修改</a>
+					<a href="javascript:void(0);"
+					onclick="delModule(198)">删除</a></td>
+			</tr>
+						<tr class="pid_198 pid_179"
+				style="height: 30px; display: none;">
+				<td><label></td>
+				<td style="text-align: center;"><input type="text" class="sort"
+					fieldid="199" fieldname="sort" value="0"
+					size="1"></td>
+				<td><span style="color: #ccc;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|——</span>
+					<input type="text" fieldid="199"
+					fieldname="module_name" value="添加满减满送"></td>
+				<td style="text-align: center;">是</td>
+				<td style="text-align: center;"><a
+					href="http://tp.23673.com/admin/system/editmodule?module_id=199">修改</a>
+					<a href="javascript:void(0);"
+					onclick="delModule(199)">删除</a></td>
+			</tr>
+						<tr class="pid_198 pid_179"
+				style="height: 30px; display: none;">
+				<td><label></td>
+				<td style="text-align: center;"><input type="text" class="sort"
+					fieldid="200" fieldname="sort" value="1"
+					size="1"></td>
+				<td><span style="color: #ccc;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|——</span>
+					<input type="text" fieldid="200"
+					fieldname="module_name" value="编辑满减送"></td>
+				<td style="text-align: center;">是</td>
+				<td style="text-align: center;"><a
+					href="http://tp.23673.com/admin/system/editmodule?module_id=200">修改</a>
+					<a href="javascript:void(0);"
+					onclick="delModule(200)">删除</a></td>
+			</tr>
+						<tr class="pid_179"
+				style="height: 30px; display: none;">
+				<td><a
+					href="javascript:void(0)" onclick="tab_switch(201)"
+					class="tab_jian_201 tab_jian_179"
+					style="display: block;"><i class="fa fa-minus-circle"></i></a><a
+					href="javascript:void(0)" onclick="tab_switch(201)"
+					class="tab_jia_201 tab_jia_179"
+					style="display: none;"><i class="fa fa-plus-circle"></i></a> 				</td>
+				<td style="text-align: center;"><input onkeyup="value=value.replace(/[^\d+(\.\d+)?]/g,'')" type="text" class="sort"
+					fieldid="201" fieldname="sort" value="5"
+					size="1"></td>
+				<td><span style="color: #ccc;">|——</span> <input type="text"
+					fieldid="201" fieldname="module_name"
+					value="限时折扣"></td>
+				<td style="text-align: center;">是</td>
+				<td style="text-align: center;"><a
+					href="http://tp.23673.com/admin/system/editmodule?module_id=201">修改</a>
+					<a href="javascript:void(0);"
+					onclick="delModule(201)">删除</a></td>
+			</tr>
+						<tr class="pid_201 pid_179"
+				style="height: 30px; display: none;">
+				<td><label></td>
+				<td style="text-align: center;"><input type="text" class="sort"
+					fieldid="202" fieldname="sort" value="0"
+					size="1"></td>
+				<td><span style="color: #ccc;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|——</span>
+					<input type="text" fieldid="202"
+					fieldname="module_name" value="添加限时折扣"></td>
+				<td style="text-align: center;">是</td>
+				<td style="text-align: center;"><a
+					href="http://tp.23673.com/admin/system/editmodule?module_id=202">修改</a>
+					<a href="javascript:void(0);"
+					onclick="delModule(202)">删除</a></td>
+			</tr>
+						<tr class="pid_201 pid_179"
+				style="height: 30px; display: none;">
+				<td><label></td>
+				<td style="text-align: center;"><input type="text" class="sort"
+					fieldid="203" fieldname="sort" value="1"
+					size="1"></td>
+				<td><span style="color: #ccc;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|——</span>
+					<input type="text" fieldid="203"
+					fieldname="module_name" value="修改限时折扣"></td>
+				<td style="text-align: center;">是</td>
+				<td style="text-align: center;"><a
+					href="http://tp.23673.com/admin/system/editmodule?module_id=203">修改</a>
+					<a href="javascript:void(0);"
+					onclick="delModule(203)">删除</a></td>
+			</tr>
+						<tr class="pid_179"
+				style="height: 30px; display: none;">
+				<td>				</td>
+				<td style="text-align: center;"><input onkeyup="value=value.replace(/[^\d+(\.\d+)?]/g,'')" type="text" class="sort"
+					fieldid="469" fieldname="sort" value="6"
+					size="1"></td>
+				<td><span style="color: #ccc;">|——</span> <input type="text"
+					fieldid="469" fieldname="module_name"
+					value="满额包邮"></td>
+				<td style="text-align: center;">是</td>
+				<td style="text-align: center;"><a
+					href="http://tp.23673.com/admin/system/editmodule?module_id=469">修改</a>
+					<a href="javascript:void(0);"
+					onclick="delModule(469)">删除</a></td>
+			</tr>
+					<tr class="pid_0" style="height: 30px;">
+			<td>
+								<a href="javascript:;" onclick="tab_switch(218)" class="tab_jia_218" style="display: block;"><i class="fa fa-plus-circle"></i></a>
+				<a href="javascript:;" onclick="tab_switch(218)" class="tab_jian_218" style="display: none;"><i class="fa fa-minus-circle"></i></a>
+							</td>
+			<td style="text-align: center;"><input onkeyup="value=value.replace(/[^\d+(\.\d+)?]/g,'')" type="text" class="sort"
+					fieldid="218" fieldname="sort" value="6"
+					size="1"></td>
+				<td><input type="text" fieldid="218"
+					fieldname="module_name" value="店铺"></td>
+				<td style="text-align: center;">是</td>
+				<td style="text-align: center;"><a
+					href="http://tp.23673.com/admin/system/editmodule?module_id=218">修改</a>
+					<a href="javascript:void(0);"
+					onclick="delModule(218)">删除</a></td>
+			</tr>
+						<tr class="pid_218"
+				style="height: 30px; display: none;">
+				<td>				</td>
+				<td style="text-align: center;"><input onkeyup="value=value.replace(/[^\d+(\.\d+)?]/g,'')" type="text" class="sort"
+					fieldid="418" fieldname="sort" value="1"
+					size="1"></td>
+				<td><span style="color: #ccc;">|——</span> <input type="text"
+					fieldid="418" fieldname="module_name"
+					value="店铺设置"></td>
+				<td style="text-align: center;">是</td>
+				<td style="text-align: center;"><a
+					href="http://tp.23673.com/admin/system/editmodule?module_id=418">修改</a>
+					<a href="javascript:void(0);"
+					onclick="delModule(418)">删除</a></td>
+			</tr>
+						<tr class="pid_218"
+				style="height: 30px; display: none;">
+				<td>				</td>
+				<td style="text-align: center;"><input onkeyup="value=value.replace(/[^\d+(\.\d+)?]/g,'')" type="text" class="sort"
+					fieldid="10006" fieldname="sort" value="2"
+					size="1"></td>
+				<td><span style="color: #ccc;">|——</span> <input type="text"
+					fieldid="10006" fieldname="module_name"
+					value="促销版块"></td>
+				<td style="text-align: center;">是</td>
+				<td style="text-align: center;"><a
+					href="http://tp.23673.com/admin/system/editmodule?module_id=10006">修改</a>
+					<a href="javascript:void(0);"
+					onclick="delModule(10006)">删除</a></td>
+			</tr>
+						<tr class="pid_218"
+				style="height: 30px; display: none;">
+				<td><a
+					href="javascript:void(0)" onclick="tab_switch(678)"
+					class="tab_jian_678 tab_jian_218"
+					style="display: block;"><i class="fa fa-minus-circle"></i></a><a
+					href="javascript:void(0)" onclick="tab_switch(678)"
+					class="tab_jia_678 tab_jia_218"
+					style="display: none;"><i class="fa fa-plus-circle"></i></a> 				</td>
+				<td style="text-align: center;"><input onkeyup="value=value.replace(/[^\d+(\.\d+)?]/g,'')" type="text" class="sort"
+					fieldid="678" fieldname="sort" value="2"
+					size="1"></td>
+				<td><span style="color: #ccc;">|——</span> <input type="text"
+					fieldid="678" fieldname="module_name"
+					value="广告管理"></td>
+				<td style="text-align: center;">是</td>
+				<td style="text-align: center;"><a
+					href="http://tp.23673.com/admin/system/editmodule?module_id=678">修改</a>
+					<a href="javascript:void(0);"
+					onclick="delModule(678)">删除</a></td>
+			</tr>
+						<tr class="pid_678 pid_218"
+				style="height: 30px; display: none;">
+				<td><label></td>
+				<td style="text-align: center;"><input type="text" class="sort"
+					fieldid="680" fieldname="sort" value="0"
+					size="1"></td>
+				<td><span style="color: #ccc;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|——</span>
+					<input type="text" fieldid="680"
+					fieldname="module_name" value="修改广告"></td>
+				<td style="text-align: center;">是</td>
+				<td style="text-align: center;"><a
+					href="http://tp.23673.com/admin/system/editmodule?module_id=680">修改</a>
+					<a href="javascript:void(0);"
+					onclick="delModule(680)">删除</a></td>
+			</tr>
+						<tr class="pid_678 pid_218"
+				style="height: 30px; display: none;">
+				<td><label></td>
+				<td style="text-align: center;"><input type="text" class="sort"
+					fieldid="679" fieldname="sort" value="1"
+					size="1"></td>
+				<td><span style="color: #ccc;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|——</span>
+					<input type="text" fieldid="679"
+					fieldname="module_name" value="添加广告"></td>
+				<td style="text-align: center;">是</td>
+				<td style="text-align: center;"><a
+					href="http://tp.23673.com/admin/system/editmodule?module_id=679">修改</a>
+					<a href="javascript:void(0);"
+					onclick="delModule(679)">删除</a></td>
+			</tr>
+						<tr class="pid_218"
+				style="height: 30px; display: none;">
+				<td><a
+					href="javascript:void(0)" onclick="tab_switch(10022)"
+					class="tab_jian_10022 tab_jian_218"
+					style="display: block;"><i class="fa fa-minus-circle"></i></a><a
+					href="javascript:void(0)" onclick="tab_switch(10022)"
+					class="tab_jia_10022 tab_jia_218"
+					style="display: none;"><i class="fa fa-plus-circle"></i></a> 				</td>
+				<td style="text-align: center;"><input onkeyup="value=value.replace(/[^\d+(\.\d+)?]/g,'')" type="text" class="sort"
+					fieldid="10022" fieldname="sort" value="4"
+					size="1"></td>
+				<td><span style="color: #ccc;">|——</span> <input type="text"
+					fieldid="10022" fieldname="module_name"
+					value="导航管理"></td>
+				<td style="text-align: center;">是</td>
+				<td style="text-align: center;"><a
+					href="http://tp.23673.com/admin/system/editmodule?module_id=10022">修改</a>
+					<a href="javascript:void(0);"
+					onclick="delModule(10022)">删除</a></td>
+			</tr>
+						<tr class="pid_10022 pid_218"
+				style="height: 30px; display: none;">
+				<td><label></td>
+				<td style="text-align: center;"><input type="text" class="sort"
+					fieldid="10023" fieldname="sort" value="0"
+					size="1"></td>
+				<td><span style="color: #ccc;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|——</span>
+					<input type="text" fieldid="10023"
+					fieldname="module_name" value="添加导航"></td>
+				<td style="text-align: center;">是</td>
+				<td style="text-align: center;"><a
+					href="http://tp.23673.com/admin/system/editmodule?module_id=10023">修改</a>
+					<a href="javascript:void(0);"
+					onclick="delModule(10023)">删除</a></td>
+			</tr>
+						<tr class="pid_10022 pid_218"
+				style="height: 30px; display: none;">
+				<td><label></td>
+				<td style="text-align: center;"><input type="text" class="sort"
+					fieldid="10024" fieldname="sort" value="0"
+					size="1"></td>
+				<td><span style="color: #ccc;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|——</span>
+					<input type="text" fieldid="10024"
+					fieldname="module_name" value="修改导航"></td>
+				<td style="text-align: center;">是</td>
+				<td style="text-align: center;"><a
+					href="http://tp.23673.com/admin/system/editmodule?module_id=10024">修改</a>
+					<a href="javascript:void(0);"
+					onclick="delModule(10024)">删除</a></td>
+			</tr>
+						<tr class="pid_218"
+				style="height: 30px; display: none;">
+				<td>				</td>
+				<td style="text-align: center;"><input onkeyup="value=value.replace(/[^\d+(\.\d+)?]/g,'')" type="text" class="sort"
+					fieldid="10025" fieldname="sort" value="4"
+					size="1"></td>
+				<td><span style="color: #ccc;">|——</span> <input type="text"
+					fieldid="10025" fieldname="module_name"
+					value="线下店铺"></td>
+				<td style="text-align: center;">是</td>
+				<td style="text-align: center;"><a
+					href="http://tp.23673.com/admin/system/editmodule?module_id=10025">修改</a>
+					<a href="javascript:void(0);"
+					onclick="delModule(10025)">删除</a></td>
+			</tr>
+						<tr class="pid_218"
+				style="height: 30px; display: none;">
+				<td>				</td>
+				<td style="text-align: center;"><input onkeyup="value=value.replace(/[^\d+(\.\d+)?]/g,'')" type="text" class="sort"
+					fieldid="474" fieldname="sort" value="15"
+					size="1"></td>
+				<td><span style="color: #ccc;">|——</span> <input type="text"
+					fieldid="474" fieldname="module_name"
+					value="首页公告"></td>
+				<td style="text-align: center;">是</td>
+				<td style="text-align: center;"><a
+					href="http://tp.23673.com/admin/system/editmodule?module_id=474">修改</a>
+					<a href="javascript:void(0);"
+					onclick="delModule(474)">删除</a></td>
+			</tr>
+						<tr class="pid_218"
+				style="height: 30px; display: none;">
+				<td>				</td>
+				<td style="text-align: center;"><input onkeyup="value=value.replace(/[^\d+(\.\d+)?]/g,'')" type="text" class="sort"
+					fieldid="519" fieldname="sort" value="24"
+					size="1"></td>
+				<td><span style="color: #ccc;">|——</span> <input type="text"
+					fieldid="519" fieldname="module_name"
+					value="货到付款区域"></td>
+				<td style="text-align: center;">否</td>
+				<td style="text-align: center;"><a
+					href="http://tp.23673.com/admin/system/editmodule?module_id=519">修改</a>
+					<a href="javascript:void(0);"
+					onclick="delModule(519)">删除</a></td>
+			</tr>
+					<tr class="pid_0" style="height: 30px;">
+			<td>
+								<a href="javascript:;" onclick="tab_switch(126)" class="tab_jia_126" style="display: block;"><i class="fa fa-plus-circle"></i></a>
+				<a href="javascript:;" onclick="tab_switch(126)" class="tab_jian_126" style="display: none;"><i class="fa fa-minus-circle"></i></a>
+							</td>
+			<td style="text-align: center;"><input onkeyup="value=value.replace(/[^\d+(\.\d+)?]/g,'')" type="text" class="sort"
+					fieldid="126" fieldname="sort" value="9"
+					size="1"></td>
+				<td><input type="text" fieldid="126"
+					fieldname="module_name" value="用户"></td>
+				<td style="text-align: center;">是</td>
+				<td style="text-align: center;"><a
+					href="http://tp.23673.com/admin/system/editmodule?module_id=126">修改</a>
+					<a href="javascript:void(0);"
+					onclick="delModule(126)">删除</a></td>
+			</tr>
+						<tr class="pid_126"
+				style="height: 30px; display: none;">
+				<td><a
+					href="javascript:void(0)" onclick="tab_switch(127)"
+					class="tab_jian_127 tab_jian_126"
+					style="display: block;"><i class="fa fa-minus-circle"></i></a><a
+					href="javascript:void(0)" onclick="tab_switch(127)"
+					class="tab_jia_127 tab_jia_126"
+					style="display: none;"><i class="fa fa-plus-circle"></i></a> 				</td>
+				<td style="text-align: center;"><input onkeyup="value=value.replace(/[^\d+(\.\d+)?]/g,'')" type="text" class="sort"
+					fieldid="127" fieldname="sort" value="0"
+					size="1"></td>
+				<td><span style="color: #ccc;">|——</span> <input type="text"
+					fieldid="127" fieldname="module_name"
+					value="用户列表"></td>
+				<td style="text-align: center;">是</td>
+				<td style="text-align: center;"><a
+					href="http://tp.23673.com/admin/system/editmodule?module_id=127">修改</a>
+					<a href="javascript:void(0);"
+					onclick="delModule(127)">删除</a></td>
+			</tr>
+						<tr class="pid_127 pid_126"
+				style="height: 30px; display: none;">
+				<td><label></td>
+				<td style="text-align: center;"><input type="text" class="sort"
+					fieldid="360" fieldname="sort" value="1"
+					size="1"></td>
+				<td><span style="color: #ccc;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|——</span>
+					<input type="text" fieldid="360"
+					fieldname="module_name" value="添加用户"></td>
+				<td style="text-align: center;">否</td>
+				<td style="text-align: center;"><a
+					href="http://tp.23673.com/admin/system/editmodule?module_id=360">修改</a>
+					<a href="javascript:void(0);"
+					onclick="delModule(360)">删除</a></td>
+			</tr>
+						<tr class="pid_127 pid_126"
+				style="height: 30px; display: none;">
+				<td><label></td>
+				<td style="text-align: center;"><input type="text" class="sort"
+					fieldid="144" fieldname="sort" value="5"
+					size="1"></td>
+				<td><span style="color: #ccc;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|——</span>
+					<input type="text" fieldid="144"
+					fieldname="module_name" value="编辑用户"></td>
+				<td style="text-align: center;">否</td>
+				<td style="text-align: center;"><a
+					href="http://tp.23673.com/admin/system/editmodule?module_id=144">修改</a>
+					<a href="javascript:void(0);"
+					onclick="delModule(144)">删除</a></td>
+			</tr>
+						<tr class="pid_126"
+				style="height: 30px; display: none;">
+				<td><a
+					href="javascript:void(0)" onclick="tab_switch(128)"
+					class="tab_jian_128 tab_jian_126"
+					style="display: block;"><i class="fa fa-minus-circle"></i></a><a
+					href="javascript:void(0)" onclick="tab_switch(128)"
+					class="tab_jia_128 tab_jia_126"
+					style="display: none;"><i class="fa fa-plus-circle"></i></a> 				</td>
+				<td style="text-align: center;"><input onkeyup="value=value.replace(/[^\d+(\.\d+)?]/g,'')" type="text" class="sort"
+					fieldid="128" fieldname="sort" value="0"
+					size="1"></td>
+				<td><span style="color: #ccc;">|——</span> <input type="text"
+					fieldid="128" fieldname="module_name"
+					value="用户组列表"></td>
+				<td style="text-align: center;">是</td>
+				<td style="text-align: center;"><a
+					href="http://tp.23673.com/admin/system/editmodule?module_id=128">修改</a>
+					<a href="javascript:void(0);"
+					onclick="delModule(128)">删除</a></td>
+			</tr>
+						<tr class="pid_128 pid_126"
+				style="height: 30px; display: none;">
+				<td><label></td>
+				<td style="text-align: center;"><input type="text" class="sort"
+					fieldid="133" fieldname="sort" value="2"
+					size="1"></td>
+				<td><span style="color: #ccc;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|——</span>
+					<input type="text" fieldid="133"
+					fieldname="module_name" value="添加用户组"></td>
+				<td style="text-align: center;">否</td>
+				<td style="text-align: center;"><a
+					href="http://tp.23673.com/admin/system/editmodule?module_id=133">修改</a>
+					<a href="javascript:void(0);"
+					onclick="delModule(133)">删除</a></td>
+			</tr>
+						<tr class="pid_126"
+				style="height: 30px; display: none;">
+				<td>				</td>
+				<td style="text-align: center;"><input onkeyup="value=value.replace(/[^\d+(\.\d+)?]/g,'')" type="text" class="sort"
+					fieldid="398" fieldname="sort" value="0"
+					size="1"></td>
+				<td><span style="color: #ccc;">|——</span> <input type="text"
+					fieldid="398" fieldname="module_name"
+					value="个人资料"></td>
+				<td style="text-align: center;">是</td>
+				<td style="text-align: center;"><a
+					href="http://tp.23673.com/admin/system/editmodule?module_id=398">修改</a>
+					<a href="javascript:void(0);"
+					onclick="delModule(398)">删除</a></td>
+			</tr>
+					<tr class="pid_0" style="height: 30px;">
+			<td>
+								<a href="javascript:;" onclick="tab_switch(409)" class="tab_jia_409" style="display: block;"><i class="fa fa-plus-circle"></i></a>
+				<a href="javascript:;" onclick="tab_switch(409)" class="tab_jian_409" style="display: none;"><i class="fa fa-minus-circle"></i></a>
+							</td>
+			<td style="text-align: center;"><input onkeyup="value=value.replace(/[^\d+(\.\d+)?]/g,'')" type="text" class="sort"
+					fieldid="409" fieldname="sort" value="11"
+					size="1"></td>
+				<td><input type="text" fieldid="409"
+					fieldname="module_name" value="资产"></td>
+				<td style="text-align: center;">是</td>
+				<td style="text-align: center;"><a
+					href="http://tp.23673.com/admin/system/editmodule?module_id=409">修改</a>
+					<a href="javascript:void(0);"
+					onclick="delModule(409)">删除</a></td>
+			</tr>
+						<tr class="pid_409"
+				style="height: 30px; display: none;">
+				<td><a
+					href="javascript:void(0)" onclick="tab_switch(684)"
+					class="tab_jian_684 tab_jian_409"
+					style="display: block;"><i class="fa fa-minus-circle"></i></a><a
+					href="javascript:void(0)" onclick="tab_switch(684)"
+					class="tab_jia_684 tab_jia_409"
+					style="display: none;"><i class="fa fa-plus-circle"></i></a> 				</td>
+				<td style="text-align: center;"><input onkeyup="value=value.replace(/[^\d+(\.\d+)?]/g,'')" type="text" class="sort"
+					fieldid="684" fieldname="sort" value="0"
+					size="1"></td>
+				<td><span style="color: #ccc;">|——</span> <input type="text"
+					fieldid="684" fieldname="module_name"
+					value="店铺收入"></td>
+				<td style="text-align: center;">是</td>
+				<td style="text-align: center;"><a
+					href="http://tp.23673.com/admin/system/editmodule?module_id=684">修改</a>
+					<a href="javascript:void(0);"
+					onclick="delModule(684)">删除</a></td>
+			</tr>
+						<tr class="pid_684 pid_409"
+				style="height: 30px; display: none;">
+				<td><label></td>
+				<td style="text-align: center;"><input type="text" class="sort"
+					fieldid="726" fieldname="sort" value="0"
+					size="1"></td>
+				<td><span style="color: #ccc;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|——</span>
+					<input type="text" fieldid="726"
+					fieldname="module_name" value="提现"></td>
+				<td style="text-align: center;">是</td>
+				<td style="text-align: center;"><a
+					href="http://tp.23673.com/admin/system/editmodule?module_id=726">修改</a>
+					<a href="javascript:void(0);"
+					onclick="delModule(726)">删除</a></td>
+			</tr>
+						<tr class="pid_684 pid_409"
+				style="height: 30px; display: none;">
+				<td><label></td>
+				<td style="text-align: center;"><input type="text" class="sort"
+					fieldid="729" fieldname="sort" value="0"
+					size="1"></td>
+				<td><span style="color: #ccc;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|——</span>
+					<input type="text" fieldid="729"
+					fieldname="module_name" value="账户列表"></td>
+				<td style="text-align: center;">是</td>
+				<td style="text-align: center;"><a
+					href="http://tp.23673.com/admin/system/editmodule?module_id=729">修改</a>
+					<a href="javascript:void(0);"
+					onclick="delModule(729)">删除</a></td>
+			</tr>
+						<tr class="pid_684 pid_409"
+				style="height: 30px; display: none;">
+				<td><label></td>
+				<td style="text-align: center;"><input type="text" class="sort"
+					fieldid="730" fieldname="sort" value="0"
+					size="1"></td>
+				<td><span style="color: #ccc;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|——</span>
+					<input type="text" fieldid="730"
+					fieldname="module_name" value="修改账户"></td>
+				<td style="text-align: center;">是</td>
+				<td style="text-align: center;"><a
+					href="http://tp.23673.com/admin/system/editmodule?module_id=730">修改</a>
+					<a href="javascript:void(0);"
+					onclick="delModule(730)">删除</a></td>
+			</tr>
+						<tr class="pid_684 pid_409"
+				style="height: 30px; display: none;">
+				<td><label></td>
+				<td style="text-align: center;"><input type="text" class="sort"
+					fieldid="732" fieldname="sort" value="0"
+					size="1"></td>
+				<td><span style="color: #ccc;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|——</span>
+					<input type="text" fieldid="732"
+					fieldname="module_name" value="提现列表"></td>
+				<td style="text-align: center;">是</td>
+				<td style="text-align: center;"><a
+					href="http://tp.23673.com/admin/system/editmodule?module_id=732">修改</a>
+					<a href="javascript:void(0);"
+					onclick="delModule(732)">删除</a></td>
+			</tr>
+						<tr class="pid_684 pid_409"
+				style="height: 30px; display: none;">
+				<td><label></td>
+				<td style="text-align: center;"><input type="text" class="sort"
+					fieldid="727" fieldname="sort" value="1"
+					size="1"></td>
+				<td><span style="color: #ccc;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|——</span>
+					<input type="text" fieldid="727"
+					fieldname="module_name" value="添加账户"></td>
+				<td style="text-align: center;">是</td>
+				<td style="text-align: center;"><a
+					href="http://tp.23673.com/admin/system/editmodule?module_id=727">修改</a>
+					<a href="javascript:void(0);"
+					onclick="delModule(727)">删除</a></td>
+			</tr>
+						<tr class="pid_409"
+				style="height: 30px; display: none;">
+				<td>				</td>
+				<td style="text-align: center;"><input onkeyup="value=value.replace(/[^\d+(\.\d+)?]/g,'')" type="text" class="sort"
+					fieldid="459" fieldname="sort" value="1"
+					size="1"></td>
+				<td><span style="color: #ccc;">|——</span> <input type="text"
+					fieldid="459" fieldname="module_name"
+					value="销售概况"></td>
+				<td style="text-align: center;">是</td>
+				<td style="text-align: center;"><a
+					href="http://tp.23673.com/admin/system/editmodule?module_id=459">修改</a>
+					<a href="javascript:void(0);"
+					onclick="delModule(459)">删除</a></td>
+			</tr>
+						<tr class="pid_409"
+				style="height: 30px; display: none;">
+				<td><a
+					href="javascript:void(0)" onclick="tab_switch(463)"
+					class="tab_jian_463 tab_jian_409"
+					style="display: block;"><i class="fa fa-minus-circle"></i></a><a
+					href="javascript:void(0)" onclick="tab_switch(463)"
+					class="tab_jia_463 tab_jia_409"
+					style="display: none;"><i class="fa fa-plus-circle"></i></a> 				</td>
+				<td style="text-align: center;"><input onkeyup="value=value.replace(/[^\d+(\.\d+)?]/g,'')" type="text" class="sort"
+					fieldid="463" fieldname="sort" value="2"
+					size="1"></td>
+				<td><span style="color: #ccc;">|——</span> <input type="text"
+					fieldid="463" fieldname="module_name"
+					value="商品分析"></td>
+				<td style="text-align: center;">是</td>
+				<td style="text-align: center;"><a
+					href="http://tp.23673.com/admin/system/editmodule?module_id=463">修改</a>
+					<a href="javascript:void(0);"
+					onclick="delModule(463)">删除</a></td>
+			</tr>
+						<tr class="pid_463 pid_409"
+				style="height: 30px; display: none;">
+				<td><label></td>
+				<td style="text-align: center;"><input type="text" class="sort"
+					fieldid="460" fieldname="sort" value="1"
+					size="1"></td>
+				<td><span style="color: #ccc;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|——</span>
+					<input type="text" fieldid="460"
+					fieldname="module_name" value="热卖商品"></td>
+				<td style="text-align: center;">否</td>
+				<td style="text-align: center;"><a
+					href="http://tp.23673.com/admin/system/editmodule?module_id=460">修改</a>
+					<a href="javascript:void(0);"
+					onclick="delModule(460)">删除</a></td>
+			</tr>
+						<tr class="pid_409"
+				style="height: 30px; display: none;">
+				<td>				</td>
+				<td style="text-align: center;"><input onkeyup="value=value.replace(/[^\d+(\.\d+)?]/g,'')" type="text" class="sort"
+					fieldid="461" fieldname="sort" value="4"
+					size="1"></td>
+				<td><span style="color: #ccc;">|——</span> <input type="text"
+					fieldid="461" fieldname="module_name"
+					value="同行热卖"></td>
+				<td style="text-align: center;">否</td>
+				<td style="text-align: center;"><a
+					href="http://tp.23673.com/admin/system/editmodule?module_id=461">修改</a>
+					<a href="javascript:void(0);"
+					onclick="delModule(461)">删除</a></td>
+			</tr>
+						<tr class="pid_409"
+				style="height: 30px; display: none;">
+				<td>				</td>
+				<td style="text-align: center;"><input onkeyup="value=value.replace(/[^\d+(\.\d+)?]/g,'')" type="text" class="sort"
+					fieldid="462" fieldname="sort" value="5"
+					size="1"></td>
+				<td><span style="color: #ccc;">|——</span> <input type="text"
+					fieldid="462" fieldname="module_name"
+					value="运营报告"></td>
+				<td style="text-align: center;">是</td>
+				<td style="text-align: center;"><a
+					href="http://tp.23673.com/admin/system/editmodule?module_id=462">修改</a>
+					<a href="javascript:void(0);"
+					onclick="delModule(462)">删除</a></td>
+			</tr>
+						<tr class="pid_409"
+				style="height: 30px; display: none;">
+				<td><a
+					href="javascript:void(0)" onclick="tab_switch(454)"
+					class="tab_jian_454 tab_jian_409"
+					style="display: block;"><i class="fa fa-minus-circle"></i></a><a
+					href="javascript:void(0)" onclick="tab_switch(454)"
+					class="tab_jia_454 tab_jia_409"
+					style="display: none;"><i class="fa fa-plus-circle"></i></a> 				</td>
+				<td style="text-align: center;"><input onkeyup="value=value.replace(/[^\d+(\.\d+)?]/g,'')" type="text" class="sort"
+					fieldid="454" fieldname="sort" value="6"
+					size="1"></td>
+				<td><span style="color: #ccc;">|——</span> <input type="text"
+					fieldid="454" fieldname="module_name"
+					value="销售统计"></td>
+				<td style="text-align: center;">否</td>
+				<td style="text-align: center;"><a
+					href="http://tp.23673.com/admin/system/editmodule?module_id=454">修改</a>
+					<a href="javascript:void(0);"
+					onclick="delModule(454)">删除</a></td>
+			</tr>
+						<tr class="pid_454 pid_409"
+				style="height: 30px; display: none;">
+				<td><label></td>
+				<td style="text-align: center;"><input type="text" class="sort"
+					fieldid="457" fieldname="sort" value="2"
+					size="1"></td>
+				<td><span style="color: #ccc;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|——</span>
+					<input type="text" fieldid="457"
+					fieldname="module_name" value="销售明细"></td>
+
+				<td style="text-align: center;">否</td>
+				<td style="text-align: center;"><a
+					href="http://tp.23673.com/admin/system/editmodule?module_id=457">修改</a>
+					<a href="javascript:void(0);"
+					onclick="delModule(457)">删除</a></td>
+			</tr>
+						<tr class="pid_409"
+				style="height: 30px; display: none;">
+				<td><a
+					href="javascript:void(0)" onclick="tab_switch(403)"
+					class="tab_jian_403 tab_jian_409"
+					style="display: block;"><i class="fa fa-minus-circle"></i></a><a
+					href="javascript:void(0)" onclick="tab_switch(403)"
+					class="tab_jia_403 tab_jia_409"
+					style="display: none;"><i class="fa fa-plus-circle"></i></a> 				</td>
+				<td style="text-align: center;"><input onkeyup="value=value.replace(/[^\d+(\.\d+)?]/g,'')" type="text" class="sort"
+					fieldid="403" fieldname="sort" value="9"
+					size="1"></td>
+				<td><span style="color: #ccc;">|——</span> <input type="text"
+					fieldid="403" fieldname="module_name"
+					value="销售排行"></td>
+				<td style="text-align: center;">是</td>
+				<td style="text-align: center;"><a
+					href="http://tp.23673.com/admin/system/editmodule?module_id=403">修改</a>
+					<a href="javascript:void(0);"
+					onclick="delModule(403)">删除</a></td>
+			</tr>
+						<tr class="pid_403 pid_409"
+				style="height: 30px; display: none;">
+				<td><label></td>
+				<td style="text-align: center;"><input type="text" class="sort"
+					fieldid="405" fieldname="sort" value="6"
+					size="1"></td>
+				<td><span style="color: #ccc;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|——</span>
+					<input type="text" fieldid="405"
+					fieldname="module_name" value="商品销售统计"></td>
+
+				<td style="text-align: center;">否</td>
+				<td style="text-align: center;"><a
+					href="http://tp.23673.com/admin/system/editmodule?module_id=405">修改</a>
+					<a href="javascript:void(0);"
+					onclick="delModule(405)">删除</a></td>
+			</tr>
+					<tr class="pid_0" style="height: 30px;">
+			<td>
+								<a href="javascript:;" onclick="tab_switch(120)" class="tab_jia_120" style="display: block;"><i class="fa fa-plus-circle"></i></a>
+				<a href="javascript:;" onclick="tab_switch(120)" class="tab_jian_120" style="display: none;"><i class="fa fa-minus-circle"></i></a>
+							</td>
+			<td style="text-align: center;"><input onkeyup="value=value.replace(/[^\d+(\.\d+)?]/g,'')" type="text" class="sort"
+					fieldid="120" fieldname="sort" value="999"
+					size="1"></td>
+				<td><input type="text" fieldid="120"
+					fieldname="module_name" value="系统"></td>
+				<td style="text-align: center;">是</td>
+				<td style="text-align: center;"><a
+					href="http://tp.23673.com/admin/system/editmodule?module_id=120">修改</a>
+					<a href="javascript:void(0);"
+					onclick="delModule(120)">删除</a></td>
+			</tr>
+						<tr class="pid_120"
+				style="height: 30px; display: none;">
+				<td><a
+					href="javascript:void(0)" onclick="tab_switch(121)"
+					class="tab_jian_121 tab_jian_120"
+					style="display: block;"><i class="fa fa-minus-circle"></i></a><a
+					href="javascript:void(0)" onclick="tab_switch(121)"
+					class="tab_jia_121 tab_jia_120"
+					style="display: none;"><i class="fa fa-plus-circle"></i></a> 				</td>
+				<td style="text-align: center;"><input onkeyup="value=value.replace(/[^\d+(\.\d+)?]/g,'')" type="text" class="sort"
+					fieldid="121" fieldname="sort" value="2"
+					size="1"></td>
+				<td><span style="color: #ccc;">|——</span> <input type="text"
+					fieldid="121" fieldname="module_name"
+					value="模块列表"></td>
+				<td style="text-align: center;">是</td>
+				<td style="text-align: center;"><a
+					href="http://tp.23673.com/admin/system/editmodule?module_id=121">修改</a>
+					<a href="javascript:void(0);"
+					onclick="delModule(121)">删除</a></td>
+			</tr>
+						<tr class="pid_121 pid_120"
+				style="height: 30px; display: none;">
+				<td><label></td>
+				<td style="text-align: center;"><input type="text" class="sort"
+					fieldid="129" fieldname="sort" value="0"
+					size="1"></td>
+				<td><span style="color: #ccc;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|——</span>
+					<input type="text" fieldid="129"
+					fieldname="module_name" value="删除模块"></td>
+				<td style="text-align: center;">否</td>
+				<td style="text-align: center;"><a
+					href="http://tp.23673.com/admin/system/editmodule?module_id=129">修改</a>
+					<a href="javascript:void(0);"
+					onclick="delModule(129)">删除</a></td>
+			</tr>
+						<tr class="pid_121 pid_120"
+				style="height: 30px; display: none;">
+				<td><label></td>
+				<td style="text-align: center;"><input type="text" class="sort"
+					fieldid="122" fieldname="sort" value="1"
+					size="1"></td>
+				<td><span style="color: #ccc;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|——</span>
+					<input type="text" fieldid="122"
+					fieldname="module_name" value="添加模块"></td>
+
+				<td style="text-align: center;">否</td>
+				<td style="text-align: center;"><a
+					href="http://tp.23673.com/admin/system/editmodule?module_id=122">修改</a>
+					<a href="javascript:void(0);"
+					onclick="delModule(122)">删除</a></td>
+			</tr>
+						<tr class="pid_121 pid_120"
+				style="height: 30px; display: none;">
+				<td><label></td>
+				<td style="text-align: center;"><input type="text" class="sort"
+					fieldid="123" fieldname="sort" value="2"
+					size="1"></td>
+				<td><span style="color: #ccc;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|——</span>
+					<input type="text" fieldid="123"
+					fieldname="module_name" value="修改模块"></td>
+
+				<td style="text-align: center;">否</td>
+				<td style="text-align: center;"><a
+					href="http://tp.23673.com/admin/system/editmodule?module_id=123">修改</a>
+					<a href="javascript:void(0);"
+					onclick="delModule(123)">删除</a></td>
+			</tr>
+					</tbody>
+	</table>
+</div>
+
+<script type="text/javascript">
+$(".style0list table input").change(function(){
+	var fieldid = $(this).attr('fieldid');
+	var fieldname = $(this).attr('fieldname');
+	var fieldvalue = $(this).val();
+	$.ajax({
+		type:"post",
+		url:"http://tp.23673.com/admin/system/modifyfield",
+		data:{'fieldid':fieldid,'fieldname':fieldname,'fieldvalue':fieldvalue},
+		async:true,
+		success: function (data) {
+				var flag = "error";
+				if(data.code>0){
+					flag = "success";
+				}
+				showTip(data['message'],flag);
+		}
+	});
+});
+	function tab_switch(module_id){
+		if($(".pid_"+module_id).css('display') != 'none'){
+			$(".tab_jian_"+module_id).hide();
+			$(".tab_jia_"+module_id).show();
+			$(".pid_"+module_id).hide(300);
+		}else{
+			$(".tab_jian_"+module_id).show();
+			$(".tab_jia_"+module_id).hide();
+			$(".pid_"+module_id).show(500);
+		}
+	}
+		function addModule(){
+			var pid = $("#pid").val();
+			location.href = "http://tp.23673.com/admin/system/addmodule?pid="+pid;
+		}
+		function delModule(module_id){
+			$( "#dialog" ).dialog({
+	            buttons: {
+	                "确定": function() {
+	                    $(this).dialog('close');
+	                    $.ajax({
+	        				type:"post",
+	        				url:"http://tp.23673.com/admin/system/delmodule",
+	        				data:{'module_id':module_id},
+	        				async:true,
+	        				dataType: 'json',
+	        				success:function (data) {
+
+	        					if(data['code'] > 0){
+	        						location.href = "http://tp.23673.com/admin/system/modulelist";
+	        					}else{
+	        						$("#dialog").dialog({
+	        							 buttons: {
+	        					                "确定": function() {
+	        					                    $(this).dialog('close');
+	        					                }
+	        					            },
+	        					            contentText:data['message']
+	        						})
+	        					}
+	        				}
+	        			});
+	                },
+	                "取消,#e57373": function() {
+	                    $(this).dialog('close');
+	                }
+	            },
+	            contentText:"确定删除？",
+	        });
+			/* if(confirm("确定删除？")){
+
+			} */
+		}
+        var appCode = GetUrlAppCode();
+        var menuCode = GetUrlMenuCode();
+        if (appCode != 'PLATFORM' && appCode != "" && appCode != null) {
+            $("#type").css("display", "none");
+            $("#Operate ul").css("display", "none");
+            $(".separationLine").css("display", "none");
+        }
+        </script>
+
+		</div>
+		<script src="../../static/js/page_4.js"></script>
+<div class="page" id="turn-ul" style="display: none;">
+	<div class="pagination pagination-right">
+		<ul>
+			<li class="total-data">共0有条数据</li>
+			<li class="according-number">每页显示<input type="text" class="input-medium" id="showNumber" value="20" data-default="20" />条</li>
+			<li><a id="beginPage" class="page-disable" style="border: 1px solid #dddddd;">首页</a></li>
+			<li><a id="prevPage" class="page-disable">上一页</a></li>
+			<li id="pageNumber"></li>
+			<li><a id="nextPage">下一页</a></li>
+			<li><a id="lastPage">末页</a></li>
+			<li class="page-count">共0页</li>
+		</ul>
+	</div>
+</div>
+<input type="hidden" id="page_count" />
+<input type="hidden" id="page_size" />
+<script>
+$(function() {
+	try{
+		$("#turn-ul").show();//显示分页
+		LoadingInfo(1);//通过此方法调用分页类
+	}catch(e){
+		$("#turn-ul").hide();
+	}
+
+	//首页
+	$("#beginPage").click(function() {
+		if(jumpNumber!=1){
+			jumpNumber = 1;
+			LoadingInfo(1);
+			changeClass("begin");
+		}
+		return false;
+	});
+
+	//上一页
+	$("#prevPage").click(function() {
+		var obj = $(".currentPage");
+		var index = parseInt(obj.text()) - 1;
+		if (index > 0) {
+			obj.removeClass("currentPage");
+			obj.prev().addClass("currentPage");
+			jumpNumber = index;
+			LoadingInfo(index);
+			//判断是否是第一页
+			if (index == 1) {
+				changeClass("prev");
+			} else {
+				changeClass();
+			}
+		}
+		return false;
+	});
+
+	//下一页
+	$("#nextPage").click(function() {
+		var obj = $(".currentPage");
+		//当前页加一（下一页）
+		var index = parseInt(obj.text()) + 1;
+		if (index <= $("#page_count").val()) {
+			jumpNumber = index;
+			LoadingInfo(index);
+			obj.removeClass("currentPage");
+			obj.next().addClass("currentPage");
+			//判断是否是最后一页
+			if (index == $("#page_count").val()) {
+				changeClass("next");
+			} else {
+				changeClass();
+			}
+		}
+		return false;
+	});
+
+	//末页
+	$("#lastPage").click(function() {
+		jumpNumber = $("#page_count").val();
+		if(jumpNumber>1){
+			LoadingInfo(jumpNumber);
+			$("#pageNumber a:eq("+ (parseInt($("#page_count").val()) - 1) + ")").text($("#page_count").val());
+			changeClass("next");
+		}
+		return false;
+	});
+
+	//每页显示页数
+	$("#showNumber").blur(function(){
+		if(isNaN($(this).val())){
+			$("#showNumber").val(20);
+			jumpNumber = 1;
+			LoadingInfo(jumpNumber);
+			return;
+		}
+		//页数没有变化的话，就不要再执行查询
+		if(parseInt($(this).val()) != $(this).attr("data-default")){
+// 			jumpNumber = 1;//设置每页显示的页数，并且设置到第一页
+			$(this).attr("data-default",$(this).val());
+			LoadingInfo(jumpNumber);
+		}
+		return false;
+	}).keyup(function(event){
+		if(event.keyCode == 13){
+			if(isNaN($(this).val())){
+				$("#showNumber").val(20);
+				jumpNumber = 1;
+				LoadingInfo(jumpNumber);
+			}
+			//页数没有变化的话，就不要再执行查询
+			if(parseInt($(this).val()) != $(this).attr("data-default")){
+// 				jumpNumber = 1;//设置每页显示的页数，并且设置到第一页
+				$(this).attr("data-default",$(this).val());
+				//总数据数量
+				var total_count = parseInt($(".total-data").attr("data-total-count"));
+				//计算用户输入的页数是否超过当前页数
+				var curr_count = Math.ceil(total_count/parseInt($(this).val()));
+				if( curr_count !=0 && curr_count < jumpNumber){
+					jumpNumber = curr_count;//输入的页数超过了，没有那么多
+				}
+				LoadingInfo(jumpNumber);
+			}
+		}
+		return false;
+	});
+});
+
+//跳转页面
+function JumpForPage(obj) {
+	jumpNumber = $(obj).text();
+	LoadingInfo($(obj).text());
+	$(".currentPage").removeClass("currentPage");
+	$(obj).addClass("currentPage");
+	if (jumpNumber == 1) {
+		changeClass("prev");
+	} else if (jumpNumber < parseInt($("#page_count").val())) {
+		changeClass();
+	} else if (jumpNumber == parseInt($("#page_count").val())) {
+		changeClass("next");
+	}
+}
+
+</script>
+
+		<!-- 公共的操作提示弹出框 common-success：成功，common-warning：警告，common-error：错误，-->
+		<div class="common-tip-message js-common-tip">
+			<div class="inner"></div>
+		</div>
+	</div>
+</div>
+
+<!--修改密码弹出框 -->
+<div id="edit-password" class="modal hide" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+	<div class="modal-header">
+		<button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+		<h3 id="myModalLabel">修改密码</h3>
+	</div>
+	<div class="modal-body">
+		<form class="form-horizontal">
+			<div class="control-group">
+				<label class="control-label" for="inputPassword"><span class="color-red">*</span>原密码</label>
+									<div class="controls">
+										<input type="password" id="pwd0" placeholder="请输入原密码" />
+										<span class="help-block"></span>
+									</div>
+				</div>
+				<div class="control-group">
+					<label class="control-label" for="inputPassword"><span class="color-red">*</span>新密码</label>
+					<div class="controls">
+						<input type="password" id="pwd1" placeholder="请输入新密码" />
+						<span class="help-block"></span>
+					</div>
+				</div>
+				<div class="control-group">
+					<label class="control-label" for="inputPassword"><span class="color-red">*</span>再次输入密码</label>
+					<div class="controls">
+						<input type="password" id="pwd2" placeholder="请输入确认密码" />
+						<span class="help-block"></span>
+					</div>
+				</div>
+				<div style="text-align: center; height: 20px;" id="show"></div>
+				</form>
+			</div>
+			<div class="modal-footer">
+				<button class="btn btn-info" onclick="submitPassword()" style="display:inline-block;">保存</button>
+				<button class="btn" data-dismiss="modal" aria-hidden="true">关闭</button>
+			</div>
+		</div>
+
+		<!--修改密码弹框结束  -->
+		<div class="footer">
+			<div id="faq" style="background: #eee; padding-top: 10px;">
+				<div class="faq-wrapper"></div>
+			</div>
+			<div id="footer" class="wrapper">
+				<p>
+				</p>
+				<p style="color:#333333; display: none;" id="bottom_copyright">Copyright © 2015-2025 六星开源商城&nbsp;版权所有 保留一切权利<br><a href="http://www.sixstaredu.com" target="_blank" style="text-decoration: none;color:#333333;">湖南六星教育网络科技有限公司&nbsp;</a>
+					<span>提供技术支持&nbsp;0731-8557-3019</span>
+				</p>
+			</div>
+		</div>
+
+		<link rel="stylesheet" type="text/css" href="../../static/css/jquery-ui-private_4.css">
+		<script>
+			var platform_shopname = '六星开源商城';
+		</script>
+		<script type="text/javascript" src="../../static/js/jquery-ui-private_4.js" charset="utf-8"></script>
+		<script type="text/javascript" src="../../static/js/jquery.timers_4.js"></script>
+		<div id="dialog"></div>
+		<script type="text/javascript">
+			function showMessage(type, message, url, time) {
+				if (url == undefined) {
+					url = '';
+				}
+				if (time == undefined) {
+					time = 2;
+				}
+				//成功之后的跳转
+				if (type == 'success') {
+					$("#dialog").dialog({
+						buttons: {
+							"确定,#51A351": function() {
+								$(this).dialog('close');
+							}
+						},
+						contentText: message,
+						time: time,
+						timeHref: url,
+					});
+				}
+				//失败之后的跳转
+				if (type == 'error') {
+					$("#dialog").dialog({
+						buttons: {
+							"确定,#e57373": function() {
+								$(this).dialog('close');
+							}
+						},
+						time: time,
+						contentText: message,
+						timeHref: url,
+					});
+				}
+			}
+
+			function showConfirm(content) {
+				$("#dialog").dialog({
+					buttons: {
+						"确定": function() {
+							$(this).dialog('close');
+							return 1;
+						},
+						"取消,#e57373": function() {
+							$(this).dialog('close');
+							return 0;
+						}
+					},
+					contentText: content,
+				});
+			}
+		</script>
+		<script src="../../static/js/ns_common_base_4.js"></script>
+		<script>
+			$(function() {
+
+				$('.index-sitemap > a').bind("click", function() {
+					$(".sitemap-menu-arrow").slideDown("slow");
+					$(".sitemap-menu").slideDown("slow");
+				});
+				$('.add-quickmenu > a').bind("click", function() {
+					$(".sitemap-menu-arrow").slideDown("slow");
+					$(".sitemap-menu").slideDown("slow");
+				});
+				$('#closeSitemap').bind("click", function() {
+					$(".sitemap-menu-arrow").slideUp("fast");
+					$(".sitemap-menu").slideUp("fast");
+				});
+			});
+
+			function add_nav_class(doc) {
+				$(doc).addClass("hover");
+			}
+
+			function remove_nav_class(doc) {
+				$(doc).removeClass("hover");
+			}
+
+			// 显示导航管理
+			function nav_open() {
+				var one = new Array();
+				var two = new Array();
+				var three = new Array();
+				$(".ncsc-head-layout .sitemap-menu dl").each(function(c, e) {
+					if (c < 5) {
+						one.push($(e).height());
+					} else if (c > 4 && c < 10) {
+						two.push($(e).height());
+					} else if (c > 9 && c < 15) {
+						three.push($(e).height());
+					}
+				})
+				$(".ncsc-head-layout .sitemap-menu dl").each(function(c, e) {
+					if (c < 5) {
+						var one_max_height = Math.max.apply(Math, one);
+						$(e).height(one_max_height);
+					} else if (c > 4 && c < 10) {
+						var two_max_height = Math.max.apply(Math, two);
+						$(e).height(two_max_height);
+					} else if (c > 9 && c < 15) {
+						var three_max_height = Math.max.apply(Math, three);
+						$(e).height(three_max_height);
+					}
+				})
+				$(".sitemap-menu-arrow").show();
+				$(".sitemap-menu").show();
+			}
+			// 隐藏导航管理
+			function nav_close() {
+				$(".sitemap-menu-arrow").hide();
+				$(".sitemap-menu").hide();
+			}
+			// 系统注销菜单的控制
+			var closetimer = 0;
+
+			function exitSystemOver() {
+				cancelColseMenu();
+				$("#exit_System").css("display", "block");
+			};
+
+			function exitSystemOut() {
+				closetimer = window.setTimeout(mclose, 600);
+			};
+
+			function cancelColseMenu() {
+				window.clearTimeout(closetimer);
+				closetimer = null;
+			};
+
+			function mclose() {
+				$("#exit_System").css("display", "none");
+			}
+		</script>
+
+</body>
+
+</html>
