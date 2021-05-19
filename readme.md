@@ -28,7 +28,7 @@
         - supervisor
         
      - openresty 
-        - nginx -> openresty-conf
+        - openresty-conf
     
 #### log
     说明：日志, 容器内部记录在/var/log
@@ -37,14 +37,19 @@
     说明：项目代码
      - blog 
        - 自己的项目， 第一二节课会员注册登陆
-       - 数据库结构： php artisan migrate
+       - vendor: compose install
+       - 数据库结构： 
+            命令：php artisan migrate
+            注意，这个命令如果在宿主机执行的话，需要将.env文件的DB_HOST临时改成127.0.0.1
        - 数据库数据： 
-            php artisan db:seed --class 
+            php artisan db:seed --class UserSeeder
+            注意，这个命令如果在宿主机执行的话，需要将.env文件的DB_HOST临时改成127.0.0.1
 
-     - lmrs-2008 
-       - 老师的api
      - webserver 
-       - 老师的前端代码
+       - 前端代码
+            初始化账户名：test
+            初始化密码：123456
+
      - lua 
        - lua配置文件
 

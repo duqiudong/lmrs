@@ -1,5 +1,6 @@
 ngx.header.content_type = "application/json;charset=utf8"
 local cache_ngx = ngx.shared.cache;
+cache_ngx:clear("lmrs_home_index");
 local contentCache = cache_ngx:get("lmrs_home_index");
 local cjson = require("cjson");
 if contentCache == "" or contentCache == nil then
@@ -13,13 +14,14 @@ if contentCache == "" or contentCache == nil then
         local db = mysql:new();
         --db:set_timeout(2000)
         local props = {
-            host = "172.27.0.6",
+            host = "mysql",
             port = 33060,
             database = "lmrs_2008_shops",
             user = "root",
             password = "123456"
         }
         local res = db:connect(props);
+        ngx.say(cjson.encode(res));
         local select_sql = "select * from lmrs_product_categorys"
         res = db:query(select_sql);
         local responsejson = cjson.encode(res);
