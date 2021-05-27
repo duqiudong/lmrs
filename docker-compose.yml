@@ -16,6 +16,9 @@ services:
       - six
 
   local-php:
+    build:
+      context: .
+      dockerfile: PHP.Dockerfile
     image: php8:fpm-swoole
     container_name: six-php
     volumes:
@@ -40,7 +43,8 @@ services:
     ports:
       - 33060:3306
     networks:
-      - six
+      six:
+        ipv4_address: 127.27.0.2
 
 
   redis:
@@ -49,7 +53,8 @@ services:
     ports:
       - 63790:6379
     networks:
-      - six
+      six:
+        ipv4_address: 172.27.0.3
 
 
   openresty:
@@ -70,5 +75,9 @@ services:
 
 networks:
   six:
+    ipam:
+      config:
+        - subnet: 172.27.0.0/16
+          gateway: 172.27.0.1
 
 # ipv4_address: 172.27.0.4
