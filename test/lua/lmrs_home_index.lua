@@ -14,7 +14,7 @@ if contentCache == "" or contentCache == nil then
         local db = mysql:new();
         --db:set_timeout(2000)
         local props = {
-            host = "127.27.0.4",
+            host = "172.27.0.4",
             port = 33060,
             database = "lmrs_2008_shops",
             user = "root",

@@ -1,6 +1,27 @@
 version: '2'
 
 services:
+  mysql:
+    image: mysql:8.0
+    container_name: six-mysql
+    environment:
+      - "MYSQL_ROOT_PASSWORD=123456"
+      - "TZ=Asia/Shanghai"
+    ports:
+      - 33060:3306
+    networks:
+      six:
+        ipv4_address: 172.27.0.4
+
+  redis:
+    image: redis
+    container_name: six-redis
+    ports:
+      - 63790:6379
+    networks:
+      six:
+        ipv4_address: 172.27.0.5
+
   local-nginx:
     image: nginx
     container_name: six-nginx
@@ -14,6 +35,7 @@ services:
       - 8081:8081
     networks:
       - six
+
 
   local-php:
     build:
@@ -34,29 +56,6 @@ services:
     networks:
       - six
 
-  mysql:
-    image: mysql:8.0
-    container_name: six-mysql
-    environment:
-      - "MYSQL_ROOT_PASSWORD=123456"
-      - "TZ=Asia/Shanghai"
-    ports:
-      - 33060:3306
-    networks:
-      six:
-        ipv4_address: 127.27.0.2
-
-
-  redis:
-    image: redis
-    container_name: six-redis
-    ports:
-      - 63790:6379
-    networks:
-      six:
-        ipv4_address: 172.27.0.3
-
-
   openresty:
     image: openresty/openresty
     container_name: six-openresty
@@ -75,9 +74,9 @@ services:
 
 networks:
   six:
+    driver: bridge
     ipam:
+      driver: default
       config:
-        - subnet: 172.27.0.0/16
-          gateway: 172.27.0.1
-
-# ipv4_address: 172.27.0.4
+       - subnet: 172.27.0.0/16
+         gateway: 172.27.0.1

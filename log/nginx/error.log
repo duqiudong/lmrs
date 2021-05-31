@@ -193,3 +193,4 @@
 2021/05/14 02:10:48 [error] 26#26: *12 open() "/var/www/html/blog/public/api/test" failed (2: No such file or directory), client: 172.27.0.1, server: localhost, request: "GET /api/test HTTP/1.1", host: "localhost:8080"
 2021/05/14 02:10:51 [error] 26#26: *12 open() "/var/www/html/blog/public/api/v1" failed (2: No such file or directory), client: 172.27.0.1, server: localhost, request: "GET /api/v1 HTTP/1.1", host: "localhost:8080"
 2021/05/14 02:10:54 [error] 26#26: *12 open() "/var/www/html/blog/public/api/v1/test" failed (2: No such file or directory), client: 172.27.0.1, server: localhost, request: "GET /api/v1/test HTTP/1.1", host: "localhost:8080"
+2021/05/31 01:39:37 [emerg] 1#1: host not found in upstream "local-php" in /etc/nginx/conf.d/test-fpm.conf:34
