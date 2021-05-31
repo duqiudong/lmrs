@@ -24,5 +24,6 @@ php artisan migrate
 初始化数据
 ```
 php artisan db:seed --class=UserSeeder //user账户密码：test  123456
+php artisan db:seed --class=ProductCategorySeeder
 ```
 
