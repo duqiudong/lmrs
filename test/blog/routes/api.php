@@ -19,14 +19,24 @@ $apiDingo->version('v1', function ($api) {
     $api->group(["namespace" => "App\Http\Controllers\Api\V1"], function ($api) {
         $api->post('getCode', 'VerificationCodesController@sendCode');
         $api->post('reg', 'UserController@registered');
+        $api->post('soldCountQueue', 'IndexController@SoldCountQueue');
     });
 
     $api->group(["namespace" => "App\Http\Controllers"], function ($api) {
         $api->post('login', 'UserLoginController@login');
-
     });
-
 });
+
+//$api = app('Dingo\Api\Routing\Router');
+//$api->version('v1',[
+//    'middleware' => ['bindings'],
+//    'namespace' => "App\Http\Controllers\Api\V1"
+//],function ($api){
+//    $api->post('getCode','VerificationCodesController@sendCode')->name("verificationCodes.store");
+//    $api->post('users','UserController@registered')->name("users.store");
+//    $api->post('login','UserLoginController@login')->name("login.store");
+//
+//});
 
 
 //

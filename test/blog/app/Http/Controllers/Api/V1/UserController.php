@@ -12,7 +12,7 @@ use Illuminate\Support\Facades\Hash;
 class UserController extends Controller
 {
     public function registered(UserRequest $request) {
-        $verifyData = $this->redisCache()->get('code_'.$request->phone);
+        $verifyData = $this->redisCache()->get('code_'.$request->mobile);
         if(!$verifyData) {
             abort(403, "验证码已失效");
         }
@@ -21,12 +21,10 @@ class UserController extends Controller
             throw new \Exception('验证码错误');
         }
 
-        $member = User::create([
-            'name' => $request->name,
-            'mobile' => $request->phone,
-            'password' => Hash::make($request->password),
-            'status'  => 1
-        ]);
-        return new UserResource($member);
+        $user = new User();
+        $user->fill($request->toArray());
+        $user->password = Hash::make($request->password);
+        $user->save();
+        return new UserResource($user);
     }
 }

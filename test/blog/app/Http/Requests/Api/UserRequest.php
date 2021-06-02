@@ -23,7 +23,7 @@ class UserRequest extends FormRequest {
         return [
             'name'              => 'required|between:3,25|regex:/^[A-Za-z0-9\-\_]+$/',
             'password'          => 'required|alpha_dash|min:6',
-            'phone'             => 'required|string',
+            'mobile'             => 'required|string',
             'verification_code' => 'required|string',
         ];
     }
