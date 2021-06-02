@@ -25,7 +25,14 @@ $apiDingo->version('v1', function ($api) {
     $api->group(["namespace" => "App\Http\Controllers"], function ($api) {
         $api->post('login', 'UserLoginController@login');
     });
+
+    $api->group(["namespace" => "App\Http\Controllers", 'middleware' => 'api.auth'], function ($api) {
+        $api->post('productList', 'ProductController@index')->name("product.index");
+    });
+
 });
+
+
 
 //$api = app('Dingo\Api\Routing\Router');
 //$api->version('v1',[
