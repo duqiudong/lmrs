@@ -1,3 +1,2 @@
-cluster.name: my-application #集群名称
-node.name: node-1 #节点名称
-
+cluster.name: lmrs #集群名称
+node.name: es01 #节点名称

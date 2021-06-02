@@ -75,19 +75,44 @@ services:
     image: elasticsearch:7.12.1
     container_name: es01
     environment:
+      - node.name=es01
+      - cluster.name=es-docker-cluster
+      - discovery.seed_hosts=es02
+      - cluster.initial_master_nodes=es01,es02,es03
+      - bootstrap.memory_lock=true
+      - http.cors.enabled=true
+      - http.cors.allow-origin=*
       - "ES_JAVA_OPTS=-Xms512m -Xmx512m"
     ulimits:
       memlock:
         soft: -1
         hard: -1
-    volumes:
-#      - ./conf/es/data:/usr/share/elasticsearch/data
-      - ./conf/es/conf/elasticsearch.yml:/usr/share/elasticsearch/config/elasticsearch.yml
-      - ./conf/es/plugins:/usr/share/elasticsearch/plugins
-      - ./log/es:/usr/share/elasticsearch/logs
+    #    volumes:
+    #      - ./conf/es/data:/usr/share/elasticsearch/data
+    #      - ./conf/es/conf/elasticsearch.yml:/usr/share/elasticsearch/config/elasticsearch.yml
+    #      - ./conf/es/plugins:/usr/share/elasticsearch/plugins
+    #      - ./log/es:/usr/share/elasticsearch/logs
     ports:
       - 9200:9200
-      - 9300:9300
+    networks:
+      - six
+
+  es02:
+    image: elasticsearch:7.12.1
+    container_name: es02
+    environment:
+      - node.name=es02
+      - cluster.name=es-docker-cluster
+      - discovery.seed_hosts=es01
+      - cluster.initial_master_nodes=es01,es02
+      - bootstrap.memory_lock=true
+      - http.cors.enabled=true
+      - http.cors.allow-origin=*
+      - "ES_JAVA_OPTS=-Xms512m -Xmx512m"
+    ulimits:
+      memlock:
+        soft: -1
+        hard: -1
     networks:
       - six
 
@@ -107,5 +132,5 @@ networks:
     ipam:
       driver: default
       config:
-       - subnet: 172.27.0.0/16
-         gateway: 172.27.0.1
+        - subnet: 172.27.0.0/16
+          gateway: 172.27.0.1

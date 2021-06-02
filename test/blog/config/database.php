@@ -92,7 +92,7 @@ return [
         ],
 
         'elasticsearch' => [
-            'host' => explode(',', env('ES_HOSTS')),
+            'host' => env('ES_HOSTS', ''),
         ],
 
     ],

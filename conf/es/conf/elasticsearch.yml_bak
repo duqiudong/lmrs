@@ -1,0 +1,18 @@
+cluster.name: lmrs #集群名称
+node.name: es01 #节点名称
+node.master: true
+node.data: false
+path.data: /usr/share/elasticsearch/data
+path.logs: /usr/share/elasticsearch/logs
+bootstrap.memory_lock: true
+network.host: 0.0.0.0
+http.port: 9200
+transport.tcp.port: 9300
+discovery.zen.ping.unicast.hosts: ["es01:9300", "es02:9300", "es03:9300"]
+cluster.initial_master_nodes: ["es01"]
+
+http.cors.enabled: true
+http.cors.allow-origin: "*"
+
+xpack.security.enabled: false
+xpack.security.transport.ssl.enabled: false

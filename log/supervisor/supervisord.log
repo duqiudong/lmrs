@@ -1065,3 +1065,16 @@
 2021-06-02 09:22:59,174 INFO spawned: 'laravel-s-test' with pid 11
 2021-06-02 09:23:00,385 INFO success: php entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
 2021-06-02 09:23:00,386 INFO success: laravel-s-test entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2021-06-02 15:45:43,837 WARN received SIGQUIT indicating exit request
+2021-06-02 15:45:43,919 INFO waiting for php, laravel-s-test to die
+2021-06-02 15:45:44,417 INFO stopped: laravel-s-test (exit status 0)
+2021-06-02 15:45:44,519 INFO stopped: php (exit status 0)
+2021-06-02 15:46:11,727 CRIT Supervisor is running as root.  Privileges were not dropped because no user is specified in the config file.  If you intend to run as root, you can set user=root in the config file to avoid this message.
+2021-06-02 15:46:11,729 INFO Included extra file "/etc/supervisor/conf.d/phpSupervisord.conf" during parsing
+2021-06-02 15:46:11,759 INFO RPC interface 'supervisor' initialized
+2021-06-02 15:46:11,759 CRIT Server 'unix_http_server' running without any HTTP authentication checking
+2021-06-02 15:46:11,841 INFO supervisord started with pid 1
+2021-06-02 15:46:12,847 INFO spawned: 'php' with pid 10
+2021-06-02 15:46:12,852 INFO spawned: 'laravel-s-test' with pid 11
+2021-06-02 15:46:13,969 INFO success: php entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2021-06-02 15:46:13,970 INFO success: laravel-s-test entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
