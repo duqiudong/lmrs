@@ -1,0 +1,3 @@
+cluster.name: my-application #集群名称
+node.name: node-1 #节点名称
+

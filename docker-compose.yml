@@ -71,6 +71,35 @@ services:
     networks:
       - six
 
+  es01:
+    image: elasticsearch:7.12.1
+    container_name: es01
+    environment:
+      - "ES_JAVA_OPTS=-Xms512m -Xmx512m"
+    ulimits:
+      memlock:
+        soft: -1
+        hard: -1
+    volumes:
+#      - ./conf/es/data:/usr/share/elasticsearch/data
+      - ./conf/es/conf/elasticsearch.yml:/usr/share/elasticsearch/config/elasticsearch.yml
+      - ./conf/es/plugins:/usr/share/elasticsearch/plugins
+      - ./log/es:/usr/share/elasticsearch/logs
+    ports:
+      - 9200:9200
+      - 9300:9300
+    networks:
+      - six
+
+  kibana:
+    image: kibana:7.12.1
+    container_name: kibana
+    volumes:
+      - ./conf/kibana/conf/kibana.yml:/usr/share/kibana/config/kibana.yml
+    ports:
+      - 5601:5601
+    networks:
+      - six
 
 networks:
   six:
